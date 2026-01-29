@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://observables.art', // Your custom domain
+  site: 'https://toddmargolis.net', // Your custom domain
   output: 'static',
   base: '/',                       // Leave as '/' since you use a custom domain
   outDir: 'dist',
