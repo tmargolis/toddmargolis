@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Virtual Walkthrough" hideFooter={true}>
+  <div class="fixed inset-0 z-50 bg-black flex flex-col">
+    <!-- Close / Back Button -->
+    <div class="absolute top-6 right-6 z-50">
+      <a href="/" class="text-white font-mono text-xs uppercase tracking-widest hover:text-indigo-400">Exit Exhibition [X]</a>
+    </div>
+
+    <!-- Iframe Container -->
+    <div class="flex-1 w-full h-full relative">
+       <iframe 
+         width="100%" 
+         height="100%" 
+         src="https://d7mntklkfre1v.cloudfront.net/virtual-exhibitions/?i=22729" 
+         frameborder="0" 
+         allowfullscreen
+         class="w-full h-full border-none"
+         title="Virtual Exhibition"
+       ></iframe>
+       
+       <!-- Fallback/Overlay if needed -->
+       <div class="absolute inset-0 pointer-events-none flex items-center justify-center bg-black/50 backdrop-blur-sm hidden">
+          <p class="font-mono text-white">Loading Virtual Space...</p>
+       </div>
+    </div>
+  </div>
+</Layout>

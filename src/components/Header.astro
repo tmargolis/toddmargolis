@@ -1,0 +1,86 @@
+---
+interface Props {
+  prevProject?: { title: string; slug: string };
+  nextProject?: { title: string; slug: string };
+  hideWalkthrough?: boolean;
+}
+
+const { prevProject, nextProject, hideWalkthrough = false } = Astro.props;
+---
+
+<nav class="fixed top-0 w-full z-40 glass mix-blend-difference text-gray-300">
+  <!-- Mobile: Evenly spread links across full width -->
+  <div class="md:hidden w-full p-6">
+    <div class="flex justify-between items-center font-mono text-xs tracking-[0.2em] uppercase">
+      <a href="/" class="font-serif text-2xl tracking-tight text-white hover:text-glow transition-all duration-300">
+        OBSERVABLES
+      </a>
+      <a href="/narrative/" class="hover:text-white hover:text-glow transition-all duration-300">Artist Statement</a>
+      <div class="flex flex-col items-center relative">
+        <a href="/works/" class="hover:text-white hover:text-glow transition-all duration-300">Works</a>
+        <!-- Project Nav Arrows (Mobile - Under Works) -->
+        {prevProject && nextProject && (
+          <div class="flex gap-4 absolute top-full mt-0.5">
+             <a href={`/works/${prevProject.slug}/`} class="hover:text-white hover:text-glow transition-all duration-300">&larr;</a>
+             <a href={`/works/${nextProject.slug}/`} class="hover:text-white hover:text-glow transition-all duration-300">&rarr;</a>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop Layout -->
+  <div class="hidden md:flex w-full justify-between items-center">
+    <!-- Left Side -->
+    <div class="flex items-center gap-8">
+      <a href="/" class="font-serif text-2xl tracking-tight text-white hover:text-glow transition-all duration-300">
+        OBSERVABLES
+      </a>
+      <div class="flex gap-6 font-mono text-xs tracking-[0.2em] uppercase">
+        <a href="/narrative/" class="hover:text-white hover:text-glow transition-all duration-300">Artist Statement</a>
+        <a href="/works/" class="hover:text-white hover:text-glow transition-all duration-300">Works</a>
+      </div>
+    </div>
+
+    <!-- Center (Project Nav - Desktop Only) -->
+    {prevProject && nextProject && (
+      <div class="hidden lg:flex gap-8 font-mono text-xs tracking-[0.2em] uppercase absolute left-1/2 transform -translate-x-1/2">
+         <a href={`/works/${prevProject.slug}/`} class="hover:text-white hover:text-glow transition-all duration-300 group">
+            &larr; <span class="hidden xl:inline">{prevProject.title}</span>
+         </a>
+         <span class="text-white/20">|</span>
+         <a href={`/works/${nextProject.slug}/`} class="hover:text-white hover:text-glow transition-all duration-300 group">
+            <span class="hidden xl:inline">{nextProject.title}</span> &rarr;
+         </a>
+      </div>
+    )}
+
+    <!-- Right Side -->
+    <div class="flex items-center gap-6 font-mono text-xs tracking-[0.2em] uppercase">
+      {!hideWalkthrough && <a href="/walkthrough/" class="hover:text-white hover:text-glow transition-all duration-300">Walkthrough</a>}
+      <a href="/logistics/" id="nav-logistics" class="hidden hover:text-white hover:text-glow transition-all duration-300">Logistics</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Check Clerk auth status to show Logistics link
+  window.addEventListener("load", async function () {
+    const checkClerk = setInterval(async () => {
+      // @ts-ignore
+      if (window.Clerk) {
+        clearInterval(checkClerk);
+        // @ts-ignore
+        await window.Clerk.load();
+        
+        // @ts-ignore
+        if (window.Clerk.user) {
+          const logisticsLink = document.getElementById('nav-logistics');
+          const logisticsLinkMobile = document.getElementById('nav-logistics-mobile');
+          if (logisticsLink) logisticsLink.classList.remove('hidden');
+          if (logisticsLinkMobile) logisticsLinkMobile.classList.remove('hidden');
+        }
+      }
+    }, 100);
+  });
+</script>

@@ -1,0 +1,581 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { projects } from '../../data/projects';
+import Watermark from '../../components/Watermark.astro';
+
+export function getStaticPaths() {
+  return projects.map(project => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const hideWalkthrough = true;
+const hasWalkthroughButton = true;
+
+const currentIndex = projects.findIndex(p => p.slug === project.slug);
+const prevProject = projects[currentIndex - 1] || projects[projects.length - 1];
+const nextProject = projects[currentIndex + 1] || projects[0];
+
+// Include hero image in carousel if it's not already in the images array
+const carouselImages = project.images.includes(project.heroImage) 
+  ? project.images 
+  : [project.heroImage, ...project.images];
+
+// For series projects, include hero image if not already in images array
+const seriesImages = (() => {
+  const baseImages = project.images.includes(project.heroImage) 
+    ? project.images 
+    : [project.heroImage, ...project.images];
+  return project.contextImage 
+    ? [project.contextImage, ...baseImages]
+    : baseImages;
+})();
+
+const isStarTrails = project.slug === 'star-trails';
+const starTrailsModelBases = ['geminid', 'dunes', 'goose-lake', 'wildcat'];
+const getStarTrailsModelBase = (index) => starTrailsModelBases[index] || `star-trails-${index + 1}`;
+
+const isNowAndThen = project.slug === 'now-and-then';
+const nowAndThenModelBases = ['whirlpool', 'andromeda', 'eagle', 'orion', 'horsehead', 'california', 'veil'];
+const getNowAndThenModelBase = (index) => nowAndThenModelBases[index] || `now-and-then-${index + 1}`;
+
+const hasModelViewer = (index) => {
+  if (isStarTrails) return true;
+  if (isNowAndThen) return true; // Show for all images in Now & Then series
+  return false;
+};
+const getModelBase = (index) => {
+  if (isStarTrails) return getStarTrailsModelBase(index);
+  if (isNowAndThen) return getNowAndThenModelBase(index);
+  return '';
+};
+---
+
+<Layout title={project.title} prevProject={prevProject} nextProject={nextProject} hideWalkthrough={hideWalkthrough} hasWalkthroughButton={hasWalkthroughButton}>
+  <!-- Hero -->
+  <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
+    <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
+    {project.videos && project.videos.length > 0 ? (
+       /* Special case: If the hero should be a video, we could check here or just use image. 
+          Currently using heroImage as primary. */
+        <img src={project.heroImage} alt={project.title} class="w-full h-full object-cover cursor-zoom-in" onclick={`openLightbox('${project.heroImage}')`} />
+    ) : (
+        <img src={project.heroImage} alt={project.title} class="w-full h-full object-cover cursor-zoom-in" onclick={`openLightbox('${project.heroImage}')`} />
+    )}
+    {project.watermarkedImages?.includes(project.heroImage) && <Watermark />}
+    
+    <div class="absolute inset-0 z-20 flex flex-col justify-end p-6 md:p-12 pb-24 pointer-events-none">
+      {project.isSeries && (
+        <span class="font-mono text-xs text-indigo-400 tracking-widest uppercase mb-2 block">Series Collection</span>
+      )}
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-4">{project.title}</h1>
+      <p class="font-serif text-xl md:text-2xl text-gray-300 italic max-w-2xl">"{project.quote}"</p>
+    </div>
+  </header>
+
+  <!-- Content Grid -->
+  <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-12 relative">
+    
+    <!-- Left Col: Content -->
+    <div class="md:col-span-8 space-y-24">
+      
+      <!-- Series Handling: Alternating layout just like Standard View -->
+      {project.isSeries ? (
+        <div class="space-y-24">
+          <!-- Intro Text -->
+          <div class="font-mono text-sm text-gray-300 leading-relaxed text-justify border-l border-white/20 pl-6 space-y-4">
+             {project.description.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
+             {project.description2 && project.description2.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
+          </div>
+
+          <!-- Context Image (Optional) -->
+          {project.contextImage && (
+             <div class="w-full relative group">
+                <img 
+                  src={project.contextImage} 
+                  class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" 
+                  alt={project.contextCaption || "Context View"}
+                  onclick={`handleImageClick(event, '${project.contextImage}')`}
+                />
+                {project.watermarkedImages?.includes(project.contextImage) && <Watermark />}
+                {project.contextCaption && (
+                   <span class="block font-mono text-[10px] text-gray-500 uppercase tracking-widest mt-2 text-center">{project.contextCaption}</span>
+                )}
+             </div>
+          )}
+
+          <!-- Loop through all series images in alternating layout -->
+          {project.images.map((img, i) => (
+             i % 2 === 0 ? (
+               /* Even Index: Text Left (if any metadata), Image Right */
+               <div class="flex flex-col md:flex-row gap-8 items-center">
+                   <div class="flex-1 font-mono text-sm text-gray-400 leading-relaxed text-right md:text-right w-full">
+                      {project.imageTitles && project.imageTitles[i] && (
+                        <span class="block text-white mb-2 uppercase tracking-widest">{project.imageTitles[i]}</span>
+                      )}
+                      {project.imageDescriptions && project.imageDescriptions[i] ? (
+                        <p>{project.imageDescriptions[i]}</p>
+                      ) : (
+                        <p>Archival pigment print on cotton rag.</p>
+                      )}
+                      {hasModelViewer(i) && (
+                        <model-viewer
+                          class="model-viewer-frame mobile-only"
+                          src={`/models/${getModelBase(i)}.glb?v=6`}
+                          ios-src={`/models/${getModelBase(i)}.usdz?v=6`}
+                          ar
+                          ar-modes="webxr scene-viewer quick-look"
+                          camera-controls
+                          alt="A 3D model of my artwork">
+                          <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; bottom: 10px; right: 10px; ">
+                            View in your space
+                          </button>
+                        </model-viewer>
+                      )}
+                   </div>
+                   <div class="flex-1 w-full relative">
+                      <img 
+                        src={img} 
+                        class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" 
+                        alt={`Series Variation ${i+1}`}
+                        onclick={`handleImageClick(event, '${img}')`}
+                      />
+                      {project.watermarkedImages?.includes(img) && <Watermark />}
+                   </div>
+               </div>
+             ) : (
+               /* Odd Index: Image Left, Text Right */
+               <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                    <div class="flex-1 font-mono text-sm text-gray-400 leading-relaxed text-left w-full">
+                      {project.imageTitles && project.imageTitles[i] && (
+                        <span class="block text-white mb-2 uppercase tracking-widest">{project.imageTitles[i]}</span>
+                      )}
+                      {project.imageDescriptions && project.imageDescriptions[i] ? (
+                        <p>{project.imageDescriptions[i]}</p>
+                      ) : (
+                        <p>Archival pigment print on cotton rag.</p>
+                      )}
+                      {hasModelViewer(i) && (
+                        <model-viewer
+                          class="model-viewer-frame mobile-only"
+                          src={`/models/${getModelBase(i)}.glb?v=6`}
+                          ios-src={`/models/${getModelBase(i)}.usdz?v=6`}
+                          ar
+                          ar-modes="webxr scene-viewer quick-look"
+                          camera-controls
+                          alt="A 3D model of my artwork">
+                          <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+                            View in your space
+                          </button>
+                        </model-viewer>
+                      )}
+                   </div>
+                   <div class="flex-1 w-full relative">
+                      <img 
+                        src={img} 
+                        class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" 
+                        alt={`Series Variation ${i+1}`} 
+                        onclick={`handleImageClick(event, '${img}')`}
+                      />
+                      {project.watermarkedImages?.includes(img) && <Watermark />}
+                   </div>
+               </div>
+             )
+          ))}
+
+          <!-- Post-Images Text Section (Optional) -->
+          {project.description3 && (
+            <div class="font-mono text-sm text-gray-300 leading-relaxed text-justify border-l border-white/20 pl-6 space-y-4">
+              {project.description3.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
+            </div>
+          )}
+        </div>
+      ) : (
+        /* Standard Single Work Layout */
+        <>
+          {/* Show video if it exists, otherwise conditionally show carousel */}
+          {(project.videos && project.videos.length > 0) || !['black-hole-vision', 'the-edge', '3d-horizons','cmb-vr','redshifter', 'audio-counter'].includes(project.slug) ? (
+            <div class="relative w-full aspect-video bg-gray-900 overflow-x-auto snap-x snap-mandatory flex hide-scrollbar items-center justify-center">
+               {/* Check if Video Exists for Main Display */}
+               {project.videos && project.videos.length > 0 ? (
+                  <video 
+                     class="w-full h-full object-cover" 
+                     autoplay 
+                     loop 
+                     muted 
+                     playsinline
+                     controls
+                     preload="none"
+                  >
+                     <source src={project.videos[0]} type="video/mp4" />
+                     Your browser does not support the video tag.
+                  </video>
+               ) : (
+                  /* Fallback to Image Carousel */
+                  carouselImages.map((img, idx) => (
+                    <div key={idx} class="relative w-full h-full flex-shrink-0 snap-center">
+                      <img 
+                        src={img} 
+                        class="w-full h-full object-cover cursor-zoom-in" 
+                        alt="Detail view" 
+                        onclick={`openLightbox('${img}')`}
+                      />
+                      {project.watermarkedImages?.includes(img) && <Watermark />}
+                    </div>
+                  ))
+               )}
+            </div>
+          ) : null}
+
+          <div class="space-y-24">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="flex-1 font-mono text-sm text-gray-300 leading-relaxed text-justify space-y-4">
+                   {project.description.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
+                </div>
+                <div class="flex-1 relative">
+                   {project.images[0] && <img src={project.images[0]} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[0]}')`} />}
+                   {project.watermarkedImages?.includes(project.images[0]) && <Watermark />}
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                 <div class="flex-1 font-mono text-sm text-gray-300 leading-relaxed text-justify space-y-4">
+                   {project.description2.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
+                </div>
+                <div class="flex-1 relative">
+                   {project.images[2] ? (
+                     <>
+                       <img src={project.images[2]} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[2]}')`} />
+                       {project.watermarkedImages?.includes(project.images[2]) && <Watermark />}
+                     </>
+                   ) : project.images[1] ? (
+                     <>
+                       <img src={project.images[1]} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[1]}')`} />
+                       {project.watermarkedImages?.includes(project.images[1]) && <Watermark />}
+                     </>
+                   ) : (
+                     <>
+                       <img src={project.heroImage} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.heroImage}')`} />
+                       {project.watermarkedImages?.includes(project.heroImage) && <Watermark />}
+                     </>
+                   )}
+                </div>
+            </div>
+
+            {project.description3 && (
+              <div class="font-mono text-sm text-gray-300 leading-relaxed text-justify space-y-4">
+                {project.description3.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
+              </div>
+            )}
+          </div>
+        </>
+      )}
+
+    </div>
+
+    <!-- Right Col: Properties -->
+    <div class="md:col-span-4 md:sticky md:top-32 h-fit space-y-8 border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0 md:pl-8">
+      <div class="space-y-4 font-mono text-xs uppercase tracking-widest text-gray-400">
+       {/* Check if status Exists */}
+       {project.status ? (
+        <div>
+          <span class="block text-gray-600 mb-1">Status</span>
+          <span class="text-white">{project.status}</span>
+        </div>
+       ) : (
+        <div>
+          <span class="block text-gray-600 mb-1">Year</span>
+          <span class="text-white">{project.year}</span>
+        </div>
+       )}
+        <div>
+          <span class="block text-gray-600 mb-1">Medium</span>
+          <span class="text-white">{project.medium}</span>
+        </div>
+        <div>
+          <span class="block text-gray-600 mb-1">Dimensions</span>
+          <span class="text-white">{project.dimensions}</span>
+        </div>
+        <div>
+          <span class="block text-gray-600 mb-1">Weight</span>
+          <span class="text-white">{project.weight}</span>
+        </div>
+        
+        {/* Protected Logistics & Price Section */}
+        <div id="protected-meta" class="hidden space-y-4 pt-8 border-t border-white/10">
+           <h4 class="font-serif text-white italic">Logistics</h4>
+           {project.price && (
+            <div>
+              <span class="block text-gray-600 mb-1">Price</span>
+              <span class="text-green-400">{project.price}</span>
+            </div>
+           )}
+           {project.note && (
+             <div>
+              <span class="block text-gray-600 mb-1">Requirements</span>
+              <span class="text-indigo-400">{project.note}</span>
+            </div>
+           )}
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Virtual Walkthrough Button -->
+  <div class="max-w-7xl mx-auto px-6 md:px-12 pb-8 flex justify-center">
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/walkthrough/" class="border border-white/20 text-white font-mono text-xs px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500">
+        Virtual Walkthrough
+      </a>
+      {['delayed-vision', 'star-trails', 'now-and-then'].includes(project.slug) && (
+        <a href="https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fd7mntklkfre1v.cloudfront.net%2Fvirtual-exhibitions%2F%3Fi%3D22729%26ap_aln_height%3D20%26ap_aln_id%3D1149594&data=05%7C02%7Ctodd.margolis%40qlik.com%7Cf691e18993da47f6171c08de5b4dcdbd%7Cc21eeb5ff5a644e8a997124f2f7a497c%7C0%7C0%7C639048586896543535%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=L8lhdANhOKY%2BPrNI47LHOVmW7liYwzPagayY%2BADX7%2Fw%3D&reserved=0" class="border border-white/20 text-white font-mono text-xs px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500">
+          View in AR
+        </a>
+      )}
+    </div>
+  </div>
+
+  <!-- Project Navigation -->
+  <div class="max-w-7xl mx-auto px-6 md:px-12 pb-12 flex justify-between font-mono text-xs uppercase tracking-widest text-gray-500 border-t border-white/10 pt-8">
+    <a href={`/works/${prevProject.slug}/`} class="hover:text-white transition-colors group">
+      &larr; <span class="group-hover:translate-x-1 transition-transform inline-block">{prevProject.title}</span>
+    </a>
+    <a href={`/works/${nextProject.slug}/`} class="hover:text-white transition-colors group">
+      <span class="group-hover:-translate-x-1 transition-transform inline-block">{nextProject.title}</span> &rarr;
+    </a>
+  </div>
+
+          <!-- About the Artist Section (Specific for Project Page) -->
+          <section class="bg-white/5 border-t border-white/10 py-16 px-6 md:px-12">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 class="font-serif text-3xl italic mb-6">About the Artist</h3>
+                <p class="font-mono text-sm text-gray-400 mb-8 leading-relaxed">
+                  My practice is a hands-on investigation into space and time, using emergent technologies like virtual reality and AI to build interactive worlds that reshape human perception. These artworks make complex data tangible and connect people across vast distances, turning passive viewers into active participants who explore the very nature of a shared, hybrid reality.
+                </p>
+                <a href="/bio/" class="inline-block border border-white/20 px-6 py-3 font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+                  Learn More
+                </a>
+              </div>
+              <div class="relative aspect-square md:aspect-[4/3] bg-gray-800 overflow-hidden">
+                <!-- Placeholder Portrait -->
+                <img src="/images/todd.jpeg" class="w-full h-full object-cover grayscale opacity-80" alt="Artist Portrait" />
+              </div>
+            </div>
+          </section>
+
+  <!-- Fixed Inquiry Button -->
+  <a href="/contact/" class="fixed bottom-8 right-8 z-50 bg-white text-black font-mono text-xs px-6 py-3 uppercase tracking-widest hover:bg-indigo-500 hover:text-white transition-all duration-300 shadow-lg shadow-indigo-500/20">
+      Inquire about this artwork
+  </a>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-xl hidden flex items-center justify-center cursor-zoom-out p-4" onclick="closeLightbox()">
+     <div class="relative max-w-full max-h-full">
+       <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain shadow-2xl shadow-black" />
+       <div id="lightbox-watermark" class="absolute bottom-8 right-0 pointer-events-none hidden" style="transform: rotate(-45deg);">
+         <span class="font-mono text-s uppercase tracking-widest text-black" style="opacity: 0.3; text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6);">
+           AI Draft
+         </span>
+       </div>
+     </div>
+     <button id="lightbox-prev" class="absolute left-6 text-white font-mono text-2xl hover:text-indigo-400 opacity-50 hover:opacity-100 z-10" onclick="event.stopPropagation(); navigateImage(-1)">‹</button>
+     <button id="lightbox-next" class="absolute right-6 mr-12 text-white font-mono text-2xl hover:text-indigo-400 opacity-50 hover:opacity-100 z-10" onclick="event.stopPropagation(); navigateImage(1)">›</button>
+  </div>
+
+</Layout>
+
+  <script define:vars={{ allImages: project.isSeries ? seriesImages : carouselImages, watermarkedImages: project.watermarkedImages || [], prevUrl: `/works/${prevProject.slug}/`, nextUrl: `/works/${nextProject.slug}/` }}>
+    // Collect all clickable images from the page
+    const images = allImages;
+    let currentImageIndex = 0;
+
+    // Swipe navigation for project pages
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let touchStartY = 0;
+    let touchEndY = 0;
+    const swipeThreshold = 150; // Minimum swipe distance in pixels (increased for less sensitivity)
+    const maxVerticalSwipe = 100; // Maximum vertical movement to consider it a horizontal swipe
+
+    function handleSwipe() {
+      const swipeDistance = touchEndX - touchStartX;
+      const verticalDistance = Math.abs(touchEndY - touchStartY);
+      
+      // Only navigate if lightbox is not open
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox && !lightbox.classList.contains('hidden')) {
+        return; // Don't navigate between projects if lightbox is open
+      }
+
+      // Require a more intentional horizontal swipe (not just a scroll)
+      if (Math.abs(swipeDistance) > swipeThreshold && verticalDistance < maxVerticalSwipe) {
+        if (swipeDistance > 0) {
+          // Swipe right - go to previous project
+          window.location.href = prevUrl;
+        } else {
+          // Swipe left - go to next project
+          window.location.href = nextUrl;
+        }
+      }
+    }
+
+    // Touch event listeners for swipe navigation
+    document.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    document.addEventListener('touchend', function(e) {
+      touchEndX = e.changedTouches[0].screenX;
+      touchEndY = e.changedTouches[0].screenY;
+      handleSwipe();
+    }, { passive: true });
+
+    // Scroll-reveal (mobile only): grayscale by default; start observing only after first scroll so initial view stays B&W
+    document.addEventListener('DOMContentLoaded', function() {
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      const revealEls = document.querySelectorAll('.scroll-reveal-color');
+      if (isMobile && revealEls.length) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+            } else {
+              entry.target.classList.remove('in-view');
+            }
+          });
+        }, { rootMargin: '0px 0px -15% 0px', threshold: 0.75 });
+
+        const startObserving = () => {
+          revealEls.forEach((el) => observer.observe(el));
+          window.removeEventListener('scroll', startObserving);
+          window.removeEventListener('touchmove', startObserving);
+        };
+        window.addEventListener('scroll', startObserving, { passive: true, once: true });
+        window.addEventListener('touchmove', startObserving, { passive: true, once: true });
+      }
+    });
+
+    // Desktop: reveal color on click. Mobile: just open lightbox (scroll handles reveal).
+    window.handleImageClick = function(event, src) {
+      const isDesktop = window.matchMedia('(hover: hover)').matches;
+      if (isDesktop && event.currentTarget) {
+        event.currentTarget.classList.add('in-view');
+      }
+      window.openLightbox(src);
+    };
+
+    // Helper function to show/hide watermark in lightbox
+    function updateLightboxWatermark(imageSrc) {
+      const watermark = document.getElementById('lightbox-watermark');
+      if (watermark) {
+        if (watermarkedImages.includes(imageSrc)) {
+          watermark.classList.remove('hidden');
+        } else {
+          watermark.classList.add('hidden');
+        }
+      }
+    }
+
+    // Lightbox Logic - make functions global for onclick handlers
+    window.openLightbox = function(src) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      if (lightbox && img) {
+        // Find the index of the clicked image
+        currentImageIndex = images.findIndex(imgSrc => imgSrc === src);
+        if (currentImageIndex === -1) currentImageIndex = 0;
+        
+        img.src = src;
+        updateLightboxWatermark(src);
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    };
+
+    window.closeLightbox = function() {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox) {
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = '';
+        currentImageIndex = 0;
+      }
+    };
+
+    window.navigateImage = function(direction) {
+      if (images.length === 0) return;
+      
+      currentImageIndex += direction;
+      if (currentImageIndex < 0) currentImageIndex = images.length - 1;
+      if (currentImageIndex >= images.length) currentImageIndex = 0;
+      
+      const img = document.getElementById('lightbox-img');
+      if (img) {
+        const newSrc = images[currentImageIndex];
+        img.src = newSrc;
+        updateLightboxWatermark(newSrc);
+      }
+    };
+
+    function navigateProject(direction) {
+      window.closeLightbox();
+      if (direction === -1) {
+        window.location.href = prevUrl;
+      } else {
+        window.location.href = nextUrl;
+      }
+    }
+
+    // Keyboard event listener
+    document.addEventListener('keydown', function(e) {
+      const lightbox = document.getElementById('lightbox');
+      if (!lightbox || lightbox.classList.contains('hidden')) return;
+
+      switch(e.key) {
+        case 'Escape':
+          window.closeLightbox();
+          e.preventDefault();
+          break;
+        case 'ArrowLeft':
+          window.navigateImage(-1);
+          e.preventDefault();
+          break;
+        case 'ArrowRight':
+          window.navigateImage(1);
+          e.preventDefault();
+          break;
+        case 'PageUp':
+          navigateProject(-1);
+          e.preventDefault();
+          break;
+        case 'PageDown':
+          navigateProject(1);
+          e.preventDefault();
+          break;
+      }
+    });
+
+    // Auth Logic for Logistics/Price
+    window.addEventListener("load", async function () {
+        const checkClerk = setInterval(async () => {
+            // @ts-ignore
+            if (window.Clerk) {
+                clearInterval(checkClerk);
+                // @ts-ignore
+                await window.Clerk.load();
+                
+                const protectedMeta = document.getElementById('protected-meta');
+                
+                // @ts-ignore
+                if (window.Clerk.user && protectedMeta) {
+                    protectedMeta.classList.remove('hidden');
+                }
+            }
+        }, 100);
+    });
+  </script>

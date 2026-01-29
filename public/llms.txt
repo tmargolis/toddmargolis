@@ -1,0 +1,28 @@
+# Observables.art
+
+> Observables explores the friction between what we see as reality and what science tells us is fact. A convergence of space and time, the work exists at the intersection of astrophotography, sculpted objects, and interactive immersive environments. Each piece is a study in materiality—the 'rocky' grit of physical existence meeting the 'gassy' translucency of our digital lives. Central to this work is the reality that astronomy is the study of the past: every photon captured is a "light fossil" carrying a history of travel from an era we never inhabited. The installations explore the "shifting shoreline" of the cosmic horizon, demanding a recalibration of our senses to perceive subtle shifts in light, space, and time.
+
+## Core Pages
+
+- [Home](https://observables.art/) - Landing page featuring the Observables collection with hero section and grid of all 11 artworks
+- [Narrative](https://observables.art/narrative/) - Artist statement exploring the intersection of space and time, materiality, and the act of observation
+- [Works](https://observables.art/works/) - Complete gallery index displaying all projects in a grid layout
+- [Bang](https://observables.art/works/bang/) - Kinetic installation using a closed-loop pneumatic system with a black weather balloon
+- [Black Hole Vision](https://observables.art/works/black-hole-vision/) - Virtual Reality experience visualizing spaghettification and the event horizon
+- [Delayed Vision](https://observables.art/works/delayed-vision/) - Video mirror series introducing delays corresponding to light-travel time from celestial bodies (Moon, Sun, Saturn)
+- [Star Trails](https://observables.art/works/star-trails/) - Photographic series capturing star motion as Earth rotates (Geminid, Dunes, Goose Lake, Wildcat)
+- [3D Horizons](https://observables.art/works/3d-horizons/) - Stereoscopic View-Master experience with 7 images of the solar system
+- [Audio Counter](https://observables.art/works/audio-counter/) - Generative audio piece sonifying the observable universe's star counts
+- [The Edge](https://observables.art/works/the-edge/) - Laminar flow fog screen installation representing the edge of the observable universe
+- [Now & Then](https://observables.art/works/now-and-then/) - Photo series combining modern astrophotography with historical imagery (Whirlpool, Andromeda, Eagle, Orion, Horsehead, California)
+- [Sculpture Series](https://observables.art/works/sculpture/) - Cast material reliefs from topographic data of cosmic objects (Mars, Milky Way, Moon, Sun, Black Hole)
+- [CMB VR](https://observables.art/works/cmb-vr/) - Virtual Reality experience placing the user inside the Cosmic Microwave Background radiation sphere
+- [Redshifter](https://observables.art/works/redshifter/) - Immersive room installation simulating the Redshift effect with lighting that shifts spectrum
+- [Virtual Walkthrough](https://observables.art/walkthrough/) - Full-screen ArtPlacer embed providing an interactive 3D virtual exhibition experience
+- [Artist Bio](https://observables.art/bio/) - Biography of Todd Margolis, practice description, and link to main portfolio at toddmargolis.net
+- [Inquire](https://observables.art/contact/) - Contact page for acquisitions, exhibitions, and press inquiries
+- [Logistics](https://observables.art/logistics/) - Authenticated page (Clerk) containing technical requirements, installation specifications, and shipping details for all 11 artworks, with downloadable Exhibition Prospectus PDF
+
+## Data Collections
+
+- [projects.ts](https://observables.art/) - TypeScript data file containing complete metadata for all 11 artworks including titles, years, mediums, dimensions, weights, prices, descriptions, image paths, video paths, and series configurations. Defines the Project interface and exports the projects array used throughout the site for dynamic page generation.

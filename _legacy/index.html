@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observables | Exhibition</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'obs-black': '#050505',
+                        'obs-indigo': '#1a1a2e', 
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Mono"', 'monospace'],
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles for Grain and Utilities -->
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+
+        /* Noise Overlay */
+        .noise-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.07;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Gaseous Background Elements */
+        .gas-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: 0;
+            animation: blob 20s infinite alternate;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Cargo-style Hover Effect */
+        .artwork-card .meta-overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .artwork-card:hover .meta-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="relative">
+
+    <!-- Noise Texture -->
+    <div class="noise-overlay"></div>
+
+    <!-- Background Gaseous Effects -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="gas-orb w-96 h-96 bg-indigo-900/40 top-0 left-0 mix-blend-screen"></div>
+        <div class="gas-orb w-[500px] h-[500px] bg-blue-900/20 bottom-0 right-0 mix-blend-screen" style="animation-delay: -5s;"></div>
+        <div class="gas-orb w-80 h-80 bg-purple-900/30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mix-blend-screen" style="animation-delay: -10s;"></div>
+    </div>
+
+    <!-- Floating Inquiry Button -->
+    <a href="#inquiry" class="fixed bottom-8 right-8 z-40 bg-white text-black font-mono text-xs px-4 py-2 uppercase tracking-widest hover:bg-gray-300 transition-colors duration-300 mix-blend-exclusion">
+        Inquiry [Open]
+    </a>
+
+    <!-- Navigation / Header -->
+    <nav class="fixed top-0 w-full z-40 p-6 flex justify-between items-start font-mono text-xs tracking-widest uppercase mix-blend-difference text-gray-400">
+        <div>
+            <h1>Observables</h1>
+            <p>2026 Touring Cycle</p>
+        </div>
+        <div class="text-right">
+            <div id="auth-button-container">
+                <!-- Clerk Button will mount here -->
+                <button onclick="openSignIn()" class="hover:text-white transition-colors cursor-pointer">[ Curator Login ]</button>
+            </div>
+            <p id="user-greeting" class="hidden text-white"></p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative z-10">
+
+        <!-- Hero Section -->
+        <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 relative">
+            <h2 class="font-serif text-5xl md:text-8xl lg:text-9xl mb-8 leading-tight animate-float">
+                Observables
+            </h2>
+            <div class="max-w-2xl font-mono text-sm md:text-base text-gray-400 mb-12 space-y-4">
+                <p class="uppercase tracking-widest text-indigo-300">A convergence of the tectonic and the ethereal.</p>
+                <p>Observables explores the friction between geological permanence and the fleeting nature of digital atmosphere.</p>
+            </div>
+            <a href="#statement" class="border border-white/20 text-white font-mono text-xs px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500">
+                Enter Exhibition
+            </a>
+        </section>
+
+        <!-- Artist Statement (Asymmetric Grid) -->
+        <section id="statement" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+                
+                <!-- Text Block -->
+                <div class="md:col-span-5 md:col-start-2 sticky top-24">
+                    <h3 class="font-serif text-3xl md:text-4xl mb-6 italic">The Intersection of Matter & Light</h3>
+                    <div class="font-mono text-sm text-gray-400 space-y-6 leading-relaxed text-justify">
+                        <p>
+                            My work exists at the intersection of heavy matter and light. By blending astrophotography, 3D-printed planets, and interactive immersive environments, I seek to create objects that feel like artifacts from a future we haven't yet reached.
+                        </p>
+                        <p>
+                            Each piece in this collection is a study in texture—the 'rocky' grit of physical existence meeting the 'gassy' translucency of our digital lives. These are not just objects; they are environments captured in a state of suspended animation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Asymmetric Image Grid -->
+                <div class="md:col-span-6 md:col-start-7 space-y-24 mt-12 md:mt-0">
+                    
+                    <!-- Image 1 -->
+                    <div class="artwork-card relative group">
+                        <div class="aspect-[3/4] bg-gray-900 w-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                            <img src="https://images.unsplash.com/photo-1614730341194-75c60740a073?q=80&w=2187&auto=format&fit=crop" alt="Artwork 1" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-700">
+                        </div>
+                        <div class="meta-overlay absolute bottom-0 left-0 w-full bg-black/80 backdrop-blur-sm p-4 font-mono text-[10px] text-gray-300 uppercase tracking-wider border-t border-white/10">
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <span class="text-white block mb-1">Work 01: Nebulae Core</span>
+                                    <span>2025 | 40x40x10cm | Resin & Basalt</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block">Note: Internal light source</span>
+                                    <span>Weight: 12kg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image 2 (Offset) -->
+                    <div class="artwork-card relative group ml-[-20%] w-[120%]">
+                        <div class="aspect-video bg-gray-900 w-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2022&auto=format&fit=crop" alt="Artwork 2" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-700">
+                        </div>
+                        <div class="meta-overlay absolute bottom-0 left-0 w-full bg-black/80 backdrop-blur-sm p-4 font-mono text-[10px] text-gray-300 uppercase tracking-wider border-t border-white/10">
+                             <div class="flex justify-between items-end">
+                                <div>
+                                    <span class="text-white block mb-1">Work 02: Horizon Event</span>
+                                    <span>2024 | Variable | Projection Map</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block">Note: Requires dark room</span>
+                                    <span>Weight: N/A</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Image 3 -->
+                     <div class="artwork-card relative group w-[80%] ml-auto">
+                        <div class="aspect-square bg-gray-900 w-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" alt="Artwork 3" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-700">
+                        </div>
+                         <div class="meta-overlay absolute bottom-0 left-0 w-full bg-black/80 backdrop-blur-sm p-4 font-mono text-[10px] text-gray-300 uppercase tracking-wider border-t border-white/10">
+                             <div class="flex justify-between items-end">
+                                <div>
+                                    <span class="text-white block mb-1">Work 03: Tectonic Drift</span>
+                                    <span>2025 | 200x100cm | Steel & OLED</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="block">Note: Interactive sensor</span>
+                                    <span>Weight: 45kg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Walkthrough Placeholder -->
+        <section class="py-24 bg-obs-black relative border-t border-white/5">
+             <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="flex justify-between items-end mb-8">
+                    <h3 class="font-serif text-3xl">Virtual Gallery</h3>
+                    <span class="font-mono text-xs text-gray-500 uppercase">ArtPlacer Simulation</span>
+                </div>
+                <div class="w-full aspect-[16/9] bg-[#0a0a0a] border border-white/10 flex items-center justify-center relative overflow-hidden group">
+                    <!-- Placeholder visual for ArtPlacer -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-30 grayscale group-hover:scale-105 transition-transform duration-1000">
+                    
+                    <div class="relative z-20 text-center">
+                        <button class="bg-white text-black font-mono text-xs px-6 py-3 uppercase tracking-widest hover:bg-indigo-500 hover:text-white transition-colors">
+                            Launch Walkthrough
+                        </button>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Curator Access (Clerk Protected) -->
+        <section id="curator-access" class="hidden py-24 bg-[#080808] border-y border-white/5">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                 <div class="inline-block border border-green-900/50 bg-green-900/10 text-green-400 font-mono text-[10px] px-3 py-1 mb-6 uppercase tracking-widest">
+                    Authenticated: Institutional Access
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl mb-8">The Viewing Room</h2>
+                <p class="font-mono text-sm text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Welcome to the Viewing Room. This space is designed for institutional preview. Below, you will find the full technical breakdown for the Observables touring cycle.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left border-t border-white/10 pt-12">
+                    <div class="space-y-2">
+                        <h4 class="font-serif text-xl text-white">Spatial Concept</h4>
+                        <p class="font-mono text-xs text-gray-500 leading-relaxed">The works are designed to be experienced in a low-light, high-contrast environment.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-serif text-xl text-white">The 3D Walkthrough</h4>
+                        <p class="font-mono text-xs text-gray-500 leading-relaxed">The virtual gallery provides a 1:1 scale simulation of the proposed installation flow.</p>
+                    </div>
+                    <div class="space-y-2">
+                         <h4 class="font-serif text-xl text-white">Technical Fidelity</h4>
+                        <p class="font-mono text-xs text-gray-500 leading-relaxed">All works are museum-grade, utilizing archival pigment prints and chemically stabilized resin. Inquiry status: Open for 2026 booking.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-16">
+                     <a href="mailto:studio@observables.art" class="font-mono text-xs border-b border-white hover:text-indigo-400 hover:border-indigo-400 transition-colors pb-1 uppercase tracking-widest">Request Full Catalog (.PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 text-center font-mono text-[10px] text-gray-600 uppercase tracking-widest">
+            <p>&copy; 2026 Observables. All Rights Reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Clerk Logic -->
+    <!-- REPLACE WITH YOUR ACTUAL PUBLISHABLE KEY -->
+    <script
+      async
+      crossorigin="anonymous"
+      data-clerk-publishable-key="pk_test_cGF0aWVudC1kcnVtLTkxLmNsZXJrLmFjY291bnRzLmRldiQ"
+      src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+      onload="window.Clerk.load()"
+    ></script>
+
+    <script>
+        // Wait for Clerk to load
+        window.addEventListener("load", async function () {
+            // Poll for Clerk availability
+            const checkClerk = setInterval(async () => {
+                if (window.Clerk) {
+                    clearInterval(checkClerk);
+                    await window.Clerk.load();
+                    
+                    const authContainer = document.getElementById('auth-button-container');
+                    const protectedSection = document.getElementById('curator-access');
+                    const userGreeting = document.getElementById('user-greeting');
+
+                    if (window.Clerk.user) {
+                        // User is signed in
+                        authContainer.innerHTML = '';
+                        // Create User Button
+                        const userButtonDiv = document.createElement('div');
+                        window.Clerk.mountUserButton(userButtonDiv);
+                        authContainer.appendChild(userButtonDiv);
+
+                        // Show Protected Content
+                        protectedSection.classList.remove('hidden');
+                        
+                        // Greeting
+                        userGreeting.innerText = `Welcome, ${window.Clerk.user.firstName}`;
+                        userGreeting.classList.remove('hidden');
+
+                    } else {
+                        // User is not signed in
+                        protectedSection.classList.add('hidden');
+                        userGreeting.classList.add('hidden');
+                        
+                        // Setup Login Trigger
+                        authContainer.innerHTML = `<button onclick="window.Clerk.openSignIn()" class="hover:text-white transition-colors cursor-pointer">[ Curator Login ]</button>`;
+                    }
+                }
+            }, 100);
+        });
+
+        // Fallback for demo purposes if no key provided or key invalid
+        // This allows you to see the UI states without a valid key if you edit the code manually
+        function openSignIn() {
+             if(window.Clerk) {
+                window.Clerk.openSignIn();
+             } else {
+                 alert("Clerk is initializing or missing API Key.");
+             }
+        }
+    </script>
+</body>
+</html>

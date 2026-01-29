@@ -1,0 +1,13 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<div class={`absolute bottom-10 right-0 pointer-events-none ${className}`} style="transform: rotate(-45deg);">
+  <span class="font-mono text-xl uppercase tracking-widest text-black drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]" style="opacity: 0.3; text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6);">
+    AI Draft
+  </span>
+</div>

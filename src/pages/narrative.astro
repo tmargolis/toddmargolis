@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Artist Statement" hasWalkthroughButton={true}>
+  <section class="py-24 px-6 md:px-12 max-w-4xl mx-auto min-h-screen flex flex-col justify-center">
+      <div class="mb-12">
+        <span class="font-mono text-xs text-indigo-400 uppercase tracking-widest mb-4 block">Artist Statement</span>
+        <h1 class="font-serif text-4xl md:text-6xl italic leading-tight mb-4">Intersecting Space & Time</h1>
+      </div>
+      
+      <div class="font-mono text-sm md:text-base text-gray-300 space-y-8 leading-relaxed text-justify max-w-2xl">
+          <p>
+              ​In a contemporary landscape defined by the "infinite scroll" and the synthetic hallucinations of Artificial Intelligence, the act of looking has become an act of suspicion. We inhabit an era of profound cynicism where the "observed" is no longer synonymous with the "real." As AI-generated imagery erodes our trust in the visual record, and political discourse seeks to reframe history through the lens of ideological belief, the concept of objective truth has become a contested site.
+          </p>
+          <p>
+              The Observables Cycle responds to this crisis of consensus reality. It serves as a rigorous investigation into the wonders of the universe that science has empirically confirmed—the phenomena we can see, measure, and verify as objective fact. By centering the work on confirmed astronomical data and physical laws, the cycle creates a "topography of the verifiable" to counter the weightless, often deceptive nature of our digital lives.
+          </p>
+          <p>
+              ​At its core, the cycle explores the friction between the "rocky" grit of physical existence and the "gassy" translucency of our digital lives. Through a fusion of astrophotography, kinetic sculpture, and immersive virtuality, I create sensory paradoxes—artifacts from a future we haven't yet reached—that demand a slower, more intentional form of engagement. This "slow art" ethos is a direct intervention against the rapid-fire consumption and political weaponization of information.
+          </p>
+          <p>
+              ​While this cycle maps the empirical world, it also establishes the foundation for a secondary inquiry: The Unobservables. Where the current cycle focuses on verified truth, the latter will explore the speculative theories and unconfirmed geometries of the cosmos—those spaces where science and belief still overlap. Together, these bodies of work interrogate the very nature of evidence, challenging the viewer to move beyond the cynical gaze and recalibrate their senses to the profound, indifferent realities of the material universe.
+          </p>
+      </div>
+
+      <div class="mt-16 border-t border-white/10 pt-8 space-y-8">
+        <a href="/bio/" class="font-mono text-xs text-white hover:text-indigo-400 transition-colors uppercase tracking-widest block">
+          Read Artist Bio
+        </a>
+        <div class="flex justify-center pt-4">
+          <a href="/walkthrough/" class="border border-white/20 text-white font-mono text-xs px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500">
+            Virtual Walkthrough
+          </a>
+        </div>
+      </div>
+  </section>
+</Layout>

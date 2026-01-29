@@ -1,0 +1,75 @@
+---
+interface Props {
+  hasWalkthroughButton?: boolean;
+}
+
+const { hasWalkthroughButton = false } = Astro.props;
+---
+
+<footer class="py-12 border-t border-white/5 bg-obs-black relative z-10">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 font-mono text-[10px] text-gray-500 uppercase tracking-widest">
+    
+    <div class="flex gap-8">
+      <a href="/contact/" class="hover:text-white transition-colors">Inquire</a>
+      <a href="/bio/" class="hover:text-white transition-colors">About the Artist</a>
+    </div>
+
+    <!-- Mobile: Walkthrough and Logistics -->
+    <div class="md:hidden flex gap-6">
+      {!hasWalkthroughButton && <a href="/walkthrough/" class="hover:text-white transition-colors">Walkthrough</a>}
+      <a href="/logistics/" id="nav-logistics-mobile" class="hidden hover:text-white transition-colors">Logistics</a>
+    </div>
+
+    <div id="auth-footer">
+      <!-- Login Button / User Profile -->
+      <button onclick="openSignIn()" id="login-btn" class="hover:text-white transition-colors cursor-pointer">[ Login ]</button>
+    </div>
+
+    <div>
+      &copy; 2026 Observables
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Handle Login Button Logic
+  window.addEventListener("load", async function () {
+    const checkClerk = setInterval(async () => {
+      // @ts-ignore
+      if (window.Clerk) {
+        clearInterval(checkClerk);
+        // @ts-ignore
+        await window.Clerk.load();
+        
+        const authContainer = document.getElementById('auth-footer');
+        const loginBtn = document.getElementById('login-btn');
+
+        // @ts-ignore
+        if (window.Clerk.user) {
+           if(authContainer) {
+             authContainer.innerHTML = '';
+             const userButtonDiv = document.createElement('div');
+             // @ts-ignore
+             window.Clerk.mountUserButton(userButtonDiv);
+             authContainer.appendChild(userButtonDiv);
+           }
+           // Show Logistics link on mobile if authenticated
+           const logisticsLinkMobile = document.getElementById('nav-logistics-mobile');
+           if (logisticsLinkMobile) logisticsLinkMobile.classList.remove('hidden');
+        } else {
+           // Ensure login button works
+        }
+      }
+    }, 100);
+  });
+
+  // Global scope function for simple onclick
+  // @ts-ignore
+  window.openSignIn = function() {
+    // @ts-ignore
+     if(window.Clerk) {
+        // @ts-ignore
+        window.Clerk.openSignIn();
+     }
+  }
+</script>
