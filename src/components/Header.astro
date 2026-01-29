@@ -2,10 +2,9 @@
 interface Props {
   prevProject?: { title: string; slug: string };
   nextProject?: { title: string; slug: string };
-  hideWalkthrough?: boolean;
 }
 
-const { prevProject, nextProject, hideWalkthrough = false } = Astro.props;
+const { prevProject, nextProject } = Astro.props;
 ---
 
 <nav class="fixed top-0 w-full z-40 glass mix-blend-difference text-gray-300">
@@ -57,7 +56,6 @@ const { prevProject, nextProject, hideWalkthrough = false } = Astro.props;
 
     <!-- Right Side -->
     <div class="flex items-center gap-6 font-mono text-xs tracking-[0.2em] uppercase">
-      {!hideWalkthrough && <a href="/walkthrough/" class="hover:text-white hover:text-glow transition-all duration-300">Walkthrough</a>}
       <a href="/logistics/" id="nav-logistics" class="hidden hover:text-white hover:text-glow transition-all duration-300">Logistics</a>
     </div>
   </div>

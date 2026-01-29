@@ -8,11 +8,9 @@ interface Props {
   prevProject?: { title: string; slug: string };
   nextProject?: { title: string; slug: string };
   hideFooter?: boolean;
-  hideWalkthrough?: boolean;
-  hasWalkthroughButton?: boolean;
 }
 
-const { title, prevProject, nextProject, hideFooter = false, hideWalkthrough = false, hasWalkthroughButton = false } = Astro.props;
+const { title, prevProject, nextProject, hideFooter = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -59,12 +57,12 @@ const { title, prevProject, nextProject, hideFooter = false, hideWalkthrough = f
     <!-- Noise Texture -->
     <div class="noise-overlay"></div>
 
-    <Header prevProject={prevProject} nextProject={nextProject} hideWalkthrough={hideWalkthrough} />
+    <Header prevProject={prevProject} nextProject={nextProject} />
     
     <main class="relative z-10 pt-0 min-h-[80vh]">
 		  <slot />
     </main>
 
-    {!hideFooter && <Footer hasWalkthroughButton={hasWalkthroughButton} />}
+    {!hideFooter && <Footer />}
 	</body>
 </html>
