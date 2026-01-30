@@ -12,7 +12,7 @@ const { prevProject, nextProject } = Astro.props;
   <div class="md:hidden w-full p-6">
     <div class="flex justify-between items-center font-mono text-xs tracking-[0.2em] uppercase">
       <a href="/" class="font-serif text-2xl tracking-tight text-white hover:text-glow transition-all duration-300">
-        OBSERVABLES
+        Todd Margolis
       </a>
       <a href="/narrative/" class="hover:text-white hover:text-glow transition-all duration-300">Artist Statement</a>
       <div class="flex flex-col items-center relative">
@@ -33,7 +33,7 @@ const { prevProject, nextProject } = Astro.props;
     <!-- Left Side -->
     <div class="flex items-center gap-8">
       <a href="/" class="font-serif text-2xl tracking-tight text-white hover:text-glow transition-all duration-300">
-        OBSERVABLES
+        Todd Margolis
       </a>
       <div class="flex gap-6 font-mono text-xs tracking-[0.2em] uppercase">
         <a href="/narrative/" class="hover:text-white hover:text-glow transition-all duration-300">Artist Statement</a>
@@ -56,29 +56,6 @@ const { prevProject, nextProject } = Astro.props;
 
     <!-- Right Side -->
     <div class="flex items-center gap-6 font-mono text-xs tracking-[0.2em] uppercase">
-      <a href="/logistics/" id="nav-logistics" class="hidden hover:text-white hover:text-glow transition-all duration-300">Logistics</a>
     </div>
   </div>
 </nav>
-
-<script>
-  // Check Clerk auth status to show Logistics link
-  window.addEventListener("load", async function () {
-    const checkClerk = setInterval(async () => {
-      // @ts-ignore
-      if (window.Clerk) {
-        clearInterval(checkClerk);
-        // @ts-ignore
-        await window.Clerk.load();
-        
-        // @ts-ignore
-        if (window.Clerk.user) {
-          const logisticsLink = document.getElementById('nav-logistics');
-          const logisticsLinkMobile = document.getElementById('nav-logistics-mobile');
-          if (logisticsLink) logisticsLink.classList.remove('hidden');
-          if (logisticsLinkMobile) logisticsLinkMobile.classList.remove('hidden');
-        }
-      }
-    }, 100);
-  });
-</script>
