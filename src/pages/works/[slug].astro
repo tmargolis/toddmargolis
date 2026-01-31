@@ -71,7 +71,7 @@ const getModelBase = (index) => {
         <span class="font-mono text-xs text-indigo-400 tracking-widest uppercase mb-2 block">Series Collection</span>
       )}
       <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-4">{project.title}</h1>
-      <p class="font-serif text-xl md:text-2xl text-gray-300 italic max-w-2xl">"{project.quote}"</p>
+      {project.quote && <p class="font-serif text-xl md:text-2xl text-gray-300 italic max-w-2xl">"{project.quote}"</p>}
     </div>
   </header>
 
@@ -242,7 +242,7 @@ const getModelBase = (index) => {
 
             <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
                  <div class="flex-1 font-mono text-sm text-gray-300 leading-relaxed text-justify space-y-4">
-                   {project.description2.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
+                   {project.description2 && project.description2.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
                 </div>
                 <div class="flex-1 relative">
                    {project.images[2] ? (
@@ -294,14 +294,18 @@ const getModelBase = (index) => {
           <span class="block text-gray-600 mb-1">Medium</span>
           <span class="text-white">{project.medium}</span>
         </div>
+        {project.dimensions && (
         <div>
           <span class="block text-gray-600 mb-1">Dimensions</span>
           <span class="text-white">{project.dimensions}</span>
         </div>
+        )}
+        {project.weight && (
         <div>
           <span class="block text-gray-600 mb-1">Weight</span>
           <span class="text-white">{project.weight}</span>
         </div>
+        )}
         
         {/* Protected Logistics & Price Section */}
         <div id="protected-meta" class="hidden space-y-4 pt-8 border-t border-white/10">

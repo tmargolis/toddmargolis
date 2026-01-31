@@ -1,26 +1,30 @@
+export type Category = 'Creative' | 'Inquiry' | 'Strategy';
+
 export interface Project {
   slug: string;
   title: string;
+  category: Category[];
+  subCategory?: string;
   status?: string;
   year: string;
   medium: string;
-  dimensions: string;
-  weight: string;
+  dimensions?: string;
+  weight?: string;
   price?: string;
-  note: string;
+  note?: string;
   heroImage: string;
-  quote: string;
+  quote?: string;
   description: string;
-  description2: string;
+  description2?: string;
   description3?: string;
   images: string[];
   videos?: string[];
   isSeries?: boolean;
   imageTitles?: string[];
-  imageDescriptions?: string[]; // New field for specific descriptions per image
+  imageDescriptions?: string[];
   contextImage?: string;
   contextCaption?: string;
-  watermarkedImages?: string[]; // Array of image paths that should show watermark
+  watermarkedImages?: string[];
 }
 
 export const projects: Project[] = [
@@ -28,6 +32,7 @@ export const projects: Project[] = [
   {
     slug: 'bang',
     title: 'Bang',
+    category: ['Creative'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Kinetic Installation (Latex, Pneumatics)',
@@ -54,6 +59,7 @@ export const projects: Project[] = [
   {
     slug: 'black-hole-vision',
     title: 'Spaghettification',
+    category: ['Creative', 'Inquiry'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Virtual Reality',
@@ -75,6 +81,7 @@ export const projects: Project[] = [
   {
     slug: 'delayed-vision',
     title: 'Delayed Vision',
+    category: ['Creative', 'Inquiry'],
     status: 'Alpha Version',
     year: '2026',
     medium: 'Android app running on  Galaxy A9+ Tablet',
@@ -108,6 +115,7 @@ export const projects: Project[] = [
   {
     slug: 'star-trails',
     title: 'Star Trails',
+    category: ['Creative'],
     year: '2023-2024',
     medium: 'Archival Pigment Prints',
     dimensions: '20 x 30 inches each',
@@ -143,6 +151,7 @@ export const projects: Project[] = [
   {
     slug: '3d-horizons',
     title: 'Horizons',
+    category: ['Creative', 'Inquiry'],
     status: 'Work in Progress',
     year: '2026',
     medium: 'Stereoscopic View-Master',
@@ -189,6 +198,7 @@ export const projects: Project[] = [
   {
     slug: 'audio-counter',
     title: 'Metronome',
+    category: ['Creative', 'Inquiry'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Generative Audio',
@@ -210,6 +220,7 @@ export const projects: Project[] = [
   {
     slug: 'the-edge',
     title: 'The Edge',
+    category: ['Creative', 'Inquiry'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Laminar Flow Fog Screen',
@@ -235,6 +246,7 @@ export const projects: Project[] = [
   {
     slug: 'now-and-then',
     title: 'Now & Then',
+    category: ['Creative'],
     status: 'Work in Progress',
     year: '2021-2026',
     medium: 'Archival Prints',
@@ -280,6 +292,7 @@ export const projects: Project[] = [
   {
     slug: 'sculpture',
     title: 'Neighbors',
+    category: ['Creative'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Cast Material',
@@ -320,6 +333,7 @@ export const projects: Project[] = [
   {
     slug: 'cmb-vr',
     title: 'CMB',
+    category: ['Creative', 'Inquiry'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Virtual Reality',
@@ -341,6 +355,7 @@ export const projects: Project[] = [
   {
     slug: 'redshifter',
     title: 'Redshifter',
+    category: ['Creative'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Room Installation',
@@ -363,6 +378,7 @@ export const projects: Project[] = [
   {
     slug: 'sky-watcher',
     title: 'Sky Watcher',
+    category: ['Creative'],
     status: 'Work in Progress',
     year: '2026',
     medium: 'Mixed Media Light Sculpture (Arduino, Makeon Controller, LEDs, Vellum, Gold Acrylic)',
@@ -381,5 +397,71 @@ export const projects: Project[] = [
     videos: [
       '/images/SkyWatcher.mp4' 
     ]
+  },
+  // Historical: ATLAS in silico
+  {
+    slug: 'atlas-in-silico',
+    title: 'ATLAS in silico',
+    category: ['Creative', 'Inquiry'],
+    year: 'TBD',
+    medium: 'VR Installation',
+    heroImage: '/images/placeholder.png',
+    description: 'VR installation fusing dynamic media with metagenomics.',
+    images: ['/images/placeholder.png']
+  },
+  // Historical: Varrier Display
+  {
+    slug: 'varrier-display',
+    title: 'Varrier Display',
+    category: ['Inquiry', 'Strategy'],
+    year: 'TBD',
+    medium: 'Autostereoscopic VR Hardware',
+    heroImage: '/images/placeholder.png',
+    description: 'Novel autostereoscopic VR hardware invention.',
+    images: ['/images/placeholder.png']
+  },
+  // Historical: Vroom (Virtual Room)
+  {
+    slug: 'vroom',
+    title: 'Vroom (Virtual Room)',
+    category: ['Inquiry', 'Strategy'],
+    year: 'TBD',
+    medium: 'Tiled Display Environment',
+    heroImage: '/images/placeholder.png',
+    description: 'Next-gen reconfigurable tiled display environment.',
+    images: ['/images/placeholder.png']
+  },
+  // Historical: Transmedia Research Institute (FSU)
+  {
+    slug: 'transmedia-research-institute-fsu',
+    title: 'Transmedia Research Institute (FSU)',
+    category: ['Strategy', 'Inquiry'],
+    year: 'TBD',
+    medium: 'Institutional Design',
+    heroImage: '/images/placeholder.png',
+    description: 'Institutional design and facility specification.',
+    images: ['/images/placeholder.png']
+  },
+  // Historical: Emergent Reality Lab (RPI)
+  {
+    slug: 'emergent-reality-lab-rpi',
+    title: 'Emergent Reality Lab (RPI)',
+    category: ['Strategy', 'Inquiry'],
+    year: 'TBD',
+    medium: 'Lab Design',
+    heroImage: '/images/placeholder.png',
+    description: 'Lab design and technical blueprinting.',
+    images: ['/images/placeholder.png']
+  },
+  // Historical: Applied Interactives NFP
+  {
+    slug: 'applied-interactives-nfp',
+    title: 'Applied Interactives NFP',
+    category: ['Strategy', 'Creative'],
+    year: 'TBD',
+    medium: 'Non-profit',
+    heroImage: '/images/placeholder.png',
+    description: 'Non-profit leadership and agile research collective.',
+    images: ['/images/placeholder.png']
   }
 ];
