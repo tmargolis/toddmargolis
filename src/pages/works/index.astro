@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { projects } from '../../data/projects';
 ---
 
-<Layout title="Works" hideWalkthrough={true} hasWalkthroughButton={true}>
+<Layout title="Works">
   <section class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
       <h1 class="font-serif text-5xl md:text-7xl mb-16 text-center">Selected Works</h1>
       
@@ -29,10 +29,5 @@ import { projects } from '../../data/projects';
         ))}
       </div>
 
-      <div class="flex justify-center mt-16">
-        <a href="/walkthrough/" class="border border-white/20 text-white font-mono text-xs px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500">
-          Virtual Walkthrough
-        </a>
-      </div>
   </section>
 </Layout>
