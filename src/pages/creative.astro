@@ -26,7 +26,7 @@ const projectsBySubCategory = creativeSubCategoryOrder.map((subCat) => ({
 
     {projectsBySubCategory.map(({ name, slug, projects: subProjects }) => (
       <div id={slug} class="mb-20 scroll-mt-32">
-        <h2 class="font-mono text-sm uppercase text-gray-400 tracking-widest mb-8 border-b border-white/10 pb-4">
+        <h2 class="subsection-title font-mono text-sm uppercase tracking-widest">
           {name}
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">

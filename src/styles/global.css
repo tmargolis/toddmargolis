@@ -42,6 +42,22 @@
   }
 }
 
+/* Category sub-section titles (Creative, Inquiry, Strategy pages) */
+.subsection-title {
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    oklch(0.22 0.03 276) 6%,
+    oklch(0.22 0.03 276) 94%,
+    transparent 100%
+  );
+  color: oklch(0.673 0.182 276.935);
+  padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
 model-viewer.model-viewer-frame {
   width: 100%;
   aspect-ratio: 4 / 3;
