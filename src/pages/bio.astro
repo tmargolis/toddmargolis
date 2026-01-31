@@ -2,46 +2,49 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Artist Bio" hasWalkthroughButton={true}>
-  <section class="min-h-screen pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-24">
+<Layout title="About">
+  <section class="min-h-screen pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12 md:gap-24">
       
       <!-- Text (Left) -->
       <div class="flex-1 order-2 md:order-1">
-          <h1 class="font-serif text-5xl md:text-6xl mb-8 italic">The Artist</h1>
+          <h1 class="font-serif text-5xl md:text-6xl mb-4 italic">About Todd Margolis</h1>
+          <p class="font-mono text-sm text-gray-400 mb-8 font-semibold">A Convergence of Art, Engineering, and Strategy</p>
           <div class="font-mono text-sm text-gray-300 space-y-6 leading-relaxed text-justify">
               <p>
-                  Todd Margolis’s artistic practice bridges the profound gap between the human and the cosmic. His work makes the universe’s most abstract concepts—vast distances and deep time—tangible and deeply personal. For over two decades, he has created artworks that do not just show us images of the cosmos, but instead build new ways for us to perceive our place within it.
-              </p>
-              <p>
-                  This practice is rooted in a rare synthesis of artistic vision and pioneering technological development. An alumnus of the University of Illinois at Chicago’s legendary Electronic Visualization Laboratory (EVL), Margolis has spent his career not merely using technology but inventing it—from co-creating VR hardware systems like Varrier™ to serving as Technical Director for major art/science research centers. He treats code as a material and light as a structural element, crafting interactive immersive environments that have been exhibited internationally from the Museum of Contemporary Art, Chicago to the National Academy of Sciences. This new body of work is a direct extension of a long-standing investigation into virtual and augmented realities, seen in acclaimed projects like ATLAS in silico and Special Treatment.
-              </p>
-              <p>
-                  Central to this work is the reality that astronomy is the study of the past. Because light travels at a finite speed, every photon captured by a lens is a "light fossil," carrying a history from an era we never inhabited. In his <a href="/works/now-and-then/" class="text-indigo-400 hover:text-white transition-colors">Now & Then</a> series, Margolis explores this "time travel vision." Using AI, he generates contextual scenes from Earth's history—from the prehistoric to the dawn of the Renaissance—that match the exact moment light first departed a celestial object. By digitally fabricating these historical styles—rendering subjects as stone etchings, on flaking parchment, or as objects fossilized into rock—he materializes the immense latency of the universe, transforming the night sky from a collection of distant objects into a readable archive of our shared human and cosmic heritage.
-              </p>
-              <p>
-                  His large-scale installations extend this inquiry to the very limits of perception. Works like <a href="/works/the-edge/" class="text-indigo-400 hover:text-white transition-colors">The Edge</a> explore the "shifting shoreline" of the cosmic horizon, using elements like a fog wall to create a physical "curtain of uncertainty." This boundary represents the final wall of sight—the point where our vision fails and the unknowability of our own past begins. Ultimately, Margolis's work is a compelling fusion of art, science, and technology. Leveraging deep expertise in AI, data visualization, and virtual reality, he constructs new perceptual shorelines for the viewer—making the imperceptible visible and the incomprehensible intimate, and offering a direct experience of our place within the vast, unfolding narrative of the universe.
+                  Todd Margolis is a product strategist, researcher, and artist who has spent over two decades navigating the "uncomfortable in-betweens" of emerging technology. His career is defined by a unique ability to translate "blue sky" academic inquiry into scalable, market-ready realities. By synthesizing the rigor of computer science with the speculative capacity of new media art, he helps organizations and audiences grasp the layered infrastructures that shape our world.
               </p>
 
-              <div class="pt-8 mt-8 border-t border-white/10 space-y-6">
-                  <a href="https://toddmargolis.net" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-mono text-xs text-indigo-400 hover:text-white uppercase tracking-widest transition-colors">
-                      Visit Main Portfolio (toddmargolis.net) 
-                      <span>&nearr;</span>
-                  </a>
-                  <div class="flex justify-center pt-4">
-                    <a href="/walkthrough/" class="border border-white/20 text-white font-mono text-xs px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500">
-                      Virtual Walkthrough
-                    </a>
-                  </div>
-              </div>
+              <h3 class="font-serif text-xl text-white mt-10 mb-4">The Engineering of Experience</h3>
+              <p>
+                  Todd's trajectory began at the bleeding edge of visualization research. As a grad student and then Visiting Research Programmer at the University of Illinois at Chicago's <strong class="text-white">Electronic Visualization Lab (EVL)</strong>, he co-invented the <strong class="text-white">Varrier™ auto-stereoscopic display</strong>—a pioneering barrier-strip system that enabled high-resolution Virtual Reality without the need for glasses. This early work in modeling sub-pixel rendering algorithms established the foundation of his practice: removing the friction between the user and the data.
+              </p>
+              <p>
+                  He expanded this expertise as the <strong class="text-white">Technical Director</strong> of the <strong class="text-white">Center for Research in Computing and the Arts (CRCA)</strong> at UCSD. There, he spearheaded the design and architecture of a <strong class="text-white">10,000 sq. ft. research facility</strong>, managing labs dedicated to spatialized audio, motion capture, and immersive environments. He served as a bridge between diverse disciplines, leading interdisciplinary teams to build "discovery platforms" for massive datasets ranging from metagenomics to cultural analytics.
+              </p>
+
+              <h3 class="font-serif text-xl text-white mt-10 mb-4">From Telepresence to Product Strategy</h3>
+              <p>
+                  What distinguishes Todd's approach to product management is his background in high-stakes, real-time media systems. Projects like <strong class="text-white">CineGrid 3D 4K</strong>—which successfully executed the tri-continental premiere of 4K feature-length media via optical networks <strong class="text-white">(in 2010)</strong> and his work in <strong class="text-white">Telepresence Performance</strong> (<em>TeleMotions</em>, <em>ResoNations</em>) required more than just creative vision; they demanded rigorous logistical planning, latency management, and fault-tolerant network architecture.
+              </p>
+              <p>
+                  This experience in <strong class="text-white">Distributed Cinema</strong> and networked collaboration directly informs his data-driven approach to product leadership. He views enterprise software not merely as code, but as a collaborative environment where human intuition and algorithmic logic must coexist.
+              </p>
+
+              <h3 class="font-serif text-xl text-white mt-10 mb-4">Applied Research & Innovation Leadership</h3>
+              <p>
+                  Today, as <strong class="text-white">Sr. Director of Applied Research & Emerging Technologies at Qlik</strong>, Todd accelerates the long-term roadmap for enterprise intelligence. He leads a team of machine learning engineers to define the strategy for <strong class="text-white">Generative AI</strong>, moving beyond the hype cycle to develop capabilities that are ethical, scalable, and genuinely useful.
+              </p>
+              <p>
+                  His current artistic practice, <strong class="text-white">Observables</strong>, continues this inquiry. Through projects like <em>Horizons</em> (a stereoscopic intervention into space data) and <em>Metronome</em> (a sonification of cosmic time), he continues to materialize the invisible, proving that the tools of rigorous research and the instruments of artistic expression are one and the same.
+              </p>
           </div>
       </div>
 
       <!-- Portrait (Right) -->
-      <div class="flex-1 order-1 md:order-2 w-full">
+      <div class="flex-1 order-1 md:order-2 w-full md:sticky md:top-32">
           <div class="aspect-[3/4] bg-gray-800 relative overflow-hidden">
               <div class="absolute inset-0 bg-indigo-900/20 mix-blend-overlay z-10"></div>
-              <!-- Placeholder Portrait -->
-              <img src="/images/todd.jpeg" alt="Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+              <img src="/images/todd.jpeg" alt="Todd Margolis" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
           </div>
       </div>
 
