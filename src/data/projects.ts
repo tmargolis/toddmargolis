@@ -579,28 +579,16 @@ export const projects: Project[] = [
     description: 'Placeholder for Scalable metadata environments (SPIE Paper).',
     images: ['/images/placeholder.png']
   },
-  // Pedagogy & Labs: Technical Director (UCSD/CRCA)
+  // Updated: Research Assistant (UIC/EVL)
   {
-    slug: 'technical-director-ucsd-crca',
-    title: 'Technical Director (UCSD/CRCA)',
+    slug: 'uic-evl',
+    title: 'University of Illinois at Chicago',
     category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs'],
-    year: 'TBD',
-    medium: 'Lab Management',
+    subCategory: ['Display & Interaction Systems', 'Pedagogy & Labs'],
+    year: '1998-2005',
+    medium: 'Research Assistant',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Technical Director (UCSD/CRCA).',
-    images: ['/images/placeholder.png']
-  },
-  // Pedagogy & Labs: Visiting Research Programmer (UIC/EVL)
-  {
-    slug: 'visiting-research-programmer-uic-evl',
-    title: 'Visiting Research Programmer (UIC/EVL)',
-    category: ['Inquiry','Strategy'],
-    subCategory: ['Pedagogy & Labs'],
-    year: 'TBD',
-    medium: 'Academic Research',
-    heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Visiting Research Programmer (UIC/EVL).',
+    description: 'Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored a paper on VR systems published at SPIE 2001 and premiered the Varrier system at IEEE VR 2004.',
     images: ['/images/placeholder.png']
   },
   // Professional experience
@@ -610,7 +598,7 @@ export const projects: Project[] = [
     title: 'Qlik',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
-    year: '10/14-present',
+    year: '2014-present',
     medium: 'Sr. Director of Applied Research & Emerging Technologies',
     heroImage: '/images/placeholder.png',
     description: 'Lead a team of ML engineers accelerating our long-term roadmap, defining strategy and developing new capabilities leveraging emerging media platforms. My deep empathy for customer and user needs paired with my passion for innovation drives my creative, yet data-driven approach to prioritization. I have extensive prototyping and presentation experience and enjoy providing thought leadership in executive briefings, conference keynotes and academic symposiums globally. At Qlik, I have previously held roles as Director of Product Management as well as a Sr. Solution Architect.',
@@ -620,9 +608,9 @@ export const projects: Project[] = [
   {
     slug: 'ucsd-qualcomm',
     title: 'University of California, San Diego',
-    category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs', 'Collaborative Environments'],
-    year: '11/12-10/14',
+    category: ['Strategy','Inquiry'],
+    subCategory: ['Pedagogy & Labs', 'Institutional Architecture'],
+    year: '2012-2014',
     medium: 'Assistant Project Scientist & Lecturer, Qualcomm Institute',
     heroImage: '/images/placeholder.png',
     description: 'Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive systems using VR and large-format tiled displays. Focus on leading interdisciplinary teams of academic and industry researchers to create discovery platforms for large-scale geospatial, metagenomics and healthcare data. Instructed on Digital Imaging, Collaborative Image production, Web 2.0 Interaction, Transmedia, Programming, Augmented Reality',
@@ -634,8 +622,8 @@ export const projects: Project[] = [
     title: 'University of California, San Diego',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
-    year: '1/05-5/12',
-    medium: 'Technical Director',
+    year: '2005-2012',
+    medium: 'Technical Director (CRCA)',
     heroImage: '/images/placeholder.png',
     description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
     images: ['/images/placeholder.png']
@@ -646,7 +634,7 @@ export const projects: Project[] = [
     title: 'Rensselaer Polytechnic Institute',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Institutional Architecture', 'Display & Interaction Systems'],
-    year: '10/11-12/12',
+    year: '2011-2012',
     medium: 'Consultant',
     heroImage: '/images/placeholder.png',
     description: 'Provided technical expertise for building a Virtual Reality system for the new Emergent Reality Lab at RPI. This included space planning, CAD drawing, requirements assessment, system design, equipment specification and configuration of the immersive and interactive system.',
@@ -658,7 +646,7 @@ export const projects: Project[] = [
     title: 'Florida State University',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Institutional Architecture'],
-    year: '11/11-6/12',
+    year: '2011-2012',
     medium: 'Consultant',
     heroImage: '/images/placeholder.png',
     description: 'In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This included defining research activities, facility specification, space requirements, equipment classification and furnishing specifications.',
@@ -670,7 +658,7 @@ export const projects: Project[] = [
     title: 'University of Illinois at Chicago',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems', 'Pedagogy & Labs'],
-    year: '8/98-1/05',
+    year: '1998-2005',
     medium: 'Visiting Research Programmer',
     heroImage: '/images/placeholder.png',
     description: 'Co-invented new Virtual Reality hardware and software systems for the Electronic Visualization Laboratory. Senior developer on the auto-stereoscopic barrier strip display VarrierTM where I modeled and analyzed sub-pixel rendering techniques for a new VR system inside another CAVE VR system.',
@@ -682,7 +670,7 @@ export const projects: Project[] = [
     title: 'Columbia College Chicago',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
-    year: '2/00-1/03',
+    year: '2000-2003',
     medium: 'Adjunct Faculty',
     heroImage: '/images/placeholder.png',
     description: 'Instructor for Programming Web Databases (PHP/MySQL) and Introduction to Multimedia Programming (Macromedia Director/Lingo). Frequent guest lecturer for courses relating to art and technology in the Photography, Art History, Academic Computing and Interactive Multimedia departments.',
@@ -694,22 +682,22 @@ export const projects: Project[] = [
     title: 'School of the Art Institute of Chicago',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
-    year: '1/99-1/03',
+    year: '1999-2003',
     medium: 'Instructor',
     heroImage: '/images/placeholder.png',
     description: 'Taught graduate courses in Virtual Environments (Linux/C++/YG/OpenGL/Performer), Web Architecture (DHTML/Macromedia Flash) and Experimental Programming for the Web (DHTML/Macromedia Flash).',
     images: ['/images/placeholder.png']
   },
-  // 9. (art)n Laboratory
+  // Updated: (art)n Laboratory
   {
     slug: 'artn-laboratory',
     title: '(art)n Laboratory',
     category: ['Creative', 'Inquiry'],
     subCategory: ['Tangible Artifacts', 'Display & Interaction Systems'],
-    year: '1/00-7/00',
+    year: '1999-2000',
     medium: 'Artist-in-residence, Curator',
     heroImage: '/images/placeholder.png',
-    description: 'Produced 3D artwork based on PHSCologram and ImmersaGram technology utilizing 3D modeling, programming and animation. Organized exhibition of 20 ImmeraGrams from international artists. Project lead for searchable image-database website. In charge of network systems and web server administration, web site design layout and programming.',
+    description: 'Produced 3D artwork based on PHSCologram and ImmersaGram technology utilizing 3D modeling and animation. Served as project lead for a searchable image-database website and managed network systems and web server administration.',
     images: ['/images/placeholder.png']
   },
   // 10. University of Illinois at Chicago (Lecturer)
@@ -718,7 +706,7 @@ export const projects: Project[] = [
     title: 'University of Illinois at Chicago',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
-    year: '8/98-9/00',
+    year: '1998-2000',
     medium: 'Lecturer / Lab Administrator',
     heroImage: '/images/placeholder.png',
     description: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
@@ -730,7 +718,7 @@ export const projects: Project[] = [
     title: 'NetSight',
     category: ['Strategy'],
     subCategory: ['R&D Leadership'],
-    year: '1/95-7/96',
+    year: '1995-1996',
     medium: 'Webmaster',
     heroImage: '/images/placeholder.png',
     description: 'Developed new business areas for a local ISP to offer web hosting and design services. We specialized in providing some of the first 3D VRML websites for the Chicago area.',
@@ -752,7 +740,7 @@ export const projects: Project[] = [
   // NVision
   {
     slug: 'nvision',
-    title: 'NVision',
+    title: 'University of Northampton NVision',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
     year: '2010-2012',
@@ -762,19 +750,19 @@ export const projects: Project[] = [
     description: 'A state-of-the-art technology centre in Northampton, UK designed to bring 3D immersive stereo visualisation and high performance computing to the local University and wider community.',
     images: ['/images/placeholder.png']
   },
-  // Applied Interactives, N.F.P.
+  // Updated: Applied Interactives, N.F.P.
   {
     slug: 'applied-interactives',
     title: 'Applied Interactives, N.F.P.',
     category: ['Strategy', 'Creative'],
     subCategory: ['Cultural Entrepreneurship', 'Immersive Installations'],
     year: '2001-2005',
-    medium: 'Founding Member',
+    medium: 'Founding Member / President',
     heroImage: '/images/placeholder.png',
-    description: 'A non-profit organization dedicated to democratizing Virtual Reality, moving it from exclusive military/industrial use into art museums and universities. We maintained a collaborative structure of engineers and artists, deploying installations at venues like Art Basel Miami and the Museum of Contemporary Art Chicago.',
+    description: 'A 501(c)3 non-profit dedicated to propagating VR technologies into galleries and contemporary art museums. Facilitated installations at the Museum of Contemporary Art Chicago and the Block Museum. Led the creation of a VR installation using the Auschwitz-Birkenau concentration camp as a setting for exploring persistence and memory, based on a PHSCologram housed in the Museum of Jewish Heritage.',
     images: ['/images/placeholder.png']
   },
-  // Sine::apsis Experiments
+  // Updated: Sine::apsis Experiments
   {
     slug: 'sine-apsis',
     title: 'Sine::apsis Experiments',
@@ -783,7 +771,7 @@ export const projects: Project[] = [
     year: '2000-2005',
     medium: 'Director / Artist Member',
     heroImage: '/images/placeholder.png',
-    description: 'A 501(c)3 arts collective that organized exhibitions, lectures, and events taking an unorthodox look at the role of technology in culture. Fostered public dialogue around new media and performance long before the mainstream adoption of these technologies.',
+    description: 'A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in "Information Arts" by Steve Wilson, MIT’s Leonardo journal, and YLEM. Managed multimedia programming, web site development, and technical support for large-scale new media art shows.',
     images: ['/images/placeholder.png']
   },
   // Software Studies Initiative
@@ -808,6 +796,18 @@ export const projects: Project[] = [
     medium: 'Technical Director',
     heroImage: '/images/placeholder.png',
     description: 'A research studio positioning gaming as the defining cultural form of the 21st century. We provided innovative, multi-disciplinary expertise to push forward its technological and expressive fronts. By intersecting technologies from the leading edge of visualization research with extended game industry tools, we created new cultural forms and hybrid experiences.',
+    images: ['/images/placeholder.png']
+  },
+  // New: PowerUser Inc.
+  {
+    slug: 'poweruser-inc',
+    title: 'PowerUser Inc.',
+    category: ['Strategy'],
+    subCategory: ['R&D Leadership'],
+    year: '1998-2000',
+    medium: 'Web Developer / Project Manager',
+    heroImage: '/images/placeholder.png',
+    description: 'Project manager for dynamic, database-driven websites. Installed and administered web server and e-commerce systems, collaborating on interactive site creation and site layout programming.',
     images: ['/images/placeholder.png']
   }
 ];
