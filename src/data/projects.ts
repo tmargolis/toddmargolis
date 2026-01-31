@@ -4,7 +4,7 @@ export interface Project {
   slug: string;
   title: string;
   category: Category[];
-  subCategory?: string;
+  subCategory?: string[];
   status?: string;
   year: string;
   medium: string;
@@ -33,6 +33,7 @@ export const projects: Project[] = [
     slug: 'bang',
     title: 'Bang',
     category: ['Creative'],
+    subCategory: ['Performative Systems'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Kinetic Installation (Latex, Pneumatics)',
@@ -60,6 +61,7 @@ export const projects: Project[] = [
     slug: 'black-hole-vision',
     title: 'Spaghettification',
     category: ['Creative', 'Inquiry'],
+    subCategory: ['Immersive Installations', 'Display & Interaction Systems'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Virtual Reality',
@@ -82,6 +84,7 @@ export const projects: Project[] = [
     slug: 'delayed-vision',
     title: 'Delayed Vision',
     category: ['Creative', 'Inquiry'],
+    subCategory: ['Augmented Interventions', 'Display & Interaction Systems'],
     status: 'Alpha Version',
     year: '2026',
     medium: 'Android app running on  Galaxy A9+ Tablet',
@@ -116,6 +119,7 @@ export const projects: Project[] = [
     slug: 'star-trails',
     title: 'Star Trails',
     category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
     year: '2023-2024',
     medium: 'Archival Pigment Prints',
     dimensions: '20 x 30 inches each',
@@ -152,6 +156,7 @@ export const projects: Project[] = [
     slug: '3d-horizons',
     title: 'Horizons',
     category: ['Creative', 'Inquiry'],
+    subCategory: ['Tangible Artifacts', 'Display & Interaction Systems'],
     status: 'Work in Progress',
     year: '2026',
     medium: 'Stereoscopic View-Master',
@@ -199,6 +204,7 @@ export const projects: Project[] = [
     slug: 'audio-counter',
     title: 'Metronome',
     category: ['Creative', 'Inquiry'],
+    subCategory: ['Performative Systems'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Generative Audio',
@@ -221,6 +227,7 @@ export const projects: Project[] = [
     slug: 'the-edge',
     title: 'The Edge',
     category: ['Creative', 'Inquiry'],
+    subCategory: ['Immersive Installations', 'Display & Interaction Systems'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Laminar Flow Fog Screen',
@@ -247,6 +254,7 @@ export const projects: Project[] = [
     slug: 'now-and-then',
     title: 'Now & Then',
     category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
     status: 'Work in Progress',
     year: '2021-2026',
     medium: 'Archival Prints',
@@ -293,6 +301,7 @@ export const projects: Project[] = [
     slug: 'sculpture',
     title: 'Neighbors',
     category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Cast Material',
@@ -334,6 +343,7 @@ export const projects: Project[] = [
     slug: 'cmb-vr',
     title: 'CMB',
     category: ['Creative', 'Inquiry'],
+    subCategory: ['Immersive Installations', 'Display & Interaction Systems'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Virtual Reality',
@@ -356,6 +366,7 @@ export const projects: Project[] = [
     slug: 'redshifter',
     title: 'Redshifter',
     category: ['Creative'],
+    subCategory: ['Immersive Installations'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Room Installation',
@@ -379,6 +390,7 @@ export const projects: Project[] = [
     slug: 'sky-watcher',
     title: 'Sky Watcher',
     category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
     status: 'Work in Progress',
     year: '2026',
     medium: 'Mixed Media Light Sculpture (Arduino, Makeon Controller, LEDs, Vellum, Gold Acrylic)',
@@ -403,6 +415,7 @@ export const projects: Project[] = [
     slug: 'atlas-in-silico',
     title: 'ATLAS in silico',
     category: ['Creative', 'Inquiry'],
+    subCategory: ['Immersive Installations', 'Collaborative Environments'],
     year: 'TBD',
     medium: 'VR Installation',
     heroImage: '/images/placeholder.png',
@@ -414,6 +427,7 @@ export const projects: Project[] = [
     slug: 'varrier-display',
     title: 'Varrier Display',
     category: ['Inquiry', 'Strategy'],
+    subCategory: ['Display & Interaction Systems'],
     year: 'TBD',
     medium: 'Autostereoscopic VR Hardware',
     heroImage: '/images/placeholder.png',
@@ -425,6 +439,7 @@ export const projects: Project[] = [
     slug: 'vroom',
     title: 'Vroom (Virtual Room)',
     category: ['Inquiry', 'Strategy'],
+    subCategory: ['Collaborative Environments'],
     year: 'TBD',
     medium: 'Tiled Display Environment',
     heroImage: '/images/placeholder.png',
@@ -436,6 +451,7 @@ export const projects: Project[] = [
     slug: 'transmedia-research-institute-fsu',
     title: 'Transmedia Research Institute (FSU)',
     category: ['Strategy', 'Inquiry'],
+    subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
     year: 'TBD',
     medium: 'Institutional Design',
     heroImage: '/images/placeholder.png',
@@ -447,6 +463,7 @@ export const projects: Project[] = [
     slug: 'emergent-reality-lab-rpi',
     title: 'Emergent Reality Lab (RPI)',
     category: ['Strategy', 'Inquiry'],
+    subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
     year: 'TBD',
     medium: 'Lab Design',
     heroImage: '/images/placeholder.png',
@@ -458,10 +475,203 @@ export const projects: Project[] = [
     slug: 'applied-interactives-nfp',
     title: 'Applied Interactives NFP',
     category: ['Strategy', 'Creative'],
+    subCategory: ['Cultural Entrepreneurship'],
     year: 'TBD',
     medium: 'Non-profit',
     heroImage: '/images/placeholder.png',
     description: 'Non-profit leadership and agile research collective.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: CineGrid 3D 4K
+  {
+    slug: 'cinegrid-3d-4k',
+    title: 'CineGrid 3D 4K',
+    category: ['Inquiry'],
+    subCategory: ['Collaborative Environments'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for CineGrid 3D 4K.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: HUVR (Heads-Up Virtual Reality)
+  {
+    slug: 'huvr',
+    title: 'HUVR (Heads-Up Virtual Reality)',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems', 'Augmented Interventions'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for HUVR.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: Scalable City
+  {
+    slug: 'scalable-city',
+    title: 'Scalable City',
+    category: ['Inquiry'],
+    subCategory: ['Immersive Installations', 'Collaborative Environments'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Scalable City.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: Moon Lust
+  {
+    slug: 'moon-lust',
+    title: 'Moon Lust',
+    category: ['Inquiry'],
+    subCategory: ['Augmented Interventions'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Moon Lust.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: Museum of Future Objects (MOFO)
+  {
+    slug: 'museum-of-future-objects-mofo',
+    title: 'Museum of Future Objects (MOFO)',
+    category: ['Inquiry'],
+    subCategory: ['Augmented Interventions'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Museum of Future Objects (MOFO).',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: TeleMotions
+  {
+    slug: 'telemotions',
+    title: 'TeleMotions',
+    category: ['Inquiry'],
+    subCategory: ['Performative Systems', 'Collaborative Environments'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for TeleMotions.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: ResoNations
+  {
+    slug: 'resonations',
+    title: 'ResoNations',
+    category: ['Inquiry'],
+    subCategory: ['Performative Systems', 'Collaborative Environments'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for ResoNations.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: Cultural Analytics
+  {
+    slug: 'cultural-analytics',
+    title: 'Cultural Analytics',
+    category: ['Inquiry'],
+    subCategory: ['Publications & Theory'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Cultural Analytics.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: Sr. Director, Applied Research (Qlik)
+  {
+    slug: 'sr-director-applied-research-qlik',
+    title: 'Sr. Director, Applied Research (Qlik)',
+    category: ['Strategy'],
+    subCategory: ['R&D Leadership'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Sr. Director, Applied Research (Qlik).',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: Sine::apsis Experiments
+  {
+    slug: 'sine-apsis-experiments',
+    title: 'Sine::apsis Experiments',
+    category: ['Strategy'],
+    subCategory: ['Cultural Entrepreneurship'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Sine::apsis Experiments.',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: Manifest.AR
+  {
+    slug: 'manifest-ar',
+    title: 'Manifest.AR',
+    category: ['Strategy'],
+    subCategory: ['Cultural Entrepreneurship', 'Augmented Interventions'],
+    year: 'TBD',
+    medium: 'TBD',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Manifest.AR.',
+    images: ['/images/placeholder.png']
+  },
+  // Publications & Theory: Immersive Art in Augmented Reality (Springer Chapter)
+  {
+    slug: 'immersive-art-in-augmented-reality',
+    title: 'Immersive Art in Augmented Reality',
+    category: ['Inquiry'],
+    subCategory: ['Publications & Theory'],
+    year: 'TBD',
+    medium: 'Springer Chapter',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Immersive Art in Augmented Reality (Springer Chapter).',
+    images: ['/images/placeholder.png']
+  },
+  // Publications & Theory: The Varrier Autostereoscopic Display (ACM Paper)
+  {
+    slug: 'varrier-autostereoscopic-display-acm',
+    title: 'The Varrier Autostereoscopic Display',
+    category: ['Inquiry'],
+    subCategory: ['Publications & Theory'],
+    year: 'TBD',
+    medium: 'ACM Paper',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for The Varrier Autostereoscopic Display (ACM Paper).',
+    images: ['/images/placeholder.png']
+  },
+  // Publications & Theory: Scalable metadata environments (SPIE Paper)
+  {
+    slug: 'scalable-metadata-environments',
+    title: 'Scalable metadata environments',
+    category: ['Inquiry'],
+    subCategory: ['Publications & Theory'],
+    year: 'TBD',
+    medium: 'SPIE Paper',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Scalable metadata environments (SPIE Paper).',
+    images: ['/images/placeholder.png']
+  },
+  // Pedagogy & Labs: Technical Director (UCSD/CRCA)
+  {
+    slug: 'technical-director-ucsd-crca',
+    title: 'Technical Director (UCSD/CRCA)',
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
+    year: 'TBD',
+    medium: 'Lab Management',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Technical Director (UCSD/CRCA).',
+    images: ['/images/placeholder.png']
+  },
+  // Pedagogy & Labs: Visiting Research Programmer (UIC/EVL)
+  {
+    slug: 'visiting-research-programmer-uic-evl',
+    title: 'Visiting Research Programmer (UIC/EVL)',
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
+    year: 'TBD',
+    medium: 'Academic Research',
+    heroImage: '/images/placeholder.png',
+    description: 'Placeholder for Visiting Research Programmer (UIC/EVL).',
     images: ['/images/placeholder.png']
   }
 ];

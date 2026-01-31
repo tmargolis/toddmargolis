@@ -5,12 +5,14 @@ import Footer from '../components/Footer.astro';
 
 interface Props {
 	title: string;
+  fullTitle?: string;
   prevProject?: { title: string; slug: string };
   nextProject?: { title: string; slug: string };
   hideFooter?: boolean;
 }
 
-const { title, prevProject, nextProject, hideFooter = false } = Astro.props;
+const { title, fullTitle, prevProject, nextProject, hideFooter = false } = Astro.props;
+const documentTitle = fullTitle ?? `${title} | Observables`;
 ---
 
 <!doctype html>
@@ -25,11 +27,11 @@ const { title, prevProject, nextProject, hideFooter = false } = Astro.props;
 		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
 		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title} | Observables</title>
+		<title>{documentTitle}</title>
 		
 		<!-- Open Graph / Social Media Preview -->
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content={`${title} | Observables`} />
+		<meta property="og:title" content={documentTitle} />
 		<meta property="og:description" content="Observables Exhibition - A convergence of space and time" />
 		<meta property="og:image" content={`${Astro.site}/images/og-image.jpg`} />
 		<meta property="og:url" content={`${Astro.site}${Astro.url.pathname}`} />

@@ -1,8 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const slugify = (name: string) =>
+  name.replace(/\s*&\s*/g, '-and-').toLowerCase().replace(/\s+/g, '-').replace(/&/g, '-and-').replace(/[^a-z0-9-]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
+
+const creativeSubCategories = [
+  { name: 'Immersive Installations', page: '/creative/' },
+  { name: 'Tangible Artifacts', page: '/creative/' },
+  { name: 'Augmented Interventions', page: '/creative/' },
+  { name: 'Performative Systems', page: '/creative/' },
+];
+
+const inquirySubCategories = [
+  { name: 'Display & Interaction Systems', page: '/inquiry/' },
+  { name: 'Collaborative Environments', page: '/inquiry/' },
+  { name: 'Publications & Theory', page: '/inquiry/' },
+  { name: 'Pedagogy & Labs', page: '/inquiry/' },
+];
+
+const strategySubCategories = [
+  { name: 'R&D Leadership', page: '/strategy/' },
+  { name: 'Institutional Architecture', page: '/strategy/' },
+  { name: 'Cultural Entrepreneurship', page: '/strategy/' },
+];
 ---
 
-<Layout title="Todd Margolis" description="Materializing the Invisible">
+<Layout title="Todd Margolis" fullTitle="Home | Todd Margolis" description="Materializing the Invisible">
 
     <section class="mt-16 md:mt-24">
         <header class="text-center max-w-4xl mx-auto">
@@ -15,43 +38,47 @@ import Layout from '../layouts/Layout.astro';
     <section class="mt-24">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <!-- Pillar 1: Creative -->
-            <div class="border border-gray-800 p-8 rounded-lg flex flex-col">
-                <h3 class="font-mono text-sm uppercase text-white">Creative</h3>
-                <h2 class="font-serif text-2xl text-white mt-4">Artifacts of Stability</h2>
-                <p class="font-mono text-xs text-gray-400 mt-2">Tangible Informatics</p>
-                <p class="text-gray-400 mt-4 flex-grow">Materializing the invisible. Creating mechanical apparatuses, archival prints, and immersive installations that translate vast, abstract datasets into tangible experiences.</p>
+            <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group">
+                <a href="/creative/" class="block">
+                    <h1 class="font-mono text-lg uppercase text-white">Creative</h1>
+                    <p class="text-gray-400 mt-4 flex-grow">Materializing the invisible. Creating mechanical apparatuses, archival prints, and immersive installations that translate vast, abstract datasets into tangible experiences.</p>
+                </a>
                 <ul class="mt-6 space-y-2">
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Immersive Installations</a></li>
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Tangible Artifacts</a></li>
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Augmented Interventions</a></li>
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Performative Systems</a></li>
+                    {creativeSubCategories.map((item) => (
+                        <li>
+                            <a href={`${item.page}#${slugify(item.name)}`} class="font-mono text-sm text-white hover:text-glow transition-all">{item.name}</a>
+                        </li>
+                    ))}
                 </ul>
             </div>
 
             <!-- Pillar 2: Inquiry -->
-            <div class="border border-gray-800 p-8 rounded-lg flex flex-col">
-                <h3 class="font-mono text-sm uppercase text-white">Inquiry</h3>
-                <h2 class="font-serif text-2xl text-white mt-4">Hybrid Ecosystems</h2>
-                <p class="font-mono text-xs text-gray-400 mt-2">Synthesizing Human & Machine Perception</p>
-                <p class="text-gray-400 mt-4 flex-grow">Investigating the "In-Betweens." Designing collaborative environments (Vroom), autostereoscopic systems (Varrier), and spatial interfaces where human intuition and computational logic operate in symbiosis.</p>
+            <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group">
+                <a href="/inquiry/" class="block">
+                    <h1 class="font-mono text-lg uppercase text-white">Inquiry</h1>
+                    <p class="text-gray-400 mt-4 flex-grow">Investigating hybrid ecosystems. Designing collaborative environments (Vroom), autostereoscopic systems (Varrier), and spatial interfaces where human intuition and computational logic operate in symbiosis.</p>
+                </a>
                 <ul class="mt-6 space-y-2">
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Display & Interaction Systems</a></li>
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Collaborative Environments</a></li>
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Publications & Theory</a></li>
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Pedagogy & Labs</a></li>
+                    {inquirySubCategories.map((item) => (
+                        <li>
+                            <a href={`${item.page}#${slugify(item.name)}`} class="font-mono text-sm text-white hover:text-glow transition-all">{item.name}</a>
+                        </li>
+                    ))}
                 </ul>
             </div>
 
             <!-- Pillar 3: Strategy -->
-            <div class="border border-gray-800 p-8 rounded-lg flex flex-col">
-                <h3 class="font-mono text-sm uppercase text-white">Strategy</h3>
-                <h2 class="font-serif text-2xl text-white mt-4">Innovation Architecture</h2>
-                <p class="font-mono text-xs text-gray-400 mt-2">Strategic Foresight & R&D Infrastructure</p>
-                <p class="text-gray-400 mt-4 flex-grow">Architecting the future of R&D. Bridging the gap between "blue sky" academic invention and market-ready reality by designing the physical labs, cross-functional teams, and product roadmaps that make innovation scalable.</p>
+            <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group">
+                <a href="/strategy/" class="block">
+                    <h1 class="font-mono text-lg uppercase text-white">Strategy</h1>
+                    <p class="text-gray-400 mt-4 flex-grow">Architecting the future of R&D. Bridging the gap between "blue sky" academic invention and market-ready reality by designing the physical labs, cross-functional teams, and product roadmaps that make innovation scalable.</p>
+                </a>
                 <ul class="mt-6 space-y-2">
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">R&D Leadership</a></li>
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Institutional Architecture</a></li>
-                    <li><a href="#" class="font-mono text-sm text-white hover:text-glow transition-all">Cultural Entrepreneurship</a></li>
+                    {strategySubCategories.map((item) => (
+                        <li>
+                            <a href={`${item.page}#${slugify(item.name)}`} class="font-mono text-sm text-white hover:text-glow transition-all">{item.name}</a>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
