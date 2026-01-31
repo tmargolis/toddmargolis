@@ -64,7 +64,7 @@ body {
   background-attachment: fixed;
   color: #e5e5e5;
   overflow-x: hidden;
-  min-height: 100vh;
+  min-height: 10vh;
 }
 
 /* Link Styles */
