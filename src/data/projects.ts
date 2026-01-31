@@ -731,9 +731,83 @@ export const projects: Project[] = [
     category: ['Strategy'],
     subCategory: ['R&D Leadership'],
     year: '1/95-7/96',
-    medium: 'Webmaster/Head of Internet Development',
+    medium: 'Webmaster',
     heroImage: '/images/placeholder.png',
     description: 'Developed new business areas for a local ISP to offer web hosting and design services. We specialized in providing some of the first 3D VRML websites for the Chicago area.',
+    images: ['/images/placeholder.png']
+  },
+  // Professional Organizations
+  // Manifest.AR
+  {
+    slug: 'manifest-ar',
+    title: 'Manifest.AR',
+    category: ['Strategy', 'Creative'],
+    subCategory: ['Cultural Entrepreneurship', 'Augmented Interventions'],
+    year: '2011-2012',
+    medium: 'Artist Member',
+    heroImage: '/images/placeholder.png',
+    description: 'An international artists collective working with emergent forms of augmented reality as interventionist public art. The group sees this medium as a way of transforming public space and institutions by installing virtual objects and artworks which respond to and overlay the configuration of located physical meaning.',
+    images: ['/images/placeholder.png']
+  },
+  // NVision
+  {
+    slug: 'nvision',
+    title: 'NVision',
+    category: ['Strategy', 'Inquiry'],
+    subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
+    year: '2010-2012',
+    medium: 'Honorary Board Member',
+    heroImage: '/images/placeholder.png',
+    note: 'Northampton, UK',
+    description: 'A state-of-the-art technology centre in Northampton, UK designed to bring 3D immersive stereo visualisation and high performance computing to the local University and wider community.',
+    images: ['/images/placeholder.png']
+  },
+  // Applied Interactives, N.F.P.
+  {
+    slug: 'applied-interactives',
+    title: 'Applied Interactives, N.F.P.',
+    category: ['Strategy', 'Creative'],
+    subCategory: ['Cultural Entrepreneurship', 'Immersive Installations'],
+    year: '2001-2005',
+    medium: 'Founding Member',
+    heroImage: '/images/placeholder.png',
+    description: 'A non-profit organization dedicated to democratizing Virtual Reality, moving it from exclusive military/industrial use into art museums and universities. We maintained a collaborative structure of engineers and artists, deploying installations at venues like Art Basel Miami and the Museum of Contemporary Art Chicago.',
+    images: ['/images/placeholder.png']
+  },
+  // Sine::apsis Experiments
+  {
+    slug: 'sine-apsis',
+    title: 'Sine::apsis Experiments',
+    category: ['Strategy', 'Creative'],
+    subCategory: ['Cultural Entrepreneurship', 'Performative Systems'],
+    year: '2000-2005',
+    medium: 'Director / Artist Member',
+    heroImage: '/images/placeholder.png',
+    description: 'A 501(c)3 arts collective that organized exhibitions, lectures, and events taking an unorthodox look at the role of technology in culture. Fostered public dialogue around new media and performance long before the mainstream adoption of these technologies.',
+    images: ['/images/placeholder.png']
+  },
+  // Software Studies Initiative
+  {
+    slug: 'software-studies',
+    title: 'Software Studies Initiative',
+    category: ['Inquiry', 'Strategy'],
+    subCategory: ['Pedagogy & Labs', 'Publications & Theory'],
+    year: '2008-2012',
+    medium: 'Technical Director',
+    heroImage: '/images/placeholder.png',
+    description: 'Founded by Dr. Lev Manovich to disseminate the broad vision that software is a layer that permeates all areas of contemporary societies. As Technical Director, I developed projects, workshops, and publications analyzing contemporary techniques of control, communication, representation, and simulation through the lens of this software layer.',
+    images: ['/images/placeholder.png']
+  },
+  // Experimental Game Lab
+  {
+    slug: 'experimental-game-lab',
+    title: 'Experimental Game Lab',
+    category: ['Inquiry', 'Creative'],
+    subCategory: ['Pedagogy & Labs', 'Immersive Installations'],
+    year: '2005-2012',
+    medium: 'Technical Director',
+    heroImage: '/images/placeholder.png',
+    description: 'A research studio positioning gaming as the defining cultural form of the 21st century. We provided innovative, multi-disciplinary expertise to push forward its technological and expressive fronts. By intersecting technologies from the leading edge of visualization research with extended game industry tools, we created new cultural forms and hybrid experiences.',
     images: ['/images/placeholder.png']
   }
 ];

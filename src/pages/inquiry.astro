@@ -2,6 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import { projects } from '../data/projects';
 
+/** Parse year string to a numeric sort key (higher = more recent). */
+function sortYearFromYearString(yearStr: string): number {
+  if (!yearStr) return 0;
+  const s = yearStr.toLowerCase();
+  if (s.includes('present')) return 2030;
+  const fourDigit = [...yearStr.matchAll(/\b(19|20)\d{2}\b/g)].map((m) => parseInt(m[0], 10));
+  if (fourDigit.length) return Math.max(...fourDigit);
+  const twoDigit = [...yearStr.matchAll(/\b(\d{2})\b/g)].map((m) => {
+    const n = parseInt(m[1], 10);
+    return n <= 50 ? 2000 + n : 1900 + n;
+  });
+  if (twoDigit.length) return Math.max(...twoDigit);
+  return 0;
+}
+
 const categoryProjects = projects.filter((p) => p.category.includes('Inquiry'));
 
 const inquirySubCategoryOrder = [
@@ -14,9 +29,9 @@ const inquirySubCategoryOrder = [
 const projectsBySubCategory = inquirySubCategoryOrder.map((subCat) => ({
   name: subCat,
   slug: subCat.replace(/\s*&\s*/g, '-and-').toLowerCase().replace(/\s+/g, '-').replace(/&/g, '-and-').replace(/[^a-z0-9-]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, ''),
-  projects: categoryProjects.filter(
-    (p) => p.subCategory && p.subCategory.includes(subCat)
-  ),
+  projects: categoryProjects
+    .filter((p) => p.subCategory && p.subCategory.includes(subCat))
+    .sort((a, b) => sortYearFromYearString(b.year) - sortYearFromYearString(a.year)),
 })).filter((section) => section.projects.length > 0);
 ---
 
