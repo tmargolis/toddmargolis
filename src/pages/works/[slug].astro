@@ -61,7 +61,7 @@ const aboutStatement = project.category?.length
   : categoryStatements.Creative;
 ---
 
-<Layout title={project.title} prevProject={prevProject} nextProject={nextProject}>
+<Layout title={project.title}>
   <!-- Hero -->
   <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
     <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
@@ -335,16 +335,6 @@ const aboutStatement = project.category?.length
       </div>
     </div>
 
-  </div>
-
-  <!-- Project Navigation -->
-  <div class="max-w-7xl mx-auto px-6 md:px-12 pb-12 flex justify-between font-mono text-xs uppercase tracking-widest text-gray-500 border-t border-white/10 pt-8">
-    <a href={`/works/${prevProject.slug}/`} class="hover:text-white transition-colors group">
-      &larr; <span class="group-hover:translate-x-1 transition-transform inline-block">{prevProject.title}</span>
-    </a>
-    <a href={`/works/${nextProject.slug}/`} class="hover:text-white transition-colors group">
-      <span class="group-hover:-translate-x-1 transition-transform inline-block">{nextProject.title}</span> &rarr;
-    </a>
   </div>
 
           <!-- About the Artist Section (Specific for Project Page) -->

@@ -203,7 +203,7 @@ export const projects: Project[] = [
   {
     slug: 'audio-counter',
     title: 'Metronome',
-    category: ['Creative', 'Inquiry'],
+    category: ['Creative'],
     subCategory: ['Performative Systems'],
     status: 'Awaiting Fabrication',
     year: '2026',
@@ -426,60 +426,25 @@ export const projects: Project[] = [
   {
     slug: 'varrier-display',
     title: 'Varrier Display',
-    category: ['Inquiry', 'Strategy'],
+    category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems'],
-    year: 'TBD',
-    medium: 'Autostereoscopic VR Hardware',
+    year: '2001-2005',
+    medium: '35-panel barrier-strip autostereoscopic VR display (Glasses-free VR)',
     heroImage: '/images/placeholder.png',
     description: 'Novel autostereoscopic VR hardware invention.',
+    description2: 'Published in ACM SIGGRAPH.',
     images: ['/images/placeholder.png']
   },
   // Historical: Vroom (Virtual Room)
   {
     slug: 'vroom',
     title: 'Vroom (Virtual Room)',
-    category: ['Inquiry', 'Strategy'],
+    category: ['Inquiry'],
     subCategory: ['Collaborative Environments'],
-    year: 'TBD',
-    medium: 'Tiled Display Environment',
+    year: '2010',
+    medium: 'Next-generation reconfigurable tiled display environment for distributed collaboration',
     heroImage: '/images/placeholder.png',
     description: 'Next-gen reconfigurable tiled display environment.',
-    images: ['/images/placeholder.png']
-  },
-  // Historical: Transmedia Research Institute (FSU)
-  {
-    slug: 'transmedia-research-institute-fsu',
-    title: 'Transmedia Research Institute (FSU)',
-    category: ['Strategy', 'Inquiry'],
-    subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
-    year: 'TBD',
-    medium: 'Institutional Design',
-    heroImage: '/images/placeholder.png',
-    description: 'Institutional design and facility specification.',
-    images: ['/images/placeholder.png']
-  },
-  // Historical: Emergent Reality Lab (RPI)
-  {
-    slug: 'emergent-reality-lab-rpi',
-    title: 'Emergent Reality Lab (RPI)',
-    category: ['Strategy', 'Inquiry'],
-    subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
-    year: 'TBD',
-    medium: 'Lab Design',
-    heroImage: '/images/placeholder.png',
-    description: 'Lab design and technical blueprinting.',
-    images: ['/images/placeholder.png']
-  },
-  // Historical: Applied Interactives NFP
-  {
-    slug: 'applied-interactives-nfp',
-    title: 'Applied Interactives NFP',
-    category: ['Strategy', 'Creative'],
-    subCategory: ['Cultural Entrepreneurship'],
-    year: 'TBD',
-    medium: 'Non-profit',
-    heroImage: '/images/placeholder.png',
-    description: 'Non-profit leadership and agile research collective.',
     images: ['/images/placeholder.png']
   },
   // Placeholder: CineGrid 3D 4K
@@ -578,42 +543,6 @@ export const projects: Project[] = [
     description: 'Placeholder for Cultural Analytics.',
     images: ['/images/placeholder.png']
   },
-  // Placeholder: Sr. Director, Applied Research (Qlik)
-  {
-    slug: 'sr-director-applied-research-qlik',
-    title: 'Sr. Director, Applied Research (Qlik)',
-    category: ['Strategy'],
-    subCategory: ['R&D Leadership'],
-    year: 'TBD',
-    medium: 'TBD',
-    heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Sr. Director, Applied Research (Qlik).',
-    images: ['/images/placeholder.png']
-  },
-  // Placeholder: Sine::apsis Experiments
-  {
-    slug: 'sine-apsis-experiments',
-    title: 'Sine::apsis Experiments',
-    category: ['Strategy'],
-    subCategory: ['Cultural Entrepreneurship'],
-    year: 'TBD',
-    medium: 'TBD',
-    heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Sine::apsis Experiments.',
-    images: ['/images/placeholder.png']
-  },
-  // Placeholder: Manifest.AR
-  {
-    slug: 'manifest-ar',
-    title: 'Manifest.AR',
-    category: ['Strategy'],
-    subCategory: ['Cultural Entrepreneurship', 'Augmented Interventions'],
-    year: 'TBD',
-    medium: 'TBD',
-    heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Manifest.AR.',
-    images: ['/images/placeholder.png']
-  },
   // Publications & Theory: Immersive Art in Augmented Reality (Springer Chapter)
   {
     slug: 'immersive-art-in-augmented-reality',
@@ -666,12 +595,145 @@ export const projects: Project[] = [
   {
     slug: 'visiting-research-programmer-uic-evl',
     title: 'Visiting Research Programmer (UIC/EVL)',
-    category: ['Inquiry'],
+    category: ['Inquiry','Strategy'],
     subCategory: ['Pedagogy & Labs'],
     year: 'TBD',
     medium: 'Academic Research',
     heroImage: '/images/placeholder.png',
     description: 'Placeholder for Visiting Research Programmer (UIC/EVL).',
+    images: ['/images/placeholder.png']
+  },
+  // Professional experience
+  // 1. Qlik
+  {
+    slug: 'qlik',
+    title: 'Qlik',
+    category: ['Strategy', 'Inquiry'],
+    subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
+    year: '10/14-present',
+    medium: 'Sr. Director of Applied Research & Emerging Technologies',
+    heroImage: '/images/placeholder.png',
+    description: 'Lead a team of ML engineers accelerating our long-term roadmap, defining strategy and developing new capabilities leveraging emerging media platforms. My deep empathy for customer and user needs paired with my passion for innovation drives my creative, yet data-driven approach to prioritization. I have extensive prototyping and presentation experience and enjoy providing thought leadership in executive briefings, conference keynotes and academic symposiums globally. At Qlik, I have previously held roles as Director of Product Management as well as a Sr. Solution Architect.',
+    images: ['/images/placeholder.png']
+  },
+  // 2. University of California, San Diego (Qualcomm Institute)
+  {
+    slug: 'ucsd-qualcomm',
+    title: 'University of California, San Diego',
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs', 'Collaborative Environments'],
+    year: '11/12-10/14',
+    medium: 'Assistant Project Scientist & Lecturer, Qualcomm Institute',
+    heroImage: '/images/placeholder.png',
+    description: 'Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive systems using VR and large-format tiled displays. Focus on leading interdisciplinary teams of academic and industry researchers to create discovery platforms for large-scale geospatial, metagenomics and healthcare data. Instructed on Digital Imaging, Collaborative Image production, Web 2.0 Interaction, Transmedia, Programming, Augmented Reality',
+    images: ['/images/placeholder.png']
+  },
+  // 3. University of California, San Diego (CRCA)
+  {
+    slug: 'ucsd-crca',
+    title: 'University of California, San Diego',
+    category: ['Strategy', 'Inquiry'],
+    subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
+    year: '1/05-5/12',
+    medium: 'Technical Director',
+    heroImage: '/images/placeholder.png',
+    description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
+    images: ['/images/placeholder.png']
+  },
+  // 4. Rensselaer Polytechnic Institute
+  {
+    slug: 'rpi',
+    title: 'Rensselaer Polytechnic Institute',
+    category: ['Strategy', 'Inquiry'],
+    subCategory: ['Institutional Architecture', 'Display & Interaction Systems'],
+    year: '10/11-12/12',
+    medium: 'Consultant',
+    heroImage: '/images/placeholder.png',
+    description: 'Provided technical expertise for building a Virtual Reality system for the new Emergent Reality Lab at RPI. This included space planning, CAD drawing, requirements assessment, system design, equipment specification and configuration of the immersive and interactive system.',
+    images: ['/images/placeholder.png']
+  },
+  // 5. Florida State University
+  {
+    slug: 'florida-state-university',
+    title: 'Florida State University',
+    category: ['Strategy', 'Inquiry'],
+    subCategory: ['Institutional Architecture'],
+    year: '11/11-6/12',
+    medium: 'Consultant',
+    heroImage: '/images/placeholder.png',
+    description: 'In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This included defining research activities, facility specification, space requirements, equipment classification and furnishing specifications.',
+    images: ['/images/placeholder.png']
+  },
+  // 6. University of Illinois at Chicago (EVL)
+  {
+    slug: 'uic-evl',
+    title: 'University of Illinois at Chicago',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems', 'Pedagogy & Labs'],
+    year: '8/98-1/05',
+    medium: 'Visiting Research Programmer',
+    heroImage: '/images/placeholder.png',
+    description: 'Co-invented new Virtual Reality hardware and software systems for the Electronic Visualization Laboratory. Senior developer on the auto-stereoscopic barrier strip display VarrierTM where I modeled and analyzed sub-pixel rendering techniques for a new VR system inside another CAVE VR system.',
+    images: ['/images/placeholder.png']
+  },
+  // 7. Columbia College Chicago
+  {
+    slug: 'columbia-college-chicago',
+    title: 'Columbia College Chicago',
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
+    year: '2/00-1/03',
+    medium: 'Adjunct Faculty',
+    heroImage: '/images/placeholder.png',
+    description: 'Instructor for Programming Web Databases (PHP/MySQL) and Introduction to Multimedia Programming (Macromedia Director/Lingo). Frequent guest lecturer for courses relating to art and technology in the Photography, Art History, Academic Computing and Interactive Multimedia departments.',
+    images: ['/images/placeholder.png']
+  },
+  // 8. School of the Art Institute of Chicago
+  {
+    slug: 'saic',
+    title: 'School of the Art Institute of Chicago',
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
+    year: '1/99-1/03',
+    medium: 'Instructor',
+    heroImage: '/images/placeholder.png',
+    description: 'Taught graduate courses in Virtual Environments (Linux/C++/YG/OpenGL/Performer), Web Architecture (DHTML/Macromedia Flash) and Experimental Programming for the Web (DHTML/Macromedia Flash).',
+    images: ['/images/placeholder.png']
+  },
+  // 9. (art)n Laboratory
+  {
+    slug: 'artn-laboratory',
+    title: '(art)n Laboratory',
+    category: ['Creative', 'Inquiry'],
+    subCategory: ['Tangible Artifacts', 'Display & Interaction Systems'],
+    year: '1/00-7/00',
+    medium: 'Artist-in-residence, Curator',
+    heroImage: '/images/placeholder.png',
+    description: 'Produced 3D artwork based on PHSCologram and ImmersaGram technology utilizing 3D modeling, programming and animation. Organized exhibition of 20 ImmeraGrams from international artists. Project lead for searchable image-database website. In charge of network systems and web server administration, web site design layout and programming.',
+    images: ['/images/placeholder.png']
+  },
+  // 10. University of Illinois at Chicago (Lecturer)
+  {
+    slug: 'uic-lecturer',
+    title: 'University of Illinois at Chicago',
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
+    year: '8/98-9/00',
+    medium: 'Lecturer / Lab Administrator',
+    heroImage: '/images/placeholder.png',
+    description: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
+    images: ['/images/placeholder.png']
+  },
+  // 11. NetSight
+  {
+    slug: 'netsight',
+    title: 'NetSight',
+    category: ['Strategy'],
+    subCategory: ['R&D Leadership'],
+    year: '1/95-7/96',
+    medium: 'Webmaster/Head of Internet Development',
+    heroImage: '/images/placeholder.png',
+    description: 'Developed new business areas for a local ISP to offer web hosting and design services. We specialized in providing some of the first 3D VRML websites for the Chicago area.',
     images: ['/images/placeholder.png']
   }
 ];
