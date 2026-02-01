@@ -428,16 +428,17 @@ export const projects: Project[] = [
   },
   // Historical: Varrier Display
   {
-    slug: 'varrier-display',
-    title: 'Varrier Display',
+    slug: 'varrier-siggraph',
+    title: 'The VarrierTM autostereoscopic virtual reality display',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems'],
-    year: '2001-2005',
-    medium: '35-panel barrier-strip autostereoscopic VR display (Glasses-free VR)',
-    heroImage: '/images/placeholder.png',
-    description: 'Novel autostereoscopic VR hardware invention.',
-    description2: 'Published in ACM SIGGRAPH.',
-    images: ['/images/placeholder.png']
+    year: '2005',
+    medium: 'SIGGRAPH 2005',
+    dimensions: 'Sandin, Margolis, Ge, Girado, Peterka, et al.',
+    weight: 'Technical Paper',
+    heroImage: '/images/varrier-siggraph.jpg',
+    description: 'Virtual reality (VR) has long been hampered by the gear needed to make the experience possible; specifically, stereo glasses and tracking devices. Autostereoscopic display devices are gaining popularity by freeing the user from stereo glasses, however few qualify as VR displays. The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC) has designed and produced a large scale, high resolution head-tracked barrier-strip autostereoscopic display system that produces a VR immersive experience without requiring the user to wear any encumbrances. The resulting system, called Varrier, is a passive parallax barrier 35-panel tiled display that produces a wide field of view, head-tracked VR experience. This paper presents background material related to parallax barrier autostereoscopy, provides system configuration and construction details, examines Varrier interleaving algorithms used to produce the stereo images, introduces calibration and testing, and discusses the camera-based tracking subsystem.',
+    images: ['/images/varrier-siggraph.jpg']
   },
   // Vroom (Virtual Room)
   {
@@ -558,22 +559,39 @@ export const projects: Project[] = [
     title: 'Immersive Art in Augmented Reality',
     category: ['Inquiry'],
     subCategory: ['Publications & Theory'],
-    year: 'TBD',
-    medium: 'Springer Chapter',
+    year: '2014',
+    medium: 'Augmented Reality Art book chapter (Springer)',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Immersive Art in Augmented Reality (Springer Chapter).',
+    description: 'In the context of the 2014 publication Augmented Reality Art: From an Emerging Technology to a Novel Creative Medium, this chapter serves as a pivotal investigation into the shift from technical spectacle to a nuanced creative discipline. Rather than focusing on the mere "suspension of disbelief" or the visual blending of the real and virtual, the text situates the medium as a platform for "social immersion". By exploring the cultural potential of mobile AR, it bridges the gap between art history, gaming culture, and contemporary practice. This positioning defines the chapter as a foundational study of how AR serves as an integrative work of art, where the "freedom" of the medium allows for a model of the world that is conditionally defined through participant interaction.',
+    description2: 'Relating to the Manifest.AR collective\’s ethos in 2014, the chapter reflects the group\'s radical move toward locative and socially-driven interventions. It highlights a specific turn away from purely sensorial technology toward a "new social form of immersion" that prioritizes the connection between people across distance and time. As the collective was known for its interventionist approach—often placing digital objects in physical spaces like MoMA or the Venice Biennale—this chapter provides the theoretical backbone for those actions. It argues that the true power of the medium lies in "collaborative locative media," shifting the focus from the artist\’s individual vision to collective, social outcomes within the shared digital-physical landscape.',
     images: ['/images/placeholder.png']
   },
-  // Publications & Theory: The Varrier Autostereoscopic Display (ACM Paper)
+  // Varrier at IEEE
   {
-    slug: 'varrier-autostereoscopic-display-acm',
-    title: 'The Varrier Autostereoscopic Display',
+    slug: 'varrier-IEEE',
+    title: 'Camera Based Automatic Calibration for the Varrier System',
     category: ['Inquiry'],
     subCategory: ['Publications & Theory'],
-    year: 'TBD',
-    medium: 'ACM Paper',
+    year: '2005',
+    medium: 'IEEE Computer Society Conference paper',
+    dimensions: 'Jinghua Ge, Dan Sandin, Tom Peterka, Todd Margolis, Tom DeFanti',
+    weight: 'Computer Vision and Pattern Recognition. Volume 3 pg. 110',
+    description: 'Varrier is a head-tracked, 35-panel tiled autostereoscopic display system which is produced by The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC). Varrier produces autostereoscopic imagery through a combination of a physical parallax barrier and a virtual barrier, so that the stereoscopic images are directed correctly into the viewers eyes. Since a small amount of rotation and translation between physical and virtual barriers can cause large-scale effects, registration is critical for correct stereo viewing. The process is automated by examining image frames of two video cameras separated by the interocular distance as a simulation of human eyes. Three registration parameters for each panel are calibrated in the process. An arbitrary start condition is allowed and a robust stopping criterion is used to end the process and report results. Instead of exhaustive three dimensional searching, an efficient two phase calibration method is introduced. The combination of a heuristic rough calibration and an adaptive fine calibration guarantees a fast searching process with the best solution.',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for The Varrier Autostereoscopic Display (ACM Paper).',
+    images: ['/images/placeholder.png']
+  },
+  // Varrier at SPIE
+  {
+    slug: 'varrier-SPIE',
+    title: 'Varrier autostereographic display',
+    category: ['Inquiry'],
+    subCategory: ['Publications & Theory'],
+    year: '2001',
+    medium: 'SPIE conference paper',
+    dimensions: 'Daniel J. Sandin, Todd Margolis, Greg Dawe, Jason Leigh, Thomas A. DeFanti',
+    weight: 'Proc. SPIE 4297, Stereoscopic Displays and Virtual Reality Systems VIII, (22 June 2001); https://doi.org/10.1117/12.430818',
+    description: 'The goal of this research is to develop a head-tracked, stern virtual reality system utilizing plasma or LCD panels. This paper describes a head-tracked barrier auto-stereographic method that is optimized for real-time interactive virtual reality systems. In this method, virtual barrier screen is created simulating the physical barrier screen, and placed in the virtual world in front of the projection plane. An off- axis perspective projection of this barrier screen, combined with the rest of the virtual world, is projected from at least two viewpoints corresponding to the eye positions of the head- tracked viewer. During the rendering process, the simulated barrier screen effectively casts shadows on the projection plane. Since the different projection points cast shadows at different angles, the different viewpoints are spatially separated on the projection plane. These spatially separated images are projected into the viewer\'s space at different angles by the physical barrier screen. The flexibility of this computational process allows more complicated barrier screens than the parallel opaque lines typically used in barrier strip auto-stereography. In addition this method supports the focusing and steering of images for a user\'s given viewpoint, and allows for very wide angles of view. This method can produce an effective panel-based auto-stereo virtual reality system.',
+    heroImage: '/images/placeholder.png',
     images: ['/images/placeholder.png']
   },
   // Publications & Theory: Scalable metadata environments (SPIE Paper)
@@ -582,20 +600,23 @@ export const projects: Project[] = [
     title: 'Scalable metadata environments',
     category: ['Inquiry'],
     subCategory: ['Publications & Theory'],
-    year: 'TBD',
-    medium: 'SPIE Paper',
+    year: '2014',
+    medium: 'SPIE Conference Paper',
+    dimensions: 'Ruth G. West, Todd Margolis, Andrew Prudhomme, Jürgen P. Schulze, Iman Mostafavi, J. P. Lewis, Joachim Gossmann, and Rajvikram Singh',
+    weight: 'Proc. SPIE 9012, The Engineering Reality of Virtual Reality 2014, 901205 (28 February 2014); https://doi.org/10.1117/12.2038673',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Scalable metadata environments (SPIE Paper).',
+    description: 'Scalable Metadata Environments (MDEs) are an artistic approach for designing immersive environments for large scale data exploration in which users interact with data by forming multiscale patterns that they alternatively disrupt and reform. Developed and prototyped as part of an art-science research collaboration, we define an MDE as a 4D virtual environment structured by quantitative and qualitative metadata describing multidimensional data collections. Entire data sets (e.g.10s of millions of records) can be visualized and sonified at multiple scales and at different levels of detail so they can be explored interactively in real-time within MDEs. They are designed to reflect similarities and differences in the underlying data or metadata such that patterns can be visually/aurally sorted in an exploratory fashion by an observer who is not familiar with the details of the mapping from data to visual, auditory or dynamic attributes. While many approaches for visual and auditory data mining exist, MDEs are distinct in that they utilize qualitative and quantitative data and metadata to construct multiple interrelated conceptual coordinate systems. These "regions" function as conceptual lattices for scalable auditory and visual representations within virtual environments computationally driven by multi-GPU CUDA-enabled fluid dyamics systems.',
     images: ['/images/placeholder.png']
   },
-  // Updated: Research Assistant (UIC/EVL)
+  // Research Assistant (UIC/EVL)
   {
     slug: 'uic-evl',
-    title: 'University of Illinois at Chicago',
+    title: 'Electronic Visualization Laboratory',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems', 'Pedagogy & Labs'],
     year: '1998-2005',
     medium: 'Research Assistant',
+    dimensions: 'University of Illinois at Chicago',
     heroImage: '/images/placeholder.png',
     description: 'Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored a paper on VR systems published at SPIE 2001 and premiered the Varrier system at IEEE VR 2004.',
     images: ['/images/placeholder.png']
@@ -616,11 +637,12 @@ export const projects: Project[] = [
   // 2. University of California, San Diego (Qualcomm Institute)
   {
     slug: 'ucsd-qualcomm',
-    title: 'University of California, San Diego',
+    title: 'Qualcomm Institute',
     category: ['Strategy','Inquiry'],
     subCategory: ['Pedagogy & Labs', 'Institutional Architecture'],
     year: '2012-2014',
-    medium: 'Assistant Project Scientist & Lecturer, Qualcomm Institute',
+    medium: 'Assistant Project Scientist & Lecturer',
+    dimensions: 'University of California, San Diego',
     heroImage: '/images/placeholder.png',
     description: 'Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive systems using VR and large-format tiled displays. Focus on leading interdisciplinary teams of academic and industry researchers to create discovery platforms for large-scale geospatial, metagenomics and healthcare data. Instructed on Digital Imaging, Collaborative Image production, Web 2.0 Interaction, Transmedia, Programming, Augmented Reality',
     images: ['/images/placeholder.png']
@@ -628,11 +650,12 @@ export const projects: Project[] = [
   // 3. University of California, San Diego (CRCA)
   {
     slug: 'ucsd-crca',
-    title: 'University of California, San Diego',
+    title: 'CRCA',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
     year: '2005-2012',
-    medium: 'Technical Director (CRCA)',
+    medium: 'Technical Director',
+    dimensions: 'University of California, San Diego',
     heroImage: '/images/placeholder.png',
     description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
     images: ['/images/placeholder.png']
@@ -661,26 +684,15 @@ export const projects: Project[] = [
     description: 'In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This included defining research activities, facility specification, space requirements, equipment classification and furnishing specifications.',
     images: ['/images/placeholder.png']
   },
-  // 6. University of Illinois at Chicago (EVL)
-  {
-    slug: 'uic-evl',
-    title: 'University of Illinois at Chicago',
-    category: ['Inquiry'],
-    subCategory: ['Display & Interaction Systems', 'Pedagogy & Labs'],
-    year: '1998-2005',
-    medium: 'Visiting Research Programmer',
-    heroImage: '/images/placeholder.png',
-    description: 'Co-invented new Virtual Reality hardware and software systems for the Electronic Visualization Laboratory. Senior developer on the auto-stereoscopic barrier strip display VarrierTM where I modeled and analyzed sub-pixel rendering techniques for a new VR system inside another CAVE VR system.',
-    images: ['/images/placeholder.png']
-  },
   // 7. Columbia College Chicago
   {
     slug: 'columbia-college-chicago',
-    title: 'Columbia College Chicago',
+    title: 'Interactive Arts and Media',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
     year: '2000-2003',
     medium: 'Adjunct Faculty',
+    dimensions: 'Columbia College Chicago',
     heroImage: '/images/placeholder.png',
     description: 'Instructor for Programming Web Databases (PHP/MySQL) and Introduction to Multimedia Programming (Macromedia Director/Lingo). Frequent guest lecturer for courses relating to art and technology in the Photography, Art History, Academic Computing and Interactive Multimedia departments.',
     images: ['/images/placeholder.png']
@@ -688,11 +700,12 @@ export const projects: Project[] = [
   // 8. School of the Art Institute of Chicago
   {
     slug: 'saic',
-    title: 'School of the Art Institute of Chicago',
+    title: 'Art and Technology',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
     year: '1999-2003',
     medium: 'Instructor',
+    dimensions: 'School of the Art Institute of Chicago',
     heroImage: '/images/placeholder.png',
     description: 'Taught graduate courses in Virtual Environments (Linux/C++/YG/OpenGL/Performer), Web Architecture (DHTML/Macromedia Flash) and Experimental Programming for the Web (DHTML/Macromedia Flash).',
     images: ['/images/placeholder.png']
@@ -712,11 +725,12 @@ export const projects: Project[] = [
   // 10. University of Illinois at Chicago (Lecturer)
   {
     slug: 'uic-lecturer',
-    title: 'University of Illinois at Chicago',
+    title: 'Electronic Visualization Laboratory',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
     year: '1998-2000',
     medium: 'Lecturer / Lab Administrator',
+    dimensions: 'University of Illinois at Chicago',
     heroImage: '/images/placeholder.png',
     description: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
     images: ['/images/placeholder.png']
@@ -804,7 +818,7 @@ export const projects: Project[] = [
     year: '2005-2012',
     medium: 'Technical Director',
     heroImage: '/images/placeholder.png',
-    description: 'A research studio positioning gaming as the defining cultural form of the 21st century. We provided innovative, multi-disciplinary expertise to push forward its technological and expressive fronts. By intersecting technologies from the leading edge of visualization research with extended game industry tools, we created new cultural forms and hybrid experiences.',
+    description: 'Founded by Sheldon Brown, EGL is a research studio positioning gaming as the defining cultural form of the 21st century. We provided innovative, multi-disciplinary expertise to push forward its technological and expressive fronts. By intersecting technologies from the leading edge of visualization research with extended game industry tools, we created new cultural forms and hybrid experiences.',
     images: ['/images/placeholder.png']
   },
   // New: PowerUser Inc.
