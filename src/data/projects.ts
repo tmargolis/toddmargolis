@@ -60,8 +60,8 @@ export const projects: Project[] = [
   {
     slug: 'black-hole-vision',
     title: 'Spaghettification',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Immersive Installations', 'Display & Interaction Systems'],
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Virtual Reality',
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     title: 'Delayed Vision',
     category: ['Creative', 'Inquiry'],
     subCategory: ['Augmented Interventions', 'Display & Interaction Systems'],
-    status: 'Alpha Version',
+    status: 'Work in Progress',
     year: '2026',
     medium: 'Android app running on  Galaxy A9+ Tablet',
     dimensions: '11 x 7 x 1 inches',
@@ -100,17 +100,20 @@ export const projects: Project[] = [
     images: [
       '/images/Moon_Previs-1.png',
       '/images/Sun_Previs-1.png',
-      '/images/Saturn_Previs-1.png'
+      '/images/Saturn_Previs-1.png',
+      '/images/ProximaCentauriTablet.png'
     ],
     imageTitles: [
         'The Moon (1.3s delay)',
         'The Sun (8m 20s delay)',
-        'Saturn (79m delay)'
+        'Saturn (79m delay)',
+        'Proxima Centauri (4.24 years delay)'
     ],
     imageDescriptions: [
         'The "Moon" mirror confronts you with a 1.3-second delay, a slight, uncanny hiccup in reality. This subtle temporal disjunction makes perceptible the distance between Earth and our nearest celestial neighbor, transforming a familiar reflection into something slightly, unsettlingly out of sync.',
         'In the "Sun" mirror, an 8-minute and 20-second gap separates you from your reflection, translating the immense scale of our solar system into a tangible temporal disjunction. The delay represents the time it takes for light to travel from the Sun to Earth, making the vastness of space immediately, personally felt.',
-        'The "Saturn" mirror introduces a delay of nearly an hour and a half; the reflected self is so temporally removed it feels like another person, a phantom of your own recent history.'
+        'The "Saturn" mirror introduces a delay of nearly an hour and a half; the reflected self is so temporally removed it feels like another person, a phantom of your own recent history.',
+        'This special edition mirror introduces a delay of 4.24 years; the reflected scene is almost certainly showing a different person or place as a time capsule from the past.'
     ],
     description3: 'This work finds a powerful precedent in Margolis\'s 2012 augmented reality piece, Moon Lust, exhibited at the Adler Planetarium, which first combined celestial concepts with technologies of altered perception. By turning a core principle of observational astronomy into a deeply personal, philosophical, and unforgettable encounter, the work transforms the gallery into an observatory that looks inward to reveal the most fundamental truths of our place in the cosmos.'
   },
@@ -416,10 +419,11 @@ export const projects: Project[] = [
     title: 'ATLAS in silico',
     category: ['Creative', 'Inquiry'],
     subCategory: ['Immersive Installations', 'Collaborative Environments'],
-    year: 'TBD',
+    year: '2007-2013',
     medium: 'VR Installation',
     heroImage: '/images/placeholder.png',
-    description: 'VR installation fusing dynamic media with metagenomics.',
+    description: 'ATLAS in silico is a physically interactive virtual reality installation that fuses dynamic media, computer vision, and spatialized multichannel audio with pioneering science. It functions as an expressive virtual reality context for large-scale data exploration. Rather than simply displaying numbers, it translates massive scientific datasets—specifically touching on metagenomics and biological sequences—into a visceral, navigable environment. It uses computer vision to track the viewer, allowing their physical presence to drive the audiovisual representation of the data, effectively bridging the gap between abstract information and physical perception.',
+    description2: 'The project was the subject of significant academic inquiry, leading to publications such as "Algorithmic Object as Natural Specimen" in Leonardo and "Sensate Abstraction" in SPIE, which detailed hybrid strategies for handling multi-dimensional data. The work has been exhibited globally at major venues including the National Academy of Sciences, SIGGRAPH, the Perot Museum of Nature and Science, 9e2 (Seattle), and the Museum of Old and New Art (MONA) in Tasmania.',
     images: ['/images/placeholder.png']
   },
   // Historical: Varrier Display
@@ -435,16 +439,16 @@ export const projects: Project[] = [
     description2: 'Published in ACM SIGGRAPH.',
     images: ['/images/placeholder.png']
   },
-  // Historical: Vroom (Virtual Room)
+  // Vroom (Virtual Room)
   {
     slug: 'vroom',
     title: 'Vroom (Virtual Room)',
     category: ['Inquiry'],
     subCategory: ['Collaborative Environments'],
-    year: '2010',
-    medium: 'Next-generation reconfigurable tiled display environment for distributed collaboration',
+    year: '2010-2013',
+    medium: 'Tiled display environment at UCSD',
     heroImage: '/images/placeholder.png',
-    description: 'Next-gen reconfigurable tiled display environment.',
+    description: 'Next-gen reconfigurable tiled display environment for distributed collaboration.',
     images: ['/images/placeholder.png']
   },
   // Placeholder: CineGrid 3D 4K
@@ -453,20 +457,21 @@ export const projects: Project[] = [
     title: 'CineGrid 3D 4K',
     category: ['Inquiry'],
     subCategory: ['Collaborative Environments'],
-    year: 'TBD',
-    medium: 'TBD',
+    year: '2006-2013',
+    medium: 'High-Performance Networked Media',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for CineGrid 3D 4K.',
+    description: 'CineGrid is a global, non-profit organization dedicated to the research and demonstration of ultra-high-quality digital media over high-speed photonic networks. At its core, the project functions as a specialized "collaboratory," integrating high-performance computing with the rigorous demands of digital cinema. By utilizing 10 Gbps optical networks, CineGrid enables the real-time distribution and collaborative editing of 4K, 8K, and stereoscopic 3D media across vast distances. This infrastructure effectively removes the geographical barriers of high-end production, allowing interdisciplinary teams to treat global networks as a singular, unified workspace.',
+    description2: 'A highlight of my research included networking media infrastructure, culminating in the tri-continental premiere of 4K feature-length media.  This milestone successfully established new benchmarks for distributed cinema, proving that uncompressed, ultra-high-resolution streams could be synchronized across continents with minimal latency.',
     images: ['/images/placeholder.png']
   },
   // Placeholder: HUVR (Heads-Up Virtual Reality)
   {
     slug: 'huvr',
-    title: 'HUVR (Heads-Up Virtual Reality)',
+    title: 'HUVR',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems', 'Augmented Interventions'],
-    year: 'TBD',
-    medium: 'TBD',
+    year: '2010-2012',
+    medium: 'Heads-Up Virtual Reality at UCSD',
     heroImage: '/images/placeholder.png',
     description: 'Placeholder for HUVR.',
     images: ['/images/placeholder.png']
@@ -477,10 +482,11 @@ export const projects: Project[] = [
     title: 'Scalable City',
     category: ['Inquiry'],
     subCategory: ['Immersive Installations', 'Collaborative Environments'],
-    year: 'TBD',
-    medium: 'TBD',
+    year: '2009',
+    medium: 'Immersive Installation',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Scalable City.',
+    description: 'Scalable City is a multi-dimensional art and research project developed within the Experimental Game Lab at the Qualcomm Institute, UCSD. The work functions as a provocative critique of urban sprawl and algorithmic logic, utilizing the mechanics of a video game to simulate the relentless expansion and eventual collapse of a hyper-consumerist landscape. By intersecting technologies from the leading edge of visualization research with extended game industry tools, the project creates a hybrid experience that explores how software systems permeate and shape contemporary society.',
+    description2: 'The artwork is structured around a series of algorithmic "rules" that automate the construction of a sprawling, chaotic city—transforming the serene geometry of a digital landscape into a densely packed environment of roads and suburban architecture. As the simulation progresses, the very tools used for creation become the agents of destruction, leading to a "beautifully entropic" failure of the urban system.',
     images: ['/images/placeholder.png']
   },
   // Placeholder: Moon Lust
@@ -513,10 +519,11 @@ export const projects: Project[] = [
     title: 'TeleMotions',
     category: ['Inquiry'],
     subCategory: ['Performative Systems', 'Collaborative Environments'],
-    year: 'TBD',
-    medium: 'TBD',
+    year: '2011',
+    medium: 'Telepresence Performance',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for TeleMotions.',
+    description: 'TeleMotions was an experimental telepresence performance project developed by the Experimental Game Lab at the Qualcomm Institute (UCSD). The project functioned as an inquiry into networked collaboration, utilizing high-bandwidth optical networks to facilitate real-time, distributed performances between remote participants. By connecting physically separated performers through immersive media environments, TeleMotions sought to challenge traditional notions of "presence" and "place," creating a shared virtual stage where movement and sound could interact without geographical constraints.',
+    description2: 'In my role as Technical Director at the lab, I managed the complex infrastructure required for such high-stakes, real-time media systems. This involved coordinating the logistical planning, latency management, and fault-tolerant network architecture necessary to ensure that human intuition and algorithmic logic could coexist seamlessly across a distributed network.',
     images: ['/images/placeholder.png']
   },
   // Placeholder: ResoNations
@@ -525,10 +532,11 @@ export const projects: Project[] = [
     title: 'ResoNations',
     category: ['Inquiry'],
     subCategory: ['Performative Systems', 'Collaborative Environments'],
-    year: 'TBD',
-    medium: 'TBD',
+    year: '2009',
+    medium: 'Telepresence Performance',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for ResoNations.',
+    description: 'ResoNations was an international, multi-site "telematic" performance that connected musicians across global distances in real-time, creating a unified sonic experience through high-speed optical networks. The project served as a high-stakes inquiry into the possibilities of networked media, utilizing the infrastructure of CineGrid and the Qualcomm Institute to facilitate low-latency, high-fidelity collaboration between performers in locations such as San Diego, New York, and Belfast. By bridging these geographically disparate spaces, the performance challenged the limitations of physical distance and explored the emergence of a "distributed" stage.',
+    description2: 'In my capacity as Technical Director for this performance, I was responsible for the rigorous logistical planning and fault-tolerant network architecture required to maintain synchronicity across continents. Managing the latency and audio-visual fidelity of ResoNations required more than just technical oversight; it demanded a strategic approach to Collaborative Environments, where human artistic intuition could coexist with complex algorithmic logic.',
     images: ['/images/placeholder.png']
   },
   // Placeholder: Cultural Analytics
@@ -537,10 +545,11 @@ export const projects: Project[] = [
     title: 'Cultural Analytics',
     category: ['Inquiry'],
     subCategory: ['Publications & Theory'],
-    year: 'TBD',
-    medium: 'TBD',
+    year: '2012-2014',
+    medium: 'Immersive Analytics',
     heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Cultural Analytics.',
+    description: 'The GeoMedia Analytics Platform was a research project that transformed thousands of Flickr and Instagram photos into a spatialized visual history of New York City. By utilizing a custom "Flickr Harvester" and high-performance computing, the project analyzed the collective output of social media users along Park Avenue and other major urban corridors. This allowed for the creation of massive, high-resolution "photo clouds" that layered the city\'s digital metadata directly onto its physical geography, revealing invisible cultural patterns and the shifting rhythms of urban life.',
+    description2: 'In my capacity as Technical Director for the Software Studies Initiative, I leveraged the Vroom and HIPerSpace tiled display environments to visualize these datasets at an unprecedented scale. This work moved beyond simple data mapping to explore how software and social algorithms influence human behavior and architectural perception. Within my current portfolio, this project served as a cornerstone of Inquiry, demonstrating my ability to synthesize Public Data, Visual Analytics, and Immersive Design to make the hidden infrastructures of our modern society visible.',
     images: ['/images/placeholder.png']
   },
   // Publications & Theory: Immersive Art in Augmented Reality (Springer Chapter)
@@ -750,10 +759,10 @@ export const projects: Project[] = [
     description: 'A state-of-the-art technology centre in Northampton, UK designed to bring 3D immersive stereo visualisation and high performance computing to the local University and wider community.',
     images: ['/images/placeholder.png']
   },
-  // Updated: Applied Interactives, N.F.P.
+  // Applied Interactives, N.F.P.
   {
     slug: 'applied-interactives',
-    title: 'Applied Interactives, N.F.P.',
+    title: 'Applied Interactives',
     category: ['Strategy', 'Creative'],
     subCategory: ['Cultural Entrepreneurship', 'Immersive Installations'],
     year: '2001-2005',
