@@ -550,22 +550,4 @@ const aboutStatement = project.category?.length
       }
     });
 
-    // Auth Logic for Logistics/Price
-    window.addEventListener("load", async function () {
-        const checkClerk = setInterval(async () => {
-            // @ts-ignore
-            if (window.Clerk) {
-                clearInterval(checkClerk);
-                // @ts-ignore
-                await window.Clerk.load();
-                
-                const protectedMeta = document.getElementById('protected-meta');
-                
-                // @ts-ignore
-                if (window.Clerk.user && protectedMeta) {
-                    protectedMeta.classList.remove('hidden');
-                }
-            }
-        }, 100);
-    });
   </script>
