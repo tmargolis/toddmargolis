@@ -221,6 +221,23 @@ const aboutStatement = project.category?.length
                      Your browser does not support the video tag.
                   </video>
                ) : (
+
+          <!-- Context Image (Optional) -->
+          {project.contextImage && (
+             <div class="w-full relative group">
+                <img 
+                  src={project.contextImage} 
+                  class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" 
+                  alt={project.contextCaption || "Context View"}
+                  onclick={`handleImageClick(event, '${project.contextImage}')`}
+                />
+                {project.watermarkedImages?.includes(project.contextImage) && <Watermark />}
+                {project.contextCaption && (
+                   <span class="block font-mono text-[10px] text-gray-500 uppercase tracking-widest mt-2 text-center">{project.contextCaption}</span>
+                )}
+             </div>
+          )}
+<--
                   /* Fallback to Image Carousel */
                   carouselImages.map((img, idx) => (
                     <div key={idx} class="relative w-full h-full flex-shrink-0 snap-center">
@@ -233,6 +250,7 @@ const aboutStatement = project.category?.length
                       {project.watermarkedImages?.includes(img) && <Watermark />}
                     </div>
                   ))
+-->
                )}
             </div>
           ) : null}
