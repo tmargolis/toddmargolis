@@ -631,9 +631,8 @@ export const projects: Project[] = [
     year: '2014-present',
     medium: 'Sr. Director of Applied Research & Emerging Technologies',
     heroImage: '/images/placeholder.png',
-    contextImage: '/images/Qlik_Logo_No_Trademark_2_Color_Positive_RGB.png',
     description: 'Lead a team of ML engineers accelerating our long-term roadmap, defining strategy and developing new capabilities leveraging emerging media platforms. My deep empathy for customer and user needs paired with my passion for innovation drives my creative, yet data-driven approach to prioritization. I have extensive prototyping and presentation experience and enjoy providing thought leadership in executive briefings, conference keynotes and academic symposiums globally. At Qlik, I have previously held roles as Director of Product Management as well as a Sr. Solution Architect.',
-    images: ['/images/placeholder2.png']
+    images: ['/images/Qlik_Logo_No_Trademark_2_Color_Positive_RGB.png']
   },
   // 2. University of California, San Diego (Qualcomm Institute)
   {
@@ -644,8 +643,7 @@ export const projects: Project[] = [
     year: '2012-2014',
     medium: 'Assistant Project Scientist & Lecturer',
     dimensions: 'University of California, San Diego',
-    heroImage: '/images/placeholder.png',
-    contextImage: '/images/atkinson-720.jpg',    
+    heroImage: '/images/atkinson-720.jpg',
     description: 'Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive systems using VR and large-format tiled displays. Focus on leading interdisciplinary teams of academic and industry researchers to create discovery platforms for large-scale geospatial, metagenomics and healthcare data. Instructed on Digital Imaging, Collaborative Image production, Web 2.0 Interaction, Transmedia, Programming, Augmented Reality',
     images: ['/images/placeholder.png']
   },
