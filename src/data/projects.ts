@@ -715,8 +715,8 @@ export const projects: Project[] = [
   {
     slug: 'artn-laboratory',
     title: '(art)n Laboratory',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Tangible Artifacts', 'Display & Interaction Systems'],
+    category: ['Creative', 'Inquiry','Strategy'],
+    subCategory: ['Tangible Artifacts', 'Display & Interaction Systems','Cultural Entrepreneurship'],
     year: '1999-2000',
     medium: 'Artist-in-residence, Curator',
     heroImage: '/images/placeholder.png',
