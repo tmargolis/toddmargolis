@@ -26,7 +26,6 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm' # Use 'yarn' or 'pnpm' if applicable
-          cache-dependency-path: 'package-lock.json' # Explicitly use the primary lock file
       - name: Checkout your repository using git
         uses: actions/checkout@v5
       - name: Install, build, and upload your site
