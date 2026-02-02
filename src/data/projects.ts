@@ -630,7 +630,8 @@ export const projects: Project[] = [
     subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
     year: '2014-present',
     medium: 'Sr. Director of Applied Research & Emerging Technologies',
-    heroImage: '/images/Qlik_Logo_No_Trademark_2_Color_Positive_RGB.png',
+    heroImage: '/images/placeholder.png',
+    contextImage: '/images/Qlik_Logo_No_Trademark_2_Color_Positive_RGB.png',
     description: 'Lead a team of ML engineers accelerating our long-term roadmap, defining strategy and developing new capabilities leveraging emerging media platforms. My deep empathy for customer and user needs paired with my passion for innovation drives my creative, yet data-driven approach to prioritization. I have extensive prototyping and presentation experience and enjoy providing thought leadership in executive briefings, conference keynotes and academic symposiums globally. At Qlik, I have previously held roles as Director of Product Management as well as a Sr. Solution Architect.',
     images: ['/images/placeholder.png']
   },
