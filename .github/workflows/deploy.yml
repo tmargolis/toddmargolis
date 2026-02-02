@@ -22,10 +22,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-node@v4
         with:
-         python-version: '3.10'
-         cache: 'pip'
+          node-version: '20'
+          cache: 'npm' # Use 'yarn' or 'pnpm' if applicable
       - name: Checkout your repository using git
         uses: actions/checkout@v5
       - name: Install, build, and upload your site
