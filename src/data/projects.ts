@@ -645,6 +645,7 @@ export const projects: Project[] = [
     medium: 'Assistant Project Scientist & Lecturer',
     dimensions: 'University of California, San Diego',
     heroImage: '/images/placeholder.png',
+    contextImage: '/images/atkinson-720.jpg',    
     description: 'Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive systems using VR and large-format tiled displays. Focus on leading interdisciplinary teams of academic and industry researchers to create discovery platforms for large-scale geospatial, metagenomics and healthcare data. Instructed on Digital Imaging, Collaborative Image production, Web 2.0 Interaction, Transmedia, Programming, Augmented Reality',
     images: ['/images/placeholder.png']
   },
