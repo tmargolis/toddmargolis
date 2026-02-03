@@ -1,6 +1,32 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { projects } from '../../data/projects';
+
+/** Parse year string to a numeric sort key (higher = more recent). */
+function sortYearFromYearString(yearStr: string): number {
+  if (!yearStr) return 0;
+  const s = yearStr.toLowerCase();
+  if (s.includes('present')) return 2030;
+  const fourDigit = [...yearStr.matchAll(/\b(19|20)\d{2}\b/g)].map((m) => parseInt(m[0], 10));
+  if (fourDigit.length) return Math.max(...fourDigit);
+  const twoDigit = [...yearStr.matchAll(/\b(\d{2})\b/g)].map((m) => {
+    const n = parseInt(m[1], 10);
+    return n <= 50 ? 2000 + n : 1900 + n;
+  });
+  if (twoDigit.length) return Math.max(...twoDigit);
+  return 0;
+}
+
+const projectsByDate = [...projects].sort(
+  (a, b) => sortYearFromYearString(b.year) - sortYearFromYearString(a.year)
+);
+
+/** Use first image when no specific hero image is set (placeholder or empty). */
+function getDisplayHeroImage(project: (typeof projects)[0]) {
+  return (project.heroImage === '/images/placeholder.png' || !project.heroImage?.trim()) && project.images?.length > 0
+    ? project.images[0]
+    : project.heroImage ?? '';
+}
 ---
 
 <Layout title="Works">
@@ -8,14 +34,14 @@ import { projects } from '../../data/projects';
       <h1 class="font-serif text-5xl md:text-7xl mb-16 text-center">Selected Works</h1>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        {projects.map((project, index) => (
+        {projectsByDate.map((project, index) => (
           <a href={`/works/${project.slug}/`} class="group block relative">
              <div class="aspect-[4/3] bg-gray-900 w-full overflow-hidden mb-6 relative">
                 <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
                 <img 
-                  src={project.heroImage} 
+                  src={getDisplayHeroImage(project)} 
                   alt={project.title} 
-                  class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
+                  class="object-cover w-full h-full md:grayscale md:group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                 />
              </div>
              <div class="flex justify-between items-start border-t border-white/10 pt-4">

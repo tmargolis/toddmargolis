@@ -10,14 +10,14 @@ interface Props {
 }
 
 const { title, fullTitle, hideFooter = false } = Astro.props;
-const documentTitle = fullTitle ?? `${title} | Observables`;
+const documentTitle = fullTitle ?? `${title} | Home`;
 ---
 
 <!doctype html>
 <html lang="en" class="scroll-smooth bg-obs-black text-gray-200">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Observables Exhibition" />
+		<meta name="description" content="Todd Margolis" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -30,7 +30,7 @@ const documentTitle = fullTitle ?? `${title} | Observables`;
 		<!-- Open Graph / Social Media Preview -->
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={documentTitle} />
-		<meta property="og:description" content="Observables Exhibition - A convergence of space and time" />
+		<meta property="og:description" content="Todd Margolis" />
 		<meta property="og:image" content={`${Astro.site}/images/og-image.jpg`} />
 		<meta property="og:url" content={`${Astro.site}${Astro.url.pathname}`} />
 		<meta name="twitter:card" content="summary_large_image" />
