@@ -107,7 +107,7 @@ const aboutStatement = project.category?.length
              <div class="w-full relative group">
                 <img 
                   src={project.contextImage} 
-                  class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" 
+                  class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" 
                   alt={project.contextCaption || "Context View"}
                   onclick={`handleImageClick(event, '${project.contextImage}')`}
                 />
@@ -150,7 +150,7 @@ const aboutStatement = project.category?.length
                    <div class="flex-1 w-full relative">
                       <img 
                         src={img} 
-                        class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" 
+                        class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" 
                         alt={`Series Variation ${i+1}`}
                         onclick={`handleImageClick(event, '${img}')`}
                       />
@@ -187,7 +187,7 @@ const aboutStatement = project.category?.length
                    <div class="flex-1 w-full relative">
                       <img 
                         src={img} 
-                        class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" 
+                        class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" 
                         alt={`Series Variation ${i+1}`} 
                         onclick={`handleImageClick(event, '${img}')`}
                       />
@@ -227,7 +227,7 @@ const aboutStatement = project.category?.length
                   <div class="relative w-full h-full">
                     <img 
                       src={project.images[0]} 
-                      class="w-full h-full object-cover cursor-zoom-in" 
+                      class="w-full h-full object-cover cursor-zoom-in md:grayscale md:hover:grayscale-0 transition-all duration-500" 
                       alt="Detail view" 
                       onclick={`openLightbox('${project.images[0]}')`}
                     />
@@ -244,7 +244,7 @@ const aboutStatement = project.category?.length
                 </div>
                 {project.images.length >= 2 && (
                 <div class="flex-1 relative">
-                   {project.images[0] && <img src={project.images[0]} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[0]}')`} />}
+                   {project.images[0] && <img src={project.images[0]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[0]}')`} />}
                    {project.watermarkedImages?.includes(project.images[0]) && <Watermark />}
                 </div>
                 )}
@@ -258,17 +258,17 @@ const aboutStatement = project.category?.length
                 <div class="flex-1 relative">
                    {project.images[2] ? (
                      <>
-                       <img src={project.images[2]} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[2]}')`} />
+                       <img src={project.images[2]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[2]}')`} />
                        {project.watermarkedImages?.includes(project.images[2]) && <Watermark />}
                      </>
                    ) : project.images[1] ? (
                      <>
-                       <img src={project.images[1]} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[1]}')`} />
+                       <img src={project.images[1]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[1]}')`} />
                        {project.watermarkedImages?.includes(project.images[1]) && <Watermark />}
                      </>
                    ) : (
                      <>
-                       <img src={displayHeroImage} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${displayHeroImage}')`} />
+                       <img src={displayHeroImage} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${displayHeroImage}')`} />
                        {project.watermarkedImages?.includes(displayHeroImage) && <Watermark />}
                      </>
                    )}

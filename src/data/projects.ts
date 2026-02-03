@@ -421,10 +421,10 @@ export const projects: Project[] = [
     subCategory: ['Immersive Installations', 'Collaborative Environments'],
     year: '2007-2013',
     medium: 'VR Installation',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/atlas-varrier.png',
     description: 'ATLAS in silico is a physically interactive virtual reality installation that fuses dynamic media, computer vision, and spatialized multichannel audio with pioneering science. It functions as an expressive virtual reality context for large-scale data exploration. Rather than simply displaying numbers, it translates massive scientific datasets—specifically touching on metagenomics and biological sequences—into a visceral, navigable environment. It uses computer vision to track the viewer, allowing their physical presence to drive the audiovisual representation of the data, effectively bridging the gap between abstract information and physical perception.',
     description2: 'The project was the subject of significant academic inquiry, leading to publications such as "Algorithmic Object as Natural Specimen" in Leonardo and "Sensate Abstraction" in SPIE, which detailed hybrid strategies for handling multi-dimensional data. The work has been exhibited globally at major venues including the National Academy of Sciences, SIGGRAPH, the Perot Museum of Nature and Science, 9e2 (Seattle), and the Museum of Old and New Art (MONA) in Tasmania.',
-    images: ['/images/placeholder.png']
+    images: ['/images/ATLAS_mode1-head_on.png','/images/ATLAS_PRINT_SGO_grid.jpg']
   },
   // Historical: Varrier Display
   {
@@ -460,22 +460,21 @@ export const projects: Project[] = [
     subCategory: ['Collaborative Environments'],
     year: '2006-2013',
     medium: 'High-Performance Networked Media',
-    heroImage: '/images/CineGrid-TED Large.jpeg',
+    heroImage: '/images/Cinegrid_4K3D.jpg',
     description: 'CineGrid is a global, non-profit organization dedicated to the research and demonstration of ultra-high-quality digital media over high-speed photonic networks. At its core, the project functions as a specialized "collaboratory," integrating high-performance computing with the rigorous demands of digital cinema. By utilizing 10 Gbps optical networks, CineGrid enables the real-time distribution and collaborative editing of 4K, 8K, and stereoscopic 3D media across vast distances. This infrastructure effectively removes the geographical barriers of high-end production, allowing interdisciplinary teams to treat global networks as a singular, unified workspace.',
     description2: 'A highlight of my research included networking media infrastructure, culminating in the tri-continental premiere of 4K feature-length media.  This milestone successfully established new benchmarks for distributed cinema, proving that uncompressed, ultra-high-resolution streams could be synchronized across continents with minimal latency.',
-    images: ['/images/CineGrid-TED Large.jpeg']
+    images: ['/images/CineSAGE-ILM.1-sm.jpg','/images/CineGrid-TED Large.jpeg','/images/CineGridVroom1.jpg']
   },
   // Placeholder: HUVR (Heads-Up Virtual Reality)
   {
     slug: 'huvr',
     title: 'HUVR',
-    category: ['Inquiry'],
+    category: ['Creative','Inquiry'],
     subCategory: ['Display & Interaction Systems', 'Augmented Interventions'],
     year: '2010-2012',
     medium: 'Heads-Up Virtual Reality at UCSD',
-    heroImage: '/images/placeholder.png',
-    description: 'Placeholder for HUVR.',
-    images: ['/images/placeholder.png']
+    description: 'A small group of UCSD researchers have created a new, relatively low-cost augmented reality system that enables users to touch the virtual environment they are immersed in. The Heads-Up Virtual Reality device (HUVR) couples a consumer 3D HD flat screen TV with a half-silvered mirror to project any graphic image onto the user\'s hands and into the space surrounding them.',
+    images: ['/images/huvr_greg.jpg']
   },
   // Placeholder: Scalable City
   {
@@ -494,10 +493,10 @@ export const projects: Project[] = [
   {
     slug: 'moon-lust',
     title: 'Moon Lust',
-    category: ['Inquiry'],
+    category: ['Creative'],
     subCategory: ['Augmented Interventions'],
     year: '2012',
-    medium: 'Augmented Alternate Reality Game',
+    medium: 'Augmented Reality Alternate Reality Game',
     heroImage: '/images/placeholder.png',
     description: 'Placeholder for Moon Lust.',
     images: ['/images/placeholder.png']
@@ -506,26 +505,25 @@ export const projects: Project[] = [
   {
     slug: 'museum-of-future-objects-mofo',
     title: 'Museum of Future Objects (MOFO)',
-    category: ['Inquiry'],
+    category: ['Creative'],
     subCategory: ['Augmented Interventions'],
     year: '2013-2014',
-    medium: 'Augmented Alternate Reality Game',
-    heroImage: '/images/placeholder.png',
+    medium: 'Augmented Reality Alternate Reality Game',
     description: 'Placeholder for Museum of Future Objects (MOFO).',
-    images: ['/images/placeholder.png']
+    images: ['/images/MOFO.jpg']
   },
   // Placeholder: TeleMotions
   {
     slug: 'telemotions',
     title: 'TeleMotions',
-    category: ['Inquiry'],
-    subCategory: ['Performative Systems', 'Collaborative Environments'],
+    category: ['Creative'],
+    subCategory: ['Performative Systems'],
     year: '2011',
     medium: 'Telepresence Performance',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/TeleMotions4.jpg',
     description: 'TeleMotions was an experimental telepresence performance project developed by the Experimental Game Lab at the Qualcomm Institute (UCSD). The project functioned as an inquiry into networked collaboration, utilizing high-bandwidth optical networks to facilitate real-time, distributed performances between remote participants. By connecting physically separated performers through immersive media environments, TeleMotions sought to challenge traditional notions of "presence" and "place," creating a shared virtual stage where movement and sound could interact without geographical constraints.',
     description2: 'In my role as Technical Director at the lab, I managed the complex infrastructure required for such high-stakes, real-time media systems. This involved coordinating the logistical planning, latency management, and fault-tolerant network architecture necessary to ensure that human intuition and algorithmic logic could coexist seamlessly across a distributed network.',
-    images: ['/images/placeholder.png']
+    images: ['/images/TeleMotions2.jpg']
   },
   // Placeholder: ResoNations
   {
@@ -578,6 +576,19 @@ export const projects: Project[] = [
     description2: 'Shown at Qlik Qonnections 2019 in Dallas, TX',
     images: ['/images/EmergencyDrone3.jpeg']
   },
+  // Placeholder: Special Treatment
+  {
+    slug: 'special-treatment',
+    title: 'Special Treatment',
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
+    year: '2003-2005',
+    medium: 'Virtual Reality',
+    heroImage: '/images/STP_PHSC.jpg',
+    description: 'Special Treatment is an immersive and interactive Virtual Reality installation examining the strength and persistence of memory. An ominous journey by train car deposits viewers in a sparsely populated camp pieced together from plans, photographs and other artifacts from Auschwitz II/Birkenau, Poland. As visitors explore the camp and its architectural structures, conversations and ephemera of the past fade in and out of perception - at times almost tangible, at other times mere allusions. These structures and stories are not intended to be strictly historical or documentary. Each element is the foundation for the folding together of past and present; where the sounds and images of old memories blend with memories created by each new visitor. Special Treatment advances the audience from passive viewing to active experience by smoothly moving from present to past and back again. Special Treatment creates a landscape where glimpses and fragments of Birkenau establish a narrative framework where the events of the past continue to shape and be shaped by contemporary interpretations of those events. The full history and lesson of a place such as the death camp at Birkenau is seen not only in the records of those who survived or passed on their memories to us in the present, but in how those events are remembered and shaped by the people of today. The stories of these people grow with each new experience of Special Treatment, and the solidity of that space and the substance of those events becomes more concrete with each new visitor. The immersive experience allows each participant to inhabit the scene of these events, and as they leave the evidence of their own actions and memories, Special Treatment is continually transformed into a new potential memory. Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
+    description2: 'Special Treatment is continually transformed into a new potential memory. Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
+    images: ['/images/STP_RealMemory1.med.jpg']
+  },
   // Placeholder: Cultural Analytics
   {
     slug: 'cultural-analytics',
@@ -603,6 +614,19 @@ export const projects: Project[] = [
     description: 'In the context of the 2014 publication Augmented Reality Art: From an Emerging Technology to a Novel Creative Medium, this chapter serves as a pivotal investigation into the shift from technical spectacle to a nuanced creative discipline. Rather than focusing on the mere "suspension of disbelief" or the visual blending of the real and virtual, the text situates the medium as a platform for "social immersion". By exploring the cultural potential of mobile AR, it bridges the gap between art history, gaming culture, and contemporary practice. This positioning defines the chapter as a foundational study of how AR serves as an integrative work of art, where the "freedom" of the medium allows for a model of the world that is conditionally defined through participant interaction.',
     description2: 'Relating to the Manifest.AR collective\’s ethos in 2014, the chapter reflects the group\'s radical move toward locative and socially-driven interventions. It highlights a specific turn away from purely sensorial technology toward a "new social form of immersion" that prioritizes the connection between people across distance and time. As the collective was known for its interventionist approach—often placing digital objects in physical spaces like MoMA or the Venice Biennale—this chapter provides the theoretical backbone for those actions. It argues that the true power of the medium lies in "collaborative locative media," shifting the focus from the artist\’s individual vision to collective, social outcomes within the shared digital-physical landscape.',
     images: ['/images/placeholder.png']
+  },
+  // SPECFLIC
+  {
+    slug: 'specflic',
+    title: 'SPECFLIC',
+    category: ['Creative'],
+    subCategory: ['Augmented Intervention'],
+    year: '2006',
+    medium: 'Distributed Cinema',
+    heroImage: '/images/Specflic_bear_mulloy_01.jpg',
+    description: 'SPECFLIC uses novel transmission and display media and a new storytelling form called Distributed Social Cinema to expand a critical dialogue about the social and cultural effects of future technologies and public spaces.  Each iteration of the series is held in an iconic public space and is free and open to the public. SPECFLIC stories are all set in 2030, and arise from research-based speculations about the near future of that particular public institution. Usually, in a performance or cinema experience, the audience is admonished to turn off their cell phones and cease conversation. SPECFLIC seeks to integrate these devices (cell phones, laptops, mp3players, etc) with live tele-matic performance, pre-recorded media elements, street performers and the audience\'s own social activity to create a multi-modal story event.',
+    description2: 'Live ambient performances streamed through mobile video platforms are "mixed" and projected on public architecture to produce a new form of cinematic experience. I worked with Adriene Jenik in SPECFLIC 1.0 in La Jolla and SPECFLIC 2.0 in San Jose as Technical Director to identify and utilize transgressive digital media throughout the design and planning process. Physical architecture was transformed into immersive spaces where social experiences played out through digitally mediated audio and video streams (live and pre-recorded). During pre-production of SPECFLIC 2.0, I worked with Cinematographer John Pirozzi to assist with the HD shoot of Allison Janney and Richard Jenik in the MLK Library. I lead a large technical support team for SPECFLIC 2.0 which installed a complex network of projectors, cameras, microphones, speakers and computers inside, around and on top of the installation spaces.',
+    images: ['/images/specflic_infospherian300.jpg']
   },
   // Varrier at IEEE
   {
@@ -696,7 +720,7 @@ export const projects: Project[] = [
     dimensions: 'University of California, San Diego',
     heroImage: '/images/placeholder.png',
     description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
-    images: ['/images/placeholder.png']
+    images: ['/images/TeleTaiko.jpg']
   },
   // 4. Rensselaer Polytechnic Institute
   {
@@ -785,6 +809,18 @@ export const projects: Project[] = [
     description: 'Developed new business areas for a local ISP to offer web hosting and design services. We specialized in providing some of the first 3D VRML websites for the Chicago area.',
     images: ['/images/SGI_indy.jpeg']
   },
+  // Local ARt
+  {
+    slug: 'local-art',
+    title: 'Local ARt',
+    category: ['Creative'],
+    subCategory: ['Augmented Interventions'],
+    year: '2011',
+    medium: 'Augmented Reality Alternate Reality Game',
+    heroImage: '/images/FOR.2.jpeg',
+    description: 'Local ARt is a mobile Augmented Reality Alternate Reality Game developed in San Diego in 2011. The primary aim was to create a novel way of connecting two artist run galleries with a series of art walks and community cultural events; and playfully explore the relationship between public and private domains.',
+    images: ['/images/FOR.jpeg']
+  },
   // Professional Organizations
   // Manifest.AR
   {
@@ -818,9 +854,9 @@ export const projects: Project[] = [
     subCategory: ['Cultural Entrepreneurship', 'Immersive Installations'],
     year: '2001-2005',
     medium: 'Founding Member / President',
-    heroImage: '/images/placeholder.png',
     description: 'A 501(c)3 non-profit dedicated to propagating VR technologies into galleries and contemporary art museums. Facilitated installations at the Museum of Contemporary Art Chicago and the Block Museum. Led the creation of a VR installation using the Auschwitz-Birkenau concentration camp as a setting for exploring persistence and memory, based on a PHSCologram housed in the Museum of Jewish Heritage.',
-    images: ['/images/placeholder.png']
+    heroImage: '/images/AppliedInteractives_PortraitMain.jpg',
+    images: ['/images/VRPortalVideo.jpg','/images/VRPrtl_MCA.jpg']
   },
   // Updated: Sine::apsis Experiments
   {
