@@ -83,8 +83,8 @@ export const projects: Project[] = [
   {
     slug: 'delayed-vision',
     title: 'Delayed Vision',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Augmented Interventions', 'Display & Interaction Systems'],
+    category: ['Creative'],
+    subCategory: ['Augmented Interventions'],
     status: 'Work in Progress',
     year: '2026',
     medium: 'Android app running on  Galaxy A9+ Tablet',
@@ -673,7 +673,7 @@ export const projects: Project[] = [
   // Research Assistant (UIC/EVL)
   {
     slug: 'uic-evl',
-    title: 'Electronic Visualization Laboratory',
+    title: 'UIC\'s Electronic Visualization Laboratory',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems', 'Pedagogy & Labs'],
     year: '1998-2005',
@@ -699,7 +699,7 @@ export const projects: Project[] = [
   // 2. University of California, San Diego (Qualcomm Institute)
   {
     slug: 'ucsd-qualcomm',
-    title: 'Qualcomm Institute',
+    title: 'UCSD\'s Qualcomm Institute',
     category: ['Strategy','Inquiry'],
     subCategory: ['Pedagogy & Labs', 'Institutional Architecture'],
     year: '2012-2014',
@@ -712,7 +712,7 @@ export const projects: Project[] = [
   // 3. University of California, San Diego (CRCA)
   {
     slug: 'ucsd-crca',
-    title: 'CRCA',
+    title: 'UCSD\'s CRCA',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
     year: '2005-2012',
@@ -749,7 +749,7 @@ export const projects: Project[] = [
   // 7. Columbia College Chicago
   {
     slug: 'columbia-college-chicago',
-    title: 'Interactive Arts and Media',
+    title: 'Columbia\'s Interactive Arts and Media',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
     year: '2000-2003',
@@ -762,7 +762,7 @@ export const projects: Project[] = [
   // 8. School of the Art Institute of Chicago
   {
     slug: 'saic',
-    title: 'Art and Technology',
+    title: 'SAIC\'s Art and Technology',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
     year: '1999-2003',
@@ -787,7 +787,7 @@ export const projects: Project[] = [
   // 10. University of Illinois at Chicago (Lecturer)
   {
     slug: 'uic-lecturer',
-    title: 'Electronic Visualization Laboratory',
+    title: 'UIC\'s Electronic Visualization Laboratory',
     category: ['Inquiry'],
     subCategory: ['Pedagogy & Labs'],
     year: '1998-2000',
@@ -873,7 +873,7 @@ export const projects: Project[] = [
   // Software Studies Initiative
   {
     slug: 'software-studies',
-    title: 'Software Studies Initiative',
+    title: 'UCSD\'s Software Studies Initiative',
     category: ['Inquiry', 'Strategy'],
     subCategory: ['Pedagogy & Labs', 'Publications & Theory'],
     year: '2008-2012',
@@ -885,7 +885,7 @@ export const projects: Project[] = [
   // Experimental Game Lab
   {
     slug: 'experimental-game-lab',
-    title: 'Experimental Game Lab',
+    title: 'UCSD\'s Experimental Game Lab',
     category: ['Inquiry', 'Creative'],
     subCategory: ['Pedagogy & Labs', 'Immersive Installations'],
     year: '2005-2012',
