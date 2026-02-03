@@ -12,7 +12,7 @@ export interface Project {
   weight?: string;
   price?: string;
   note?: string;
-  heroImage: string;
+  heroImage?: string;
   quote?: string;
   description: string;
   description2?: string;
@@ -460,10 +460,10 @@ export const projects: Project[] = [
     subCategory: ['Collaborative Environments'],
     year: '2006-2013',
     medium: 'High-Performance Networked Media',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/CineGrid-TED Large.jpeg',
     description: 'CineGrid is a global, non-profit organization dedicated to the research and demonstration of ultra-high-quality digital media over high-speed photonic networks. At its core, the project functions as a specialized "collaboratory," integrating high-performance computing with the rigorous demands of digital cinema. By utilizing 10 Gbps optical networks, CineGrid enables the real-time distribution and collaborative editing of 4K, 8K, and stereoscopic 3D media across vast distances. This infrastructure effectively removes the geographical barriers of high-end production, allowing interdisciplinary teams to treat global networks as a singular, unified workspace.',
     description2: 'A highlight of my research included networking media infrastructure, culminating in the tri-continental premiere of 4K feature-length media.  This milestone successfully established new benchmarks for distributed cinema, proving that uncompressed, ultra-high-resolution streams could be synchronized across continents with minimal latency.',
-    images: ['/images/placeholder.png']
+    images: ['/images/CineGrid-TED Large.jpeg']
   },
   // Placeholder: HUVR (Heads-Up Virtual Reality)
   {
@@ -496,8 +496,8 @@ export const projects: Project[] = [
     title: 'Moon Lust',
     category: ['Inquiry'],
     subCategory: ['Augmented Interventions'],
-    year: 'TBD',
-    medium: 'TBD',
+    year: '2012',
+    medium: 'Augmented Alternate Reality Game',
     heroImage: '/images/placeholder.png',
     description: 'Placeholder for Moon Lust.',
     images: ['/images/placeholder.png']
@@ -508,8 +508,8 @@ export const projects: Project[] = [
     title: 'Museum of Future Objects (MOFO)',
     category: ['Inquiry'],
     subCategory: ['Augmented Interventions'],
-    year: 'TBD',
-    medium: 'TBD',
+    year: '2013-2014',
+    medium: 'Augmented Alternate Reality Game',
     heroImage: '/images/placeholder.png',
     description: 'Placeholder for Museum of Future Objects (MOFO).',
     images: ['/images/placeholder.png']
@@ -540,6 +540,44 @@ export const projects: Project[] = [
     description2: 'In my capacity as Technical Director for this performance, I was responsible for the rigorous logistical planning and fault-tolerant network architecture required to maintain synchronicity across continents. Managing the latency and audio-visual fidelity of ResoNations required more than just technical oversight; it demanded a strategic approach to Collaborative Environments, where human artistic intuition could coexist with complex algorithmic logic.',
     images: ['/images/placeholder.png']
   },
+  // Placeholder: Immersive Analytics
+  {
+    slug: 'immersive-analytics',
+    title: 'Immersive Analytics',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
+    year: '2012-2018',
+    medium: 'Immersive Analytics',
+    heroImage: '/images/ImmersiveAnalyticsLarge.jpeg',
+    description: 'I integrated Qlik Sense APIs with a Virtual Reality environment',
+    description2: 'Shown at Qlik Qonnections 2018 in Orlando, FL',
+    images: ['/images/ImmersiveAnalyticsSIGGRAPH.jpg']
+  },
+  // Placeholder: GenAI
+  {
+    slug: 'qlik-genai',
+    title: 'Qlik AI',
+    category: ['Inquiry'],
+    subCategory: ['Publications & Theory'],
+    year: '2023',
+    medium: 'Generative AI',
+    heroImage: '/images/ImmersiveAnalyticsLarge.jpeg',
+    description: 'I integrated Qlik Sense APIs with Generative AI to show the Art of the Possible',
+    images: ['/images/placeholder.png']
+  },
+  // Placeholder: Emergency Response Drone
+  {
+    slug: 'emergency-response-drone',
+    title: 'Emerngency Response Drove',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
+    year: '2019',
+    medium: 'Internet of Things Analytics',
+    heroImage: '/images/EmergencyDrone2.jpeg',
+    description: 'I integrated Qlik Sense APIs with an AWS DeepSight camera mounted to an industrial drone',
+    description2: 'Shown at Qlik Qonnections 2019 in Dallas, TX',
+    images: ['/images/EmergencyDrone3.jpeg']
+  },
   // Placeholder: Cultural Analytics
   {
     slug: 'cultural-analytics',
@@ -548,10 +586,10 @@ export const projects: Project[] = [
     subCategory: ['Publications & Theory'],
     year: '2012-2014',
     medium: 'Immersive Analytics',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/ToddCalit2AdvisoryCommitteeMeeting-06-05-14 Large.jpeg',
     description: 'The GeoMedia Analytics Platform was a research project that transformed thousands of Flickr and Instagram photos into a spatialized visual history of New York City. By utilizing a custom "Flickr Harvester" and high-performance computing, the project analyzed the collective output of social media users along Park Avenue and other major urban corridors. This allowed for the creation of massive, high-resolution "photo clouds" that layered the city\'s digital metadata directly onto its physical geography, revealing invisible cultural patterns and the shifting rhythms of urban life.',
     description2: 'In my capacity as Technical Director for the Software Studies Initiative, I leveraged the Vroom and HIPerSpace tiled display environments to visualize these datasets at an unprecedented scale. This work moved beyond simple data mapping to explore how software and social algorithms influence human behavior and architectural perception. Within my current portfolio, this project served as a cornerstone of Inquiry, demonstrating my ability to synthesize Public Data, Visual Analytics, and Immersive Design to make the hidden infrastructures of our modern society visible.',
-    images: ['/images/placeholder.png']
+    images: ['/images/tiledDisplayGeo.jpg','/images/toddHololens.jpg']
   },
   // Publications & Theory: Immersive Art in Augmented Reality (Springer Chapter)
   {
@@ -630,9 +668,9 @@ export const projects: Project[] = [
     subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
     year: '2014-present',
     medium: 'Sr. Director of Applied Research & Emerging Technologies',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/QlikSF.jpg',
     description: 'Lead a team of ML engineers accelerating our long-term roadmap, defining strategy and developing new capabilities leveraging emerging media platforms. My deep empathy for customer and user needs paired with my passion for innovation drives my creative, yet data-driven approach to prioritization. I have extensive prototyping and presentation experience and enjoy providing thought leadership in executive briefings, conference keynotes and academic symposiums globally. At Qlik, I have previously held roles as Director of Product Management as well as a Sr. Solution Architect.',
-    images: ['/images/Qlik_Logo_No_Trademark_2_Color_Positive_RGB.png']
+    images: ['/images/qlikTaiko.jpg']
   },
   // 2. University of California, San Diego (Qualcomm Institute)
   {
@@ -645,7 +683,7 @@ export const projects: Project[] = [
     dimensions: 'University of California, San Diego',
     heroImage: '/images/atkinson-720.jpg',
     description: 'Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive systems using VR and large-format tiled displays. Focus on leading interdisciplinary teams of academic and industry researchers to create discovery platforms for large-scale geospatial, metagenomics and healthcare data. Instructed on Digital Imaging, Collaborative Image production, Web 2.0 Interaction, Transmedia, Programming, Augmented Reality',
-    images: ['/images/placeholder.png']
+    images: ['/images/atkinson-720.jpg']
   },
   // 3. University of California, San Diego (CRCA)
   {
@@ -743,9 +781,9 @@ export const projects: Project[] = [
     subCategory: ['R&D Leadership'],
     year: '1995-1996',
     medium: 'Webmaster',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/netsight.png',
     description: 'Developed new business areas for a local ISP to offer web hosting and design services. We specialized in providing some of the first 3D VRML websites for the Chicago area.',
-    images: ['/images/placeholder.png']
+    images: ['/images/SGI_indy.jpeg']
   },
   // Professional Organizations
   // Manifest.AR
@@ -768,10 +806,9 @@ export const projects: Project[] = [
     subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
     year: '2010-2012',
     medium: 'Honorary Board Member',
-    heroImage: '/images/placeholder.png',
     note: 'Northampton, UK',
     description: 'A state-of-the-art technology centre in Northampton, UK designed to bring 3D immersive stereo visualisation and high performance computing to the local University and wider community.',
-    images: ['/images/placeholder.png']
+    images: ['/images/Northampton.jpg']
   },
   // Applied Interactives, N.F.P.
   {
@@ -829,8 +866,42 @@ export const projects: Project[] = [
     subCategory: ['R&D Leadership'],
     year: '1998-2000',
     medium: 'Web Developer / Project Manager',
-    heroImage: '/images/placeholder.png',
     description: 'Project manager for dynamic, database-driven websites. Installed and administered web server and e-commerce systems, collaborating on interactive site creation and site layout programming.',
-    images: ['/images/placeholder.png']
+    images: ['/images/poweruser.jpg']
+  },
+  // Minority Report: Qlik Gesture
+  {
+    slug: 'qlik-gesture',
+    title: 'Qlik Gesture',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
+    year: '2014-2015',
+    medium: 'Hand Gesture Recognition',
+    heroImage: '/images/QlikQonnections.jpeg',
+    description: 'After only three months of employment with Qlik, I was asked to build a gestural interface for Qlik Sense. This was a challenging project as it required me to learn a new technology stack and to work with a new team. I was able to complete the project in a short amount of time and it was so well received by the Qlik community that I was asked to present it at Qlik Qonnections 2014 in Orlando, FL.',
+    description2: 'Qlik Summit 2014, Orlando, FL and Qlik Qonnections 2015, Dallas, TX. Demonstration: Qlik Sense Gestural Interface.',
+    images: ['/images/QlikQonnections.jpeg']
+  },
+  // Day in the Life
+  {
+    slug: 'qlik-day-in-the-life',
+    title: 'Day in the Life',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
+    year: '2016',
+    medium: 'Augmented Reality',
+    description: 'day in the life of a qlik developer',
+    images: ['/images/QlikQonnectionsPano.jpeg']
+  },
+  // Insight Chatbot
+  {
+    slug: 'qlik-insight-chatbot',
+    title: 'Insight Chatbot',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
+    year: '2017',
+    medium: 'Web Application',
+    description: 'I helped build a chatbot for Qlik Sense that uses the Qlik Sense API to answer questions about the data. Qlik eventually acquired the company and integrated the chatbot into Qlik Sense. This was long before Generative AI was a thing.',
+    images: ['/images/InsightChatbotLarge.jpeg']
   }
 ];

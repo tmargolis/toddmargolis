@@ -16,16 +16,21 @@ const currentIndex = projects.findIndex(p => p.slug === project.slug);
 const prevProject = projects[currentIndex - 1] || projects[projects.length - 1];
 const nextProject = projects[currentIndex + 1] || projects[0];
 
+// Use first image as hero when no specific hero image is set (placeholder or empty)
+const displayHeroImage = (project.heroImage === '/images/placeholder.png' || !project.heroImage?.trim()) && project.images?.length > 0
+  ? project.images[0]
+  : project.heroImage;
+
 // Include hero image in carousel if it's not already in the images array
-const carouselImages = project.images.includes(project.heroImage) 
+const carouselImages = project.images.includes(displayHeroImage) 
   ? project.images 
-  : [project.heroImage, ...project.images];
+  : [displayHeroImage, ...project.images];
 
 // For series projects, include hero image if not already in images array
 const seriesImages = (() => {
-  const baseImages = project.images.includes(project.heroImage) 
+  const baseImages = project.images.includes(displayHeroImage) 
     ? project.images 
-    : [project.heroImage, ...project.images];
+    : [displayHeroImage, ...project.images];
   return project.contextImage 
     ? [project.contextImage, ...baseImages]
     : baseImages;
@@ -66,13 +71,12 @@ const aboutStatement = project.category?.length
   <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
     <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
     {project.videos && project.videos.length > 0 ? (
-       /* Special case: If the hero should be a video, we could check here or just use image. 
-          Currently using heroImage as primary. */
-        <img src={project.heroImage} alt={project.title} class="w-full h-full object-cover cursor-zoom-in" onclick={`openLightbox('${project.heroImage}')`} />
+       /* Special case: If the hero should be a video, we could check here or just use image. */
+        <img src={displayHeroImage} alt={project.title} class="w-full h-full object-cover cursor-zoom-in" onclick={`openLightbox('${displayHeroImage}')`} />
     ) : (
-        <img src={project.heroImage} alt={project.title} class="w-full h-full object-cover cursor-zoom-in" onclick={`openLightbox('${project.heroImage}')`} />
+        <img src={displayHeroImage} alt={project.title} class="w-full h-full object-cover cursor-zoom-in" onclick={`openLightbox('${displayHeroImage}')`} />
     )}
-    {project.watermarkedImages?.includes(project.heroImage) && <Watermark />}
+    {project.watermarkedImages?.includes(displayHeroImage) && <Watermark />}
     
     <div class="absolute inset-0 z-20 flex flex-col justify-end p-6 md:p-12 pb-24 pointer-events-none">
       {project.isSeries && (
@@ -203,10 +207,9 @@ const aboutStatement = project.category?.length
       ) : (
         /* Standard Single Work Layout */
         <>
-          {/* Show video if it exists, otherwise conditionally show carousel */}
-          {(project.videos && project.videos.length > 0) || !['black-hole-vision', 'the-edge', '3d-horizons','cmb-vr','redshifter', 'audio-counter'].includes(project.slug) ? (
+          {/* Show top block only when: video exists, or exactly 1 image (show that image at top) */}
+          {(project.videos && project.videos.length > 0) || (project.images && project.images.length === 1) ? (
             <div class="relative w-full aspect-video bg-gray-900 overflow-x-auto snap-x snap-mandatory flex hide-scrollbar items-center justify-center">
-               {/* Check if Video Exists for Main Display */}
                {project.videos && project.videos.length > 0 ? (
                   <video 
                      class="w-full h-full object-cover" 
@@ -220,19 +223,17 @@ const aboutStatement = project.category?.length
                      <source src={project.videos[0]} type="video/mp4" />
                      Your browser does not support the video tag.
                   </video>
-               ) : (
-                  project.images && project.images.length > 0 && project.images[0] ? (
-                    <div class="relative w-full h-full">
-                      <img 
-                        src={project.images[0]} 
-                        class="w-full h-full object-cover cursor-zoom-in" 
-                        alt="Detail view" 
-                        onclick={`openLightbox('${project.images[0]}')`}
-                      />
-                      {project.watermarkedImages?.includes(project.images[0]) && <Watermark />}
-                    </div>
-                  ) : null
-               )}
+               ) : project.images && project.images.length === 1 && project.images[0] ? (
+                  <div class="relative w-full h-full">
+                    <img 
+                      src={project.images[0]} 
+                      class="w-full h-full object-cover cursor-zoom-in" 
+                      alt="Detail view" 
+                      onclick={`openLightbox('${project.images[0]}')`}
+                    />
+                    {project.watermarkedImages?.includes(project.images[0]) && <Watermark />}
+                  </div>
+               ) : null}
             </div>
           ) : null}
 
@@ -267,8 +268,8 @@ const aboutStatement = project.category?.length
                      </>
                    ) : (
                      <>
-                       <img src={project.heroImage} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.heroImage}')`} />
-                       {project.watermarkedImages?.includes(project.heroImage) && <Watermark />}
+                       <img src={displayHeroImage} class="w-full scroll-reveal-color transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${displayHeroImage}')`} />
+                       {project.watermarkedImages?.includes(displayHeroImage) && <Watermark />}
                      </>
                    )}
                 </div>
