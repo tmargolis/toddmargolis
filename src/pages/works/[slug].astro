@@ -64,6 +64,20 @@ const categoryStatements: Record<string, string> = {
 const aboutStatement = project.category?.length
   ? categoryStatements[project.category[0]] ?? categoryStatements.Creative
   : categoryStatements.Creative;
+
+/** Parse Vimeo or YouTube link into iframe embed URL, or null if not supported. */
+function getVideoEmbedUrl(link: string | undefined): string | null {
+  if (!link?.trim()) return null;
+  const url = link.trim();
+  const vimeoMatch = url.match(/(?:vimeo\.com\/|player\.vimeo\.com\/video\/)(\d+)/i);
+  if (vimeoMatch) return `https://player.vimeo.com/video/${vimeoMatch[1]}`;
+  const ytMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/);
+  if (ytMatch) return `https://www.youtube.com/embed/${ytMatch[1]}`;
+  return null;
+}
+const videoEmbedUrl = getVideoEmbedUrl(project.videoLink);
+const hasVideo = !!videoEmbedUrl || !!(project.videos && project.videos.length > 0);
+const showContentImages = project.images.length >= 2 || (hasVideo && project.images.length >= 1);
 ---
 
 <Layout title={project.title}>
@@ -207,10 +221,18 @@ const aboutStatement = project.category?.length
       ) : (
         /* Standard Single Work Layout */
         <>
-          {/* Show top block only when: video exists, or exactly 1 image (show that image at top) */}
-          {(project.videos && project.videos.length > 0) || (project.images && project.images.length === 1) ? (
+          {/* Show top block when: videoLink, self-hosted video, or exactly 1 image */}
+          {videoEmbedUrl || (project.videos && project.videos.length > 0) || (project.images && project.images.length === 1) ? (
             <div class="relative w-full aspect-video bg-gray-900 overflow-x-auto snap-x snap-mandatory flex hide-scrollbar items-center justify-center">
-               {project.videos && project.videos.length > 0 ? (
+               {videoEmbedUrl ? (
+                  <iframe
+                    src={videoEmbedUrl}
+                    class="w-full h-full"
+                    title={`Video: ${project.title}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  />
+               ) : project.videos && project.videos.length > 0 ? (
                   <video 
                      class="w-full h-full object-cover" 
                      autoplay 
@@ -242,7 +264,7 @@ const aboutStatement = project.category?.length
                 <div class="flex-1 font-mono text-sm text-gray-300 leading-relaxed text-justify space-y-4">
                    {project.description.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
                 </div>
-                {project.images.length >= 2 && (
+                {showContentImages && (
                 <div class="flex-1 relative">
                    {project.images[0] && <img src={project.images[0]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[0]}')`} />}
                    {project.watermarkedImages?.includes(project.images[0]) && <Watermark />}
@@ -254,7 +276,7 @@ const aboutStatement = project.category?.length
                  <div class="flex-1 font-mono text-sm text-gray-300 leading-relaxed text-justify space-y-4">
                    {project.description2 && project.description2.split('\n\n').map((para) => para.trim() && <p>{para.trim()}</p>)}
                 </div>
-                {project.images.length >= 2 && (
+                {showContentImages && (
                 <div class="flex-1 relative">
                    {project.images[2] ? (
                      <>

@@ -19,6 +19,7 @@ export interface Project {
   description3?: string;
   images: string[];
   videos?: string[];
+  videoLink?: string;
   isSeries?: boolean;
   imageTitles?: string[];
   imageDescriptions?: string[];
@@ -225,6 +226,24 @@ export const projects: Project[] = [
       '/images/gsmf.gif'
     ],
     watermarkedImages: ['/images/Audio_Stats.png', '/images/gsmf.gif']
+  },
+  // 6. Perfect Parlor
+  {
+    slug: 'perfect-parlor',
+    title: 'Perfect Parlor',
+    category: ['Creative'],
+    subCategory: ['Performative Systems'],
+    year: '2002-2003',
+    medium: 'Virtual Reality',
+    heroImage: '/images/parlorCropped.png',
+    videoLink: 'https://vimeo.com/26047631?fl=pl&fe=cm',
+    description: 'The Perfect Parlor explores how technology can augment human communication, interaction and perceptions when incorporated into personal, social and work spaces. It is a networked tele-immersive virtual environment, where people from around the world can come together in a shared space to talk, play and perform. The Victorian parlor, a metaphor of global socialization is the setting for this virtual experience. Although the historic \'parlor\' has come and gone from our homes, the role it has served in Victorian culture can be used as a model in our mediated culture today.',
+    description2: 'The Perfect Parlor creates a platform for communications, where networked avatars have shared experiences. It is a place for infinite stories, and each story having multiple endings. It is not a static experience for each person to consistently recycle the same perspective. Instead it is a space for individuals to create meaningful life experiences and perpetuate their own personal narratives.',
+    description3: 'The Perfect Parlor is an environment to explore social interaction in online communities. Participants from Chicago, New York, Indiana, Sweden and the Netherlands have interacted with each other via the networked VR installation.',
+    images: [
+      '/images/perfect1.1.jpg',
+      '/images/perfect3.jpg'
+    ]
   },
   // 7. The Edge
   {
@@ -467,6 +486,20 @@ export const projects: Project[] = [
     description2: 'A highlight of my research included networking media infrastructure, culminating in the tri-continental premiere of 4K feature-length media.  This milestone successfully established new benchmarks for distributed cinema, proving that uncompressed, ultra-high-resolution streams could be synchronized across continents with minimal latency.',
     images: ['/images/CineSAGE-ILM.1-sm.jpg','/images/CineGrid-TED Large.jpeg','/images/CineGridVroom1.jpg']
   },
+  // Confluxus
+  {
+    slug: 'confluxus',
+    title: 'Confluxus',
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
+    year: '20001',
+    medium: 'Networked Virtual Reality',
+    heroImage: '/images/confluxus.jpg',
+    description: 'Confluxus is a collaborative virtual reality artwork which is procedurally generated through user interaction. The space is designed to be a community meeting area where participants from varied backgrounds can come together in a tele-immersive environment and cooperate to create a shared experience. Participants were able to join into the shared space from physically remote VR systems. Through the passage of time, the space evolves into a collective expression of the participants intentions. The virtual objects and activities in the space begin as pre-determined constructs by the artists and gradually develop based on user-input.',
+    description2: 'Confluxus is an architectural portal that reacts to the positions and movements of the users within it by revealing only the parts of the structure that are within users\' proximity. Within this space, the participants can see each others\' avatars leaving trails over time from their wake in the 3D architectural grid. From here, participants are able to move to other artworks.',
+    images: ['/images/confluxus_sm.jpg'],
+    videoLink: 'https://vimeo.com/25293365?fl=pl&fe=cm'
+  },
   // Placeholder: HUVR (Heads-Up Virtual Reality)
   {
     slug: 'huvr',
@@ -663,8 +696,9 @@ export const projects: Project[] = [
     subCategory: ['Immersive Installations'],
     year: '2003-2005',
     medium: 'Virtual Reality',
-    collaborators: ['Geoffrey A. Baum','Keith Miller','Tim Portlock'],
+    collaborators: ['Geoffrey A. Baum','Keith Miller','Tim Portlock', 'Sabrina Raaf'],
     heroImage: '/images/STP_PHSC.jpg',
+    videoLink: 'https://vimeo.com/25600185',
     description: 'Special Treatment is an immersive and interactive Virtual Reality installation examining the strength and persistence of memory. An ominous journey by train car deposits viewers in a sparsely populated camp pieced together from plans, photographs and other artifacts from Auschwitz II/Birkenau, Poland. As visitors explore the camp and its architectural structures, conversations and ephemera of the past fade in and out of perception - at times almost tangible, at other times mere allusions. These structures and stories are not intended to be strictly historical or documentary. Each element is the foundation for the folding together of past and present; where the sounds and images of old memories blend with memories created by each new visitor.',
     description2: 'Special Treatment advances the audience from passive viewing to active experience by smoothly moving from present to past and back again. Special Treatment creates a landscape where glimpses and fragments of Birkenau establish a narrative framework where the events of the past continue to shape and be shaped by contemporary interpretations of those events. The full history and lesson of a place such as the death camp at Birkenau is seen not only in the records of those who survived or passed on their memories to us in the present, but in how those events are remembered and shaped by the people of today. The stories of these people grow with each new experience of Special Treatment, and the solidity of that space and the substance of those events becomes more concrete with each new visitor. The immersive experience allows each participant to inhabit the scene of these events, and as they leave the evidence of their own actions and memories, Special Treatment is continually transformed into a new potential memory.',
     description3: 'Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
@@ -857,13 +891,14 @@ export const projects: Project[] = [
     title: '(art)n Laboratory',
     category: ['Creative', 'Inquiry','Strategy'],
     subCategory: ['Tangible Artifacts', 'Display & Interaction Systems','Cultural Entrepreneurship'],
-    year: '1999-2000',
+    year: '1999-2001',
     medium: 'Artist-in-residence, Curator',
     heroImage: '/images/artnLarge.jpeg',
     description: 'Produced 3D artwork based on PHSCologram and ImmersaGram technology utilizing 3D modeling and animation. Served as project lead for a searchable image-database website and managed network systems and web server administration.',
     images: ['/images/edPachkeLarge.jpg','/images/BattleOfMidwayLarge.jpeg'],
     description2: 'Co-produced artwork for a permanent installation at the Chicago Midway Airport to commemorate the Battle of Midway. Curated an exhibition of ImmersaGrams (Virtual Reality Snapshots) by a group of international artists.',
-    collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Ellen Sandor']
+    collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Ellen Sandor'],
+    videoLink: 'https://vimeo.com/25333525?fl=pl&fe=cm'
   },
   // 10. University of Illinois at Chicago (Lecturer)
   {
@@ -942,6 +977,21 @@ export const projects: Project[] = [
     description: 'A state-of-the-art technology centre in Northampton, UK designed to bring 3D immersive stereo visualisation and high performance computing to the local University and wider community.',
     images: ['/images/Northampton.jpg']
   },
+  // LOCKUP
+  {
+    slug: 'lockup',
+    title: 'LOCKUP',
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
+    year: '2000',
+    medium: 'Virtual Reality Installation',
+    description: 'LOCKUP is an installation, performance and interactive narrative in Virtual Reality that explores the realm of possibilities open to us when we alter life courses through important decision making. Using a transgressive story line, the user is transcended into a criminal world where their fate can be determined by the choices made throughout the piece. A totally immersive suspension of disbelief is achieved via physical interaction with virtual and real objects and an intellectual and emotional connection to the characters and plight of the user\'s survival. Two performers in the CAVE™ with the user interact in a "good-cop/bad-cop" method to provide guidance and encouragement.',
+    description2: 'The artwork was originally designed to take advantage of the physical installation space by actually locking the user into the CAVE™ Virtual Reality Theater behind metal bar doors. The user would be forced to wear an enhanced straitjacket that contains temperature, heart rate and vibration input and output sensors. There would be surveillance video cameras that watch the user and the audience and incorporate and recontextualize these images back into the artwork.',
+    description3: 'Special thanks to Dan Sandin, Dave Pape, Alan Millman and UIC\'s Electronic Visualization Laboratory to help make this work possible.',
+    heroImage: '/images/LOCKUP.jpg',
+    images: ['/images/phase4.jpg','/images/phase5.jpg'],
+    videoLink: 'https://vimeo.com/25295866?fl=pl&fe=cm'
+  },
   // Applied Interactives, N.F.P.
   {
     slug: 'applied-interactives',
@@ -949,6 +999,7 @@ export const projects: Project[] = [
     category: ['Strategy', 'Creative'],
     subCategory: ['Cultural Entrepreneurship', 'Immersive Installations'],
     year: '2001-2005',
+    videoLink: 'https://vimeo.com/26047034?fl=pl&fe=cm',
     medium: 'Founding Member / President',
     collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Tim Portlock', 'Ben Chang'],
     description: 'A 501(c)3 non-profit dedicated to propagating VR technologies into galleries and contemporary art museums. Led the creation of a VR installation using the Auschwitz-Birkenau concentration camp as a setting for exploring persistence and memory, based on a PHSCologram housed in the Museum of Jewish Heritage.',
