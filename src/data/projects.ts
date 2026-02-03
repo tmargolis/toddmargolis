@@ -426,7 +426,7 @@ export const projects: Project[] = [
     heroImage: '/images/atlas-varrier.png',
     description: 'ATLAS in silico is a physically interactive virtual reality installation that fuses dynamic media, computer vision, and spatialized multichannel audio with pioneering science. It functions as an expressive virtual reality context for large-scale data exploration. Rather than simply displaying numbers, it translates massive scientific datasets—specifically touching on metagenomics and biological sequences—into a visceral, navigable environment. It uses computer vision to track the viewer, allowing their physical presence to drive the audiovisual representation of the data, effectively bridging the gap between abstract information and physical perception.',
     description2: 'The project was the subject of significant academic inquiry, leading to publications such as "Algorithmic Object as Natural Specimen" in Leonardo and "Sensate Abstraction" in SPIE, which detailed hybrid strategies for handling multi-dimensional data. The work has been exhibited globally at major venues including the National Academy of Sciences, SIGGRAPH, the Perot Museum of Nature and Science, 9e2 (Seattle), and the Museum of Old and New Art (MONA) in Tasmania.',
-    images: ['/images/ATLAS_mode1-head_on.png','/images/ATLAS_PRINT_SGO_grid.jpg']
+    images: ['/images/Screenshot-16.png','/images/ATLAS_PRINT_SGO_grid.jpg']
   },
   // Historical: Varrier Display
   {
@@ -475,8 +475,11 @@ export const projects: Project[] = [
     subCategory: ['Display & Interaction Systems', 'Augmented Interventions'],
     year: '2010-2012',
     medium: 'Heads-Up Virtual Reality at UCSD',
-    description: 'A small group of UCSD researchers have created a new, relatively low-cost augmented reality system that enables users to touch the virtual environment they are immersed in. The Heads-Up Virtual Reality device (HUVR) couples a consumer 3D HD flat screen TV with a half-silvered mirror to project any graphic image onto the user\'s hands and into the space surrounding them.',
-    images: ['/images/huvr_greg.jpg'],
+    description: 'A small group of UCSD researchers have created a new, relatively low-cost augmented reality system that enables users to touch the virtual environment they are immersed in. The Heads-Up Virtual Reality device (HUVR) couples a consumer 3D HD flat screen TV with a half-silvered mirror to project any graphic image onto the user\'s hands and into the space surrounding them. With his or her head position optically tracked to generate the correct perspective view, the user maneuvers a force-feedback (haptic) device to interact with the 3D image, literally "touching" the object\'s angles and contours as if it was a tangible physical object.',
+    description2: 'HUVR can be used for training and education in structural and mechanical engineering, archaeology and medicine as well as other tasks that require hand-eye coordination. One of the most unique characteristics of HUVR is that a user can place their hands inside of the virtual environment without occluding the 3D image. Built using open-source software and consumer level hardware, HUVR offers users a tactile experience in an immersive environment that is functional, affordable and scalable.',
+    description3: 'I contributed to the overall design and system integration of HUVR. Additionally, I consulted on haptics, screen evaluation and testing, mirror surface selection, application development and tele-collaboration configurations. I lead the development of wireless head tracking solutions for HUVR. Two versions of tracking were implemented: a high end VICON system and a custom affordable webcam version. The VICON solution is robust, reliable and accurate, but comes with a significant price tag. The custom solution uses OpenCV and a $11 surveillance camera. The OpenCV tracker uses Haar?s cascades to perform real-time facial detection with Lucas-Kanade optical flow for tracking XY movement. For more information about HUVR, please review my research paper. Supported by the California Institute for Telecommunications and Information Technology (Calit2) at the University of California, San Diego & King Abdullah University of Science and Technology (KAUST).',
+    heroImage: '/images/huvr_greg.jpg',
+    images: ['/images/HUVR-SC10.jpeg','/images/DualHUVRatSC10.jpeg'],
     collaborators: ['Greg Dawe', 'Dan Sandin', 'Tom DeFanti']
   },
   // Placeholder: Scalable City
@@ -506,6 +509,45 @@ export const projects: Project[] = [
     description: 'Moon Lust is a speculative project that explores global interests and issues pertaining to lunar exploration and habitation. As a curated mobile augmented reality exhibition, Moon Lust hopes to facilitate a dialogue about topics such as lunar mining, space tourism, celestial territories, space ecology and policy, by locating augmented visualizations in and around the Adler Planetarium. The project launched June 21 2012 and remains as a permanent AR exhibition.',
     images: ['/images/SERL.jpg']
   },
+  // Promotional Consideration
+  {
+    slug: 'promotional-consideration',
+    title: 'Promotional Consideration',
+    category: ['Creative'],
+    subCategory: ['Augmented Interventions'],
+    year: '2012',
+    collaborators: ['Tracy Cornish'],
+    medium: 'Augmented Reality Alternate Reality Game',
+    heroImage: '/images/Promos.jpg',
+    description: 'Promotional Considerations is a speculative project designed to articulate and anticipate the needs, desires and concerns of lunar habitation. Blending current lunar research with models of private industry, we can foresee the types of products and services that will emerge for lunar settlers. Each company is represented through augmented reality advertisements as well as accompanying micro-sites.',
+    description2: 'The sites are linked to forums to encourage discussion about the issues that the advertisements provoke. Promotional considerations points to larger concerns about life on the moon ranging from the physiological and pyschological effects of individuals who inhabit it, to higher order questions about how the "common heritage" of celestial bodies is affected by private industry interests and concepts of ownership.',
+    images: ['/images/newMoon.jpg','/images/rareEarth.jpg']
+  },
+  // Out of the Box
+  {
+    slug: 'out-of-the-box',
+    title: 'Out of the Box',
+    category: ['Creative'],
+    subCategory: ['Augmented Interventions'],
+    year: '2012',
+    collaborators: ['Tracy Cornish'],
+    medium: 'Augmented Reality Alternate Reality Game',
+    heroImage: '/images/darp.jpg',
+    description: 'As an exhibition, Out of the Box consists of Virtual Reality artifacts (VRAs) re-contextualized in mobile augmented reality. Viewing the VRA and choosing how to interact with it is the most basic form of participation. The choice, however affects the experience of other participants. In addition, the participant can tweet or facebook activities from within the AR browser which are aggregated into website forums for discussion, inquiry and action. A deeper level of interactivity is built into the experience through a transmedia story, more specifically an ARG which provides participants the option to delve into the narrative that unfolds across social media, websites, forums and mAR. The story develops differently depending on the entry point into the project, with the possibility of two people playing side by side having completely different yet connected experiences. Physical installations offer an additional level of interactivity. Employing the ARG concept of “this is not a game”, these fictional HQs provide real-time updates of players/VRA locations, broadcast media particular to the organization, and live actors fulfilling the roles of characters.',
+    description2: 'The deep backstory designed for narrative immersion, the integration of real world media platforms and live events, in conjunction a with broad range of social interactivity provides a framework which fosters social immersion within mAR. With this in mind we propose the term augmented social immersion to describe this integrated form of mAR social immersion.',
+    images: ['/images/OOTB.jpg','/images/protecscreenshot.jpg']
+  },
+  // Money Grab
+  {
+    slug: 'money-grab',
+    title: 'Money Grab',
+    category: ['Creative'],
+    subCategory: ['Augmented Interventions'],
+    year: '2011',
+    medium: 'Augmented Reality Alternate Reality Game',
+    description: 'Grab that $$$ before the bankers do! #OccupyWallSt. Using the Augmented Reality browser Layar, anyone can open this mobile app and see money raining down all around you. This is one piece in a series entitled Party at my Place which utilizes augmented reality to create insta-celebrations surrounding participants.',
+    images: ['/images/moneyGrabNYC-sm.png']
+  },
   // Placeholder: Museum of Future Objects (MOFO)
   {
     slug: 'museum-of-future-objects-mofo',
@@ -517,6 +559,19 @@ export const projects: Project[] = [
     collaborators: ['Tracy Cornish'],
     description: 'Placeholder for Museum of Future Objects (MOFO).',
     images: ['/images/MOFO.jpg']
+  },
+  // Show Me
+  {
+    slug: 'show-me',
+    title: 'Show Me',
+    category: ['Creative'],
+    subCategory: ['Augmented Interventions'],
+    year: '2011',
+    medium: 'Augmented Reality Alternate Reality Game',
+    description: 'Show Me explores virtual tourism using augmented reality with my avatar agent. I\'ve never been to Philadelphia. My father, born and raised in Philadelphia, is my only connection to the city. I have always wanted to visit with him to see his childhood haunts and listen as he recants tales of his youth. He doesn\'t travel much these days, and I cannot afford the time so the tour of Philly has been put on the backburner. That is, until now... I have sent my avatar there as an augment to learn more about Philadelphia by recruiting audience members as “tour guides”. Using a 3D laser scanned model of myself inside the Layar augmented reality browser, my avatar wanders throughout the exhibition sites until visitors interact with Virtual Todd. He attempts to befriend willing participants, hitching a ride with them to show him the sights. This is the beginning of telepresence in virtual tourism. The experience results in the typical sight-seeing artifacts - photographs (screenshots) of my avatar with the exhibition audience, in various locations in and around Philadelphia. Using Layar\'s authentication and screenshot uploading, people can reload my Layar at any time and location during the exhibit and Virtual Todd will join them there.',
+    description2: 'This artwork builds upon my previously produced Augmented Reality projects like Local ARt (an AR Alternate Reality Game) and ImageQuest (a citizen science project using mobile AR with urban tree canopies). My current research investigates social and cultural relationships to emerging media which draws on over a decade of experience creating tele-collaborative immersive and interactive artworks and systems. Show me is an ongoing project which will integrate social networking and game mechanics to further engage the public in novel forms of virtual tourism. The premiere exhibition for Show Me is in Distributed Collectives with other members of Manifest.AR - an international artists collective working with emergent forms of augmented reality as interventionist public art.',
+    heroImage: '/images/meNme.jpg',
+    images: ['/images/IMG_0645_todd.jpg','/images/markNme.jpg']
   },
   // Placeholder: TeleMotions
   {
@@ -559,6 +614,21 @@ export const projects: Project[] = [
     description2: 'Shown at Qlik Qonnections 2018 in Orlando, FL',
     images: ['/images/ImmersiveAnalyticsSIGGRAPH.jpg']
   },
+  // Becoming Dragon
+  {
+    slug: 'becoming-dragon',
+    title: 'Becoming Dragon',
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
+    year: '2008-2010',
+    medium: 'Augmented Reality',
+    collaborators: ['Micha Cardenas'],
+    heroImage: '/images/BG.1.jpg',
+    description: 'Becoming Dragon questions the one year requirement of Real Life Experience that transgender people must fulfill in order to receive Gender Confirmation Surgery (Sexual Reassignment Surgery), and asks if this could be replaced by one year of Second Life Experience to lead to Species Reassignment Surgery. For the performance, Micha Cardenas, aka Azdel Slade, lived for 365 hours immersed in Second Life with a head mounted display (HMD), only seeing the physical world through a video feed, and a motion capture system to map her movements into Second Life. During the entire duration of the performance Micha stayed in the performance space at the Center for Research in Computing and the Arts (CRCA) and in Second Life which were both open to the public.',
+    description2: 'The project seeks to explore notions of cultural identity and gender and examines the subject in transition - both biologically and technologically. As the Virtual Media Specialist for Becoming Dragon, I collaborated with Micha Cardenas and Chris Head to integrate motion capture technologies into the mixed reality performance. Micha wore a customized optical target integrated into the HMD which captured every live physical movement to control the movements of her avatar in Second Life. This was accomplished using VICON cameras and software I setup and configured with a bridge written by Chris Head and a SL script to receive those movements written by Micha. I also facilitated the installation and configuration of the stereoscopic 3D Second Life projection into the performance space as well as the video feed from the physical world back into Second Life.',
+    description3: 'Co-sponsored by The Center for Performance Studies, the UCLA Department of Theater, the Center for Research in Computing and the Arts (CRCA), the Department of Theater, the School of Theater, Film, and Television, LGBT Studies, the Center for the Study of Women and The Center for Research in Engineering, Media and Performance. Additional support provided by San Diego State University\'s Second Life Initiative, Aztlan Island.',
+    images: ['/images/becoming-transreal_1.jpg','/images/11_25_08_micha_dragon.jpg']
+  },
   // Placeholder: GenAI
   {
     slug: 'qlik-genai',
@@ -593,9 +663,11 @@ export const projects: Project[] = [
     subCategory: ['Immersive Installations'],
     year: '2003-2005',
     medium: 'Virtual Reality',
+    collaborators: ['Geoffrey A. Baum','Keith Miller','Tim Portlock'],
     heroImage: '/images/STP_PHSC.jpg',
-    description: 'Special Treatment is an immersive and interactive Virtual Reality installation examining the strength and persistence of memory. An ominous journey by train car deposits viewers in a sparsely populated camp pieced together from plans, photographs and other artifacts from Auschwitz II/Birkenau, Poland. As visitors explore the camp and its architectural structures, conversations and ephemera of the past fade in and out of perception - at times almost tangible, at other times mere allusions. These structures and stories are not intended to be strictly historical or documentary. Each element is the foundation for the folding together of past and present; where the sounds and images of old memories blend with memories created by each new visitor. Special Treatment advances the audience from passive viewing to active experience by smoothly moving from present to past and back again. Special Treatment creates a landscape where glimpses and fragments of Birkenau establish a narrative framework where the events of the past continue to shape and be shaped by contemporary interpretations of those events. The full history and lesson of a place such as the death camp at Birkenau is seen not only in the records of those who survived or passed on their memories to us in the present, but in how those events are remembered and shaped by the people of today. The stories of these people grow with each new experience of Special Treatment, and the solidity of that space and the substance of those events becomes more concrete with each new visitor. The immersive experience allows each participant to inhabit the scene of these events, and as they leave the evidence of their own actions and memories, Special Treatment is continually transformed into a new potential memory. Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
-    description2: 'Special Treatment is continually transformed into a new potential memory. Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
+    description: 'Special Treatment is an immersive and interactive Virtual Reality installation examining the strength and persistence of memory. An ominous journey by train car deposits viewers in a sparsely populated camp pieced together from plans, photographs and other artifacts from Auschwitz II/Birkenau, Poland. As visitors explore the camp and its architectural structures, conversations and ephemera of the past fade in and out of perception - at times almost tangible, at other times mere allusions. These structures and stories are not intended to be strictly historical or documentary. Each element is the foundation for the folding together of past and present; where the sounds and images of old memories blend with memories created by each new visitor.',
+    description2: 'Special Treatment advances the audience from passive viewing to active experience by smoothly moving from present to past and back again. Special Treatment creates a landscape where glimpses and fragments of Birkenau establish a narrative framework where the events of the past continue to shape and be shaped by contemporary interpretations of those events. The full history and lesson of a place such as the death camp at Birkenau is seen not only in the records of those who survived or passed on their memories to us in the present, but in how those events are remembered and shaped by the people of today. The stories of these people grow with each new experience of Special Treatment, and the solidity of that space and the substance of those events becomes more concrete with each new visitor. The immersive experience allows each participant to inhabit the scene of these events, and as they leave the evidence of their own actions and memories, Special Treatment is continually transformed into a new potential memory.',
+    description3: 'Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
     images: ['/images/STP_RealMemory1.med.jpg']
   },
   // Placeholder: Cultural Analytics
@@ -824,11 +896,27 @@ export const projects: Project[] = [
     title: 'Local ARt',
     category: ['Creative'],
     subCategory: ['Augmented Interventions'],
+    collaborators: ['Tracy Cornish'],
     year: '2011',
     medium: 'Augmented Reality Alternate Reality Game',
     heroImage: '/images/FOR.2.jpeg',
-    description: 'Local ARt is a mobile Augmented Reality Alternate Reality Game developed in San Diego in 2011. The primary aim was to create a novel way of connecting two artist run galleries with a series of art walks and community cultural events; and playfully explore the relationship between public and private domains.',
+    description: 'Local ARt is a mobile Augmented Reality Alternate Reality Game developed in San Diego in 2011. The primary aim was to create a novel way of connecting two artist run galleries with a series of art walks and community cultural events; and playfully explore the relationship between public and private domains. Replayabilty, minimal design resources, social media integration, neighborhood exploration, and the development/use of mobile augmented reality software were key considerations in the game design and implementation.',
     images: ['/images/FOR.jpeg']
+  },
+  // Image Quest
+  {
+    slug: 'images-quest',
+    title: 'Image Quest',
+    category: ['Inquiry'],
+    subCategory: ['Collaborative Environments'],
+    collaborators: ['Ruth West'],
+    year: '2010-2012',
+    medium: 'Display & Interaction Systems',
+    heroImage: '/images/GoogleEarth.1.jpg',
+    description: 'Researchers from Washington University, the University of Arizona, the University of California, San Diego, and the University of Vermont were awarded collaborative grants to develop tools that support deeper integration of citizen scientists with a broad range of biological imaging projects. Our specific aims are to develop tools: 1. To make it easier for volunteers with smart phones to capture calibrated imagery supporting quantitative data measurements. 2. To facilitate volunteer contributions to image analysis tasks with better interfaces and formal methods to validate and create consensus estimates from many responses. 3. To foster long-term motivation and engagement within virtual communities through online environments that combine aesthetics, social networking and visualization tools.',
+    description2: 'These tools will have an initial focus on problem domains including monitoring of urban re-forestation efforts and analysis of 3D biological and neurological imaging data at many different scales. It will produce a set of smart phone and web apps that will be available to the broader biological research community that require calibrated image capture and analysis, and will create an experimental web portal to engage virtual communities of volunteers and scientists collaborating to work on imaging problems.',
+    description3: 'The ImageQuest project will make it simpler for volunteers and scientists to engage in a much broader set of biological imaging research. Providing tools which enhance a volunteers ability to capture and analyze images relieves a technical burden on biologists trying to develop citizen science approaches. Making these tools smarter and more interactive encourages volunteers to contribute meaningfully to novel research questions, and building a virtual community around the volunteers and the scientists helps to recruit, motivate and retain long term participation of the public in scientific research.',
+    images: ['/images/IQ-NYC-LiDARnCensus.jpg','/images/LiDAR.1.png']
   },
   // Professional Organizations
   // Manifest.AR
