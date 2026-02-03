@@ -730,9 +730,8 @@ export const projects: Project[] = [
     subCategory: ['Institutional Architecture', 'Display & Interaction Systems'],
     year: '2011-2012',
     medium: 'Consultant',
-    heroImage: '/images/placeholder.png',
     description: 'Provided technical expertise for building a Virtual Reality system for the new Emergent Reality Lab at RPI. This included space planning, CAD drawing, requirements assessment, system design, equipment specification and configuration of the immersive and interactive system.',
-    images: ['/images/placeholder.png']
+    images: ['/images/erl.png']
   },
   // 5. Florida State University
   {
