@@ -245,6 +245,21 @@ export const projects: Project[] = [
       '/images/perfect3.jpg'
     ]
   },
+  // Infinite Studio
+  {
+    slug: 'infinite-studio',
+    title: 'Infinite Studio',
+    category: ['Creative'],
+    subCategory: ['Performative Systems'],
+    year: '2000',
+    medium: 'Virtual Reality',
+    heroImage: '/images/infinite_studio_sm.jpg',
+    videoLink: 'https://vimeo.com/25293887?fl=pl&fe=cm',
+    description: 'Infinite Studio was a new paradigm of art-making, that enables users to create, in real-time, interactive virtual reality artwork from inside a virtual environment. Using a color palette and several drawing and modeling tools, the user can create and modify virtual objects for any effect desired. Individuals can also collaborate across networks to create group constructions. The scenes can be easily scaled, rotated or moved from one part of the virtual world to another, thereby changing focus or eliminating elements. Every line drawn has a lifespan causing the entire art piece to constantly evolve. ',
+    images: [
+      '/images/infiniteStudioBig2.jpg'
+    ]
+  },
   // 7. The Edge
   {
     slug: 'the-edge',
@@ -469,9 +484,11 @@ export const projects: Project[] = [
     subCategory: ['Collaborative Environments'],
     year: '2010-2013',
     medium: 'Tiled display environment at UCSD',
-    heroImage: '/images/placeholder.png',
-    description: 'Next-gen reconfigurable tiled display environment for distributed collaboration.',
-    images: ['/images/CineGridVroom4.jpg']
+    heroImage: '/images/CineGridVroom4.jpg',
+    description: 'Vroom (Virtual Room) is a next-generation reconfigurable tiled display environment in development at Calit2. Vroom enables freely scalable digital collaboratories, connecting distributed, high-resolution visualization resources for collaborative work in the sciences, engineering and the arts. Vroom can transform a space into a completely immersive mixed media environment with interactive display surfaces and spatialized audio. The system utilizes narrow bezel display walls, directional audio and advanced interaction devices to share ultra high resolution data. Vroom builds on previous research from the NSF funded OptiPuter project by integrating modular OptiPortables (portable tiled display systems) with open-source middleware for local and remote collaboration.',
+    description2: 'Vroom enables group collaboration for local and remote participants to share knowledge and experiences. Possible applications include: Remote learning, Brainstorming / Storyboarding, Post-production review and collaboration, High resolution video playback, Tele-immersive 3D interaction, Easy-to-use screencasting, Image, video, text media sharing\n\nVroom features include: Support for multiple user interfaces (optical tracking, touch UI, gesture interface, etc.), Support for directional and spatialized audio, Giga-Pixel image interactivity, 4K video streaming, 3D visualization, Tele-matic production',
+    description3: 'Previous compatible system (HIPerSpace, HIPerWall, AESOP, OptiPortal) have been developed at Calit2 and distributed around the world to dozens of academic, government and corporate institutions. These systems are connected to high-speed optical networks to enable remote collaboration. The installation of Vroom in the Calit2 Theater will have approximately 100 displays, both 2D and 3D in a reconfigurable arrangement. Open-source software developed at UCSD and the Electronic Visualization Lab at UIC will enable the graphics (SAGE, CGLX and CalVR) and audio (SoundBender, VMAP and Sonnotate) middleware to share data across the local Vroom system as well as with remote nodes. Vroom will use 10Gb/s networking to all the display nodes with 10 (eventually 20) 10Gb/s uplinks to remote servers. Using both research systems and commercial platforms, we will integrate HD video tele-conferencing with remote nodes. We will employ spatialized audio with distributed Meyer speakers along with multiple wave field synthesis speaker arrays to provide directional audio. 4K video streaming and playback will be integrated into Vroom for both tiled display walls and projection surfaces.',
+    images: ['/images/Octo-OptIPortableUnderConstructionControlRoom.jpeg', '/images/AllScreensContiuousImageDemo.jpg']
   },
   // Placeholder: CineGrid 3D 4K
   {
@@ -991,6 +1008,19 @@ export const projects: Project[] = [
     heroImage: '/images/LOCKUP.jpg',
     images: ['/images/phase4.jpg','/images/phase5.jpg'],
     videoLink: 'https://vimeo.com/25295866?fl=pl&fe=cm'
+  },
+  // Growing Documentary
+  {
+    slug: 'growing-documentary',
+    title: 'Growing Documentary',
+    category: ['Inquiry'],
+    subCategory: ['Collaborative Environments'],
+    year: '2012',
+    medium: 'Distributed Cinema',
+    collaborators: ['Tracy Cornish'],
+    description: 'Growing Documentary: Places + Perspectives is a sponsored research project between graduate students from Keio Media Design, Keio University and undergraduate students from the Visual Arts Department at the University of California, San Diego. The goal of this project is to explore remote collaboration as a means for producing a HD documentary using emerging technologies such as Vroom (virtual room @Calit2); CineSage and PIX System for media sharing, review and critique; and HD/4K video teleconferencing for face-to-face discussions, knowledge sharing and project development. Using high-speed optical networks to connect advanced collaboration spaces, we were able to bridge diverse ideas with complex workflows in a novel format for next generation digital cinema production and distribution.',
+    heroImage: '/images/groupShot1.jpg',
+    images: ['/images/mewide.jpg']
   },
   // Applied Interactives, N.F.P.
   {

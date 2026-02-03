@@ -80,7 +80,7 @@ const hasVideo = !!videoEmbedUrl || !!(project.videos && project.videos.length >
 const showContentImages = project.images.length >= 2 || (hasVideo && project.images.length >= 1);
 ---
 
-<Layout title={project.title}>
+<Layout title={project.title} activeCategories={project.category}>
   <!-- Hero -->
   <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
     <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>

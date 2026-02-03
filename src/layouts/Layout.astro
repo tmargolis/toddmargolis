@@ -7,9 +7,10 @@ interface Props {
 	title: string;
   fullTitle?: string;
   hideFooter?: boolean;
+  activeCategories?: string[];
 }
 
-const { title, fullTitle, hideFooter = false } = Astro.props;
+const { title, fullTitle, hideFooter = false, activeCategories = [] } = Astro.props;
 const documentTitle = fullTitle ?? `Todd Margolis | ${title}`;
 ---
 
@@ -47,7 +48,7 @@ const documentTitle = fullTitle ?? `Todd Margolis | ${title}`;
     <!-- Noise Texture -->
     <div class="noise-overlay"></div>
 
-    <Header />
+    <Header activeCategories={activeCategories} />
     
     <main class="relative z-10 pt-0 min-h-0 flex-1 flex flex-col">
 		  <slot />

@@ -1,4 +1,9 @@
 ---
+interface Props {
+  activeCategories?: string[];
+}
+const { activeCategories = [] } = Astro.props;
+
 function subCategorySlug(name: string): string {
   return name
     .replace(/\s*&\s*/g, '-and-')
@@ -52,9 +57,12 @@ const navItems = [
         Todd Margolis
       </a>
       <div class="flex items-center gap-4">
-        {navItems.map((item) => (
-          <a href={item.href} class="font-mono text-xs tracking-[0.2em] uppercase font-normal hover:text-white hover:text-glow transition-all duration-300">{item.label}</a>
-        ))}
+        {navItems.map((item) => {
+          const isActive = activeCategories.includes(item.label);
+          return (
+          <a href={item.href} class={`font-mono text-xs tracking-[0.2em] uppercase hover:text-white hover:text-glow transition-all duration-300 ${isActive ? 'font-semibold' : 'font-normal'}`}>{item.label}</a>
+          );
+        })}
       </div>
     </div>
   </div>
@@ -66,10 +74,11 @@ const navItems = [
     </a>
 
     <div class="absolute left-1/2 transform -translate-x-1/2 flex gap-8 font-mono text-xs tracking-[0.2em] uppercase">
-      {navItems.map((item) => (
-        'subCategories' in item && item.subCategories?.length ? (
+      {navItems.map((item) => {
+        const isActive = activeCategories.includes(item.label);
+        return 'subCategories' in item && item.subCategories?.length ? (
           <div class="relative group">
-            <a href={item.href} class="font-normal hover:text-white hover:text-glow transition-all duration-300 block py-1">{item.label}</a>
+            <a href={item.href} class={`${isActive ? 'font-semibold' : 'font-normal'} hover:text-white hover:text-glow transition-all duration-300 block py-1`}>{item.label}</a>
             <div class="absolute left-0 top-full pt-1 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <div class="bg-[#0a0a0a] border border-white/10 rounded shadow-2xl py-2 min-w-[200px]">
                 {item.subCategories.map((name) => (
@@ -84,9 +93,9 @@ const navItems = [
             </div>
           </div>
         ) : (
-          <a href={item.href} class="font-normal hover:text-white hover:text-glow transition-all duration-300">{item.label}</a>
-        )
-      ))}
+          <a href={item.href} class={`${isActive ? 'font-semibold' : 'font-normal'} hover:text-white hover:text-glow transition-all duration-300`}>{item.label}</a>
+        );
+      })}
     </div>
 
     <!-- Right: spacer for balance -->
