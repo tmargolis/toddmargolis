@@ -25,6 +25,7 @@ export interface Project {
   contextImage?: string;
   contextCaption?: string;
   watermarkedImages?: string[];
+  collaborators?: string[];
 }
 
 export const projects: Project[] = [
@@ -419,6 +420,7 @@ export const projects: Project[] = [
     title: 'ATLAS in silico',
     category: ['Creative', 'Inquiry'],
     subCategory: ['Immersive Installations', 'Collaborative Environments'],
+    collaborators: ['Ruth West', 'Jurgen Schulze', 'JP Lewis', 'Alex Nano', 'Iman Mostafavi', 'Joachim Gossmann', 'Ben Hackbarth'],
     year: '2007-2013',
     medium: 'VR Installation',
     heroImage: '/images/atlas-varrier.png',
@@ -429,12 +431,12 @@ export const projects: Project[] = [
   // Historical: Varrier Display
   {
     slug: 'varrier-siggraph',
-    title: 'The VarrierTM autostereoscopic virtual reality display',
+    title: 'The Varrier™ autostereoscopic virtual reality display',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems'],
     year: '2005',
     medium: 'SIGGRAPH 2005',
-    dimensions: 'Sandin, Margolis, Ge, Girado, Peterka, et al.',
+    collaborators: ['Sandin, Margolis, Ge, Girado, Peterka, et al.'],
     weight: 'Technical Paper',
     heroImage: '/images/varrier-siggraph.jpg',
     description: 'Virtual reality (VR) has long been hampered by the gear needed to make the experience possible; specifically, stereo glasses and tracking devices. Autostereoscopic display devices are gaining popularity by freeing the user from stereo glasses, however few qualify as VR displays. The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC) has designed and produced a large scale, high resolution head-tracked barrier-strip autostereoscopic display system that produces a VR immersive experience without requiring the user to wear any encumbrances. The resulting system, called Varrier, is a passive parallax barrier 35-panel tiled display that produces a wide field of view, head-tracked VR experience. This paper presents background material related to parallax barrier autostereoscopy, provides system configuration and construction details, examines Varrier interleaving algorithms used to produce the stereo images, introduces calibration and testing, and discusses the camera-based tracking subsystem.',
@@ -450,7 +452,7 @@ export const projects: Project[] = [
     medium: 'Tiled display environment at UCSD',
     heroImage: '/images/placeholder.png',
     description: 'Next-gen reconfigurable tiled display environment for distributed collaboration.',
-    images: ['/images/placeholder.png']
+    images: ['/images/CineGridVroom4.jpg']
   },
   // Placeholder: CineGrid 3D 4K
   {
@@ -474,7 +476,8 @@ export const projects: Project[] = [
     year: '2010-2012',
     medium: 'Heads-Up Virtual Reality at UCSD',
     description: 'A small group of UCSD researchers have created a new, relatively low-cost augmented reality system that enables users to touch the virtual environment they are immersed in. The Heads-Up Virtual Reality device (HUVR) couples a consumer 3D HD flat screen TV with a half-silvered mirror to project any graphic image onto the user\'s hands and into the space surrounding them.',
-    images: ['/images/huvr_greg.jpg']
+    images: ['/images/huvr_greg.jpg'],
+    collaborators: ['Greg Dawe', 'Dan Sandin', 'Tom DeFanti']
   },
   // Placeholder: Scalable City
   {
@@ -483,11 +486,12 @@ export const projects: Project[] = [
     category: ['Inquiry'],
     subCategory: ['Immersive Installations', 'Collaborative Environments'],
     year: '2009',
+    collaborators: ['Sheldon Brown'],
     medium: 'Immersive Installation',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/scalableCity2.jpg',
     description: 'Scalable City is a multi-dimensional art and research project developed within the Experimental Game Lab at the Qualcomm Institute, UCSD. The work functions as a provocative critique of urban sprawl and algorithmic logic, utilizing the mechanics of a video game to simulate the relentless expansion and eventual collapse of a hyper-consumerist landscape. By intersecting technologies from the leading edge of visualization research with extended game industry tools, the project creates a hybrid experience that explores how software systems permeate and shape contemporary society.',
     description2: 'The artwork is structured around a series of algorithmic "rules" that automate the construction of a sprawling, chaotic city—transforming the serene geometry of a digital landscape into a densely packed environment of roads and suburban architecture. As the simulation progresses, the very tools used for creation become the agents of destruction, leading to a "beautifully entropic" failure of the urban system.',
-    images: ['/images/placeholder.png']
+    images: ['/images/scalableCity.jpg','/images/Sheldon_Brown-_Scalable_City1.jpg']
   },
   // Placeholder: Moon Lust
   {
@@ -496,10 +500,11 @@ export const projects: Project[] = [
     category: ['Creative'],
     subCategory: ['Augmented Interventions'],
     year: '2012',
+    collaborators: ['Tracy Cornish'],
     medium: 'Augmented Reality Alternate Reality Game',
-    heroImage: '/images/placeholder.png',
-    description: 'Placeholder for Moon Lust.',
-    images: ['/images/placeholder.png']
+    heroImage: '/images/moonlustadler1.jpg',
+    description: 'Moon Lust is a speculative project that explores global interests and issues pertaining to lunar exploration and habitation. As a curated mobile augmented reality exhibition, Moon Lust hopes to facilitate a dialogue about topics such as lunar mining, space tourism, celestial territories, space ecology and policy, by locating augmented visualizations in and around the Adler Planetarium. The project launched June 21 2012 and remains as a permanent AR exhibition.',
+    images: ['/images/SERL.jpg']
   },
   // Placeholder: Museum of Future Objects (MOFO)
   {
@@ -509,6 +514,7 @@ export const projects: Project[] = [
     subCategory: ['Augmented Interventions'],
     year: '2013-2014',
     medium: 'Augmented Reality Alternate Reality Game',
+    collaborators: ['Tracy Cornish'],
     description: 'Placeholder for Museum of Future Objects (MOFO).',
     images: ['/images/MOFO.jpg']
   },
@@ -536,7 +542,8 @@ export const projects: Project[] = [
     heroImage: '/images/placeholder.png',
     description: 'ResoNations was an international, multi-site "telematic" performance that connected musicians across global distances in real-time, creating a unified sonic experience through high-speed optical networks. The project served as a high-stakes inquiry into the possibilities of networked media, utilizing the infrastructure of CineGrid and the Qualcomm Institute to facilitate low-latency, high-fidelity collaboration between performers in locations such as San Diego, New York, and Belfast. By bridging these geographically disparate spaces, the performance challenged the limitations of physical distance and explored the emergence of a "distributed" stage.',
     description2: 'In my capacity as Technical Director for this performance, I was responsible for the rigorous logistical planning and fault-tolerant network architecture required to maintain synchronicity across continents. Managing the latency and audio-visual fidelity of ResoNations required more than just technical oversight; it demanded a strategic approach to Collaborative Environments, where human artistic intuition could coexist with complex algorithmic logic.',
-    images: ['/images/placeholder.png']
+    images: ['/images/TeleMotions.jpg'],
+    collaborators: ['Mark Dresser']
   },
   // Placeholder: Immersive Analytics
   {
@@ -546,6 +553,7 @@ export const projects: Project[] = [
     subCategory: ['Display & Interaction Systems'],
     year: '2012-2018',
     medium: 'Immersive Analytics',
+    collaborators: ['Richard Hackathorn'],
     heroImage: '/images/ImmersiveAnalyticsLarge.jpeg',
     description: 'I integrated Qlik Sense APIs with a Virtual Reality environment',
     description2: 'Shown at Qlik Qonnections 2018 in Orlando, FL',
@@ -571,6 +579,7 @@ export const projects: Project[] = [
     subCategory: ['Display & Interaction Systems'],
     year: '2019',
     medium: 'Internet of Things Analytics',
+    collaborators: ['Ottawa Emergency Services'],
     heroImage: '/images/EmergencyDrone2.jpeg',
     description: 'I integrated Qlik Sense APIs with an AWS DeepSight camera mounted to an industrial drone',
     description2: 'Shown at Qlik Qonnections 2019 in Dallas, TX',
@@ -636,7 +645,7 @@ export const projects: Project[] = [
     subCategory: ['Publications & Theory'],
     year: '2005',
     medium: 'IEEE Computer Society Conference paper',
-    dimensions: 'Jinghua Ge, Dan Sandin, Tom Peterka, Todd Margolis, Tom DeFanti',
+    collaborators: ['Jinghua Ge, Dan Sandin, Tom Peterka, Todd Margolis, Tom DeFanti'],
     weight: 'Computer Vision and Pattern Recognition. Volume 3 pg. 110',
     description: 'Varrier is a head-tracked, 35-panel tiled autostereoscopic display system which is produced by The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC). Varrier produces autostereoscopic imagery through a combination of a physical parallax barrier and a virtual barrier, so that the stereoscopic images are directed correctly into the viewers eyes. Since a small amount of rotation and translation between physical and virtual barriers can cause large-scale effects, registration is critical for correct stereo viewing. The process is automated by examining image frames of two video cameras separated by the interocular distance as a simulation of human eyes. Three registration parameters for each panel are calibrated in the process. An arbitrary start condition is allowed and a robust stopping criterion is used to end the process and report results. Instead of exhaustive three dimensional searching, an efficient two phase calibration method is introduced. The combination of a heuristic rough calibration and an adaptive fine calibration guarantees a fast searching process with the best solution.',
     heroImage: '/images/placeholder.png',
@@ -679,9 +688,9 @@ export const projects: Project[] = [
     year: '1998-2005',
     medium: 'Research Assistant',
     dimensions: 'University of Illinois at Chicago',
-    heroImage: '/images/placeholder.png',
-    description: 'Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored a paper on VR systems published at SPIE 2001 and premiered the Varrier system at IEEE VR 2004.',
-    images: ['/images/placeholder.png']
+    heroImage: '/images/USA-UIC-EVL-CAVE2.jpg',
+    description: 'Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored papers on VR systems published at SIGGRAPH and SPIE 2001 and premiered the Varrier system at IEEE VR 2004.',
+    images: ['/images/varrierColors.jpg']
   },
   // Professional experience
   // 1. Qlik
@@ -741,9 +750,8 @@ export const projects: Project[] = [
     subCategory: ['Institutional Architecture'],
     year: '2011-2012',
     medium: 'Consultant',
-    heroImage: '/images/placeholder.png',
     description: 'In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This included defining research activities, facility specification, space requirements, equipment classification and furnishing specifications.',
-    images: ['/images/placeholder.png']
+    images: ['/images/Florida-State-University_blog-cover Large.jpeg']
   },
   // 7. Columbia College Chicago
   {
@@ -779,9 +787,11 @@ export const projects: Project[] = [
     subCategory: ['Tangible Artifacts', 'Display & Interaction Systems','Cultural Entrepreneurship'],
     year: '1999-2000',
     medium: 'Artist-in-residence, Curator',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/artnLarge.jpeg',
     description: 'Produced 3D artwork based on PHSCologram and ImmersaGram technology utilizing 3D modeling and animation. Served as project lead for a searchable image-database website and managed network systems and web server administration.',
-    images: ['/images/placeholder.png']
+    images: ['/images/edPachkeLarge.jpg','/images/BattleOfMidwayLarge.jpeg'],
+    description2: 'Co-produced artwork for a permanent installation at the Chicago Midway Airport to commemorate the Battle of Midway. Curated an exhibition of ImmersaGrams (Virtual Reality Snapshots) by a group of international artists.',
+    collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Ellen Sandor']
   },
   // 10. University of Illinois at Chicago (Lecturer)
   {
@@ -829,9 +839,8 @@ export const projects: Project[] = [
     subCategory: ['Cultural Entrepreneurship', 'Augmented Interventions'],
     year: '2011-2012',
     medium: 'Artist Member',
-    heroImage: '/images/placeholder.png',
     description: 'An international artists collective working with emergent forms of augmented reality as interventionist public art. The group sees this medium as a way of transforming public space and institutions by installing virtual objects and artworks which respond to and overlay the configuration of located physical meaning.',
-    images: ['/images/placeholder.png']
+    images: ['/images/ManifestAR.png']
   },
   // NVision
   {
@@ -853,7 +862,9 @@ export const projects: Project[] = [
     subCategory: ['Cultural Entrepreneurship', 'Immersive Installations'],
     year: '2001-2005',
     medium: 'Founding Member / President',
-    description: 'A 501(c)3 non-profit dedicated to propagating VR technologies into galleries and contemporary art museums. Facilitated installations at the Museum of Contemporary Art Chicago and the Block Museum. Led the creation of a VR installation using the Auschwitz-Birkenau concentration camp as a setting for exploring persistence and memory, based on a PHSCologram housed in the Museum of Jewish Heritage.',
+    collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Tim Portlock', 'Ben Chang'],
+    description: 'A 501(c)3 non-profit dedicated to propagating VR technologies into galleries and contemporary art museums. Led the creation of a VR installation using the Auschwitz-Birkenau concentration camp as a setting for exploring persistence and memory, based on a PHSCologram housed in the Museum of Jewish Heritage.',
+    description2: 'Based at the art(n) gallery in Chicago. Exhibited at the Museum of Contemporary Art Chicago and the Block Museum.',
     heroImage: '/images/AppliedInteractives_PortraitMain.jpg',
     images: ['/images/VRPortalVideo.jpg','/images/VRPrtl_MCA.jpg']
   },
@@ -865,9 +876,9 @@ export const projects: Project[] = [
     subCategory: ['Cultural Entrepreneurship', 'Performative Systems'],
     year: '2000-2005',
     medium: 'Director / Artist Member',
-    heroImage: '/images/placeholder.png',
     description: 'A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in "Information Arts" by Steve Wilson, MIT’s Leonardo journal, and YLEM. Managed multimedia programming, web site development, and technical support for large-scale new media art shows.',
-    images: ['/images/placeholder.png']
+    collaborators: ['Fernando Orrelana', 'Sabrina Raaf', 'Andrea Polli'],
+    images: ['/images/sineLarge.jpeg']
   },
   // Software Studies Initiative
   {
@@ -888,10 +899,11 @@ export const projects: Project[] = [
     category: ['Inquiry', 'Creative'],
     subCategory: ['Pedagogy & Labs', 'Immersive Installations'],
     year: '2005-2012',
+    collaborators: ['Sheldon Brown'],
     medium: 'Technical Director',
     heroImage: '/images/placeholder.png',
     description: 'Founded by Sheldon Brown, EGL is a research studio positioning gaming as the defining cultural form of the 21st century. We provided innovative, multi-disciplinary expertise to push forward its technological and expressive fronts. By intersecting technologies from the leading edge of visualization research with extended game industry tools, we created new cultural forms and hybrid experiences.',
-    images: ['/images/placeholder.png']
+    images: ['/images/eglLarge.jpeg']
   },
   // New: PowerUser Inc.
   {

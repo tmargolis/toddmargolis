@@ -298,24 +298,25 @@ const aboutStatement = project.category?.length
         </div>
        ) : (
         <div>
-<!--          <span class="block text-gray-600 mb-1">Year</span> -->
           <span class="text-white">{project.year}</span>
         </div>
        )}
         <div>
-<!--          <span class="block text-gray-600 mb-1">Medium</span> -->
           <span class="text-white">{project.medium}</span>
         </div>
         {project.dimensions && (
         <div>
-<!--          <span class="block text-gray-600 mb-1">Dimensions</span> -->
           <span class="text-white">{project.dimensions}</span>
         </div>
         )}
         {project.weight && (
         <div>
-<!--          <span class="block text-gray-600 mb-1">Weight</span> -->
           <span class="text-white">{project.weight}</span>
+        </div>
+        )}
+        {project.collaborators && (
+        <div>
+          <span class="text-white">{project.collaborators.join(", ")}</span>
         </div>
         )}
         
