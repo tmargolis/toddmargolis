@@ -1081,7 +1081,7 @@ export const projects: Project[] = [
     category: ['Strategy'],
     subCategory: ['R&D Leadership'],
     year: '1998-2000',
-    medium: 'Web Developer / Project Manager',
+    medium: 'Web Developer',
     description: 'Project manager for dynamic, database-driven websites. Installed and administered web server and e-commerce systems, collaborating on interactive site creation and site layout programming.',
     images: ['/images/poweruser.jpg']
   },
