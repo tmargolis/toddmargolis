@@ -146,20 +146,6 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                       ) : (
                         <p>Archival pigment print on cotton rag.</p>
                       )}
-                      {hasModelViewer(i) && (
-                        <model-viewer
-                          class="model-viewer-frame mobile-only"
-                          src={`/models/${getModelBase(i)}.glb?v=6`}
-                          ios-src={`/models/${getModelBase(i)}.usdz?v=6`}
-                          ar
-                          ar-modes="webxr scene-viewer quick-look"
-                          camera-controls
-                          alt="A 3D model of my artwork">
-                          <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; bottom: 10px; right: 10px; ">
-                            View in your space
-                          </button>
-                        </model-viewer>
-                      )}
                    </div>
                    <div class="flex-1 w-full relative">
                       <img 
@@ -182,20 +168,6 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                         <p>{project.imageDescriptions[i]}</p>
                       ) : (
                         <p>Archival pigment print on cotton rag.</p>
-                      )}
-                      {hasModelViewer(i) && (
-                        <model-viewer
-                          class="model-viewer-frame mobile-only"
-                          src={`/models/${getModelBase(i)}.glb?v=6`}
-                          ios-src={`/models/${getModelBase(i)}.usdz?v=6`}
-                          ar
-                          ar-modes="webxr scene-viewer quick-look"
-                          camera-controls
-                          alt="A 3D model of my artwork">
-                          <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
-                            View in your space
-                          </button>
-                        </model-viewer>
                       )}
                    </div>
                    <div class="flex-1 w-full relative">
@@ -384,7 +356,7 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
 
   <!-- Fixed Inquiry Button -->
   <a href="/contact/" class="fixed bottom-22 right-8 z-50 bg-white text-black font-mono text-xs px-6 py-3 uppercase tracking-widest hover:bg-indigo-500 hover:text-white transition-all duration-300 shadow-lg shadow-indigo-500/20">
-      Inquire about this
+      Inquire
   </a>
 
   <!-- Lightbox Modal -->

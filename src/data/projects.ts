@@ -160,8 +160,8 @@ export const projects: Project[] = [
   {
     slug: '3d-horizons',
     title: 'Horizons',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Tangible Artifacts', 'Display & Interaction Systems'],
+    category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
     status: 'Work in Progress',
     year: '2026',
     medium: 'Stereoscopic View-Master',
@@ -264,8 +264,8 @@ export const projects: Project[] = [
   {
     slug: 'the-edge',
     title: 'The Edge',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Immersive Installations', 'Display & Interaction Systems'],
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Laminar Flow Fog Screen',
@@ -380,8 +380,8 @@ export const projects: Project[] = [
   {
     slug: 'cmb-vr',
     title: 'CMB',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Immersive Installations', 'Display & Interaction Systems'],
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Virtual Reality',
@@ -521,8 +521,8 @@ export const projects: Project[] = [
   {
     slug: 'huvr',
     title: 'HUVR',
-    category: ['Creative','Inquiry'],
-    subCategory: ['Display & Interaction Systems', 'Augmented Interventions'],
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
     year: '2010-2012',
     medium: 'Heads-Up Virtual Reality at UCSD',
     description: 'A small group of UCSD researchers have created a new, relatively low-cost augmented reality system that enables users to touch the virtual environment they are immersed in. The Heads-Up Virtual Reality device (HUVR) couples a consumer 3D HD flat screen TV with a half-silvered mirror to project any graphic image onto the user\'s hands and into the space surrounding them. With his or her head position optically tracked to generate the correct perspective view, the user maneuvers a force-feedback (haptic) device to interact with the 3D image, literally "touching" the object\'s angles and contours as if it was a tangible physical object.',
@@ -627,8 +627,8 @@ export const projects: Project[] = [
   {
     slug: 'telemotions',
     title: 'TeleMotions',
-    category: ['Creative'],
-    subCategory: ['Performative Systems'],
+    category: ['Inquiry'],
+    subCategory: ['Collaborative Environments'],
     year: '2011',
     medium: 'Telepresence Performance',
     heroImage: '/images/TeleMotions4.jpg',
@@ -641,7 +641,7 @@ export const projects: Project[] = [
     slug: 'resonations',
     title: 'ResoNations',
     category: ['Inquiry'],
-    subCategory: ['Performative Systems', 'Collaborative Environments'],
+    subCategory: ['Collaborative Environments'],
     year: '2009',
     medium: 'Telepresence Performance',
     heroImage: '/images/placeholder.png',
@@ -668,8 +668,8 @@ export const projects: Project[] = [
   {
     slug: 'becoming-dragon',
     title: 'Becoming Dragon',
-    category: ['Creative'],
-    subCategory: ['Immersive Installations'],
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
     year: '2008-2010',
     medium: 'Augmented Reality',
     collaborators: ['Micha Cardenas'],
@@ -806,13 +806,14 @@ export const projects: Project[] = [
   {
     slug: 'uic-evl',
     title: 'UIC\'s Electronic Visualization Laboratory',
-    category: ['Inquiry'],
-    subCategory: ['Display & Interaction Systems', 'Pedagogy & Labs'],
+    category: ['Inquiry', 'Strategy'],
+    subCategory: ['Pedagogy & Labs','Academic Practice'],
     year: '1998-2005',
     medium: 'Research Assistant',
     dimensions: 'University of Illinois at Chicago',
     heroImage: '/images/USA-UIC-EVL-CAVE2.jpg',
     description: 'Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored papers on VR systems published at SIGGRAPH and SPIE 2001 and premiered the Varrier system at IEEE VR 2004.',
+    description2: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
     images: ['/images/varrierColors.jpg']
   },
   // Professional experience
@@ -833,7 +834,7 @@ export const projects: Project[] = [
     slug: 'ucsd-qualcomm',
     title: 'UCSD\'s Qualcomm Institute',
     category: ['Strategy','Inquiry'],
-    subCategory: ['Pedagogy & Labs', 'Institutional Architecture'],
+    subCategory: ['Pedagogy & Labs', 'Academic Practice'],
     year: '2012-2014',
     medium: 'Assistant Project Scientist & Lecturer',
     dimensions: 'University of California, San Diego',
@@ -846,7 +847,7 @@ export const projects: Project[] = [
     slug: 'ucsd-crca',
     title: 'UCSD\'s CRCA',
     category: ['Strategy', 'Inquiry'],
-    subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
+    subCategory: ['Academic Practice', 'Pedagogy & Labs'],
     year: '2005-2012',
     medium: 'Technical Director',
     dimensions: 'University of California, San Diego',
@@ -857,10 +858,11 @@ export const projects: Project[] = [
   // 4. Rensselaer Polytechnic Institute
   {
     slug: 'rpi',
-    title: 'Rensselaer Polytechnic Institute',
+    title: 'RPI\'s Emergent Reality Lab',
     category: ['Strategy', 'Inquiry'],
-    subCategory: ['Institutional Architecture', 'Display & Interaction Systems'],
+    subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
+    dimensions: 'Rensselaer Polytechnic Institute',
     medium: 'Consultant',
     description: 'Provided technical expertise for building a Virtual Reality system for the new Emergent Reality Lab at RPI. This included space planning, CAD drawing, requirements assessment, system design, equipment specification and configuration of the immersive and interactive system.',
     images: ['/images/erl.png']
@@ -868,10 +870,11 @@ export const projects: Project[] = [
   // 5. Florida State University
   {
     slug: 'florida-state-university',
-    title: 'Florida State University',
+    title: 'FSU\'s Translation Transmedia Research Institute',
     category: ['Strategy', 'Inquiry'],
-    subCategory: ['Institutional Architecture'],
+    subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
+    dimensions: 'Florida State University',
     medium: 'Consultant',
     description: 'In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This included defining research activities, facility specification, space requirements, equipment classification and furnishing specifications.',
     images: ['/images/Florida-State-University_blog-cover Large.jpeg']
@@ -880,8 +883,8 @@ export const projects: Project[] = [
   {
     slug: 'columbia-college-chicago',
     title: 'Columbia\'s Interactive Arts and Media',
-    category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs'],
+    category: ['Inquiry','Strategy'],
+    subCategory: ['Pedagogy & Labs','Academic Practice'],
     year: '2000-2003',
     medium: 'Adjunct Faculty',
     dimensions: 'Columbia College Chicago',
@@ -893,8 +896,8 @@ export const projects: Project[] = [
   {
     slug: 'saic',
     title: 'SAIC\'s Art and Technology',
-    category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs'],
+    category: ['Inquiry','Strategy'],
+    subCategory: ['Pedagogy & Labs','Academic Practice'],
     year: '1999-2003',
     medium: 'Instructor',
     dimensions: 'School of the Art Institute of Chicago',
@@ -907,7 +910,7 @@ export const projects: Project[] = [
     slug: 'artn-laboratory',
     title: '(art)n Laboratory',
     category: ['Creative', 'Inquiry','Strategy'],
-    subCategory: ['Tangible Artifacts', 'Display & Interaction Systems','Cultural Entrepreneurship'],
+    subCategory: ['Tangible Artifacts', 'Display & Interaction Systems','Cultural Stewardship'],
     year: '1999-2001',
     medium: 'Artist-in-residence, Curator',
     heroImage: '/images/artnLarge.jpeg',
@@ -916,19 +919,6 @@ export const projects: Project[] = [
     description2: 'Co-produced artwork for a permanent installation at the Chicago Midway Airport to commemorate the Battle of Midway. Curated an exhibition of ImmersaGrams (Virtual Reality Snapshots) by a group of international artists.',
     collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Ellen Sandor'],
     videoLink: 'https://vimeo.com/25333525?fl=pl&fe=cm'
-  },
-  // 10. University of Illinois at Chicago (Lecturer)
-  {
-    slug: 'uic-lecturer',
-    title: 'UIC\'s Electronic Visualization Laboratory',
-    category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs'],
-    year: '1998-2000',
-    medium: 'Lecturer / Lab Administrator',
-    dimensions: 'University of Illinois at Chicago',
-    heroImage: '/images/placeholder.png',
-    description: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
-    images: ['/images/placeholder.png']
   },
   // 11. NetSight
   {
@@ -975,8 +965,8 @@ export const projects: Project[] = [
   {
     slug: 'manifest-ar',
     title: 'Manifest.AR',
-    category: ['Strategy', 'Creative'],
-    subCategory: ['Cultural Entrepreneurship', 'Augmented Interventions'],
+    category: ['Strategy'],
+    subCategory: ['Cultural Stewardship'],
     year: '2011-2012',
     medium: 'Artist Member',
     description: 'An international artists collective working with emergent forms of augmented reality as interventionist public art. The group sees this medium as a way of transforming public space and institutions by installing virtual objects and artworks which respond to and overlay the configuration of located physical meaning.',
@@ -1026,8 +1016,8 @@ export const projects: Project[] = [
   {
     slug: 'applied-interactives',
     title: 'Applied Interactives',
-    category: ['Strategy', 'Creative'],
-    subCategory: ['Cultural Entrepreneurship', 'Immersive Installations'],
+    category: ['Strategy'],
+    subCategory: ['Cultural Stewardship'],
     year: '2001-2005',
     videoLink: 'https://vimeo.com/26047034?fl=pl&fe=cm',
     medium: 'Founding Member / President',
@@ -1041,11 +1031,11 @@ export const projects: Project[] = [
   {
     slug: 'sine-apsis',
     title: 'Sine::apsis Experiments',
-    category: ['Strategy', 'Creative'],
-    subCategory: ['Cultural Entrepreneurship', 'Performative Systems'],
+    category: ['Strategy'],
+    subCategory: ['Cultural Stewardship'],
     year: '2000-2005',
     medium: 'Director / Artist Member',
-    description: 'A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in "Information Arts" by Steve Wilson, MIT’s Leonardo journal, and YLEM. Managed multimedia programming, web site development, and technical support for large-scale new media art shows.',
+    description: 'A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in "Information Arts" by Steve Wilson, MIT’s Leonardo journal, and YLEM.',
     collaborators: ['Fernando Orrelana', 'Sabrina Raaf', 'Andrea Polli'],
     images: ['/images/sineLarge.jpeg']
   },
@@ -1065,8 +1055,8 @@ export const projects: Project[] = [
   {
     slug: 'experimental-game-lab',
     title: 'UCSD\'s Experimental Game Lab',
-    category: ['Inquiry', 'Creative'],
-    subCategory: ['Pedagogy & Labs', 'Immersive Installations'],
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
     year: '2005-2012',
     collaborators: ['Sheldon Brown'],
     medium: 'Technical Director',
@@ -1081,7 +1071,7 @@ export const projects: Project[] = [
     category: ['Strategy'],
     subCategory: ['R&D Leadership'],
     year: '1998-2000',
-    medium: 'Web Developer / Project Manager',
+    medium: 'Web Developer',
     description: 'Project manager for dynamic, database-driven websites. Installed and administered web server and e-commerce systems, collaborating on interactive site creation and site layout programming.',
     images: ['/images/poweruser.jpg']
   },
