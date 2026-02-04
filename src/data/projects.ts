@@ -160,8 +160,8 @@ export const projects: Project[] = [
   {
     slug: '3d-horizons',
     title: 'Horizons',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Tangible Artifacts', 'Display & Interaction Systems'],
+    category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
     status: 'Work in Progress',
     year: '2026',
     medium: 'Stereoscopic View-Master',
@@ -264,8 +264,8 @@ export const projects: Project[] = [
   {
     slug: 'the-edge',
     title: 'The Edge',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Immersive Installations', 'Display & Interaction Systems'],
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Laminar Flow Fog Screen',
@@ -380,8 +380,8 @@ export const projects: Project[] = [
   {
     slug: 'cmb-vr',
     title: 'CMB',
-    category: ['Creative', 'Inquiry'],
-    subCategory: ['Immersive Installations', 'Display & Interaction Systems'],
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
     status: 'Awaiting Fabrication',
     year: '2026',
     medium: 'Virtual Reality',
