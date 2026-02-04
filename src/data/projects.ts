@@ -813,6 +813,7 @@ export const projects: Project[] = [
     dimensions: 'University of Illinois at Chicago',
     heroImage: '/images/USA-UIC-EVL-CAVE2.jpg',
     description: 'Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored papers on VR systems published at SIGGRAPH and SPIE 2001 and premiered the Varrier system at IEEE VR 2004.',
+    description2: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
     images: ['/images/varrierColors.jpg']
   },
   // Professional experience
@@ -916,19 +917,6 @@ export const projects: Project[] = [
     description2: 'Co-produced artwork for a permanent installation at the Chicago Midway Airport to commemorate the Battle of Midway. Curated an exhibition of ImmersaGrams (Virtual Reality Snapshots) by a group of international artists.',
     collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Ellen Sandor'],
     videoLink: 'https://vimeo.com/25333525?fl=pl&fe=cm'
-  },
-  // 10. University of Illinois at Chicago (Lecturer)
-  {
-    slug: 'uic-lecturer',
-    title: 'UIC\'s Electronic Visualization Laboratory',
-    category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs'],
-    year: '1998-2000',
-    medium: 'Lecturer / Lab Administrator',
-    dimensions: 'University of Illinois at Chicago',
-    heroImage: '/images/placeholder.png',
-    description: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
-    images: ['/images/placeholder.png']
   },
   // 11. NetSight
   {
