@@ -858,7 +858,7 @@ export const projects: Project[] = [
   // 4. Rensselaer Polytechnic Institute
   {
     slug: 'rpi',
-    title: 'RPI's Emergent Reality Lab',
+    title: 'RPI\'s Emergent Reality Lab',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
