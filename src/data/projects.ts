@@ -767,16 +767,32 @@ export const projects: Project[] = [
   {
     slug: 'specflic',
     title: 'SPECFLIC',
-    category: ['Creative'],
-    subCategory: ['Augmented Intervention'],
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
     year: '2006',
     medium: 'Distributed Cinema',
     heroImage: '/images/Specflic_bear_mulloy_01.jpg',
-    description: 'SPECFLIC uses novel transmission and display media and a new storytelling form called Distributed Social Cinema to expand a critical dialogue about the social and cultural effects of future technologies and public spaces.  Each iteration of the series is held in an iconic public space and is free and open to the public. SPECFLIC stories are all set in 2030, and arise from research-based speculations about the near future of that particular public institution. Usually, in a performance or cinema experience, the audience is admonished to turn off their cell phones and cease conversation. SPECFLIC seeks to integrate these devices (cell phones, laptops, mp3players, etc) with live tele-matic performance, pre-recorded media elements, street performers and the audience\'s own social activity to create a multi-modal story event.',
-    description2: 'Live ambient performances streamed through mobile video platforms are "mixed" and projected on public architecture to produce a new form of cinematic experience. I worked with Adriene Jenik in SPECFLIC 1.0 in La Jolla and SPECFLIC 2.0 in San Jose as Technical Director to identify and utilize transgressive digital media throughout the design and planning process. Physical architecture was transformed into immersive spaces where social experiences played out through digitally mediated audio and video streams (live and pre-recorded). During pre-production of SPECFLIC 2.0, I worked with Cinematographer John Pirozzi to assist with the HD shoot of Allison Janney and Richard Jenik in the MLK Library. I lead a large technical support team for SPECFLIC 2.0 which installed a complex network of projectors, cameras, microphones, speakers and computers inside, around and on top of the installation spaces.',
-    images: ['/images/specflic_infospherian300.jpg']
+    description: 'SPECFLIC uses novel transmission and display media and a new storytelling form called Distributed Social Cinema to expand a critical dialogue about the social and cultural effects of future technologies and public spaces.  Each iteration of the series is held in an iconic public space and is free and open to the public. SPECFLIC stories are all set in 2030, and arise from research-based speculations about the near future of that particular public institution.',
+    description2: 'Usually, in a performance or cinema experience, the audience is admonished to turn off their cell phones and cease conversation. SPECFLIC seeks to integrate these devices (cell phones, laptops, mp3players, etc) with live tele-matic performance, pre-recorded media elements, street performers and the audience\'s own social activity to create a multi-modal story event. Live ambient performances streamed through mobile video platforms are "mixed" and projected on public architecture to produce a new form of cinematic experience.',
+    description3: 'I worked with Adriene Jenik in SPECFLIC 1.0 in La Jolla and SPECFLIC 2.0 in San Jose as Technical Director to identify and utilize transgressive digital media throughout the design and planning process. Physical architecture was transformed into immersive spaces where social experiences played out through digitally mediated audio and video streams (live and pre-recorded). During pre-production of SPECFLIC 2.0, I worked with Cinematographer John Pirozzi to assist with the HD shoot of Allison Janney and Richard Jenik in the MLK Library. I lead a large technical support team for SPECFLIC 2.0 which installed a complex network of projectors, cameras, microphones, speakers and computers inside, around and on top of the installation spaces.',
+    images: ['/images/specflic_infospherian300.jpg','/images/remote_melissa+all.jpg']
   },
-  // Varrier at IEEE
+  // Shape Grammar Objects
+  {
+    slug: 'shape-grammar-objects',
+    title: 'Shape Grammar Objects',
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
+    year: '2009',
+    medium: '3D Fabrication',
+    heroImage: '/images/SGs.jpg',
+    collaborators: ['Ruth West', 'JP Lewis'],
+    description: 'Shape Grammar Objects builds upon a previous large scale art-science collaboration, Atlas in silico, created in response to the contemporary cultural phenomena of the data deluge. ATLAS provides an intuitive discovery based infrastructure and unconventional methodology for investigating and understanding massive multidimensional data. Within ATLAS in silico, a shape grammar approach was created using n-dimensional glyphs to visualize metagenomics data from the Global Ocean Sampling Expedition (GOS).',
+    description2: 'This shape grammar was employed to represent millions of abstract individual records from the GOS (each record having variation in sequence, molecular structure and function as well as contextual metadata) and placed the biological data within each record in a human context. Within the virtual environment users explore GOS data in combination with contextual metadata at various levels of scale and resolution through interaction with multiple data-driven visual and auditory patterns at different levels of detail. It is a hybrid multi-scale strategy that merges quantitative and qualitative representation in ways that do not require a priori knowledge of the relationship between the underlying data and its mapping.',
+    description3: 'Shape grammar is used to algorithmically generate glyphs in real-time to reflect differences in the underlying data and metadata. In this way differing data can potentially be visually sorted in an exploratory fashion by an observer using their innate pattern recognition capability. This demands an approach that generates as wide a range of distinctive patterns as possible to represent millions of unique objects.\n\nA small sample of these algorithmic objects were used to generate printed visual altas plates and rapid prototyped sculptures as "natural specimens". Shape Grammar Objects are images and sculptures that return to the formalisms of biological atlases and preserved specimens of the 19th Century, documenting variation at a material scale that allows a visual experience of the data to augment blind algorithmic queries. This historic linkage is also reiterated by integrating the aesthetics of fine-lined copper engraving, lithography and grid-like layouts of 19th Century scientific representation with contemporary digital processes.',
+    images: ['/images/SGs.2.jpg','/images/perspective_view_shaded.3.gif']
+  },
+    // Varrier at IEEE
   {
     slug: 'varrier-IEEE',
     title: 'Camera Based Automatic Calibration for the Varrier System',
@@ -946,11 +962,11 @@ export const projects: Project[] = [
     subCategory: ['Tangible Artifacts', 'Display & Interaction Systems','Cultural Stewardship'],
     year: '1999-2001',
     medium: 'Artist-in-residence, Curator',
-    heroImage: '/images/artnLarge.jpeg',
-    description: 'Produced 3D artwork based on PHSCologram and ImmersaGram technology utilizing 3D modeling and animation. Served as project lead for a searchable image-database website and managed network systems and web server administration.',
+    heroImage: '/images/KarlWirsum_WaterWeWading_tif.avif',
+    description: 'As an Artist-in-Residence at (art)n Laboratory, I aided with the production of complex 3D artworks utilizing proprietary PHSCologram and ImmersaGram technologies. Bridging the gap between digital modeling and physical output, I utilized advanced 3D animation and rendering techniques to manifest scientific and conceptual data into tangible, multi-dimensional forms. Beyond the studio, I acted as a technical lead for the laboratory\'s infrastructure, architecting a searchable image-database and managing the administration of network systems and web servers to support their pioneering digital archive.',
+    description2: 'In my capacity as a Curator and collaborator, I facilitated the intersection of fine art and immersive technology, working alongside esteemed artists such as Ellen Sandor, Karl Wirsum, and Ed Paschke. A highlight of this tenure included co-producing a permanent installation at the Chicago Midway Airport—a high-visibility commission commemorating the Battle of Midway through a sophisticated blend of historical data and digital aesthetics. Additionally, I curated a landmark exhibition of "ImmersaGrams," showcasing virtual reality snapshots from an international roster of artists to explore the friction between ephemeral digital environments and permanent physical records.',
     images: ['/images/edPachkeLarge.jpg','/images/BattleOfMidwayLarge.jpeg'],
-    description2: 'Co-produced artwork for a permanent installation at the Chicago Midway Airport to commemorate the Battle of Midway. Curated an exhibition of ImmersaGrams (Virtual Reality Snapshots) by a group of international artists.',
-    collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Ellen Sandor'],
+    collaborators: ['Ellen Sandor', 'Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Karl Wirsum', 'Ed Pachke'],
     videoLink: 'https://vimeo.com/25333525?fl=pl&fe=cm'
   },
   // 11. NetSight
