@@ -975,8 +975,8 @@ export const projects: Project[] = [
   {
     slug: 'manifest-ar',
     title: 'Manifest.AR',
-    category: ['Strategy', 'Creative'],
-    subCategory: ['Cultural Entrepreneurship', 'Augmented Interventions'],
+    category: ['Strategy'],
+    subCategory: ['Cultural Entrepreneurship'],
     year: '2011-2012',
     medium: 'Artist Member',
     description: 'An international artists collective working with emergent forms of augmented reality as interventionist public art. The group sees this medium as a way of transforming public space and institutions by installing virtual objects and artworks which respond to and overlay the configuration of located physical meaning.',
