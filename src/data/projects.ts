@@ -27,6 +27,7 @@ export interface Project {
   contextCaption?: string;
   watermarkedImages?: string[];
   collaborators?: string[];
+  website?: string;
 }
 
 export const projects: Project[] = [
@@ -653,6 +654,51 @@ export const projects: Project[] = [
     description2: 'In my role as Technical Director at the lab, I managed the complex infrastructure required for such high-stakes, real-time media systems. This involved coordinating the logistical planning, latency management, and fault-tolerant network architecture necessary to ensure that human intuition and algorithmic logic could coexist seamlessly across a distributed network.',
     images: ['/images/TeleMotions2.jpg']
   },
+  // Inspiraling
+  {
+    slug: 'inspiraling',
+    title: 'Inspiraling',
+    category: ['Inquiry'],
+    subCategory: ['Collaborative Environments'],
+    year: '2010',
+    medium: 'Telepresence Performance',
+    heroImage: '/images/inspiraling_sd4_copy_hb.jpg',
+    collaborators: ['Mark Dresser'],
+    description: 'Inspiraling: Telematic Jazz Explorations was an unprecedented concert of new jazz works with renowned composers and performers for the telematic music medium. Telematic music is networked real-time performance by musicians in different geographic locations. Performers were located in New York and San Diego, playing together as one trans-continental ensemble in real-time and "real-space". There were local audiences as well as a world-wide webcast.',
+    description2: 'The music explored elements of jazz fused with artistic properties of telematic technology including multiplicity, heterophony, swing, polyphony, synchronicity, and nodality. The transparent densities and intensities were manifested to create this new music reality of telematic jazz.\n\nIn my role as Transmedia Producer I created a shared tele-collaborative performance environment enabling real-time spontaneity and musical tele-presence. This was achieved by utilizing advanced networking, HD video and multi-channel streaming audio with the coordinated efforts of artists and technologists from across the US. I lead the administrative effort to facilitate funding, budget planning, resource management and staff scheduling.',
+    description3: 'San Diego Performers: Hafez Modirzadeh, saxophone, Michael Dessen, trombone, Alex Cline, percussion, Mark Dresser, contrabass\n\nNew York Performers: Amir ElSaffar, trumpet, Oliver Lake, saxophone, Min Xiao-Fen, pipa, Gerry Hemingway, percussion, Sarah Weaver, conductor\n\nPresented by:\n\nCalit2 and the Center for Research and Computing in the Arts (CRCA), University of California San Diego. Special thanks to the Dean of Arts and Humanities and the Fund for Innovation for supporting this project.\\nnMusic Technology Program, Steinhardt School, New York University. Dr. Robert Rowe, Vice-Chair, Director of Music Composition, Department of Music and Performing Arts Professions.\n\nRoulette Intermedia, Inc. James Staley, Director',
+    images: ['/images/inspiraling_sd8_copy_hb.jpg','/images/IMG_3681_copy_hb.jpg']
+  },
+  // ESSA!
+  {
+    slug: 'essa',
+    title: 'ESSA!',
+    category: ['Creative','Inquiry'],
+    subCategory: ['Performative Systems', 'Collaborative Environments'],
+    year: '2013',
+    medium: 'Telepresence Performance',
+    heroImage: '/images/essa-icon.png',
+    collaborators: ['Diana Wu', 'Naruwan Taiko', 'Tracy Cornish'],
+    description: 'ESSA! was a groundbreaking live performance that merged the traditional power of Japanese taiko drumming with state-of-the-art digital media. While taiko has roots in ancient battlefield communication and community festivals, it has evolved over the last half-century into a sophisticated stage art. This specific production featured Naruwan Taiko, a San Diego-based ensemble founded by Diana Wu in 2008. True to its name—a Taiwanese Ami word meaning “welcome, for we are all in the same family”—the group focuses on inclusivity and cross-cultural community building, providing a space where individuals of all backgrounds and musical experience levels can explore the physical and mental benefits of the art form.',
+    description2: 'The performance served as a technical showcase for the Qualcomm Institute at Calit2, UCSD, utilizing 4K resolution visualizations—a medium then emerging as the new digital cinema standard. Co-produced by Todd Margolis and Tracy Cornish through the IDEAS initiative, the project leveraged Margolis’s research into extreme-scale media and enabling technologies. By presenting imagery at four times the resolution of standard HD, the team aimed to push the boundaries of how high-fidelity creative content could be integrated into live, energetic performances.',
+    description3: 'Each musical piece was paired with a distinct, real-time 4K visualization designed to reveal the invisible forces behind the drumming. These visuals were driven by a variety of data sources, including motion capture, EEG brain wave data, and computer graphics that responded dynamically to the physical impact of the performers striking the drums. By visualizing the physiological and neurological functions of the artists in real time, Margolis and Cornish provided the audience with a novel, high-resolution experience that translated the internal energy of the body and brain into a stunning visual spectacle.',
+    images: ['/images/Ha-Lightning.jpg'],
+    videoLink: 'https://youtu.be/TWHJbr_A6yY?t=39'
+  },
+  // ESSA!
+  {
+    slug: 'tele-taiko',
+    title: 'Tele-Taiko Teaching @ CineGrid',
+    category: ['Inquiry'],
+    subCategory: ['Collaborative Environments'],
+    year: '2013',
+    medium: 'Telepresence Performance',
+    collaborators: ['Diana Wu', 'Naruwan Taiko', 'Tracy Cornish'],
+    description: 'Tele-Taiko Teaching at CineGrid 2013 was a pioneering exploration into high-fidelity, low-latency remote pedagogy, leveraging high-speed optical networks to bridge the physical distance between instructor and student. Under the technical direction of Todd Margolis, the project featured Diana Wu of Naruwan Taiko utilizing advanced motion capture technology to provide real-time, nuanced instruction to Nicholas Vu over the CineGrid virtual network.',
+    description2: 'By integrating ultra-high-definition video streaming with motion-tracked data, the research successfully simulated the kinesthetic feedback of an in-person apprenticeship, proving that even the most physically demanding and rhythmically precise art forms can be effectively transmitted across global research networks.',
+    images: ['/images/tele-taiko.jpg','/images/TeleTaiko.jpg'],
+    videoLink: 'https://youtu.be/5KBoZfF-EK0'
+  },
   // Placeholder: ResoNations
   {
     slug: 'resonations',
@@ -661,11 +707,12 @@ export const projects: Project[] = [
     subCategory: ['Collaborative Environments'],
     year: '2009',
     medium: 'Telepresence Performance',
-    heroImage: '/images/placeholder.png',
-    description: 'ResoNations was an international, multi-site "telematic" performance that connected musicians across global distances in real-time, creating a unified sonic experience through high-speed optical networks. The project served as a high-stakes inquiry into the possibilities of networked media, utilizing the infrastructure of CineGrid and the Qualcomm Institute to facilitate low-latency, high-fidelity collaboration between performers in locations such as San Diego, New York, and Belfast. By bridging these geographically disparate spaces, the performance challenged the limitations of physical distance and explored the emergence of a "distributed" stage.',
-    description2: 'In my capacity as Technical Director for this performance, I was responsible for the rigorous logistical planning and fault-tolerant network architecture required to maintain synchronicity across continents. Managing the latency and audio-visual fidelity of ResoNations required more than just technical oversight; it demanded a strategic approach to Collaborative Environments, where human artistic intuition could coexist with complex algorithmic logic.',
-    images: ['/images/TeleMotions.jpg'],
-    collaborators: ['Mark Dresser']
+    heroImage: '/images/resonations_2_resized.jpg',
+    description: 'Simultaneously performed at the United Nations Headquarters in New York, University of California San Diego, The Banff Centre in Alberta, Canada, Queens University Belfast, and Dongguk University in Seoul',
+    description2: 'ResoNations was an international telematic music concert for peace on November 21, 2009 performed by twenty-six renowned musicians in five international locations: United Nations Headquarters in New York, University of California San Diego, The Banff Centre in Alberta, Canada, Queens University Belfast, and Dongguk University in Seoul. Telematic music is real-time performance via high-speed networks by musicians in different geographic locations. Four new contemporary music works for peace were performed by the composite ensemble: Hope\'s Dream by Mark Dresser and Sarah Weaver, Disparate Bodies by Pedro Rebelo, Rock, Paper, Scissors by Chris Chafe, and Green-colored Harmony by Jun Kim. There were audiences in each location and a world-wide webcast.',
+    description3: 'ResoNations was made possible by an international collaboration of musicians, conductors, performers and researchers. My role as Transmedia Producer was to unify five remote locations via high quality audio and video into a single cohesive networked environment. Using multicast video streaming via Access Grid and multi-channel audio streaming via JackTrip, we connected the remote spaces to form a unified performance and experience. ResoNations was part of the annual Innovation Talks Symposia held at the United Nations Headquarters in New York by the World Association of Former United Nations Internes and Fellows (WAFUNIF), a United Nations Peace Messenger. WAFUNIF Arts For Peace and the Permanent Mission of Romania to the United Nations sponsored the event.',
+    images: ['/images/resonations_7_resized.jpg','/images/resonations_1_resized.jpg'],
+    collaborators: ['United Nations Headquarters in New York, University of California San Diego, The Banff Centre in Alberta, Canada, Queens University Belfast, and Dongguk University in Seoul']
   },
   // Placeholder: Immersive Analytics
   {
@@ -899,7 +946,7 @@ export const projects: Project[] = [
     dimensions: 'University of California, San Diego',
     heroImage: '/images/placeholder.png',
     description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
-    images: ['/images/TeleTaiko.jpg']
+    images: ['/images/CRCA.jpg']
   },
   // 4. Rensselaer Polytechnic Institute
   {
@@ -967,7 +1014,8 @@ export const projects: Project[] = [
     description2: 'In my capacity as a Curator and collaborator, I facilitated the intersection of fine art and immersive technology, working alongside esteemed artists such as Ellen Sandor, Karl Wirsum, and Ed Paschke. A highlight of this tenure included co-producing a permanent installation at the Chicago Midway Airport—a high-visibility commission commemorating the Battle of Midway through a sophisticated blend of historical data and digital aesthetics. Additionally, I curated a landmark exhibition of "ImmersaGrams," showcasing virtual reality snapshots from an international roster of artists to explore the friction between ephemeral digital environments and permanent physical records.',
     images: ['/images/edPachkeLarge.jpg','/images/BattleOfMidwayLarge.jpeg'],
     collaborators: ['Ellen Sandor', 'Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Karl Wirsum', 'Ed Pachke'],
-    videoLink: 'https://vimeo.com/25333525?fl=pl&fe=cm'
+    videoLink: 'https://vimeo.com/25333525?fl=pl&fe=cm',
+    website: 'https://www.artn.com'
   },
   // 11. NetSight
   {

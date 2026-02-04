@@ -314,6 +314,11 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
           <span class="text-white">{project.collaborators.join(", ")}</span>
         </div>
         )}
+        {project.website && (
+        <div>
+          <a href={project.website} target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 underline break-all">{project.website.replace(/^https?:\/\//, '')}</a>
+        </div>
+        )}
         
         {/* Protected Logistics & Price Section */}
         <div id="protected-meta" class="hidden space-y-4 pt-8 border-t border-white/10">
