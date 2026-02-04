@@ -880,8 +880,8 @@ export const projects: Project[] = [
   {
     slug: 'columbia-college-chicago',
     title: 'Columbia\'s Interactive Arts and Media',
-    category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs'],
+    category: ['Inquiry','Strategy'],
+    subCategory: ['Pedagogy & Labs','Institutional Architecture'],
     year: '2000-2003',
     medium: 'Adjunct Faculty',
     dimensions: 'Columbia College Chicago',
@@ -893,8 +893,8 @@ export const projects: Project[] = [
   {
     slug: 'saic',
     title: 'SAIC\'s Art and Technology',
-    category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs'],
+    category: ['Inquiry','Strategy'],
+    subCategory: ['Pedagogy & Labs','Institutional Architecture'],
     year: '1999-2003',
     medium: 'Instructor',
     dimensions: 'School of the Art Institute of Chicago',
