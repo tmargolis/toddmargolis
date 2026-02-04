@@ -521,8 +521,8 @@ export const projects: Project[] = [
   {
     slug: 'huvr',
     title: 'HUVR',
-    category: ['Creative','Inquiry'],
-    subCategory: ['Display & Interaction Systems', 'Augmented Interventions'],
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
     year: '2010-2012',
     medium: 'Heads-Up Virtual Reality at UCSD',
     description: 'A small group of UCSD researchers have created a new, relatively low-cost augmented reality system that enables users to touch the virtual environment they are immersed in. The Heads-Up Virtual Reality device (HUVR) couples a consumer 3D HD flat screen TV with a half-silvered mirror to project any graphic image onto the user\'s hands and into the space surrounding them. With his or her head position optically tracked to generate the correct perspective view, the user maneuvers a force-feedback (haptic) device to interact with the 3D image, literally "touching" the object\'s angles and contours as if it was a tangible physical object.',
