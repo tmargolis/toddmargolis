@@ -668,8 +668,8 @@ export const projects: Project[] = [
   {
     slug: 'becoming-dragon',
     title: 'Becoming Dragon',
-    category: ['Creative'],
-    subCategory: ['Immersive Installations'],
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
     year: '2008-2010',
     medium: 'Augmented Reality',
     collaborators: ['Micha Cardenas'],
