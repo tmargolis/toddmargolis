@@ -846,7 +846,7 @@ export const projects: Project[] = [
     slug: 'ucsd-crca',
     title: 'UCSD\'s CRCA',
     category: ['Strategy', 'Inquiry'],
-    subCategory: ['Institutional Architecture', 'Pedagogy & Labs'],
+    subCategory: ['Academic Practice', 'Pedagogy & Labs'],
     year: '2005-2012',
     medium: 'Technical Director',
     dimensions: 'University of California, San Diego',
