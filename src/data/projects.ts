@@ -870,7 +870,7 @@ export const projects: Project[] = [
   // 5. Florida State University
   {
     slug: 'florida-state-university',
-    title: 'FSU's Translation Transmedia Research Institute',
+    title: 'FSU\'s Translation Transmedia Research Institute',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
