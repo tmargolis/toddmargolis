@@ -89,7 +89,7 @@ export const projects: Project[] = [
     subCategory: ['Augmented Interventions'],
     status: 'Work in Progress',
     year: '2026',
-    medium: 'Android app running on  Galaxy A9+ Tablet',
+    medium: 'Tablet application',
     dimensions: '11 x 7 x 1 inches',
     weight: '1 lb',
     price: '$1000 each',
@@ -499,9 +499,25 @@ export const projects: Project[] = [
     year: '2006-2013',
     medium: 'High-Performance Networked Media',
     heroImage: '/images/Cinegrid_4K3D.jpg',
+    collaborators: ['Lauren Herr', 'Natalie Van Osdel', 'Tom DeFanti'],
     description: 'CineGrid is a global, non-profit organization dedicated to the research and demonstration of ultra-high-quality digital media over high-speed photonic networks. At its core, the project functions as a specialized "collaboratory," integrating high-performance computing with the rigorous demands of digital cinema. By utilizing 10 Gbps optical networks, CineGrid enables the real-time distribution and collaborative editing of 4K, 8K, and stereoscopic 3D media across vast distances. This infrastructure effectively removes the geographical barriers of high-end production, allowing interdisciplinary teams to treat global networks as a singular, unified workspace.',
-    description2: 'A highlight of my research included networking media infrastructure, culminating in the tri-continental premiere of 4K feature-length media.  This milestone successfully established new benchmarks for distributed cinema, proving that uncompressed, ultra-high-resolution streams could be synchronized across continents with minimal latency.',
-    images: ['/images/CineSAGE-ILM.1-sm.jpg','/images/CineGrid-TED Large.jpeg','/images/CineGridVroom1.jpg']
+    description2: 'A highlight of my research included networking media infrastructure, culminating in the tri-continental premiere of 4K feature-length media.  This milestone successfully established new benchmarks for distributed cinema, proving that uncompressed, ultra-high-resolution streams could be synchronized across continents with minimal latency. That led to a private demonstration of this technology for George Lucas at Industrial Light & Magic.',
+    images: ['/images/audience.jpg','/images/CineSAGE-ILM.1-sm.jpg']
+  },
+  // CineGrid @ AES
+  {
+    slug: 'cinegrid-aes',
+    title: 'CineGrid @ AES',
+    category: ['Inquiry'],
+    subCategory: ['Collaborative Environments'],
+    year: '2006',
+    medium: 'High-Performance Networked Media',
+    heroImage: '/images/CineGridVroom1.jpg',
+    collaborators: ['Lauren Herr', 'Natalie Van Osdel', 'Tom DeFanti', 'Peter Otto', 'Industrial Light & Magic', 'Skywalker Sound'],
+    description: 'This landmark demonstration represented the first real-time streaming of synchronized 2K/4K digital cinema and 24-channel uncompressed audio across a 10,000-mile virtual LAN. Originating from nodes in Los Angeles, San Diego, and Tokyo, the high-fidelity streams were mixed live for an audience of industry leaders at the Letterman Digital Arts Center. The project proved the viability of extreme-scale telepresence and remote post-production for the future of digital theatrical distribution.',
+    description2: 'The technical program showcased the CineGrid philosophy of "networked extreme media" through four distinct acts, including interactive 4K telepresence and remote audio post-production. By leveraging uncompressed motion pictures and multi-channel spatialized audio, the event successfully simulated a globally distributed creative workflow. This research laid the groundwork for collaborative digital cinema specifications adopted by major Hollywood studios and international research institutions.',
+    description3: 'As part of the core planning and design team, I collaborated with engineers from Industrial Light & Magic (ILM) and Skywalker Sound to architect the audio-video infrastructure. My responsibilities included configuring remote uncompressed audio servers and local network routing to ensure ultra-low latency playback. During the live performance, I served as the lead technician for queuing and managing the 24-channel spatialized audio streams over IP.',
+    images: ['/images/crew_shot.png','/images/wagner250.jpg']
   },
   // Confluxus
   {
@@ -632,6 +648,7 @@ export const projects: Project[] = [
     year: '2011',
     medium: 'Telepresence Performance',
     heroImage: '/images/TeleMotions4.jpg',
+    collaborators: ['Mark Dresser'],
     description: 'TeleMotions was an experimental telepresence performance project developed by the Experimental Game Lab at the Qualcomm Institute (UCSD). The project functioned as an inquiry into networked collaboration, utilizing high-bandwidth optical networks to facilitate real-time, distributed performances between remote participants. By connecting physically separated performers through immersive media environments, TeleMotions sought to challenge traditional notions of "presence" and "place," creating a shared virtual stage where movement and sound could interact without geographical constraints.',
     description2: 'In my role as Technical Director at the lab, I managed the complex infrastructure required for such high-stakes, real-time media systems. This involved coordinating the logistical planning, latency management, and fault-tolerant network architecture necessary to ensure that human intuition and algorithmic logic could coexist seamlessly across a distributed network.',
     images: ['/images/TeleMotions2.jpg']
@@ -741,11 +758,10 @@ export const projects: Project[] = [
     category: ['Inquiry'],
     subCategory: ['Publications & Theory'],
     year: '2014',
-    medium: 'Augmented Reality Art book chapter (Springer)',
-    heroImage: '/images/placeholder.png',
+    medium: 'Augmented Reality Art book chapter (Springer International Publishing)',
     description: 'In the context of the 2014 publication Augmented Reality Art: From an Emerging Technology to a Novel Creative Medium, this chapter serves as a pivotal investigation into the shift from technical spectacle to a nuanced creative discipline. Rather than focusing on the mere "suspension of disbelief" or the visual blending of the real and virtual, the text situates the medium as a platform for "social immersion". By exploring the cultural potential of mobile AR, it bridges the gap between art history, gaming culture, and contemporary practice. This positioning defines the chapter as a foundational study of how AR serves as an integrative work of art, where the "freedom" of the medium allows for a model of the world that is conditionally defined through participant interaction.',
     description2: 'Relating to the Manifest.AR collective\’s ethos in 2014, the chapter reflects the group\'s radical move toward locative and socially-driven interventions. It highlights a specific turn away from purely sensorial technology toward a "new social form of immersion" that prioritizes the connection between people across distance and time. As the collective was known for its interventionist approach—often placing digital objects in physical spaces like MoMA or the Venice Biennale—this chapter provides the theoretical backbone for those actions. It argues that the true power of the medium lies in "collaborative locative media," shifting the focus from the artist\’s individual vision to collective, social outcomes within the shared digital-physical landscape.',
-    images: ['/images/placeholder.png']
+    images: ['/images/978-3-319-69932-5.jpeg']
   },
   // SPECFLIC
   {
@@ -772,7 +788,7 @@ export const projects: Project[] = [
     weight: 'Computer Vision and Pattern Recognition. Volume 3 pg. 110',
     description: 'Varrier is a head-tracked, 35-panel tiled autostereoscopic display system which is produced by The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC). Varrier produces autostereoscopic imagery through a combination of a physical parallax barrier and a virtual barrier, so that the stereoscopic images are directed correctly into the viewers eyes. Since a small amount of rotation and translation between physical and virtual barriers can cause large-scale effects, registration is critical for correct stereo viewing. The process is automated by examining image frames of two video cameras separated by the interocular distance as a simulation of human eyes. Three registration parameters for each panel are calibrated in the process. An arbitrary start condition is allowed and a robust stopping criterion is used to end the process and report results. Instead of exhaustive three dimensional searching, an efficient two phase calibration method is introduced. The combination of a heuristic rough calibration and an adaptive fine calibration guarantees a fast searching process with the best solution.',
     heroImage: '/images/placeholder.png',
-    images: ['/images/placeholder.png']
+    images: ['/images/varrier65p_mars.gif']
   },
   // Varrier at SPIE
   {
@@ -782,11 +798,11 @@ export const projects: Project[] = [
     subCategory: ['Publications & Theory'],
     year: '2001',
     medium: 'SPIE conference paper',
-    dimensions: 'Daniel J. Sandin, Todd Margolis, Greg Dawe, Jason Leigh, Thomas A. DeFanti',
+    collaborators: ['Daniel J. Sandin, Todd Margolis, Greg Dawe, Jason Leigh, Thomas A. DeFanti'],
     weight: 'Proc. SPIE 4297, Stereoscopic Displays and Virtual Reality Systems VIII, (22 June 2001); https://doi.org/10.1117/12.430818',
     description: 'The goal of this research is to develop a head-tracked, stern virtual reality system utilizing plasma or LCD panels. This paper describes a head-tracked barrier auto-stereographic method that is optimized for real-time interactive virtual reality systems. In this method, virtual barrier screen is created simulating the physical barrier screen, and placed in the virtual world in front of the projection plane. An off- axis perspective projection of this barrier screen, combined with the rest of the virtual world, is projected from at least two viewpoints corresponding to the eye positions of the head- tracked viewer. During the rendering process, the simulated barrier screen effectively casts shadows on the projection plane. Since the different projection points cast shadows at different angles, the different viewpoints are spatially separated on the projection plane. These spatially separated images are projected into the viewer\'s space at different angles by the physical barrier screen. The flexibility of this computational process allows more complicated barrier screens than the parallel opaque lines typically used in barrier strip auto-stereography. In addition this method supports the focusing and steering of images for a user\'s given viewpoint, and allows for very wide angles of view. This method can produce an effective panel-based auto-stereo virtual reality system.',
     heroImage: '/images/placeholder.png',
-    images: ['/images/placeholder.png']
+    images: ['/images/varrierEyes.jpg']
   },
   // Publications & Theory: Scalable metadata environments (SPIE Paper)
   {
@@ -796,16 +812,15 @@ export const projects: Project[] = [
     subCategory: ['Publications & Theory'],
     year: '2014',
     medium: 'SPIE Conference Paper',
-    dimensions: 'Ruth G. West, Todd Margolis, Andrew Prudhomme, Jürgen P. Schulze, Iman Mostafavi, J. P. Lewis, Joachim Gossmann, and Rajvikram Singh',
+    collaborators: ['Ruth G. West, Todd Margolis, Andrew Prudhomme, Jürgen P. Schulze, Iman Mostafavi, J. P. Lewis, Joachim Gossmann, and Rajvikram Singh'],
     weight: 'Proc. SPIE 9012, The Engineering Reality of Virtual Reality 2014, 901205 (28 February 2014); https://doi.org/10.1117/12.2038673',
-    heroImage: '/images/placeholder.png',
-    description: 'Scalable Metadata Environments (MDEs) are an artistic approach for designing immersive environments for large scale data exploration in which users interact with data by forming multiscale patterns that they alternatively disrupt and reform. Developed and prototyped as part of an art-science research collaboration, we define an MDE as a 4D virtual environment structured by quantitative and qualitative metadata describing multidimensional data collections. Entire data sets (e.g.10s of millions of records) can be visualized and sonified at multiple scales and at different levels of detail so they can be explored interactively in real-time within MDEs. They are designed to reflect similarities and differences in the underlying data or metadata such that patterns can be visually/aurally sorted in an exploratory fashion by an observer who is not familiar with the details of the mapping from data to visual, auditory or dynamic attributes. While many approaches for visual and auditory data mining exist, MDEs are distinct in that they utilize qualitative and quantitative data and metadata to construct multiple interrelated conceptual coordinate systems. These "regions" function as conceptual lattices for scalable auditory and visual representations within virtual environments computationally driven by multi-GPU CUDA-enabled fluid dyamics systems.',
-    images: ['/images/placeholder.png']
+    images: ['/images/ATLAS_PRINT_SGO_grid.jpg'],
+    description: 'Scalable Metadata Environments (MDEs) are an artistic approach for designing immersive environments for large scale data exploration in which users interact with data by forming multiscale patterns that they alternatively disrupt and reform. Developed and prototyped as part of an art-science research collaboration, we define an MDE as a 4D virtual environment structured by quantitative and qualitative metadata describing multidimensional data collections. Entire data sets (e.g.10s of millions of records) can be visualized and sonified at multiple scales and at different levels of detail so they can be explored interactively in real-time within MDEs. They are designed to reflect similarities and differences in the underlying data or metadata such that patterns can be visually/aurally sorted in an exploratory fashion by an observer who is not familiar with the details of the mapping from data to visual, auditory or dynamic attributes. While many approaches for visual and auditory data mining exist, MDEs are distinct in that they utilize qualitative and quantitative data and metadata to construct multiple interrelated conceptual coordinate systems. These "regions" function as conceptual lattices for scalable auditory and visual representations within virtual environments computationally driven by multi-GPU CUDA-enabled fluid dyamics systems.'
   },
   // Research Assistant (UIC/EVL)
   {
     slug: 'uic-evl',
-    title: 'UIC\'s Electronic Visualization Laboratory',
+    title: 'Electronic Visualization Laboratory @  UIC',
     category: ['Inquiry', 'Strategy'],
     subCategory: ['Pedagogy & Labs','Academic Practice'],
     year: '1998-2005',
@@ -815,6 +830,21 @@ export const projects: Project[] = [
     description: 'Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored papers on VR systems published at SIGGRAPH and SPIE 2001 and premiered the Varrier system at IEEE VR 2004.',
     description2: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
     images: ['/images/varrierColors.jpg']
+  },
+  // FILE 4K
+  {
+    slug: 'file-4k',
+    title: 'FILE 4K',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
+    year: '2009',
+    medium: 'Technical Director',
+    collaborators: ['UCSD, CineGrid, Intel Corp., IBM, Zaxel Inc., FILE, Sony Corp., Mackenzie University, University of São Paulo, RNP, FAPESP, ANSP, Telefonica, Foundry Networks, MackPesquisa, Padtec, O2. RNP with support from the Brazilian Ministry of Science and Technology (MCT)'],
+    description: 'In July 2009, I led a research team of artists, film-makers and computer scientists to produce two high profile and historic events at FILE (Electronic Language International Festival). We premiered a 4K feature film across three continents, streamed live from Brazil to the US and Japan. This was accompanied by an HD video teleconference (VTC) between the three sites. This was the first time a feature length 4K film was streamed across three continents and the first uncompressed HD VTC between the northern and southern hemispheres.\n\nThe 4K film Enquanto a Noite não Chega (While the Night Does Not Come), by Beto Souza and Renato Falcão, was shot on a RED camera, edited and color-corrected in São Paulo, Brazil. Its premiere took place simultaneously in São Paulo, San Diego and Yokohama via network streaming during FILE 2009. In order to discuss the importance of streaming 4K cinema over optical networks, a HD VTC was also organized to occur between the same 3 sites one day after the premiere. The 15 person VTC panel had as participants: the Brazilian Minister of Culture, the president of Mackenzie University, the coordinators of several Brazilian networking companies as well as remote participants in San Diego and Japan.',
+    description2: 'While the first wave of digital cinema had been installed at HD resolution, 4K cinema offered significant improvements in quality while demanding a more sophisticated means of processing and distribution. The resolution of each frame of 4K cinema is four times that of High Definition video, comprising 3840x2160 pixels per frame. The resulting image has tremendous clarity and can provide new aesthetic methods for film makers to pursue. Through this work, the new creative affordances of 4K cinema were highlighted, along with the new capabilities of cinematic distribution, production and experience.\n\nIn my capacity as Technical Director, I led the system design and equipment specification for a worldwide collaboration. Manually provisioning the necessary networks to transport the large amounts of data generated by 4K cinema and uncompressed HD video required the efforts of many groups responsible for each segment of the customized lightpath. Having to coordinate the project via emails across several time zones added to the logistical complexity. Extending the network over the proverbial ‘last mile‘ to the show venue, was a true test of the political will and the technical savvy of the local team. Given the emergent nature of the 4K medium, we devised new methods for rendering, previewing, encoding, transferring, synchronizing and streaming 4K media. My role as the local 4K/streaming HD expert included exchanging knowledge with the Brazilian research teams to ensure the event’s success and enable future collaborations.',
+    heroImage: '/images/fig6.5.jpg',
+    images: ['/images/fig4.1.jpg','/images/fig6.4.jpg'],
+    videoLink: 'https://youtu.be/8JX1Yv7TfDQ'
   },
   // Professional experience
   // 1. Qlik
@@ -832,7 +862,7 @@ export const projects: Project[] = [
   // 2. University of California, San Diego (Qualcomm Institute)
   {
     slug: 'ucsd-qualcomm',
-    title: 'UCSD\'s Qualcomm Institute',
+    title: 'Qualcomm Institute @ UCSD',
     category: ['Strategy','Inquiry'],
     subCategory: ['Pedagogy & Labs', 'Academic Practice'],
     year: '2012-2014',
@@ -845,7 +875,7 @@ export const projects: Project[] = [
   // 3. University of California, San Diego (CRCA)
   {
     slug: 'ucsd-crca',
-    title: 'UCSD\'s CRCA',
+    title: 'CRCA @ UCSD',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Academic Practice', 'Pedagogy & Labs'],
     year: '2005-2012',
@@ -858,7 +888,7 @@ export const projects: Project[] = [
   // 4. Rensselaer Polytechnic Institute
   {
     slug: 'rpi',
-    title: 'RPI\'s Emergent Reality Lab',
+    title: 'Emergent Reality Lab @ RPI',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
@@ -870,7 +900,7 @@ export const projects: Project[] = [
   // 5. Florida State University
   {
     slug: 'florida-state-university',
-    title: 'FSU\'s Translation Transmedia Research Institute',
+    title: 'Translation Transmedia Research Institute @ FSU',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
@@ -882,28 +912,31 @@ export const projects: Project[] = [
   // 7. Columbia College Chicago
   {
     slug: 'columbia-college-chicago',
-    title: 'Columbia\'s Interactive Arts and Media',
+    title: 'Interactive Arts and Media @ Columbia',
     category: ['Inquiry','Strategy'],
     subCategory: ['Pedagogy & Labs','Academic Practice'],
     year: '2000-2003',
     medium: 'Adjunct Faculty',
     dimensions: 'Columbia College Chicago',
-    heroImage: '/images/placeholder.png',
     description: 'Instructor for Programming Web Databases (PHP/MySQL) and Introduction to Multimedia Programming (Macromedia Director/Lingo). Frequent guest lecturer for courses relating to art and technology in the Photography, Art History, Academic Computing and Interactive Multimedia departments.',
-    images: ['/images/placeholder.png']
+    images: ['/images/game-art-m.jpg']
   },
   // 8. School of the Art Institute of Chicago
   {
     slug: 'saic',
-    title: 'SAIC\'s Art and Technology',
+    title: 'Art and Technology @ SAIC',
     category: ['Inquiry','Strategy'],
     subCategory: ['Pedagogy & Labs','Academic Practice'],
     year: '1999-2003',
     medium: 'Instructor',
     dimensions: 'School of the Art Institute of Chicago',
-    heroImage: '/images/placeholder.png',
-    description: 'Taught graduate courses in Virtual Environments (Linux/C++/YG/OpenGL/Performer), Web Architecture (DHTML/Macromedia Flash) and Experimental Programming for the Web (DHTML/Macromedia Flash).',
-    images: ['/images/placeholder.png']
+    heroImage: '/images/art-institute-of-chicago.jpg',
+    collaborators: ['Ben Chang'],
+    description: 'As an instructor in the Art and Technology department at the School of the Art Institute of Chicago, I led graduate-level seminars focused on the intersection of creative practice and advanced technical infrastructure. My curriculum spanned from low-level systems programming in Linux and C++ for high-performance virtual environments—utilizing tools like OpenGL and Performer—to the development of experimental web architectures and interactive programming using DHTML and Macromedia Flash. By guiding students through these complex frameworks, I facilitated the exploration of digital aesthetics and the creation of sophisticated, data-driven artworks that push the boundaries of immersive and web-based media.',
+    description2: 'The Immersive Environments seminar was a graduate-level research course at the School of the Art Institute of Chicago that served as an interdisciplinary laboratory for students across diverse fields such as sculpture, architecture, computer programming, and sound. Led by instructors Ben Chang and Todd Margolis, the curriculum balances technical mastery of advanced Virtual Reality development with rigorous conceptual critique. Students explored the evolution of digital aesthetics and contemporary theory while interrogating a wide spectrum of media—from special effects and gaming to "hypertextual synaesthesia"—to understand the broader cultural implications of immersive tech.',
+    description3: 'The Beyond Prototypes exhibition showcased the culmination of this research, inviting the public to engage with a series of experimental virtual reality installations. Utilizing body tracking and stereoscopic video projection, the gallery transformed into a multi-sensory environment where visitors could navigate worlds ranging from poetic visualizations to bizarre interactive narratives. The collection moved past technical demos to present fully realized artworks, featuring projects that pushed the boundaries of architectural visualization and sculptural form through a digital lens.',
+    images: ['/images/lab1_400.jpg','/images/350x622-toddnewevent_185.jpg'],
+    videoLink: 'https://vimeo.com/25292528?fl=pl&fe=cm'
   },
   // Updated: (art)n Laboratory
   {
@@ -924,12 +957,12 @@ export const projects: Project[] = [
   {
     slug: 'netsight',
     title: 'NetSight',
-    category: ['Strategy'],
-    subCategory: ['R&D Leadership'],
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
     year: '1995-1996',
     medium: 'Webmaster',
     heroImage: '/images/netsight.png',
-    description: 'Developed new business areas for a local ISP to offer web hosting and design services. We specialized in providing some of the first 3D VRML websites for the Chicago area.',
+    description: 'In this role as Webmaster for a pioneering Chicago-based ISP, I spearheaded the expansion of traditional internet services into the nascent fields of web hosting and interactive design. By leveraging early-stage spatial computing, I specialized in the development of some of the region\'s first 3D VRML (Virtual Reality Modeling Language) websites, effectively introducing immersive 3D navigation to the web. This work laid the foundation for my ongoing inquiry into display systems by transforming static browsing into a navigable, three-dimensional experience.',
     images: ['/images/SGI_indy.jpeg']
   },
   // Local ARt
@@ -1048,8 +1081,9 @@ export const projects: Project[] = [
     year: '2008-2012',
     medium: 'Technical Director',
     heroImage: '/images/placeholder.png',
-    description: 'Founded by Dr. Lev Manovich to disseminate the broad vision that software is a layer that permeates all areas of contemporary societies. As Technical Director, I developed projects, workshops, and publications analyzing contemporary techniques of control, communication, representation, and simulation through the lens of this software layer.',
-    images: ['/images/placeholder.png']
+    collaborators: ['Lev Manovich'],
+    description: 'Disseminate the broad vision that software is a layer that permeates all areas of contemporary societies. As Technical Director, I developed projects, workshops, and publications analyzing contemporary techniques of control, communication, representation, and simulation through the lens of this software layer.',
+    images: ['/images/maxresdefault.jpg']
   },
   // Experimental Game Lab
   {
@@ -1068,11 +1102,11 @@ export const projects: Project[] = [
   {
     slug: 'poweruser-inc',
     title: 'PowerUser Inc.',
-    category: ['Strategy'],
-    subCategory: ['R&D Leadership'],
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
     year: '1998-2000',
     medium: 'Web Developer',
-    description: 'Project manager for dynamic, database-driven websites. Installed and administered web server and e-commerce systems, collaborating on interactive site creation and site layout programming.',
+    description: 'During my tenure as a Web Developer at PowerUser, I spearheaded the development of sophisticated, database-driven web architectures, bridging the gap between robust back-end infrastructure and intuitive user interaction. My role encompassed the full lifecycle of digital deployment, from the hands-on administration of web servers and e-commerce systems to the collaborative programming of dynamic site layouts. By integrating complex data systems with interactive design principles, I focused on creating scalable display and interaction frameworks that prioritized both technical stability and a seamless end-user experience.',
     images: ['/images/poweruser.jpg']
   },
   // Minority Report: Qlik Gesture
