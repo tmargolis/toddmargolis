@@ -1026,8 +1026,8 @@ export const projects: Project[] = [
   {
     slug: 'applied-interactives',
     title: 'Applied Interactives',
-    category: ['Strategy', 'Creative'],
-    subCategory: ['Cultural Entrepreneurship', 'Immersive Installations'],
+    category: ['Strategy'],
+    subCategory: ['Cultural Entrepreneurship'],
     year: '2001-2005',
     videoLink: 'https://vimeo.com/26047034?fl=pl&fe=cm',
     medium: 'Founding Member / President',
