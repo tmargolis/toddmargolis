@@ -806,8 +806,8 @@ export const projects: Project[] = [
   {
     slug: 'uic-evl',
     title: 'UIC\'s Electronic Visualization Laboratory',
-    category: ['Inquiry'],
-    subCategory: ['Display & Interaction Systems', 'Pedagogy & Labs'],
+    category: ['Inquiry', 'Strategy'],
+    subCategory: ['Pedagogy & Labs','Academic Practice'],
     year: '1998-2005',
     medium: 'Research Assistant',
     dimensions: 'University of Illinois at Chicago',
