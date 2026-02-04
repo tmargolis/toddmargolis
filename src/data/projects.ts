@@ -858,10 +858,11 @@ export const projects: Project[] = [
   // 4. Rensselaer Polytechnic Institute
   {
     slug: 'rpi',
-    title: 'Rensselaer Polytechnic Institute',
+    title: 'RPI's Emergent Reality Lab',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
+    dimensions: 'Rensselaer Polytechnic Institute',
     medium: 'Consultant',
     description: 'Provided technical expertise for building a Virtual Reality system for the new Emergent Reality Lab at RPI. This included space planning, CAD drawing, requirements assessment, system design, equipment specification and configuration of the immersive and interactive system.',
     images: ['/images/erl.png']
@@ -869,10 +870,11 @@ export const projects: Project[] = [
   // 5. Florida State University
   {
     slug: 'florida-state-university',
-    title: 'Florida State University',
+    title: 'FSU's Translation Transmedia Research Institute',
     category: ['Strategy', 'Inquiry'],
-    subCategory: ['Academic Practice'],
+    subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
+    dimensions: 'Florida State University'
     medium: 'Consultant',
     description: 'In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This included defining research activities, facility specification, space requirements, equipment classification and furnishing specifications.',
     images: ['/images/Florida-State-University_blog-cover Large.jpeg']
