@@ -874,7 +874,7 @@ export const projects: Project[] = [
     category: ['Strategy', 'Inquiry'],
     subCategory: ['Academic Practice', 'Display & Interaction Systems'],
     year: '2011-2012',
-    dimensions: 'Florida State University'
+    dimensions: 'Florida State University',
     medium: 'Consultant',
     description: 'In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This included defining research activities, facility specification, space requirements, equipment classification and furnishing specifications.',
     images: ['/images/Florida-State-University_blog-cover Large.jpeg']
