@@ -1065,8 +1065,8 @@ export const projects: Project[] = [
   {
     slug: 'experimental-game-lab',
     title: 'UCSD\'s Experimental Game Lab',
-    category: ['Inquiry', 'Creative'],
-    subCategory: ['Pedagogy & Labs', 'Immersive Installations'],
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
     year: '2005-2012',
     collaborators: ['Sheldon Brown'],
     medium: 'Technical Director',
