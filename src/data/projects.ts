@@ -1035,7 +1035,7 @@ export const projects: Project[] = [
     subCategory: ['Cultural Stewardship'],
     year: '2000-2005',
     medium: 'Director / Artist Member',
-    description: 'A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in "Information Arts" by Steve Wilson, MIT’s Leonardo journal, and YLEM. Managed multimedia programming, web site development, and technical support for large-scale new media art shows.',
+    description: 'A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in "Information Arts" by Steve Wilson, MIT’s Leonardo journal, and YLEM.',
     collaborators: ['Fernando Orrelana', 'Sabrina Raaf', 'Andrea Polli'],
     images: ['/images/sineLarge.jpeg']
   },
