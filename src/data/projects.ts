@@ -31,58 +31,6 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // 1. Bang
-  {
-    slug: 'bang',
-    title: 'Bang',
-    category: ['Creative'],
-    subCategory: ['Performative Systems'],
-    status: 'Awaiting Fabrication',
-    year: '2026',
-    medium: 'Kinetic Installation (Latex, Pneumatics)',
-    dimensions: '48 x 24 x 24 inches',
-    weight: '25 lb',
-    price: '$2,500.00',
-    note: 'Requires 15A Circuit',
-    heroImage: '/images/bang.png',
-    quote: 'A breathing universe.',
-    description: 'In the quiet of the gallery, a universe is born and collapses, again and again. Bang is a potent kinetic sculpture that transforms a common scientific instrument—a weather balloon—into a profound and tangible cosmic event. Through a starkly simple yet powerful mechanism, the artwork invites viewers into a direct, physical engagement with the fundamental rhythms of creation and destruction.',
-    description2: 'At the heart of the work is a large black weather balloon, whose deep, matte surface is speckled with countless white dots. Using a precisely controlled, closed-loop air pressure system, the artwork performs a relentless, meditative cycle. The balloon slowly expands from a dense, "singularity-like" state to a massive 5.5-foot sphere, holding its form before contracting back to its origin. This rhythmic inflation and deflation is the artwork\'s "cosmic breath"—a living, breathing entity whose presence alters the scale, sound, and even the subtle air currents of the room.\n\nBang powerfully evokes the cycle of cosmic creation and destruction—a tangible metaphor for the Big Bang and the hypothetical "Big Crunch." Its engagement with perception and negative space places it in dialogue with the minimalist and Light and Space movements.',
-    description3: 'Like artists who use pigment or light to create seemingly bottomless voids, Bang uses its light-absorbing surface and shifting volume to dematerialize solid form. This work is a distilled, physical expression of Todd Margolis\'s career-long exploration of technology, perception, and immersive experience. While his digital work uses code and screens to transport the user, Bang achieves a similar perceptual shift using only air and latex, giving tangible, rhythmic form to abstract cosmological concepts of universal expansion and contraction.',
-    images: [
-        '/images/bang.png',
-        '/images/Uninflated.jpg',
-        '/images/BigBang.jpg'
-    ],
-    videos: [
-      '/images/Balloon Expanding Closeup.mp4' 
-    ],
-    watermarkedImages: ['/images/bang.png', '/images/Uninflated.jpg', '/images/BigBang.jpg']
-  },
-  // 2. Black Hole Vision
-  {
-    slug: 'black-hole-vision',
-    title: 'Spaghettification',
-    category: ['Creative'],
-    subCategory: ['Immersive Installations'],
-    status: 'Awaiting Fabrication',
-    year: '2026',
-    medium: 'Virtual Reality',
-    dimensions: '7 x 6 x 12 inches',
-    weight: '1 lb',
-    price: '$5,000.00',
-    note: 'Requires power',
-    heroImage: '/images/Spaghettification.1.png',
-    quote: 'The tidal force of the infinite.',
-    description: 'Spaghettification offers a visceral, firsthand encounter with one of the universe\'s most mind-bending phenomena. The artwork moves beyond mere illustration, crafting an immersive simulation that invites viewers to witness the dramatic distortion of an object as it crosses a black hole\'s event horizon - the infamous "point of no return." Rooted in Einstein\'s theory of general relativity, the piece makes perceptible the theoretical process of extreme tidal forces stretching matter vertically while simultaneously squeezing it horizontally.\n\nThis is not a passive observation, but an embodied experience of overwhelming transformation, designed to evoke the cosmic sublime: a profound sense of awe, fragility, and existential dread. The viewer is confronted with the disintegration of form as an object is elongated into a terrifyingly thin strand, just moments before vanishing into the singularity - the infinitely dense point where the laws of physics break down. Spaghettification thus transposes a purely theoretical concept into a lived sensation, challenging the limits of human perception and offering a confrontation with ultimate unknowability.',
-    description2: 'This work is a distilled expression of artist Todd Margolis\'s career at the intersection of art, science, and technology. For over two decades, Margolis has used advanced immersive technologies to visualize complex systems and transform abstract data into tangible, experiential art. His extensive background in Electronic Visualization and pioneering work in Virtual and Augmented Reality provide the robust framework for such a project.\n\nThis piece aligns perfectly with a consistent pattern seen in works like ATLAS in silico, which visualized particle physics simulations in VR, and his research developing "artistically impelled immersive environments for large-scale data exploration." Across his practice - from co-inventing the Varrier™ auto-stereoscopic VR display to leading interdisciplinary teams at institutions like the Qualcomm Institute - Margolis has consistently sought to create platforms that manipulate and extend human perception. Spaghettification is therefore not an outlier, but a signature achievement that leverages deep technological expertise to make the invisible forces of the cosmos palpable, continuing his enduring exploration of the dialogue between scientific inquiry and artistic expression.',
-    images: [
-      '/images/Spaghettification.1.png',
-      '/images/black-hole-vision-2.jpg'
-    ],
-    watermarkedImages: ['/images/Spaghettification.1.png', '/images/black-hole-vision-2.jpg']
-  },
-  // 3. Delayed Vision
   {
     slug: 'delayed-vision',
     title: 'Delayed Vision',
@@ -205,29 +153,6 @@ export const projects: Project[] = [
     description3: 'This piece is not a nostalgic novelty; it is the culmination of a career dedicated to the intersection of art, technology, and perception. For decades, Margolis has been a pioneer in immersive media, from his early co-invention of the Varrier™ auto-stereoscopic display to his creation of 3D artwork using PHSCologram technology. This View-Master project is a direct extension of that lifelong inquiry, refining large-scale concepts into a profoundly personal form.\n\nDuring his tenure at the Qualcomm Institute at UCSD, Margolis designed "discovery platforms" to translate vast scientific datasets into immersive, understandable experiences. This practice of turning complex information into compelling visual encounters is central to his work. The View-Master, then, becomes the perfect synthesis of his artistic and technological concerns: using a historical medium of mass visual consumption to frame cutting-edge scientific discovery and contemporary cultural mythology. In doing so, he forges a tangible, and critical, connection between human curiosity, commercial ambition, and the farthest reaches of our universe.',
     watermarkedImages: ['/images/View-MasterReelSm.png', '/images/Pluto-Previs_1.jpg','/images/asteroid-anaglyph.png', '/images/ProximaAvi.png', '/images/Horizons-moon.jpg']
   },
-  // 6. Metronome
-  {
-    slug: 'audio-counter',
-    title: 'Metronome',
-    category: ['Creative'],
-    subCategory: ['Performative Systems'],
-    status: 'Awaiting Fabrication',
-    year: '2026',
-    medium: 'Generative Audio',
-    dimensions: 'Variable',
-    weight: 'N/A',
-    note: 'Stereo Speakers',
-    heroImage: '/images/pulsar.jpg',
-    quote: 'A chorus of the cosmos.',
-    description: 'METRONOME is an auditory experiment that invites you to listen to—and physically feel—the immense scale of the observable universe. While our cosmos holds an estimated two trillion galaxies, it is also governed by a precision that rivals the finest clockwork. This artwork transforms the incomprehensible magnitude of celestial time into a tangible, visceral encounter.',
-    description2: 'The installation functions as a dual-layered cosmic timepiece. Every second, the piece triggers the audible sonification of a unique pulsar—the "cosmic metronomes" of the universe. These spinning neutron stars are the most stable timekeepers in existence, and here, they provide a persistent 1Hz heartbeat for the room. Listeners hear a constantly evolving "chorus of the cosmos," ranging from the sharp, metallic clicks of millisecond pulsars to the hollow, percussive thumps of ancient stars.\n\nThis steady rhythmic immersion is punctuated every hour by a "Catastrophic Event." The pulsar clock falls into a heavy, expectant silence as the room is overtaken by raw, low-frequency data from a LIGO binary black hole merger. By time-stretching these sub-second events into thirty-second swells, METRONOME shifts the experience from the ears to the bones. Using high-output subwoofers, the merger becomes a pressure event—a literal sensation of spacetime being compressed and stretched. It is the sublime rendered audible and tactile for the first time.',
-    description3: 'This piece is a natural culmination of artist Todd Margolis\'s two-decade career exploring the intersection of art, technology, and large-scale data. From developing immersive discovery platforms for scientific research in Virtual Reality to his academic work on "Scalable Auditory Data Signatures," Margolis has consistently sought to translate vast, abstract information into meaningful human experiences. Here, he extends that inquiry to the ultimate dataset: the fundamental fabric of spacetime.\n\nThe artwork resonates deeply with the mission of Observables, exploring the contrast between the ancient, enduring universe and the fleeting, ephemeral nature of the digital sound attempting to capture it. METRONOME becomes an artifact from a future we haven\'t yet reached—a self-organizing sonic tapestry that embodies our ambition to comprehend the incomprehensible, forcing a confrontation with humanity\'s place within an unfathomable expanse.',
-    images: [
-      '/images/gravitationWave.jpg',
-      '/images/gsmf.gif'
-    ],
-    watermarkedImages: ['/images/Audio_Stats.png', '/images/gsmf.gif']
-  },
   // 6. Perfect Parlor
   {
     slug: 'perfect-parlor',
@@ -260,33 +185,6 @@ export const projects: Project[] = [
     images: [
       '/images/infiniteStudioBig2.jpg'
     ]
-  },
-  // 7. The Edge
-  {
-    slug: 'the-edge',
-    title: 'The Edge',
-    category: ['Creative'],
-    subCategory: ['Immersive Installations'],
-    status: 'Awaiting Fabrication',
-    year: '2026',
-    medium: 'Laminar Flow Fog Screen',
-    dimensions: '70 x 30 inches',
-    weight: '30kg',
-    price: '$10,000.00',
-    note: 'Requires non-windy environment',
-    heroImage: '/images/LaminarFlowMethod-1.png',
-    quote: 'A curtain of uncertainty.',
-    description: 'This work uses advanced laminar flow technology—a technique that creates a perfectly smooth, undisturbed stream of air—to sculpt a seemingly impossible object: a perfect, thin wall of fog. It stands in the space like a slice of a cloud, a smooth, touchable plane that appears solid yet yields to the slightest touch. The wall is a physical boundary that is also an invitation. Visitors are encouraged to approach it, to see their reflection dissolve on its surface, to reach out and feel the cool, fine mist, and then to step through it.',
-    description2: 'The installation is a physical metaphor for the edge of the observable universe. This cosmic boundary is not a wall in space, but the limit of what we can see—the point beyond which light has not had time to reach us. Like that boundary, the fog wall is visible and tangible, yet it is also permeable. Walking through it does not reveal what lies on the other side; it simply envelops you for a moment in the very substance of the boundary itself. The experience transforms an astronomical concept into an intimate, personal encounter, creating a profound awareness of the limits of our own perception and challenging us to reconsider the nature of edges, both physical and conceptual.',
-    description3: 'For over two decades, my work has explored the intersection of technology and perception, creating immersive environments that make intangible ideas tangible. From building Virtual Reality worlds that visualize massive scientific datasets to developing Augmented Reality experiences that overlay digital information onto our physical space, my practice has consistently focused on how we encounter and understand boundaries. This installation is a logical extension of that inquiry, moving beyond the screen to create a purely physical, yet technologically mediated, experience. Where my past work in VR and AR used digital portals to explore new realities, this fog wall provides a physical one. It synthesizes a career of technological research with a fundamental question about the human condition: how do we relate to the things we can perceive but not fully comprehend? The fog wall offers no answers, only the direct, sensory experience of standing at the edge.',
-    images: [
-      '/images/LaminarFlowMethod-1.png',
-      '/images/EdgeSideView.png'
-    ],
-    videos: [
-      '/images/EdgePrevis.mp4' 
-    ],
-    watermarkedImages: ['/images/LaminarFlowMethod-1.png', '/images/EdgeSideView.png']
   },
   // 8. Now & Then
   {
@@ -341,7 +239,7 @@ export const projects: Project[] = [
     title: 'Neighbors',
     category: ['Creative'],
     subCategory: ['Tangible Artifacts'],
-    status: 'Awaiting Fabrication',
+    status: 'Work in Progress',
     year: '2026',
     medium: 'Cast Material',
     dimensions: 'Variable',
@@ -376,53 +274,6 @@ export const projects: Project[] = [
         'Physical visualization of an event horizon, giving form to the invisible pull of a black hole.'
     ],
     watermarkedImages: ['/images/Spheroids-Previs1.png', '/images/Flats-Previs_1.png', '/images/Mars-Previs_1..png', '/images/MilkyWay-Previs_1.png', '/images/Moon-Previs_1.png', '/images/Sun-Previs_1.png', '/images/BlackHole-Previs_1.png']
-  },
-  // 10. CMB VR
-  {
-    slug: 'cmb-vr',
-    title: 'CMB',
-    category: ['Creative'],
-    subCategory: ['Immersive Installations'],
-    status: 'Awaiting Fabrication',
-    year: '2026',
-    medium: 'Virtual Reality',
-    dimensions: '7 x 6 x 12 inches',
-    weight: '1 lb',
-    price: '$5,000.00',
-    note: 'Requires power',
-    heroImage: '/images/Screenshot_20260101-084458~2.png',
-    quote: 'Inside the first light.',
-    description: 'This Virtual Reality experience offers a direct, personal encounter with the origins of our universe. You are positioned within a sphere mapped with the Cosmic Microwave Background (CMB)—the faint energy leftover from the Big Bang, often called the oldest light in the universe. Rather than observing data on a screen, you are literally placed inside it. Floating in this primal afterglow, the abstract measurements of cosmology are transformed into an enveloping visual fabric, making the universe\'s birth not just something to be seen, but to be felt.',
-    description2: 'This visual immersion is synchronized with a unique audio landscape that represents the Doppler effect, the same phenomenon you hear in the changing pitch of a passing siren. Here, the soundscape gives a visceral dimension to the cosmic motion, expansion, and vast timescales embedded within the light. The experience collapses the immense observational distance between us and the dawn of time, aiming to inspire a state of awe and recalibrate our sense of scale, self, and connection to the grand cosmic narrative. It presents the fundamental story of our universe not as a cognitive exercise, but as a direct, perceptual immersion.',
-    images: [
-      '/images/Screenshot_20260101-084458~2.png',
-      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop'
-    ],
-    watermarkedImages: ['/images/Screenshot_20260101-084458~2.png']
-  },
-  // 11. Redshifter
-  {
-    slug: 'redshifter',
-    title: 'Redshifter',
-    category: ['Creative'],
-    subCategory: ['Immersive Installations'],
-    status: 'Awaiting Fabrication',
-    year: '2026',
-    medium: 'Room Installation',
-    dimensions: '70 x 30 inches',
-    weight: 'N/A',
-    price: '$10,000.00',
-    note: '1 Large (ideally 12 foot diagonal) short throw projector. Camera and LIDAR ceiling mounted',
-    heroImage: '/images/Redshifter.png',
-    quote: 'The color of velocity.',
-    description: 'Before you stands a massive, hyper-realistic screen, a digital mirror reflecting the gallery and you within it. But this is no ordinary mirror; it is a window looking down an impossibly deep corridor of time and space. As you watch figures on the screen—your fellow visitors, perhaps even yourself—recede into this virtual distance, a profound transformation begins. First, their image stretches and shifts into the deep, ruby hues of "redshift," the same visual evidence astronomers use to see the universe expanding.',
-    description2: 'Further on, they fade beyond visible light, becoming ghostly, high-contrast monochrome figures as if seen in infrared. The most striking effect is that of time itself unraveling. With increasing distance, adults seamlessly de-age into children, then into tiny, near-static newborn infants. This is a direct and poignant visualization of "lookback time," the cosmological principle that to look out across the universe is to look back into its primordial past. At the absolute limit of perception, these infants dissolve completely, fading into the grainy, gray static of the Cosmic Microwave Background—the faint, persistent echo of the Big Bang, the earliest light in our universe. "The 1089th Step" is an immediate, visceral experience that translates the grand, abstract narrative of the cosmos into a tangible and deeply personal journey.',
-    description3: 'This work is a powerful culmination of Todd Margolis\'s career, which has consistently pioneered the use of emerging technology to create profound human experiences. His extensive background in developing immersive systems—from inventing new VR hardware to creating "expressive virtual reality contexts" for large-scale scientific data in works like "ATLAS in silico"—provides the technical and conceptual foundation for this piece. "Redshifter" situates itself in the lineage of Light and Space art, but instead of architectural light, it uses sophisticated digital simulation to manipulate our perception. It is not merely an illustration of science but a direct phenomenological inquiry, using the "live feed" to implicate us directly in its cosmic timeline. The installation evokes a modern "technological sublime," harnessing digital media to inspire the same awe and existential reflection that vast natural landscapes once did. By collapsing 13.8 billion years into the length of a gallery hall, the work transforms complex physics into an embodied encounter, bridging the unfathomable scale of the universe with the intimate scale of a single human life and asking a fundamental question: how do we perceive our place within this grand, unfolding story?',
-    images: [
-      '/images/Redshifter.png',
-      'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop'
-    ],
-    watermarkedImages: ['/images/Redshifter.png']
   },
   // 12. Sky Watcher
   {
@@ -685,7 +536,7 @@ export const projects: Project[] = [
     images: ['/images/Ha-Lightning.jpg'],
     videoLink: 'https://youtu.be/TWHJbr_A6yY?t=39'
   },
-  // ESSA!
+  // Tele-taiko
   {
     slug: 'tele-taiko',
     title: 'Tele-Taiko Teaching @ CineGrid',
@@ -1139,9 +990,9 @@ export const projects: Project[] = [
   // Software Studies Initiative
   {
     slug: 'software-studies',
-    title: 'UCSD\'s Software Studies Initiative',
-    category: ['Inquiry', 'Strategy'],
-    subCategory: ['Pedagogy & Labs', 'Publications & Theory'],
+    title: 'UCSD\'s Software Studies',
+    category: ['Inquiry'],
+    subCategory: ['Pedagogy & Labs'],
     year: '2008-2012',
     medium: 'Technical Director',
     heroImage: '/images/placeholder.png',
@@ -1165,7 +1016,7 @@ export const projects: Project[] = [
   // New: PowerUser Inc.
   {
     slug: 'poweruser-inc',
-    title: 'PowerUser Inc.',
+    title: 'PowerUser',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems'],
     year: '1998-2000',
