@@ -54,7 +54,7 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           {subProjects.map((project, index) => (
             <a href={`/works/${project.slug}/`} class="group block relative">
-              <div class="aspect-[4/3] bg-gray-900 w-full overflow-hidden mb-6 relative">
+              <div class="aspect-[4/3] bg-gray-900 w-full overflow-hidden mb-1 relative">
                 <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
                 <img
                   src={getDisplayHeroImage(project)}
@@ -62,7 +62,7 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
                   class="object-cover w-full h-full md:grayscale md:group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                 />
               </div>
-              <div class="flex justify-between items-start border-t border-white/10 pt-4">
+              <div class="flex justify-between items-start border-b border-white/10 pb-4">
                 <div>
                   <h4 class="font-serif text-2xl text-white group-hover:text-glow transition-all">{project.title}</h4>
                   <p class="font-mono text-xs text-gray-500 mt-1 uppercase">{project.year} | {project.medium}</p>
