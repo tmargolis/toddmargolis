@@ -803,8 +803,8 @@ export const projects: Project[] = [
   {
     slug: 'rpi',
     title: 'Emergent Reality Lab @ RPI',
-    category: ['Strategy', 'Inquiry'],
-    subCategory: ['Academic Practice', 'Display & Interaction Systems'],
+    category: ['Strategy'],
+    subCategory: ['Academic Practice'],
     year: '2011-2012',
     dimensions: 'Rensselaer Polytechnic Institute',
     medium: 'Consultant',
@@ -814,9 +814,9 @@ export const projects: Project[] = [
   // 5. Florida State University
   {
     slug: 'florida-state-university',
-    title: 'Translation Transmedia Research Institute @ FSU',
-    category: ['Strategy', 'Inquiry'],
-    subCategory: ['Academic Practice', 'Display & Interaction Systems'],
+    title: 'Transmedia Research Institute @ FSU',
+    category: ['Strategy'],
+    subCategory: ['Academic Practice'],
     year: '2011-2012',
     dimensions: 'Florida State University',
     medium: 'Consultant',
