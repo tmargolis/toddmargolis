@@ -54,7 +54,7 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           {subProjects.map((project, index) => (
             <a href={`/works/${project.slug}/`} class="group block relative">
-              <div class="aspect-[4/3] bg-gray-900 w-full overflow-hidden mb-6 relative">
+              <div class="aspect-[4/3] bg-gray-900 w-full overflow-hidden mb-1 relative">
                 <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
                 <img
                   src={getDisplayHeroImage(project)}
