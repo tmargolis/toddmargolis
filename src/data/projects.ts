@@ -923,7 +923,7 @@ export const projects: Project[] = [
   // NVision
   {
     slug: 'nvision',
-    title: 'University of Northampton NVision',
+    title: 'NVision @ University of Northampton',
     category: ['Strategy', 'Inquiry'],
     subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
     year: '2010-2012',
