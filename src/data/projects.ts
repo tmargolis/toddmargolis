@@ -714,19 +714,35 @@ export const projects: Project[] = [
     images: ['/images/resonations_7_resized.jpg','/images/resonations_1_resized.jpg'],
     collaborators: ['United Nations Headquarters in New York, University of California San Diego, The Banff Centre in Alberta, Canada, Queens University Belfast, and Dongguk University in Seoul']
   },
-  // Placeholder: Immersive Analytics
+  // Immersive Manufacturing Analytics
   {
-    slug: 'immersive-analytics',
-    title: 'Immersive Analytics',
+    slug: 'immersive-manufacturing-analytics',
+    title: 'Immersive Manufacturing',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems'],
-    year: '2012-2018',
+    year: '2016',
+    medium: 'Immersive Analytics',
+    collaborators: ['Richard Hackathorn'],
+    heroImage: '/images/immersiveManufacturing.jpg',
+    description: 'This project explores the convergence of Immersive Analytics and the Industrial Internet of Things (IIoT), transforming complex manufacturing data into a navigable 3D environment. Developed for high-fidelity VR headsets, the system provides a digital twin of a factory floor where real-time sensor data is mapped directly onto a virtualized conveyor system. As widgets move through the production cycle, users can physically move within the space to inspect live sensor readings, enabling a more intuitive understanding of machine health and production flow.',
+    description2: 'The platform bridges the gap between high-level oversight and tactical intervention through interactive command-and-control features. Users can manipulate power controls within the virtual space to halt the entire factory process upon detecting a sensor anomaly, facilitating immediate troubleshooting before resuming operations. By integrating Qlik Sense analytics directly into the VR experience, the system provides a multi-temporal view of the plant—blending instantaneous streaming data, short-term widget tracking, and long-term historical trends into a single, comprehensive "common operating picture" for industrial management.',
+    videoLink: 'https://youtu.be/VwbG20pvPzY',
+    images: ['/images/immersiveManufacturing2.jpg']
+  },
+  // Immersive Healthcare Analytics
+  {
+    slug: 'immersive-healthcare-analytics',
+    title: 'Immersive Healthcare',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
+    year: '2019',
     medium: 'Immersive Analytics',
     collaborators: ['Richard Hackathorn'],
     heroImage: '/images/ImmersiveAnalyticsLarge.jpeg',
-    description: 'I integrated Qlik Sense APIs with a Virtual Reality environment',
-    description2: 'Shown at Qlik Qonnections 2018 in Orlando, FL',
-    images: ['/images/ImmersiveAnalyticsSIGGRAPH.jpg']
+    description: 'This project demonstrates a pioneering application of Immersive Analytics in healthcare, utilizing the Microsoft HoloLens and Qlik Sense to provide medical professionals with heads-up, hands-free data visualization in the field. Designed for emergency response and triage, the system transforms flat patient data into a persistent 3D interface. By leveraging gesture-based interactions and voice commands, doctors and nurses can dynamically filter patient populations based on complex comorbidities—such as diabetes and age—allowing for rapid, data-informed triage without losing focus on the physical environment.',
+    description2: 'A core innovation of the system is its ability to ground virtual data in the physical world through Augmented Reality (AR) object tracking. In a mass-casualty or triage scenario, the system recognizes physical triage tags as markers; as a clinician brings a tag into view, relevant patient data objects are instantly anchored to it. These visualizations follow the patient as they move through the treatment pipeline, ensuring that critical medical history and risk scores remain spatially attached to the individual. To further reduce cognitive load during high-stress situations, the platform integrates Natural Language Generation (NLG) and text-to-speech to provide immediate, verbal summaries of diagnostic insights.',
+    videoLink: 'https://youtu.be/1g1G2TjnJdw',
+    images: ['/images/ImmersiveAnalyticsSIGGRAPH.jpg','/images/immersiveHealthcare1.jpg']
   },
   // Becoming Dragon
   {
@@ -758,16 +774,18 @@ export const projects: Project[] = [
   // Placeholder: Emergency Response Drone
   {
     slug: 'emergency-response-drone',
-    title: 'Emerngency Response Drove',
+    title: 'Emerngency Response Drone',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems'],
     year: '2019',
     medium: 'Internet of Things Analytics',
-    collaborators: ['Ottawa Emergency Services'],
+    collaborators: ['Ottawa Emergency Services', 'Qlik', 'University of Ottawa'],
     heroImage: '/images/EmergencyDrone2.jpeg',
-    description: 'I integrated Qlik Sense APIs with an AWS DeepSight camera mounted to an industrial drone',
-    description2: 'Shown at Qlik Qonnections 2019 in Dallas, TX',
-    images: ['/images/EmergencyDrone3.jpeg']
+    description: 'The Emergency Response Drone is a proof-of-concept autonomous system designed to enhance humanitarian efforts through real-time situational awareness and distributed data processing. By leveraging Qlik Core and IoT integration, the drone acts as an edge-computing node, providing 911 operators with immediate, high-fidelity data from incident scenes. The system utilizes onboard computer vision to autonomously recognize and track critical variables—including human casualties, vehicle counts, and hazardous materials—transforming raw visual feeds into structured data fields for rapid decision-making.',
+    description2: 'At the core of this innovation is the drone\'s ability to run analytics locally, calculating a dynamic risk score that is transmitted to web-based command centers. This real-time intelligence guides paramedics and firefighters in triaging scenes and deploying specialized resources with surgical precision. Beyond the immediate response, the platform facilitates comprehensive post-incident analysis by syncing edge data with cloud-based applications. This allows for the longitudinal review of major incidents, optimizing resource positioning and enhancing the common operating picture for complex, large-scale emergencies like flood relief or multi-vehicle collisions.',
+    description3: 'I was responsible for creating, planning & executing the concept, design, development, configuration and operation of the Emergency Response Drone. I worked in partnership with the Ottawa Emergency Services, Qlik, and the University of Ottawa to bring this project to life. We demonstrated the system at Qlik Qonnections 2019 in Dallas, TX',
+    images: ['/images/EmergencyDrone3.jpeg'],
+    videoLink: 'https://youtu.be/5QE_a3_dRNc'
   },
   // Placeholder: Special Treatment
   {
