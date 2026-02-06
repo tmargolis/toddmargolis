@@ -37,26 +37,11 @@ const strategySubCategories = [
 
     <section class="mt-24">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-            <!-- Pillar 1: Creative -->
-            <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group">
-                <a href="/creative/" class="block">
-                    <h1 class="font-mono text-lg uppercase text-white">Creative</h1>
-                    <p class="text-gray-400 mt-4 flex-grow">Materializing the invisible. Creating mechanical apparatuses, archival prints, and immersive installations that translate vast, abstract datasets into tangible experiences.</p>
-                </a>
-                <ul class="mt-6 space-y-2">
-                    {creativeSubCategories.map((item) => (
-                        <li>
-                            <a href={`${item.page}#${slugify(item.name)}`} class="font-mono text-sm text-white hover:text-glow transition-all">{item.name}</a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
             <!-- Pillar 2: Inquiry -->
             <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group">
                 <a href="/inquiry/" class="block">
                     <h1 class="font-mono text-lg uppercase text-white">Inquiry</h1>
-                    <p class="text-gray-400 mt-4 flex-grow">Investigating hybrid ecosystems. Designing collaborative environments (Vroom), autostereoscopic systems (Varrier), and spatial interfaces where human intuition and computational logic operate in symbiosis.</p>
+                    <p class="text-gray-400 mt-4 flex-grow">Researching hybrid ecosystems. Designing collaborative environments (Vroom), autostereoscopic systems (Varrier), and spatial interfaces where human intuition and computational logic operate in symbiosis. Enabling artists to explore and critique emerging media.</p>
                 </a>
                 <ul class="mt-6 space-y-2">
                     {inquirySubCategories.map((item) => (
@@ -81,6 +66,22 @@ const strategySubCategories = [
                     ))}
                 </ul>
             </div>
+
+            <!-- Pillar 1: Creative -->
+            <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group">
+                <a href="/creative/" class="block">
+                    <h1 class="font-mono text-lg uppercase text-white">Creative</h1>
+                    <p class="text-gray-400 mt-4 flex-grow">Materializing the invisible. Creating mechanical apparatuses, archival prints, and immersive installations that translate vast, abstract datasets into tangible experiences.</p>
+                </a>
+                <ul class="mt-6 space-y-2">
+                    {creativeSubCategories.map((item) => (
+                        <li>
+                            <a href={`${item.page}#${slugify(item.name)}`} class="font-mono text-sm text-white hover:text-glow transition-all">{item.name}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
         </div>
     </section>
 
