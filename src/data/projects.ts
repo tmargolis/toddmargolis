@@ -1076,5 +1076,18 @@ export const projects: Project[] = [
     medium: 'Web Application',
     description: 'I helped build a chatbot for Qlik Sense that uses the Qlik Sense API to answer questions about the data. Qlik eventually acquired the company and integrated the chatbot into Qlik Sense. This was long before Generative AI was a thing.',
     images: ['/images/InsightChatbotLarge.jpeg']
+  },
+    // Tree of Branch
+  {
+    slug: 'tree-of-branch',
+    title: 'Tree of Branch',
+    category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
+    year: '2015',
+    medium: 'Web Visualization',
+    description: 'This visualization was generated to assist with the exploration and analysis of Qlik’s open source developer community, Branch. Intended originally as an interactive open-ended discovery and navigational platfor, the application enables visitors to find new meaning about the users, projects and relationships therein. It can be used to understand the social dynamics of this online community as well as individuals’ user behaviours. In order to facilitate this understanding and gain insights, metadata such as similarities, categories, number of views, comments, and companies are represented here.',
+    description2: 'The nodes represent projects and are scaled based on number of views which makes it easy to quickly identify the most popular projects. Each node also describes the number of contributors and comments for that project enabling us to visually measure the amount of collaboration taking place for each project. The nodes are clustered and colored by product categories. The links describe the relationships of the projects to each other through similarities and users.',
+    description3: 'The two largest clusters highlight Qlik’s community focus on visualization extensions. There are seven medium sized clusters and five small clusters showing us where there is still room for growth. The light blue links highlight through bundling that there are many similarities to projects within each category as well as between Qlik’s two primary visualization categories. The light green links show us that surprisingly most contributors tend to develop projects across the entire product categories proving the power of Qlik’s underlying analytical platform.',
+    images: ['/images/TreeOfBranch.jpg']
   }
 ];
