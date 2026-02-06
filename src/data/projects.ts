@@ -947,8 +947,9 @@ export const projects: Project[] = [
     year: '2010-2012',
     medium: 'Honorary Board Member',
     note: 'Northampton, UK',
-    description: 'A state-of-the-art technology centre in Northampton, UK designed to bring 3D immersive stereo visualisation and high performance computing to the local University and wider community.',
-    images: ['/images/Northampton.jpg']
+    description: 'I served as an Honorary Board Member for NVision at the University of Northampton, where I provided strategic oversight during the critical launch of its multi-million-pound technology innovation center. My role involved technical and operational consultancy for "The Cube," a flagship immersive visualization facility, as well as the center\’s high-performance computing infrastructure. By leveraging my leadership experience from UCSD, I advised on facility management and international best practices, helping to transition the site from its construction phase into a fully operational hub for advanced computational research.',
+    description2: '​In addition to technical guidance, I contributed to the center\’s long-term commercial sustainability by shaping its business development and pricing strategies. I worked closely with the management board to establish tiered service models for industry partners and SMEs, ensuring that the center\’s advanced modeling and visualization services remained both accessible and impactful. This involved aligning technical capabilities with rigorous European Regional Development Fund performance targets, ultimately helping to bridge the gap between academic innovation and regional economic growth through high-level stakeholder engagement.',
+    images: ['/images/Northampton.jpg','/images/0810_vr1.jpg']
   },
   // LOCKUP
   {
@@ -1077,5 +1078,18 @@ export const projects: Project[] = [
     medium: 'Web Application',
     description: 'I helped build a chatbot for Qlik Sense that uses the Qlik Sense API to answer questions about the data. Qlik eventually acquired the company and integrated the chatbot into Qlik Sense. This was long before Generative AI was a thing.',
     images: ['/images/InsightChatbotLarge.jpeg']
+  },
+    // Tree of Branch
+  {
+    slug: 'tree-of-branch',
+    title: 'Tree of Branch',
+    category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
+    year: '2015',
+    medium: 'Web Visualization',
+    description: 'This visualization was generated to assist with the exploration and analysis of Qlik’s open source developer community, Branch. Intended originally as an interactive open-ended discovery and navigational platfor, the application enables visitors to find new meaning about the users, projects and relationships therein. It can be used to understand the social dynamics of this online community as well as individuals’ user behaviours. In order to facilitate this understanding and gain insights, metadata such as similarities, categories, number of views, comments, and companies are represented here.',
+    description2: 'The nodes represent projects and are scaled based on number of views which makes it easy to quickly identify the most popular projects. Each node also describes the number of contributors and comments for that project enabling us to visually measure the amount of collaboration taking place for each project. The nodes are clustered and colored by product categories. The links describe the relationships of the projects to each other through similarities and users.',
+    description3: 'The two largest clusters highlight Qlik’s community focus on visualization extensions. There are seven medium sized clusters and five small clusters showing us where there is still room for growth. The light blue links highlight through bundling that there are many similarities to projects within each category as well as between Qlik’s two primary visualization categories. The light green links show us that surprisingly most contributors tend to develop projects across the entire product categories proving the power of Qlik’s underlying analytical platform.',
+    images: ['/images/TreeOfBranch.jpg']
   }
 ];
