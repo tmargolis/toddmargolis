@@ -949,7 +949,7 @@ export const projects: Project[] = [
     note: 'Northampton, UK',
     description: 'I served as an Honorary Board Member for NVision at the University of Northampton, where I provided strategic oversight during the critical launch of its multi-million-pound technology innovation center. My role involved technical and operational consultancy for "The Cube," a flagship immersive visualization facility, as well as the center\’s high-performance computing infrastructure. By leveraging my leadership experience from UCSD, I advised on facility management and international best practices, helping to transition the site from its construction phase into a fully operational hub for advanced computational research.',
     description2: '​In addition to technical guidance, I contributed to the center\’s long-term commercial sustainability by shaping its business development and pricing strategies. I worked closely with the management board to establish tiered service models for industry partners and SMEs, ensuring that the center\’s advanced modeling and visualization services remained both accessible and impactful. This involved aligning technical capabilities with rigorous European Regional Development Fund performance targets, ultimately helping to bridge the gap between academic innovation and regional economic growth through high-level stakeholder engagement.',
-    images: ['/images/Northampton.jpg','/images/cube.jpg']
+    images: ['/images/Northampton.jpg','/images/0810_vr1.jpg']
   },
   // LOCKUP
   {
