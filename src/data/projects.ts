@@ -618,9 +618,9 @@ export const projects: Project[] = [
     subCategory: ['Publications & Theory'],
     year: '2023',
     medium: 'Generative AI',
-    heroImage: '/images/ImmersiveAnalyticsLarge.jpeg',
-    description: 'I integrated Qlik Sense APIs with Generative AI to show the Art of the Possible',
-    images: ['/images/placeholder.png']
+    heroImage: '/images/QlikAnswers2.png',
+    description: 'During my tenure at Qlik, I played a key role in architecting the "art of the possible" for Generative AI, specifically by designing prototype integrations that showcased how Large Language Models (LLMs) could be seamlessly embedded within the Qlik platform. These prototypes focused on transforming systems like ChatGPT or Claude from a standalone tool into a specialized virtual assistant capable of enhancing the entire analytics lifecycle. By leveraging Qlik\’s robust API ecosystem, I helped demonstrate high-value use cases such as the automated generation of complex Qlik load scripts and set analysis expressions, the creation of high-fidelity synthetic data for rapid prototyping, and the use of natural language interfaces to recommend strategic questions for data exploration.\n\nThese efforts were instrumental in helping Qlik navigate the critical balance between cutting-edge innovation and enterprise-grade security. I worked closely with development and product teams to address the inherent challenges of LLM integration, such as data privacy and accuracy, while simultaneously gathering customer feedback to ground our AI ambitions in real-world needs. By prototyping these "tight" UI integrations, I helped visualize a future where Generative AI makes sophisticated analytics more accessible and powerful, setting the stage for a roadmap that prioritizes both technological evolution and the highest level of user trust.',
+    images: ['/images/QlikAnswers.png']
   },
   // Placeholder: Emergency Response Drone
   {
@@ -813,9 +813,10 @@ export const projects: Project[] = [
     year: '2005-2012',
     medium: 'Technical Director',
     dimensions: 'University of California, San Diego',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/CRCA-neighborhood.jpg',
+    collaborators: ['Sheldon Brown','Miller Puckett', 'Shahrokh Yadegari'],
     description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
-    images: ['/images/crca.jpg']
+    images: ['/images/AG-ART-event.jpg']
   },
   // 4. Rensselaer Polytechnic Institute
   {
