@@ -631,11 +631,11 @@ export const projects: Project[] = [
     year: '2019',
     medium: 'Internet of Things Analytics',
     collaborators: ['Ottawa Emergency Services', 'Qlik', 'University of Ottawa'],
-    heroImage: '/images/EmergencyDrone2.jpeg',
+    heroImage: '/images/DroneDemo.jpg',
     description: 'The Emergency Response Drone is a proof-of-concept autonomous system designed to enhance humanitarian efforts through real-time situational awareness and distributed data processing. By leveraging Qlik Core and IoT integration, the drone acts as an edge-computing node, providing 911 operators with immediate, high-fidelity data from incident scenes. The system utilizes onboard computer vision to autonomously recognize and track critical variables—including human casualties, vehicle counts, and hazardous materials—transforming raw visual feeds into structured data fields for rapid decision-making.',
     description2: 'At the core of this innovation is the drone\'s ability to run analytics locally, calculating a dynamic risk score that is transmitted to web-based command centers. This real-time intelligence guides paramedics and firefighters in triaging scenes and deploying specialized resources with surgical precision. Beyond the immediate response, the platform facilitates comprehensive post-incident analysis by syncing edge data with cloud-based applications. This allows for the longitudinal review of major incidents, optimizing resource positioning and enhancing the common operating picture for complex, large-scale emergencies like flood relief or multi-vehicle collisions.',
     description3: 'I was responsible for creating, planning & executing the concept, design, development, configuration and operation of the Emergency Response Drone. I worked in partnership with the Ottawa Emergency Services, Qlik, and the University of Ottawa to bring this project to life. We demonstrated the system at Qlik Qonnections 2019 in Dallas, TX',
-    images: ['/images/EmergencyDrone3.jpeg'],
+    images: ['/images/EmergencyDrone2.jpeg','/images/EmergencyDroneStill.jpg'],
     videoLink: 'https://youtu.be/5QE_a3_dRNc'
   },
   // Placeholder: Special Treatment
@@ -787,7 +787,7 @@ export const projects: Project[] = [
     subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
     year: '2014-present',
     medium: 'Sr. Director of Applied Research & Emerging Technologies',
-    heroImage: '/images/QlikSF.jpg',
+    heroImage: '/images/ConnectKeynote.jpg',
     description: 'Lead a team of ML engineers accelerating our long-term roadmap, defining strategy and developing new capabilities leveraging emerging media platforms. My deep empathy for customer and user needs paired with my passion for innovation drives my creative, yet data-driven approach to prioritization. I have extensive prototyping and presentation experience and enjoy providing thought leadership in executive briefings, conference keynotes and academic symposiums globally. At Qlik, I have previously held roles as Director of Product Management as well as a Sr. Solution Architect.',
     images: ['/images/qlikTaiko.jpg']
   },
@@ -1050,7 +1050,7 @@ export const projects: Project[] = [
     subCategory: ['Display & Interaction Systems'],
     year: '2014-2015',
     medium: 'Hand Gesture Recognition',
-    heroImage: '/images/QlikQonnections.jpeg',
+    heroImage: '/images/ToddMainstage.jpg',
     description: 'After only three months of employment with Qlik, I was asked to build a gestural interface for Qlik Sense. This was a challenging project as it required me to learn a new technology stack and to work with a new team. I was able to complete the project in a short amount of time and it was so well received by the Qlik community that I was asked to present it at Qlik Qonnections 2014 in Orlando, FL.',
     description2: 'Qlik Summit 2014, Orlando, FL and Qlik Qonnections 2015, Dallas, TX. Demonstration: Qlik Sense Gestural Interface.',
     images: ['/images/QlikQonnections.jpeg']
@@ -1064,6 +1064,7 @@ export const projects: Project[] = [
     year: '2016',
     medium: 'Augmented Reality',
     description: 'day in the life of a qlik developer',
+    heroImage: '/images/DayInTheLife.png',
     images: ['/images/QlikQonnectionsPano.jpeg']
   },
   // Insight Chatbot
