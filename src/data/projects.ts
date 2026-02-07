@@ -883,7 +883,7 @@ export const projects: Project[] = [
     description: 'As an Artist-in-Residence at (art)n Laboratory, I aided with the production of complex 3D artworks utilizing proprietary PHSCologram and ImmersaGram technologies. Bridging the gap between digital modeling and physical output, I utilized advanced 3D animation and rendering techniques to manifest scientific and conceptual data into tangible, multi-dimensional forms. Beyond the studio, I acted as a technical lead for the laboratory\'s infrastructure, architecting a searchable image-database and managing the administration of network systems and web servers to support their pioneering digital archive.',
     description2: 'In my capacity as a Curator and collaborator, I facilitated the intersection of fine art and immersive technology, working alongside esteemed artists such as Ellen Sandor, Karl Wirsum, and Ed Paschke. A highlight of this tenure included co-producing a permanent installation at the Chicago Midway Airport—a high-visibility commission commemorating the Battle of Midway through a sophisticated blend of historical data and digital aesthetics. Additionally, I curated a landmark exhibition of "ImmersaGrams," showcasing virtual reality snapshots from an international roster of artists to explore the friction between ephemeral digital environments and permanent physical records.',
     images: ['/images/edPachkeLarge.jpg','/images/BattleOfMidwayLarge.jpeg'],
-    collaborators: ['Ellen Sandor', 'Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Karl Wirsum', 'Ed Pachke'],
+    collaborators: ['Ellen Sandor', 'Keith Miller', 'Geoffrey A. Baum', 'Fernando Orellana', 'Sabrina Raaf', 'Karl Wirsum', 'Ed Pachke'],
     videoLink: 'https://vimeo.com/25333525?fl=pl&fe=cm',
     website: 'https://www.artn.com'
   },
@@ -989,7 +989,7 @@ export const projects: Project[] = [
     year: '2001-2005',
     videoLink: 'https://vimeo.com/26047034?fl=pl&fe=cm',
     medium: 'Founding Member / President',
-    collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Fernando Orrelana', 'Sabrina Raaf', 'Tim Portlock', 'Ben Chang'],
+    collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Sabrina Raaf', 'Tim Portlock', 'Ben Chang'],
     description: 'A 501(c)3 non-profit dedicated to propagating VR technologies into galleries and contemporary art museums. Led the creation of a VR installation using the Auschwitz-Birkenau concentration camp as a setting for exploring persistence and memory, based on a PHSCologram housed in the Museum of Jewish Heritage.',
     description2: 'Based at the art(n) gallery in Chicago. Exhibited at the Museum of Contemporary Art Chicago and the Block Museum.',
     heroImage: '/images/AppliedInteractives_PortraitMain.jpg',
@@ -1004,7 +1004,7 @@ export const projects: Project[] = [
     year: '2000-2005',
     medium: 'Director / Artist Member',
     description: 'A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in "Information Arts" by Steve Wilson, MIT’s Leonardo journal, and YLEM.',
-    collaborators: ['Fernando Orrelana', 'Sabrina Raaf', 'Andrea Polli'],
+    collaborators: ['Fernando Orellana', 'Sabrina Raaf', 'Andrea Polli'],
     images: ['/images/sineLarge.jpeg']
   },
   // Software Studies Initiative
