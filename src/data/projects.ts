@@ -1056,7 +1056,8 @@ export const projects: Project[] = [
     heroImage: '/images/ToddMainstage.jpg',
     description: 'After only three months of employment with Qlik, I was asked to build a gestural interface for Qlik Sense. This was a challenging project as it required me to learn a new technology stack and to work with a new team. I was able to complete the project in a short amount of time and it was so well received by the Qlik community that I was asked to present it at Qlik Qonnections 2014 in Orlando, FL.',
     description2: 'Qlik Summit 2014, Orlando, FL and Qlik Qonnections 2015, Dallas, TX. Demonstration: Qlik Sense Gestural Interface.',
-    images: ['/images/QlikQonnections.jpeg']
+    images: ['/images/QlikQonnections.jpeg'],
+    videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV&t=1m34s'
   },
   // Day in the Life
   {
@@ -1068,7 +1069,8 @@ export const projects: Project[] = [
     medium: 'Augmented Reality',
     description: 'day in the life of a qlik developer',
     heroImage: '/images/DayInTheLife.png',
-    images: ['/images/QlikQonnectionsPano.jpeg']
+    images: ['/images/QlikQonnectionsPano.jpeg'],
+    videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV'
   },
   // Insight Chatbot
   {
