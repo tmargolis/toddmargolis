@@ -1106,6 +1106,7 @@ export const projects: Project[] = [
     description2: 'We recreate episodes of the first season, complete with a full scale human set and actors. The season’s scripts will be written by a collaboration of separate AI algorithms, each taught with a different subset of sitcoms. For example, one AI may be trained to write sitcoms using what it learned from the scripts of the television shows All in the Family, The Jeffersons and Three’s Company. While another AI might be trained with Saved by the Bell, The Big Bang Theory and Freaks and Geeks. In this way, the episodes the AIs write will be an amalgamation of sitcom influences, resulting in content that seems familiar to the audience, but is definitely alien. This technique anticipated the later rise of agentic patterns.',
     description3: 'Inspired by geometries moving through a tesseract, the shows’ set will be simple, but multifaceted and at the scale of a real human sitcom set. Experienced in the round by the audience, the set will be brought to life using projection-mapping with imagery inspired by the top sitcom sets of the 20th and early 21th century. The dialogue will be acted out by computer voices, played back through speakers embedded throughout the set. Cycling through several episodes throughout the 2 weeks of the conference, the audience will be treated to a live screening accompanied by the manic laughter of a synthetic studio audience.',
     heroImage: '/images/Beacon_Layout_2.jpg',
-    images: ['/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg']
+    images: ['/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg'],
+    watermarkedImages: ['/images/Beacon_Layout_2.jpg','/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg']
   }
 ];
