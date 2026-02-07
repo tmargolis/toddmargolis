@@ -398,7 +398,8 @@ export const projects: Project[] = [
     description3: 'I contributed to the overall design and system integration of HUVR. Additionally, I consulted on haptics, screen evaluation and testing, mirror surface selection, application development and tele-collaboration configurations. I lead the development of wireless head tracking solutions for HUVR. Two versions of tracking were implemented: a high end VICON system and a custom affordable webcam version. The VICON solution is robust, reliable and accurate, but comes with a significant price tag. The custom solution uses OpenCV and a $11 surveillance camera. The OpenCV tracker uses Haar?s cascades to perform real-time facial detection with Lucas-Kanade optical flow for tracking XY movement. For more information about HUVR, please review my research paper. Supported by the California Institute for Telecommunications and Information Technology (Calit2) at the University of California, San Diego & King Abdullah University of Science and Technology (KAUST).',
     heroImage: '/images/huvr_greg.jpg',
     images: ['/images/HUVR-SC10.jpeg','/images/DualHUVRatSC10.jpeg'],
-    collaborators: ['Greg Dawe', 'Dan Sandin', 'Tom DeFanti']
+    collaborators: ['Greg Dawe', 'Dan Sandin', 'Tom DeFanti'],
+    videoLink: 'https://youtu.be/h-DcHAK-dsU?si=CaKeoIcbv9Cx4x4L'
   },
   // Placeholder: Scalable City
   {
