@@ -1054,8 +1054,8 @@ export const projects: Project[] = [
     year: '2014-2015',
     medium: 'Hand Gesture Recognition',
     heroImage: '/images/ToddMainstage.jpg',
-    description: 'After only three months of employment with Qlik, I was asked to build a gestural interface for Qlik Sense. This was a challenging project as it required me to learn a new technology stack and to work with a new team. I was able to complete the project in a short amount of time and it was so well received by the Qlik community that I was asked to present it at Qlik Qonnections 2014 in Orlando, FL.',
-    description2: 'Qlik Summit 2014, Orlando, FL and Qlik Qonnections 2015, Dallas, TX. Demonstration: Qlik Sense Gestural Interface.',
+    description: 'The gestural interface for Qlik Sense represented a significant evolution in how users could physically interact with large-scale data environments. By integrating specialized hardware like the Leap Motion and Myo armband, the system enabled users to navigate complex datasets and isolate outliers through natural hand and arm movements. This interface allowed for a more visceral and embodied analytical experience, where the physical act of grabbing or pointing at data points replaced traditional mouse-based navigation. The demonstration highlights this immersive control, showcasing the seamless translation of physiological gestures into real-time data manipulations on massive video walls.',
+    description2: 'Developed during the first three months of my tenure at Qlik, this project served as an intensive exploration into new technology stacks and collaborative research. Despite the challenge of working with a new team and unfamiliar frameworks in a compressed timeframe, the resulting prototype garnered substantial acclaim within the broader community. Its success led to high-profile demonstrations at major industry events, including Qlik Qonnections 2014 in Orlando and Qlik Qonnections 2015 in Dallas. These presentations underscored the potential for gestural computing and immersive analytics to transform how decision-makers engage with information on a truly grand scale.',
     images: ['/images/QlikQonnections.jpeg'],
     videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV&t=1m34s'
   },
@@ -1067,7 +1067,8 @@ export const projects: Project[] = [
     subCategory: ['Display & Interaction Systems'],
     year: '2016',
     medium: 'Augmented Reality',
-    description: 'day in the life of a qlik developer',
+    description: 'This project explores a multi-modal interface for big data exploration, utilizing wearable technology and gesture-based interactions to navigate complex datasets across expansive display environments. The system facilitates a seamless multi-screen experience where real-time sales alerts are pushed directly to wearable devices, allowing for immediate situational awareness regardless of a user\'s proximity to a primary workstation. This infrastructure enables high-velocity remote collaboration, as team members can use voice commands and wearable interfaces to synchronize their views with distant colleagues, ensuring that all stakeholders are analyzing the same live data streams in parallel.',
+    description2: '​Central to this collaborative workflow is the ability to perform real-time data annotation and sharing through the integrated device ecosystem. Users can instantly bookmark specific data points or outliers and transmit those insights to the broader team, creating a continuous feedback loop that bridges the gap between local and remote environments. The experience is further enhanced by immersive gesture controls that allow for the physical manipulation of massive datasets on large-scale video walls. By leveraging muscle-sensing and motion-tracking sensors, the system transforms traditional analytics into an embodied process, where navigating and isolating critical information becomes a natural extension of human movement.',
     heroImage: '/images/DayInTheLife.png',
     images: ['/images/QlikQonnectionsPano.jpeg'],
     videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV'
