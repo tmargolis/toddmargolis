@@ -1092,5 +1092,16 @@ export const projects: Project[] = [
     description2: 'The nodes represent projects and are scaled based on number of views which makes it easy to quickly identify the most popular projects. Each node also describes the number of contributors and comments for that project enabling us to visually measure the amount of collaboration taking place for each project. The nodes are clustered and colored by product categories. The links describe the relationships of the projects to each other through similarities and users.',
     description3: 'The two largest clusters highlight Qlik’s community focus on visualization extensions. There are seven medium sized clusters and five small clusters showing us where there is still room for growth. The light blue links highlight through bundling that there are many similarities to projects within each category as well as between Qlik’s two primary visualization categories. The light green links show us that surprisingly most contributors tend to develop projects across the entire product categories proving the power of Qlik’s underlying analytical platform.',
     images: ['/images/TreeOfBranch.jpg']
+  },
+    // HOMCOM 
+  {
+    slug: 'homcom',
+    title: 'HOMCOM',
+    category: ['Creative'],
+    subCategory: ['Immersive Installations'],
+    year: '2018',
+    medium: 'Speculative AI',
+    description: '',
+    images: ['/images/placeholder.jpg']
   }
 ];
