@@ -1113,5 +1113,19 @@ export const projects: Project[] = [
     images: ['/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg'],
     watermarkedImages: ['/images/Beacon_Layout_2.jpg','/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg'],
     videoLink: 'https://youtu.be/RK842NwjLJ4'
+  },
+    // Presumed Existence
+  {
+    slug: 'presumed-existence',
+    title: 'Presumed Existence',
+    category: ['Creative'],
+    subCategory: ['Performative Systems'],
+    year: '2021',
+    medium: 'video',
+    collaborators: ['Ed Colmar'],
+    description: '​During the height of COVID, I work with Ed Colmar to create a data driven music video.',
+    heroImage: '/images/Beacon_Layout_2.jpg',
+    images: ['/images/placeholder.jpg'],
+    videoLink: 'https://youtu.be/SZAX2K6sp1M?feature=shared'
   }
 ];
