@@ -1125,7 +1125,7 @@ export const projects: Project[] = [
     collaborators: ['Ed Colmar'],
     description: '​During the height of COVID, I work with Ed Colmar to create a data driven music video.',
     heroImage: '/images/Beacon_Layout_2.jpg',
-    images: ['/images/placeholder.jpg'],
+    images: ['/images/PresumedExistence.jpg'],
     videoLink: 'https://youtu.be/SZAX2K6sp1M?feature=shared'
   }
 ];
