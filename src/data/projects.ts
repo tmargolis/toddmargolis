@@ -1101,7 +1101,8 @@ export const projects: Project[] = [
     subCategory: ['Immersive Installations'],
     year: '2018',
     medium: 'Speculative AI',
-    description: '',
+    description: 'Long ago, when the Artificial Intelligences were just starting to create entertainment for themselves, a group of AI writers came together to invent what would later be known as the ever-popular HOM-COMs of today. Their first project, based on what each AI knew about human television comedies, was to create their own sitcom, complete with stage, set, and actors. And though the writing effort took agonizing seconds, they managed to get through it, arriving at a final product that would revolutionize the emerging AI entertainment industry. At first the show was not well received, as it resembled the plays and novels of the Theater of the Absurd and seemed like an inside joke. Ahead of its time, the often surreal, raw language and peculiar situations did not resonate with human audiences; they simply did not get it. However, in AI circles, the pioneering programming was a huge hit, growing with popularity year after year.',
+    description2: '',
     images: ['/images/placeholder.jpg']
   }
 ];
