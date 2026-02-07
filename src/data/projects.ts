@@ -1107,6 +1107,7 @@ export const projects: Project[] = [
     description3: 'Inspired by geometries moving through a tesseract, the shows’ set will be simple, but multifaceted and at the scale of a real human sitcom set. Experienced in the round by the audience, the set will be brought to life using projection-mapping with imagery inspired by the top sitcom sets of the 20th and early 21th century. The dialogue will be acted out by computer voices, played back through speakers embedded throughout the set. Cycling through several episodes throughout the 2 weeks of the conference, the audience will be treated to a live screening accompanied by the manic laughter of a synthetic studio audience.',
     heroImage: '/images/Beacon_Layout_2.jpg',
     images: ['/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg'],
-    watermarkedImages: ['/images/Beacon_Layout_2.jpg','/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg']
+    watermarkedImages: ['/images/Beacon_Layout_2.jpg','/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg'],
+    videoLink: 'https://youtu.be/RK842NwjLJ4'
   }
 ];
