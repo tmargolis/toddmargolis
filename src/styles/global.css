@@ -47,8 +47,8 @@
   background: linear-gradient(
     to right,
     transparent 0%,
-    oklch(0.22 0.03 276) 6%,
-    oklch(0.22 0.03 276) 94%,
+    oklch(0.22 0.03 276) 5%,
+    oklch(0.22 0.03 276) 50%,
     transparent 100%
   );
   color: oklch(0.673 0.182 276.935);
