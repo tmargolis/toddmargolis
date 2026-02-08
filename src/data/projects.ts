@@ -1123,7 +1123,7 @@ export const projects: Project[] = [
     year: '2021',
     medium: 'video',
     collaborators: ['Ed Colmar'],
-    description: '​During the height of COVID, I work with Ed Colmar to create a data driven music video.',
+    description: '​During the height of COVID, I worked with Ed Colmar to create this data driven highly synchronized music video.',
     images: ['/images/PresumedExistance.jpg'],
     videoLink: 'https://youtu.be/SZAX2K6sp1M?feature=shared'
   }
