@@ -710,8 +710,8 @@ export const projects: Project[] = [
   {
     slug: 'shape-grammar-objects',
     title: 'Shape Grammar Objects',
-    category: ['Inquiry'],
-    subCategory: ['Pedagogy & Labs'],
+    category: ['Creative'],
+    subCategory: ['Tangible Artifacts'],
     year: '2009',
     medium: '3D Fabrication',
     heroImage: '/images/SGs.jpg',
