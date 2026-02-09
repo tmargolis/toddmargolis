@@ -623,7 +623,7 @@ export const projects: Project[] = [
     description: 'During my tenure at Qlik, I played a key role in architecting the "art of the possible" for Generative AI, specifically by designing prototype integrations that showcased how Large Language Models (LLMs) could be seamlessly embedded within the Qlik platform. These prototypes focused on transforming systems like ChatGPT or Claude from a standalone tool into a specialized virtual assistant capable of enhancing the entire analytics lifecycle. By leveraging Qlik\’s robust API ecosystem, I helped demonstrate high-value use cases such as the automated generation of complex Qlik load scripts and set analysis expressions, the creation of high-fidelity synthetic data for rapid prototyping, and the use of natural language interfaces to recommend strategic questions for data exploration.\n\nThese efforts were instrumental in helping Qlik navigate the critical balance between cutting-edge innovation and enterprise-grade security. I worked closely with development and product teams to address the inherent challenges of LLM integration, such as data privacy and accuracy, while simultaneously gathering customer feedback to ground our AI ambitions in real-world needs. By prototyping these "tight" UI integrations, I helped visualize a future where Generative AI makes sophisticated analytics more accessible and powerful, setting the stage for a roadmap that prioritizes both technological evolution and the highest level of user trust.',
     images: ['/images/QlikAnswers.png']
   },
-  // Placeholder: Emergency Response Drone
+  // Emergency Response Drone
   {
     slug: 'emergency-response-drone',
     title: 'Emerngency Response Drone',
@@ -639,7 +639,7 @@ export const projects: Project[] = [
     images: ['/images/EmergencyDrone2.jpeg','/images/EmergencyDroneStill.jpg'],
     videoLink: 'https://youtu.be/5QE_a3_dRNc'
   },
-  // Placeholder: Special Treatment
+  // Special Treatment
   {
     slug: 'special-treatment',
     title: 'Special Treatment',
@@ -654,6 +654,18 @@ export const projects: Project[] = [
     description2: 'Special Treatment advances the audience from passive viewing to active experience by smoothly moving from present to past and back again. Special Treatment creates a landscape where glimpses and fragments of Birkenau establish a narrative framework where the events of the past continue to shape and be shaped by contemporary interpretations of those events. The full history and lesson of a place such as the death camp at Birkenau is seen not only in the records of those who survived or passed on their memories to us in the present, but in how those events are remembered and shaped by the people of today. The stories of these people grow with each new experience of Special Treatment, and the solidity of that space and the substance of those events becomes more concrete with each new visitor. The immersive experience allows each participant to inhabit the scene of these events, and as they leave the evidence of their own actions and memories, Special Treatment is continually transformed into a new potential memory.',
     description3: 'Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
     images: ['/images/STP_RealMemory1.med.jpg']
+  },
+  // Immersive Retail
+  {
+    slug: 'immersive-retail',
+    title: 'Immersive Retail',
+    category: ['Inquiry'],
+    subCategory: ['Display & Interaction Systems'],
+    year: '2018',
+    medium: 'Augmented Reality',
+    collaborators: ['Todd Margolis'],
+    description: 'Prototyped a mixed-reality infrastructure using a Microsoft HoloLens to bridge the gap between a physical retail space and live enterprise data. The system utilized computer vision to recognize products on store shelves, triggering real-time calls to Qlik APIs to overlay dynamic inventory levels and sales performance data directly onto the physical environment. This "heads-up" analytics layer empowers store managers to make data-driven decisions regarding product placement and shelf-stocking efficiency without leaving the floor.',
+    images: ['/images/ImmersiveRetail.1.jpg','/images/ImmersiveRetail.2.jpg']
   },
   // Placeholder: Cultural Analytics
   {
