@@ -617,7 +617,7 @@ export const projects: Project[] = [
     title: 'Qlik AI',
     category: ['Inquiry'],
     subCategory: ['Publications & Theory'],
-    year: '2023',
+    year: '2023-2026',
     medium: 'Generative AI',
     heroImage: '/images/QlikAnswers2.png',
     description: 'During my tenure at Qlik, I played a key role in architecting the "art of the possible" for Generative AI, specifically by designing prototype integrations that showcased how Large Language Models (LLMs) could be seamlessly embedded within the Qlik platform. These prototypes focused on transforming systems like ChatGPT or Claude from a standalone tool into a specialized virtual assistant capable of enhancing the entire analytics lifecycle. By leveraging Qlik\’s robust API ecosystem, I helped demonstrate high-value use cases such as the automated generation of complex Qlik load scripts and set analysis expressions, the creation of high-fidelity synthetic data for rapid prototyping, and the use of natural language interfaces to recommend strategic questions for data exploration.\n\nThese efforts were instrumental in helping Qlik navigate the critical balance between cutting-edge innovation and enterprise-grade security. I worked closely with development and product teams to address the inherent challenges of LLM integration, such as data privacy and accuracy, while simultaneously gathering customer feedback to ground our AI ambitions in real-world needs. By prototyping these "tight" UI integrations, I helped visualize a future where Generative AI makes sophisticated analytics more accessible and powerful, setting the stage for a roadmap that prioritizes both technological evolution and the highest level of user trust.',
