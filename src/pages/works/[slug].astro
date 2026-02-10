@@ -314,6 +314,12 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
           <span class="text-white">{project.collaborators.join(", ")}</span>
         </div>
         )}
+        {project.projectTag && project.projectTag.length > 0 && (
+        <div>
+          <span class="block text-gray-600 mb-1">Semantic Tags</span>
+          <span class="text-white">{project.projectTag.join(", ")}</span>
+        </div>
+        )}
         {project.website && (
         <div>
           <a href={project.website} target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 underline break-all">{project.website.replace(/^https?:\/\//, '')}</a>

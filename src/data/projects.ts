@@ -20,6 +20,7 @@ export interface Project {
   images: string[];
   videos?: string[];
   videoLink?: string;
+  projectTag?: string[];
   isSeries?: boolean;
   imageTitles?: string[];
   imageDescriptions?: string[];
@@ -377,7 +378,7 @@ export const projects: Project[] = [
     title: 'Confluxus',
     category: ['Creative'],
     subCategory: ['Immersive Installations'],
-    year: '20001',
+    year: '2001',
     medium: 'Networked Virtual Reality',
     heroImage: '/images/confluxus.jpg',
     description: 'Confluxus is a collaborative virtual reality artwork which is procedurally generated through user interaction. The space is designed to be a community meeting area where participants from varied backgrounds can come together in a tele-immersive environment and cooperate to create a shared experience. Participants were able to join into the shared space from physically remote VR systems. Through the passage of time, the space evolves into a collective expression of the participants intentions. The virtual objects and activities in the space begin as pre-determined constructs by the artists and gradually develop based on user-input.',
@@ -624,7 +625,8 @@ export const projects: Project[] = [
     medium: 'Generative AI',
     heroImage: '/images/QlikAnswers2.png',
     description: 'During my tenure at Qlik, I played a key role in architecting the "art of the possible" for Generative AI, specifically by designing prototype integrations that showcased how Large Language Models (LLMs) could be seamlessly embedded within the Qlik platform. These prototypes focused on transforming systems like ChatGPT or Claude from a standalone tool into a specialized virtual assistant capable of enhancing the entire analytics lifecycle. By leveraging Qlik\’s robust API ecosystem, I helped demonstrate high-value use cases such as the automated generation of complex Qlik load scripts and set analysis expressions, the creation of high-fidelity synthetic data for rapid prototyping, and the use of natural language interfaces to recommend strategic questions for data exploration.\n\nThese efforts were instrumental in helping Qlik navigate the critical balance between cutting-edge innovation and enterprise-grade security. I worked closely with development and product teams to address the inherent challenges of LLM integration, such as data privacy and accuracy, while simultaneously gathering customer feedback to ground our AI ambitions in real-world needs. My research into AI-UI symbiosis architected the path for Qlik Answers and the Qlik MCP. By prototyping agentic logic within complex data environments, I validated a strategic roadmap for Model Context Protocols (MCP) that balances rapid innovation with architectural integrity.',
-    images: ['/images/QlikAnswers.png']
+    images: ['/images/QlikAnswers.png'],
+    projectTag: ['MCP']
   },
   // Emergency Response Drone
   {
