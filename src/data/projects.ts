@@ -342,7 +342,7 @@ export const projects: Project[] = [
     description3: 'Previous compatible system (HIPerSpace, HIPerWall, AESOP, OptiPortal) have been developed at Calit2 and distributed around the world to dozens of academic, government and corporate institutions. These systems are connected to high-speed optical networks to enable remote collaboration. The installation of Vroom in the Calit2 Theater will have approximately 100 displays, both 2D and 3D in a reconfigurable arrangement. Open-source software developed at UCSD and the Electronic Visualization Lab at UIC will enable the graphics (SAGE, CGLX and CalVR) and audio (SoundBender, VMAP and Sonnotate) middleware to share data across the local Vroom system as well as with remote nodes. Vroom will use 10Gb/s networking to all the display nodes with 10 (eventually 20) 10Gb/s uplinks to remote servers. Using both research systems and commercial platforms, we will integrate HD video tele-conferencing with remote nodes. We will employ spatialized audio with distributed Meyer speakers along with multiple wave field synthesis speaker arrays to provide directional audio. 4K video streaming and playback will be integrated into Vroom for both tiled display walls and projection surfaces.',
     images: ['/images/Octo-OptIPortableUnderConstructionControlRoom.jpeg', '/images/AllScreensContiuousImageDemo.jpg']
   },
-  // Placeholder: CineGrid 3D 4K
+  // CineGrid 3D 4K
   {
     slug: 'cinegrid-3d-4k',
     title: 'CineGrid 3D 4K',
@@ -385,7 +385,7 @@ export const projects: Project[] = [
     images: ['/images/confluxus_sm.jpg'],
     videoLink: 'https://vimeo.com/25293365?fl=pl&fe=cm'
   },
-  // Placeholder: HUVR (Heads-Up Virtual Reality)
+  // HUVR (Heads-Up Virtual Reality)
   {
     slug: 'huvr',
     title: 'HUVR',
@@ -401,7 +401,7 @@ export const projects: Project[] = [
     collaborators: ['Greg Dawe', 'Dan Sandin', 'Tom DeFanti'],
     videoLink: 'https://youtu.be/h-DcHAK-dsU?si=CaKeoIcbv9Cx4x4L'
   },
-  // Placeholder: Scalable City
+  // Scalable City
   {
     slug: 'scalable-city',
     title: 'Scalable City',
@@ -415,7 +415,7 @@ export const projects: Project[] = [
     description2: 'The artwork is structured around a series of algorithmic "rules" that automate the construction of a sprawling, chaotic city—transforming the serene geometry of a digital landscape into a densely packed environment of roads and suburban architecture. As the simulation progresses, the very tools used for creation become the agents of destruction, leading to a "beautifully entropic" failure of the urban system.',
     images: ['/images/scalableCity.jpg','/images/Sheldon_Brown-_Scalable_City1.jpg']
   },
-  // Placeholder: Moon Lust
+  // Moon Lust
   {
     slug: 'moon-lust',
     title: 'Moon Lust',
@@ -467,17 +467,20 @@ export const projects: Project[] = [
     description: 'Grab that $$$ before the bankers do! #OccupyWallSt. Using the Augmented Reality browser Layar, anyone can open this mobile app and see money raining down all around you. This is one piece in a series entitled Party at my Place which utilizes augmented reality to create insta-celebrations surrounding participants.',
     images: ['/images/moneyGrabNYC-sm.png']
   },
-  // Placeholder: Museum of Future Objects (MOFO)
+  // Museum of Future Objects (MOFO)
   {
     slug: 'museum-of-future-objects-mofo',
     title: 'Museum of Future Objects (MOFO)',
     category: ['Creative'],
     subCategory: ['Augmented Interventions'],
-    year: '2013-2014',
+    year: '2013',
     medium: 'Augmented Reality Alternate Reality Game',
     collaborators: ['Tracy Cornish'],
-    description: 'Placeholder for Museum of Future Objects (MOFO).',
-    images: ['/images/MOFO.jpg']
+    heroImage: '/images/MOFO.jpg',
+    description: 'Commissioned for the MWX2013 exhibition at the Museum and the Web Conference in Portland, MoFO was a speculative and interventionist project that utilized Augmented Reality to disrupt traditional institutional frameworks. The project employed a "blended" exhibition strategy, integrating playful yet critical AR artworks directly into the conference program. By leveraging the friction between physical museum spaces and digital overlays, MoFO challenged delegates to engage with contemporary media art that was deceptively accessible while maintaining a sharp, critical edge.',
+    description2: 'Supported by the Australia Council\’s Visual Arts Board, this project served as an inquiry into how emergent display systems can manifest speculative futures within established cultural landscapes. It stands as a key example of my work in creating "blended" environments where technology functions as both a creative medium and a critical lens.',
+    images: ['/images/FLOTL.jpg','/images/FLOTL2.jpg'],
+    website: 'https://www.flickr.com/people/mofonow/'
   },
   // Show Me
   {
@@ -492,7 +495,7 @@ export const projects: Project[] = [
     heroImage: '/images/meNme.jpg',
     images: ['/images/IMG_0645_todd.jpg','/images/markNme.jpg']
   },
-  // Placeholder: TeleMotions
+  // TeleMotions
   {
     slug: 'telemotions',
     title: 'TeleMotions',
@@ -551,7 +554,7 @@ export const projects: Project[] = [
     images: ['/images/tele-taiko.jpg','/images/TeleTaiko.jpg'],
     videoLink: 'https://youtu.be/5KBoZfF-EK0'
   },
-  // Placeholder: ResoNations
+  // ResoNations
   {
     slug: 'resonations',
     title: 'ResoNations',
@@ -611,7 +614,7 @@ export const projects: Project[] = [
     description3: 'Co-sponsored by The Center for Performance Studies, the UCLA Department of Theater, the Center for Research in Computing and the Arts (CRCA), the Department of Theater, the School of Theater, Film, and Television, LGBT Studies, the Center for the Study of Women and The Center for Research in Engineering, Media and Performance. Additional support provided by San Diego State University\'s Second Life Initiative, Aztlan Island.',
     images: ['/images/becoming-transreal_1.jpg','/images/11_25_08_micha_dragon.jpg']
   },
-  // Placeholder: GenAI
+  // GenAI
   {
     slug: 'qlik-genai',
     title: 'Qlik AI',
@@ -667,7 +670,7 @@ export const projects: Project[] = [
     description: 'Prototyped a mixed-reality infrastructure using a Microsoft HoloLens to bridge the gap between a physical retail space and live enterprise data. The system utilized computer vision to recognize products on store shelves, triggering real-time calls to Qlik APIs to overlay dynamic inventory levels and sales performance data directly onto the physical environment. This "heads-up" analytics layer empowers store managers to make data-driven decisions regarding product placement and shelf-stocking efficiency without leaving the floor.',
     images: ['/images/ImmersiveRetail.1.jpg','/images/ImmersiveRetail.2.jpg']
   },
-  // Placeholder: Cultural Analytics
+  // Cultural Analytics
   {
     slug: 'cultural-analytics',
     title: 'Cultural Analytics',
@@ -1090,26 +1093,28 @@ export const projects: Project[] = [
   // Insight Chatbot
   {
     slug: 'qlik-insight-chatbot',
-    title: 'Insight Chatbot',
+    title: 'Conversational Analytics',
     category: ['Inquiry'],
     subCategory: ['Display & Interaction Systems'],
     year: '2017',
     medium: 'Web Application',
-    description: 'I helped build a chatbot for Qlik Sense that uses the Qlik Sense API to answer questions about the data. Qlik eventually acquired the company and integrated the chatbot into Qlik Sense. This was long before Generative AI was a thing.',
+    description: 'Before the era of Large Language Models, I co-developed a pioneering chatbot for Qlik Sense designed to democratize data access through natural language interaction. By architecting a seamless integration with the Qlik Sense Engine API, the system allowed users to query complex datasets and receive instant, visualized answers through a conversational interface.',
+    description2: 'The project\’s strategic value was validated when the startup was acquired by Qlik, leading to the full integration of the technology into the core Qlik Sense platform. This work served as an early blueprint for "Inquiry-based" analytics, moving beyond traditional dashboards to create a symbiosis between human language and computational logic.',
     images: ['/images/InsightChatbotLarge.jpeg']
   },
     // Tree of Branch
   {
     slug: 'tree-of-branch',
     title: 'Tree of Branch',
-    category: ['Creative'],
-    subCategory: ['Tangible Artifacts'],
+    category: ['Inquiry'],
+    subCategory: ['Publications & Theory'],
     year: '2015',
     medium: 'Web Visualization',
-    description: 'This visualization was generated to assist with the exploration and analysis of Qlik’s open source developer community, Branch. Intended originally as an interactive open-ended discovery and navigational platfor, the application enables visitors to find new meaning about the users, projects and relationships therein. It can be used to understand the social dynamics of this online community as well as individuals’ user behaviours. In order to facilitate this understanding and gain insights, metadata such as similarities, categories, number of views, comments, and companies are represented here.',
-    description2: 'The nodes represent projects and are scaled based on number of views which makes it easy to quickly identify the most popular projects. Each node also describes the number of contributors and comments for that project enabling us to visually measure the amount of collaboration taking place for each project. The nodes are clustered and colored by product categories. The links describe the relationships of the projects to each other through similarities and users.',
-    description3: 'The two largest clusters highlight Qlik’s community focus on visualization extensions. There are seven medium sized clusters and five small clusters showing us where there is still room for growth. The light blue links highlight through bundling that there are many similarities to projects within each category as well as between Qlik’s two primary visualization categories. The light green links show us that surprisingly most contributors tend to develop projects across the entire product categories proving the power of Qlik’s underlying analytical platform.',
-    images: ['/images/TreeOfBranch.jpg']
+    dimensions: 'Published in Teradata\’s Art of Analytics',
+    description: 'This visualization, featured in Teradata\’s Art of Analytics book, was generated to assist with the exploration and analysis of Qlik\’s open-source developer community, Branch. Originally intended as an interactive, open-ended discovery and navigational platform, the application enables visitors to uncover new meaning within the complex web of users, projects, and relationships. By representing metadata such as project similarities, view counts, and corporate affiliations, the work facilitates a deep understanding of the social dynamics and individual behaviors that drive the ecosystem.',
+    description2: 'The visual architecture uses nodes to represent individual projects, scaled by view counts to immediately surface high-impact contributions. To visually quantify collaboration, each node encodes the number of contributors and comments, with clusters colored by product category. This multi-layered system—which earned its place in the Art of Analytics publication for its blend of technical rigor and expressive form—utilizes links to trace the intricate relationships between projects based on shared similarities and overlapping user bases.',
+    description3: 'The visualization reveals a strong community focus on visualization extensions, dominated by two primary clusters, while identifying several emerging clusters that indicate opportunities for growth. Light blue links use edge bundling to demonstrate high similarity both within and between Qlik\’s primary visualization categories. Perhaps most notably, the light green links show that most contributors develop projects across the entire product spectrum, proving the versatility of the underlying platform and the cross-disciplinary nature of the developer community.',
+    images: ['/images/TreeOfBranch.png']
   },
     // HOMCOM 
   {
@@ -1137,7 +1142,7 @@ export const projects: Project[] = [
     year: '2021',
     medium: 'video',
     collaborators: ['Ed Colmar'],
-    description: '​During the height of COVID, I worked with Ed Colmar to create this data driven highly synchronized music video.',
+    description: 'Created during the peak of the COVID-19 pandemic, this project was a collaborative exploration with Ed Colmar into the boundaries of remote, data-driven creative production. The music video utilizes high-fidelity synchronization techniques to map musical structures directly to visual movements, ensuring every rhythmic shift is reflected in the media\’s temporal flow. This work represents a moment where the invisible cadences of audio were materialized into a structured visual experience, bridging the gap between two remote collaborators through a precise, algorithmic lens.',
     images: ['/images/PresumedExistance.jpg'],
     videoLink: 'https://youtu.be/SZAX2K6sp1M?feature=shared'
   }
