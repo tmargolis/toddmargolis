@@ -5,8 +5,8 @@ const slugify = (name: string) =>
   name.replace(/\s*&\s*/g, '-and-').toLowerCase().replace(/\s+/g, '-').replace(/&/g, '-and-').replace(/[^a-z0-9-]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
 
 const creativeSubCategories = [
-  { name: 'Immersive Installations', page: '/creative/' },
   { name: 'Tangible Artifacts', page: '/creative/' },
+  { name: 'Immersive Installations', page: '/creative/' },
   { name: 'Augmented Interventions', page: '/creative/' },
   { name: 'Performative Systems', page: '/creative/' },
 ];
