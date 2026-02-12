@@ -1047,8 +1047,8 @@ export const projects: Project[] = [
 {
   slug: 'qlik',
   title: 'Qlik',
-  category: ['Strategy', 'Inquiry'],
-  subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
+  category: ['Strategy'],
+  subCategory: ['R&D Leadership'],
   year: '2014-2026',
   medium: 'Sr. Director of Applied Research & Emerging Technologies',
   heroImage: '/images/ConnectKeynote.jpg',
