@@ -891,7 +891,22 @@ export const projects: Project[] = [
   images: ['/images/QlikAnswers.png'],
   projectTag: ['MCP']
   },
-  // Inquiry / Publications & Theory / Cultural Analytics
+  // Inquiry / Publications & Theory / Immersive Analytics
+  {
+    slug: 'collaborative-analytics',
+    title: 'Collaborative Immersive Analytics',
+    category: ['Inquiry'],
+    subCategory: ['Publications & Theory'],
+    collaborators: ['Mark Billinghurst', 'Maxime Cordeil', 'Anastasia Bezerianos'],
+    year: '2018',
+    medium: 'Immersive Analytics book chapter (Springer Publishing)',
+    heroImage: '/images/EVLCave2Analytics.jpg',
+    description: 'Immersive Analytics is a new research initiative that aims to remove barriers between people, their data and the tools they use for analysis and decision making. Here the aims of immersive analytics research are clarified, its opportunities and historical context, as well as providing a broad research agenda for the field. In addition, it is reviewed how the term immersion has been used to refer to both technological and psychological immersion, both of which are central to immersive analytics research.',
+    description2: 'Many of the problems being addressed by Immersive Analytics require groups of people to solve. This chapter introduces the concept of Collaborative Immersive Analytics (CIA) and reviews how immersive technologies can be combined with Visual Analytics to facilitate co-located and remote collaboration. We provide a definition of Collaborative Immersive Analytics and then an overview of the different types of possible collaboration. The chapter also discusses the various roles in collaborative systems, and how to support shared interaction with the data being presented. Finally, we summarize the opportunities for future research in this domain. The aim of the chapter is to provide enough of an introduction to CIA and key directions for future research, so that practitioners will be able to begin working in the field.',
+    images: ['/images/EVLCave2Analytics.jpg','/images/CollaborativeAnalytics.jpeg'],
+    website: 'https://link.springer.com/chapter/10.1007/978-3-030-01388-2_8'
+    },
+    // Inquiry / Publications & Theory / Cultural Analytics
 {
   slug: 'cultural-analytics',
   title: 'Cultural Analytics',
@@ -1047,8 +1062,8 @@ export const projects: Project[] = [
 {
   slug: 'qlik',
   title: 'Qlik',
-  category: ['Strategy', 'Inquiry'],
-  subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
+  category: ['Strategy'],
+  subCategory: ['R&D Leadership'],
   year: '2014-2026',
   medium: 'Sr. Director of Applied Research & Emerging Technologies',
   heroImage: '/images/ConnectKeynote.jpg',
