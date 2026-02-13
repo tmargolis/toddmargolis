@@ -856,12 +856,13 @@ export const projects: Project[] = [
   title: 'Growing Documentary',
   category: ['Inquiry'],
   subCategory: ['Collaborative Environments'],
-  year: '2012',
+  year: '2011-2012',
   medium: 'Distributed Cinema',
   collaborators: ['Tracy Cornish'],
-  description: 'Growing Documentary: Places + Perspectives is a sponsored research project between graduate students from Keio Media Design, Keio University and undergraduate students from the Visual Arts Department at the University of California, San Diego. The goal of this project is to explore remote collaboration as a means for producing a HD documentary using emerging technologies such as Vroom (virtual room @Calit2); CineSage and PIX System for media sharing, review and critique; and HD/4K video teleconferencing for face-to-face discussions, knowledge sharing and project development. Using high-speed optical networks to connect advanced collaboration spaces, we were able to bridge diverse ideas with complex workflows in a novel format for next generation digital cinema production and distribution.',
+  description: 'Growing Documentary: Places + Perspectives is a sponsored research project between graduate students from Keio Media Design, Keio University and undergraduate students from the Visual Arts Department at the University of California, San Diego. The goal of this project was to explore remote collaboration as a means for producing a documentary using emerging technologies such as Vroom (Virtual Room @ Calit2), CineSage and PIX System for media sharing, review and critique, and HD/4K video teleconferencing for face-to-face discussions, knowledge sharing and project development. Using high-speed optical networks to connect advanced collaboration spaces, we were able to bridge diverse ideas with complex workflows in a novel format for next generation digital cinema production.',
+    description2: 'This project culminated with screenings at the 24th Tokyo International Film Festival (2011), CineGrid International Workshop (2011) and the Hawaii International Film Festival (2012) as well as presentated at TEDx San Diego (2013) on the novel production practice.',
   heroImage: '/images/groupShot1.jpg',
-  images: ['/images/mewide.jpg']
+  images: ['/images/GrowingTEDx.jpg']
   },
   // Inquiry / Collaborative Environments / Scalable City
   {
