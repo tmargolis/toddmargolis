@@ -1,5 +1,5 @@
 ---
-const currentPage ='inquiry';
+const currentPage = 'research';
 import Layout from '../layouts/Layout.astro';
 import { projects } from '../data/projects';
 
@@ -18,16 +18,16 @@ function sortYearFromYearString(yearStr: string): number {
   return 0;
 }
 
-const categoryProjects = projects.filter((p) => p.category.includes('Inquiry'));
+const categoryProjects = projects.filter((p) => p.category.includes('Research'));
 
-const inquirySubCategoryOrder = [
+const researchSubCategoryOrder = [
   'Display & Interaction Systems',
   'Collaborative Environments',
   'Publications & Theory',
   'Pedagogy & Labs',
 ];
 
-const projectsBySubCategory = inquirySubCategoryOrder.map((subCat) => ({
+const projectsBySubCategory = researchSubCategoryOrder.map((subCat) => ({
   name: subCat,
   slug: subCat.replace(/\s*&\s*/g, '-and-').toLowerCase().replace(/\s+/g, '-').replace(/&/g, '-and-').replace(/[^a-z0-9-]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, ''),
   projects: categoryProjects
@@ -43,9 +43,9 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
 }
 ---
 
-<Layout title="Inquiry" activeCategories={['Inquiry']}>
+<Layout title="Research" activeCategories={['Research']}>
   <section class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
-    <h1 class="font-serif text-5xl md:text-7xl mb-16 text-center">Inquiry</h1>
+    <h1 class="font-serif text-5xl md:text-7xl mb-16 text-center">Research</h1>
 
     {projectsBySubCategory.map(({ name, slug, projects: subProjects }) => (
       <section id={slug} class="mb-20 scroll-mt-32">

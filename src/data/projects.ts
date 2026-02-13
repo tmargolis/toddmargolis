@@ -1,4 +1,4 @@
-export type Category = 'Creative' | 'Inquiry' | 'Strategy';
+export type Category = 'Creative' | 'Research' | 'Strategy';
 
 export interface Project {
   slug: string;
@@ -252,7 +252,7 @@ export const projects: Project[] = [
   {
   slug: 'artn-laboratory',
   title: '(art)n Laboratory',
-  category: ['Creative', 'Inquiry','Strategy'],
+  category: ['Creative', 'Research','Strategy'],
   subCategory: ['Tangible Artifacts', 'Display & Interaction Systems','Cultural Stewardship'],
   year: '1999-2001',
   medium: 'Artist-in-residence, Curator',
@@ -269,7 +269,7 @@ export const projects: Project[] = [
 {
   slug: 'atlas-in-silico',
   title: 'ATLAS in silico',
-  category: ['Creative', 'Inquiry'],
+  category: ['Creative', 'Research'],
   subCategory: ['Immersive Installations', 'Collaborative Environments'],
   collaborators: ['Ruth West', 'Jurgen Schulze', 'JP Lewis', 'Alex Nano', 'Iman Mostafavi', 'Joachim Gossmann', 'Ben Hackbarth'],
   year: '2007-2013',
@@ -494,7 +494,7 @@ export const projects: Project[] = [
 {
   slug: 'essa',
   title: 'ESSA!',
-  category: ['Creative','Inquiry'],
+  category: ['Creative','Research'],
   subCategory: ['Performative Systems', 'Collaborative Environments'],
   year: '2013',
   medium: 'Telepresence Performance',
@@ -536,13 +536,13 @@ export const projects: Project[] = [
   images: ['/images/PresumedExistance.jpg'],
   videoLink: 'https://youtu.be/SZAX2K6sp1M?feature=shared'
   },
-  // Inquiry
-  // Inquiry: Display & Interaction Systems
-  // Inquiry / Display & Interaction Systems / The Varrier™ autostereoscopic virtual reality display
+  // Research
+  // Research: Display & Interaction Systems
+  // Research / Display & Interaction Systems / The Varrier™ autostereoscopic virtual reality display
   {
   slug: 'varrier-siggraph',
   title: 'The Varrier™ autostereoscopic virtual reality display',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2005',
   medium: 'SIGGRAPH 2005',
@@ -552,11 +552,11 @@ export const projects: Project[] = [
   description: 'Virtual reality (VR) has long been hampered by the gear needed to make the experience possible; specifically, stereo glasses and tracking devices. Autostereoscopic display devices are gaining popularity by freeing the user from stereo glasses, however few qualify as VR displays. The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC) has designed and produced a large scale, high resolution head-tracked barrier-strip autostereoscopic display system that produces a VR immersive experience without requiring the user to wear any encumbrances. The resulting system, called Varrier, is a passive parallax barrier 35-panel tiled display that produces a wide field of view, head-tracked VR experience. This paper presents background material related to parallax barrier autostereoscopy, provides system configuration and construction details, examines Varrier interleaving algorithms used to produce the stereo images, introduces calibration and testing, and discusses the camera-based tracking subsystem.',
   images: ['/images/varrier-siggraph.jpg']
   },
-  // Inquiry / Display & Interaction Systems / HUVR
+  // Research / Display & Interaction Systems / HUVR
 {
   slug: 'huvr',
   title: 'HUVR',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2010-2012',
   medium: 'Heads-Up Virtual Reality at UCSD',
@@ -568,11 +568,11 @@ export const projects: Project[] = [
   collaborators: ['Greg Dawe', 'Dan Sandin', 'Tom DeFanti'],
   videoLink: 'https://youtu.be/h-DcHAK-dsU?si=CaKeoIcbv9Cx4x4L'
   },
-  // Inquiry / Display & Interaction Systems / Immersive Manufacturing
+  // Research / Display & Interaction Systems / Immersive Manufacturing
 {
   slug: 'immersive-manufacturing-analytics',
   title: 'Immersive Manufacturing',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2016',
   medium: 'Immersive Analytics',
@@ -583,11 +583,11 @@ export const projects: Project[] = [
   videoLink: 'https://youtu.be/VwbG20pvPzY',
   images: ['/images/immersiveManufacturing2.jpg']
   },
-  // Inquiry / Display & Interaction Systems / Immersive Healthcare
+  // Research / Display & Interaction Systems / Immersive Healthcare
 {
   slug: 'immersive-healthcare-analytics',
   title: 'Immersive Healthcare',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2019',
   medium: 'Immersive Analytics',
@@ -598,11 +598,11 @@ export const projects: Project[] = [
   videoLink: 'https://youtu.be/1g1G2TjnJdw',
   images: ['/images/ImmersiveAnalyticsSIGGRAPH.jpg','/images/immersiveHealthcare1.jpg']
   },
-  // Inquiry / Display & Interaction Systems / Becoming Dragon
+  // Research / Display & Interaction Systems / Becoming Dragon
 {
   slug: 'becoming-dragon',
   title: 'Becoming Dragon',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2008-2010',
   medium: 'Augmented Reality',
@@ -613,27 +613,27 @@ export const projects: Project[] = [
   description3: 'Co-sponsored by The Center for Performance Studies, the UCLA Department of Theater, the Center for Research in Computing and the Arts (CRCA), the Department of Theater, the School of Theater, Film, and Television, LGBT Studies, the Center for the Study of Women and The Center for Research in Engineering, Media and Performance. Additional support provided by San Diego State University\'s Second Life Initiative, Aztlan Island.',
   images: ['/images/becoming-transreal_1.jpg','/images/11_25_08_micha_dragon.jpg']
   },
-  // Inquiry / Display & Interaction Systems / Emerngency Response Drone
+  // Research / Display & Interaction Systems / Emerngency Response Drone
 {
   slug: 'emergency-response-drone',
   title: 'Emerngency Response Drone',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2019',
   medium: 'Internet of Things Analytics',
-  collaborators: ['Ottawa Emergency Services', 'Qlik', 'University of Ottawa'],
+  collaborators: ['Ottawa Emergency Services', 'University of Ottawa'],
   heroImage: '/images/DroneDemo.jpg',
   description: 'The Emergency Response Drone is a proof-of-concept autonomous system designed to enhance humanitarian efforts through real-time situational awareness and distributed data processing. By leveraging Qlik Core and IoT integration, the drone acts as an edge-computing node, providing 911 operators with immediate, high-fidelity data from incident scenes. The system utilizes onboard computer vision to autonomously recognize and track critical variables—including human casualties, vehicle counts, and hazardous materials—transforming raw visual feeds into structured data fields for rapid decision-making.',
   description2: 'At the core of this innovation is the drone\'s ability to run analytics locally, calculating a dynamic risk score that is transmitted to web-based command centers. This real-time intelligence guides paramedics and firefighters in triaging scenes and deploying specialized resources with surgical precision. Beyond the immediate response, the platform facilitates comprehensive post-incident analysis by syncing edge data with cloud-based applications. This allows for the longitudinal review of major incidents, optimizing resource positioning and enhancing the common operating picture for complex, large-scale emergencies like flood relief or multi-vehicle collisions.',
-  description3: 'I was responsible for creating, planning & executing the concept, design, development, configuration and operation of the Emergency Response Drone. I worked in partnership with the Ottawa Emergency Services, Qlik, and the University of Ottawa to bring this project to life. We demonstrated the system at Qlik Qonnections 2019 in Dallas, TX',
+  description3: 'I was responsible for creating, planning & executing the concept, design, development, configuration and operation of the Emergency Response Drone. Through Qlik, I worked in partnership with the Ottawa Emergency Services and the University of Ottawa to bring this project to life. We demonstrated the system at Qlik Qonnections 2019 in Dallas, TX',
   images: ['/images/EmergencyDrone2.jpeg','/images/EmergencyDroneStill.jpg'],
   videoLink: 'https://youtu.be/5QE_a3_dRNc'
   },
-  // Inquiry / Display & Interaction Systems / Immersive Retail
+  // Research / Display & Interaction Systems / Immersive Retail
 {
   slug: 'immersive-retail',
   title: 'Immersive Retail',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2018',
   medium: 'Augmented Reality',
@@ -641,11 +641,11 @@ export const projects: Project[] = [
   description: 'Prototyped a mixed-reality infrastructure using a Microsoft HoloLens to bridge the gap between a physical retail space and live enterprise data. The system utilized computer vision to recognize products on store shelves, triggering real-time calls to Qlik APIs to overlay dynamic inventory levels and sales performance data directly onto the physical environment. This "heads-up" analytics layer empowers store managers to make data-driven decisions regarding product placement and shelf-stocking efficiency without leaving the floor.',
   images: ['/images/ImmersiveRetail.1.jpg','/images/ImmersiveRetail.2.jpg']
   },
-  // Inquiry / Display & Interaction Systems / SPECFLIC
+  // Research / Display & Interaction Systems / SPECFLIC
 {
   slug: 'specflic',
   title: 'SPECFLIC',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2006',
   medium: 'Distributed Cinema',
@@ -655,11 +655,11 @@ export const projects: Project[] = [
   description3: 'I worked with Adriene Jenik in SPECFLIC 1.0 in La Jolla and SPECFLIC 2.0 in San Jose as Technical Director to identify and utilize transgressive digital media throughout the design and planning process. Physical architecture was transformed into immersive spaces where social experiences played out through digitally mediated audio and video streams (live and pre-recorded). During pre-production of SPECFLIC 2.0, I worked with Cinematographer John Pirozzi to assist with the HD shoot of Allison Janney and Richard Jenik in the MLK Library. I lead a large technical support team for SPECFLIC 2.0 which installed a complex network of projectors, cameras, microphones, speakers and computers inside, around and on top of the installation spaces.',
   images: ['/images/specflic_infospherian300.jpg','/images/remote_melissa+all.jpg']
   },
-  // Inquiry / Display & Interaction Systems / FILE 4K
+  // Research / Display & Interaction Systems / FILE 4K
 {
   slug: 'file-4k',
   title: 'FILE 4K',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2009',
   medium: 'High-Performance Networked Media',
@@ -670,11 +670,11 @@ export const projects: Project[] = [
   images: ['/images/fig4.1.jpg','/images/fig6.4.jpg'],
   videoLink: 'https://youtu.be/8JX1Yv7TfDQ'
   },
-  // Inquiry / Display & Interaction Systems / NetSight
+  // Research / Display & Interaction Systems / NetSight
 {
   slug: 'netsight',
   title: 'NetSight',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '1995-1996',
   medium: 'Webmaster',
@@ -682,22 +682,22 @@ export const projects: Project[] = [
   description: 'In this role as Webmaster for a pioneering Chicago-based ISP, I spearheaded the expansion of traditional internet services into the nascent fields of web hosting and interactive design. By leveraging early-stage spatial computing, I specialized in the development of some of the region\'s first 3D VRML (Virtual Reality Modeling Language) websites, effectively introducing immersive 3D navigation to the web. This work laid the foundation for my ongoing inquiry into display systems by transforming static browsing into a navigable, three-dimensional experience.',
   images: ['/images/SGI_indy.jpeg']
   },
-  // Inquiry / Display & Interaction Systems / PowerUser
+  // Research / Display & Interaction Systems / PowerUser
 {
   slug: 'poweruser-inc',
   title: 'PowerUser',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '1998-2000',
   medium: 'Web Developer',
   description: 'During my tenure as a Web Developer at PowerUser, I spearheaded the development of sophisticated, database-driven web architectures, bridging the gap between robust back-end infrastructure and intuitive user interaction. My role encompassed the full lifecycle of digital deployment, from the hands-on administration of web servers and e-commerce systems to the collaborative programming of dynamic site layouts. By integrating complex data systems with interactive design principles, I focused on creating scalable display and interaction frameworks that prioritized both technical stability and a seamless end-user experience.',
   images: ['/images/poweruser.jpg']
   },
-  // Inquiry / Display & Interaction Systems / Qlik Gesture
+  // Research / Display & Interaction Systems / Qlik Gesture
 {
   slug: 'qlik-gesture',
   title: 'Qlik Gesture',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2014-2015',
   medium: 'Hand Gesture Recognition',
@@ -707,11 +707,11 @@ export const projects: Project[] = [
   images: ['/images/QlikQonnections.jpeg'],
   videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV&t=1m34s'
   },
-  // Inquiry / Display & Interaction Systems / Day in the Life
+  // Research / Display & Interaction Systems / Day in the Life
 {
   slug: 'qlik-day-in-the-life',
   title: 'Day in the Life',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2016',
   medium: 'Augmented Reality',
@@ -721,11 +721,11 @@ export const projects: Project[] = [
   images: ['/images/QlikQonnectionsPano.jpeg'],
   videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV'
   },
-  // Inquiry / Display & Interaction Systems / Conversational Analytics
+  // Research / Display & Interaction Systems / Conversational Analytics
   {
   slug: 'qlik-insight-chatbot',
   title: 'Conversational Analytics',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   year: '2017',
   medium: 'Web Application',
@@ -733,12 +733,12 @@ export const projects: Project[] = [
   description2: 'The project\'s strategic value was validated when the startup was acquired by Qlik, leading to the full integration of the technology into the core Qlik Sense platform. This work served as an early blueprint for "Inquiry-based" analytics, moving beyond traditional dashboards to create a symbiosis between human language and computational logic.',
   images: ['/images/InsightChatbotLarge.jpeg']
   },
-  // Inquiry: Collaborative Environments
-  // Inquiry / Collaborative Environments / Vroom (Virtual Room)
+  // Research: Collaborative Environments
+  // Research / Collaborative Environments / Vroom (Virtual Room)
 {
   slug: 'vroom',
   title: 'Vroom (Virtual Room)',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   year: '2010-2013',
   medium: 'Tiled display environment at UCSD',
@@ -748,11 +748,11 @@ export const projects: Project[] = [
   description3: 'Previous compatible system (HIPerSpace, HIPerWall, AESOP, OptiPortal) have been developed at Calit2 and distributed around the world to dozens of academic, government and corporate institutions. These systems are connected to high-speed optical networks to enable remote collaboration. The installation of Vroom in the Calit2 Theater will have approximately 100 displays, both 2D and 3D in a reconfigurable arrangement. Open-source software developed at UCSD and the Electronic Visualization Lab at UIC will enable the graphics (SAGE, CGLX and CalVR) and audio (SoundBender, VMAP and Sonnotate) middleware to share data across the local Vroom system as well as with remote nodes. Vroom will use 10Gb/s networking to all the display nodes with 10 (eventually 20) 10Gb/s uplinks to remote servers. Using both research systems and commercial platforms, we will integrate HD video tele-conferencing with remote nodes. We will employ spatialized audio with distributed Meyer speakers along with multiple wave field synthesis speaker arrays to provide directional audio. 4K video streaming and playback will be integrated into Vroom for both tiled display walls and projection surfaces.',
   images: ['/images/Octo-OptIPortableUnderConstructionControlRoom.jpeg', '/images/AllScreensContiuousImageDemo.jpg']
   },
-  // Inquiry / Collaborative Environments / CineGrid 3D 4K
+  // Research / Collaborative Environments / CineGrid 3D 4K
 {
   slug: 'cinegrid-3d-4k',
   title: 'CineGrid 3D 4K',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   year: '2006-2013',
   medium: 'High-Performance Networked Media',
@@ -762,11 +762,11 @@ export const projects: Project[] = [
   description2: 'A highlight of my research included networking media infrastructure, culminating in the tri-continental premiere of 4K feature-length media.  This milestone successfully established new benchmarks for distributed cinema, proving that uncompressed, ultra-high-resolution streams could be synchronized across continents with minimal latency. That led to a private demonstration of this technology for George Lucas at Industrial Light & Magic.',
   images: ['/images/audience.jpg','/images/CineSAGE-ILM.1-sm.jpg']
   },
-  // Inquiry / Collaborative Environments / CineGrid @ AES
+  // Research / Collaborative Environments / CineGrid @ AES
 {
   slug: 'cinegrid-aes',
   title: 'CineGrid @ AES',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   year: '2006',
   medium: 'High-Performance Networked Media',
@@ -777,11 +777,11 @@ export const projects: Project[] = [
   description3: 'As part of the core planning and design team, I collaborated with engineers from Industrial Light & Magic (ILM) and Skywalker Sound to architect the audio-video infrastructure. My responsibilities included configuring remote uncompressed audio servers and local network routing to ensure ultra-low latency playback. During the live performance, I served as the lead technician for queuing and managing the 24-channel spatialized audio streams over IP.',
   images: ['/images/crew_shot.png','/images/wagner250.jpg']
   },
-  // Inquiry / Collaborative Environments / TeleMotions
+  // Research / Collaborative Environments / TeleMotions
 {
   slug: 'telemotions',
   title: 'TeleMotions',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   year: '2011',
   medium: 'Telepresence Performance',
@@ -791,11 +791,11 @@ export const projects: Project[] = [
   description2: 'In my role as Technical Director at the lab, I managed the complex infrastructure required for such high-stakes, real-time media systems. This involved coordinating the logistical planning, latency management, and fault-tolerant network architecture necessary to ensure that human intuition and algorithmic logic could coexist seamlessly across a distributed network.',
   images: ['/images/TeleMotions2.jpg']
   },
-  // Inquiry / Collaborative Environments / Inspiraling
+  // Research / Collaborative Environments / Inspiraling
 {
   slug: 'inspiraling',
   title: 'Inspiraling',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   year: '2010',
   medium: 'Telepresence Performance',
@@ -806,11 +806,11 @@ export const projects: Project[] = [
   description3: 'San Diego Performers: Hafez Modirzadeh, saxophone, Michael Dessen, trombone, Alex Cline, percussion, Mark Dresser, contrabass\n\nNew York Performers: Amir ElSaffar, trumpet, Oliver Lake, saxophone, Min Xiao-Fen, pipa, Gerry Hemingway, percussion, Sarah Weaver, conductor\n\nPresented by:\n\nCalit2 and the Center for Research and Computing in the Arts (CRCA), University of California San Diego. Special thanks to the Dean of Arts and Humanities and the Fund for Innovation for supporting this project.\\nnMusic Technology Program, Steinhardt School, New York University. Dr. Robert Rowe, Vice-Chair, Director of Music Composition, Department of Music and Performing Arts Professions.\n\nRoulette Intermedia, Inc. James Staley, Director',
   images: ['/images/inspiraling_sd8_copy_hb.jpg','/images/IMG_3681_copy_hb.jpg']
   },
-  // Inquiry / Collaborative Environments / Tele-Taiko Teaching @ CineGrid
+  // Research / Collaborative Environments / Tele-Taiko Teaching @ CineGrid
 {
   slug: 'tele-taiko',
   title: 'Tele-Taiko Teaching @ CineGrid',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   year: '2013',
   medium: 'Telepresence Performance',
@@ -820,11 +820,11 @@ export const projects: Project[] = [
   images: ['/images/tele-taiko.jpg','/images/TeleTaiko.jpg'],
   videoLink: 'https://youtu.be/5KBoZfF-EK0'
   },
-  // Inquiry / Collaborative Environments / ResoNations
+  // Research / Collaborative Environments / ResoNations
 {
   slug: 'resonations',
   title: 'ResoNations',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   year: '2009',
   medium: 'Telepresence Performance',
@@ -835,11 +835,11 @@ export const projects: Project[] = [
   images: ['/images/resonations_7_resized.jpg','/images/resonations_1_resized.jpg'],
   collaborators: ['United Nations Headquarters in New York, University of California San Diego, The Banff Centre in Alberta, Canada, Queens University Belfast, and Dongguk University in Seoul']
   },
-  // Inquiry / Collaborative Environments / Image Quest
+  // Research / Collaborative Environments / Image Quest
 {
   slug: 'images-quest',
   title: 'Image Quest',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   collaborators: ['Ruth West'],
   year: '2010-2012',
@@ -850,11 +850,11 @@ export const projects: Project[] = [
   description3: 'The ImageQuest project will make it simpler for volunteers and scientists to engage in a much broader set of biological imaging research. Providing tools which enhance a volunteers ability to capture and analyze images relieves a technical burden on biologists trying to develop citizen science approaches. Making these tools smarter and more interactive encourages volunteers to contribute meaningfully to novel research questions, and building a virtual community around the volunteers and the scientists helps to recruit, motivate and retain long term participation of the public in scientific research.',
   images: ['/images/IQ-NYC-LiDARnCensus.jpg','/images/LiDAR.1.png']
   },
-  // Inquiry / Collaborative Environments / Growing Documentary
+  // Research / Collaborative Environments / Growing Documentary
   {
   slug: 'growing-documentary',
   title: 'Growing Documentary',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Collaborative Environments'],
   year: '2011-2012',
   medium: 'Distributed Cinema',
@@ -864,11 +864,11 @@ export const projects: Project[] = [
   heroImage: '/images/groupShot1.jpg',
   images: ['/images/GrowingTEDx.jpg']
   },
-  // Inquiry / Collaborative Environments / Scalable City
+  // Research / Collaborative Environments / Scalable City
   {
   slug: 'scalable-city',
   title: 'Scalable City',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Immersive Installations', 'Collaborative Environments'],
   year: '2009',
   collaborators: ['Sheldon Brown'],
@@ -878,12 +878,12 @@ export const projects: Project[] = [
   description2: 'The artwork is structured around a series of algorithmic "rules" that automate the construction of a sprawling, chaotic city—transforming the serene geometry of a digital landscape into a densely packed environment of roads and suburban architecture. As the simulation progresses, the very tools used for creation become the agents of destruction, leading to a "beautifully entropic" failure of the urban system.',
   images: ['/images/scalableCity.jpg','/images/Sheldon_Brown-_Scalable_City1.jpg']
   },
-  // Inquiry: Publications & Theory
-  // Inquiry / Publications & Theory / Qlik AI
+  // Research: Publications & Theory
+  // Research / Publications & Theory / Qlik AI
 {
   slug: 'qlik-genai',
   title: 'Qlik AI',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2023-2026',
   medium: 'Generative AI',
@@ -892,11 +892,11 @@ export const projects: Project[] = [
   images: ['/images/QlikAnswers.png'],
   projectTag: ['MCP']
   },
-  // Inquiry / Publications & Theory / Immersive Analytics
+  // Research / Publications & Theory / Immersive Analytics
   {
     slug: 'collaborative-analytics',
     title: 'Collaborative Immersive Analytics',
-    category: ['Inquiry'],
+    category: ['Research'],
     subCategory: ['Publications & Theory'],
     collaborators: ['Mark Billinghurst', 'Maxime Cordeil', 'Anastasia Bezerianos'],
     year: '2018',
@@ -907,24 +907,24 @@ export const projects: Project[] = [
     images: ['/images/EVLCave2Analytics.jpg','/images/CollaborativeAnalytics.jpeg'],
     website: 'https://link.springer.com/chapter/10.1007/978-3-030-01388-2_8'
     },
-    // Inquiry / Publications & Theory / Cultural Analytics
+    // Research / Publications & Theory / Cultural Analytics
 {
   slug: 'cultural-analytics',
   title: 'Cultural Analytics',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2012-2014',
   medium: 'Immersive Analytics',
   heroImage: '/images/ToddCalit2AdvisoryCommitteeMeeting-06-05-14 Large.jpeg',
   description: 'The GeoMedia Analytics Platform was a research project that transformed thousands of Flickr and Instagram photos into a spatialized visual history of New York City. By utilizing a custom "Flickr Harvester" and high-performance computing, the project analyzed the collective output of social media users along Park Avenue and other major urban corridors. This allowed for the creation of massive, high-resolution "photo clouds" that layered the city\'s digital metadata directly onto its physical geography, revealing invisible cultural patterns and the shifting rhythms of urban life.',
-  description2: 'In my capacity as Technical Director for the Software Studies Initiative, I leveraged the Vroom and HIPerSpace tiled display environments to visualize these datasets at an unprecedented scale. This work moved beyond simple data mapping to explore how software and social algorithms influence human behavior and architectural perception. Within my current portfolio, this project served as a cornerstone of Inquiry, demonstrating my ability to synthesize Public Data, Visual Analytics, and Immersive Design to make the hidden infrastructures of our modern society visible.',
+  description2: 'In my capacity as Technical Director for the Software Studies Initiative, I leveraged the Vroom and HIPerSpace tiled display environments to visualize these datasets at an unprecedented scale. This work moved beyond simple data mapping to explore how software and social algorithms influence human behavior and architectural perception. Within my current portfolio, this project served as a cornerstone of research, demonstrating my ability to synthesize Public Data, Visual Analytics, and Immersive Design to make the hidden infrastructures of our modern society visible.',
   images: ['/images/tiledDisplayGeo.jpg','/images/toddHololens.jpg']
   },
-  // Inquiry / Publications & Theory / Immersive Art in Augmented Reality
+  // Research / Publications & Theory / Immersive Art in Augmented Reality
 {
   slug: 'immersive-art-in-augmented-reality',
   title: 'Immersive Art in Augmented Reality',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2014',
   medium: 'Augmented Reality Art book chapter (Springer International Publishing)',
@@ -932,11 +932,11 @@ export const projects: Project[] = [
   description2: 'Relating to the Manifest.AR collective\'s ethos in 2014, the chapter reflects the group\'s radical move toward locative and socially-driven interventions. It highlights a specific turn away from purely sensorial technology toward a "new social form of immersion" that prioritizes the connection between people across distance and time. As the collective was known for its interventionist approach—often placing digital objects in physical spaces like MoMA or the Venice Biennale—this chapter provides the theoretical backbone for those actions. It argues that the true power of the medium lies in "collaborative locative media," shifting the focus from the artist\'s individual vision to collective, social outcomes within the shared digital-physical landscape.',
   images: ['/images/978-3-319-69932-5.jpeg']
   },
-  // Inquiry / Publications & Theory / Camera Based Automatic Calibration for the Varrier System
+  // Research / Publications & Theory / Camera Based Automatic Calibration for the Varrier System
 {
   slug: 'varrier-IEEE',
   title: 'Camera Based Automatic Calibration for the Varrier System',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2005',
   medium: 'IEEE Computer Society Conference paper',
@@ -946,11 +946,11 @@ export const projects: Project[] = [
   heroImage: '/images/placeholder.png',
   images: ['/images/varrier65p_mars.gif']
   },
-  // Inquiry / Publications & Theory / Varrier autostereographic display
+  // Research / Publications & Theory / Varrier autostereographic display
 {
   slug: 'varrier-SPIE',
   title: 'Varrier autostereographic display',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2001',
   medium: 'SPIE conference paper',
@@ -960,11 +960,11 @@ export const projects: Project[] = [
   heroImage: '/images/placeholder.png',
   images: ['/images/varrierEyes.jpg']
   },
-  // Inquiry / Publications & Theory / Scalable metadata environments
+  // Research / Publications & Theory / Scalable metadata environments
 {
   slug: 'scalable-metadata-environments',
   title: 'Scalable metadata environments',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2014',
   medium: 'SPIE Conference Paper',
@@ -973,11 +973,11 @@ export const projects: Project[] = [
   images: ['/images/ATLAS_PRINT_SGO_grid.jpg'],
   description: 'Scalable Metadata Environments (MDEs) are an artistic approach for designing immersive environments for large scale data exploration in which users interact with data by forming multiscale patterns that they alternatively disrupt and reform. Developed and prototyped as part of an art-science research collaboration, we define an MDE as a 4D virtual environment structured by quantitative and qualitative metadata describing multidimensional data collections. Entire data sets (e.g.10s of millions of records) can be visualized and sonified at multiple scales and at different levels of detail so they can be explored interactively in real-time within MDEs. They are designed to reflect similarities and differences in the underlying data or metadata such that patterns can be visually/aurally sorted in an exploratory fashion by an observer who is not familiar with the details of the mapping from data to visual, auditory or dynamic attributes. While many approaches for visual and auditory data mining exist, MDEs are distinct in that they utilize qualitative and quantitative data and metadata to construct multiple interrelated conceptual coordinate systems. These "regions" function as conceptual lattices for scalable auditory and visual representations within virtual environments computationally driven by multi-GPU CUDA-enabled fluid dyamics systems.'
   },
-  // Inquiry / Publications & Theory / Tree of Branch
+  // Research / Publications & Theory / Tree of Branch
   {
   slug: 'tree-of-branch',
   title: 'Tree of Branch',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2015',
   medium: 'Web Visualization',
@@ -987,12 +987,12 @@ export const projects: Project[] = [
   description3: 'The visualization reveals a strong community focus on visualization extensions, dominated by two primary clusters, while identifying several emerging clusters that indicate opportunities for growth. Light blue links use edge bundling to demonstrate high similarity both within and between Qlik\'s primary visualization categories. Perhaps most notably, the light green links show that most contributors develop projects across the entire product spectrum, proving the versatility of the underlying platform and the cross-disciplinary nature of the developer community.',
   images: ['/images/TreeOfBranch.png']
   },
-  // Inquiry: Pedagogy & Labs
-  // Inquiry / Pedagogy & Labs / Electronic Visualization Laboratory @  UIC
+  // Research: Pedagogy & Labs
+  // Research / Pedagogy & Labs / Electronic Visualization Laboratory @  UIC
 {
   slug: 'uic-evl',
   title: 'Electronic Visualization Laboratory @  UIC',
-  category: ['Inquiry', 'Strategy'],
+  category: ['Research', 'Strategy'],
   subCategory: ['Pedagogy & Labs','Academic Practice'],
   year: '1998-2005',
   medium: 'Research Assistant',
@@ -1002,11 +1002,11 @@ export const projects: Project[] = [
   description2: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
   images: ['/images/varrierColors.jpg']
   },
-  // Inquiry / Pedagogy & Labs / Interactive Arts and Media @ Columbia
+  // Research / Pedagogy & Labs / Interactive Arts and Media @ Columbia
 {
   slug: 'columbia-college-chicago',
   title: 'Interactive Arts and Media @ Columbia',
-  category: ['Inquiry','Strategy'],
+  category: ['Research','Strategy'],
   subCategory: ['Pedagogy & Labs','Academic Practice'],
   year: '2000-2003',
   medium: 'Adjunct Faculty',
@@ -1014,11 +1014,11 @@ export const projects: Project[] = [
   description: 'Instructor for Programming Web Databases (PHP/MySQL) and Introduction to Multimedia Programming (Macromedia Director/Lingo). Frequent guest lecturer for courses relating to art and technology in the Photography, Art History, Academic Computing and Interactive Multimedia departments.',
   images: ['/images/game-art-m.jpg']
   },
-  // Inquiry / Pedagogy & Labs / Art and Technology @ SAIC
+  // Research / Pedagogy & Labs / Art and Technology @ SAIC
 {
   slug: 'saic',
   title: 'Art and Technology @ SAIC',
-  category: ['Inquiry','Strategy'],
+  category: ['Research','Strategy'],
   subCategory: ['Pedagogy & Labs','Academic Practice'],
   year: '1999-2003',
   medium: 'Instructor',
@@ -1031,11 +1031,11 @@ export const projects: Project[] = [
   images: ['/images/lab1_400.jpg','/images/350x622-toddnewevent_185.jpg'],
   videoLink: 'https://vimeo.com/25292528?fl=pl&fe=cm'
   },
-  // Inquiry / Pedagogy & Labs / UCSD\
+  // Research / Pedagogy & Labs / UCSD\
 {
   slug: 'software-studies',
   title: 'UCSD\'s Software Studies',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Pedagogy & Labs'],
   year: '2008-2012',
   medium: 'Technical Director',
@@ -1044,11 +1044,11 @@ export const projects: Project[] = [
   description: 'Disseminate the broad vision that software is a layer that permeates all areas of contemporary societies. As Technical Director, I developed projects, workshops, and publications analyzing contemporary techniques of control, communication, representation, and simulation through the lens of this software layer.',
   images: ['/images/maxresdefault.jpg']
   },
-  // Inquiry / Pedagogy & Labs / UCSD\
+  // Research / Pedagogy & Labs / UCSD\
   {
   slug: 'experimental-game-lab',
   title: 'UCSD\'s Experimental Game Lab',
-  category: ['Inquiry'],
+  category: ['Research'],
   subCategory: ['Pedagogy & Labs'],
   year: '2005-2012',
   collaborators: ['Sheldon Brown'],
@@ -1077,7 +1077,7 @@ export const projects: Project[] = [
   {
   slug: 'nvision',
   title: 'NVision @ University of Northampton',
-  category: ['Strategy', 'Inquiry'],
+  category: ['Strategy', 'Research'],
   subCategory: ['R&D Leadership', 'Display & Interaction Systems'],
   year: '2010-2012',
   medium: 'Honorary Board Member',
@@ -1091,7 +1091,7 @@ export const projects: Project[] = [
 {
   slug: 'ucsd-crca',
   title: 'CRCA @ UCSD',
-  category: ['Strategy', 'Inquiry'],
+  category: ['Strategy', 'Research'],
   subCategory: ['Academic Practice', 'Pedagogy & Labs'],
   year: '2005-2012',
   medium: 'Technical Director',
@@ -1129,7 +1129,7 @@ export const projects: Project[] = [
   {
   slug: 'ucsd-qualcomm',
   title: 'Qualcomm Institute @ UCSD',
-  category: ['Strategy','Inquiry'],
+  category: ['Strategy','Research'],
   subCategory: ['Pedagogy & Labs', 'Academic Practice'],
   year: '2012-2014',
   medium: 'Assistant Project Scientist & Lecturer',

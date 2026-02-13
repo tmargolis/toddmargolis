@@ -11,11 +11,11 @@ const creativeSubCategories = [
   { name: 'Performative Systems', page: '/creative/' },
 ];
 
-const inquirySubCategories = [
-  { name: 'Display & Interaction', page: '/inquiry/' },
-  { name: 'Collaborative Environments', page: '/inquiry/' },
-  { name: 'Publications & Theory', page: '/inquiry/' },
-  { name: 'Pedagogy & Labs', page: '/inquiry/' },
+const researchSubCategories = [
+  { name: 'Display & Interaction', page: '/research/' },
+  { name: 'Collaborative Environments', page: '/research/' },
+  { name: 'Publications & Theory', page: '/research/' },
+  { name: 'Pedagogy & Labs', page: '/research/' },
 ];
 
 const strategySubCategories = [
@@ -39,12 +39,12 @@ const strategySubCategories = [
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
             <!-- Pillar 1: Research -->
             <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group m-4">
-                <a href="/inquiry/" class="block">
+                <a href="/research/" class="block">
                     <h1 class="font-mono text-lg uppercase text-white">Research</h1>
                     <p class="text-gray-400 mt-4 flex-grow">Examining how communication is meditated and augmented with technology. Designing collaborative environments, autostereoscopic systems and spatial interfaces where human intuition and computational logic operate in symbiosis. Enabling the exploration and critique of emerging media.</p>
                 </a>
                 <ul class="mt-6 space-y-2">
-                    {inquirySubCategories.map((item) => (
+                    {researchSubCategories.map((item) => (
                         <li>
                             <a href={`${item.page}#${slugify(item.name)}`} class="font-mono text-sm text-white hover:text-glow transition-all">{item.name}</a>
                         </li>

@@ -17,8 +17,8 @@ while (i < lines.length) {
   const line = lines[i];
   
   // Keep section headers (category and sub-category headers)
-  if (line.match(/^\s*\/\/\s+(Creative|Inquiry|Strategy)$/) || 
-      line.match(/^\s*\/\/\s+(Creative|Inquiry|Strategy):\s+/)) {
+  if (line.match(/^\s*\/\/\s+(Creative|Research|Strategy)$/) || 
+      line.match(/^\s*\/\/\s+(Creative|Research|Strategy):\s+/)) {
     newLines.push(line);
     i++;
     continue;
@@ -34,8 +34,8 @@ while (i < lines.length) {
       if (!prevLine.startsWith('//')) {
         break;
       }
-      if (prevLine.match(/^\s*\/\/\s+(Creative|Inquiry|Strategy)$/) || 
-          prevLine.match(/^\s*\/\/\s+(Creative|Inquiry|Strategy):\s+/)) {
+      if (prevLine.match(/^\s*\/\/\s+(Creative|Research|Strategy)$/) || 
+          prevLine.match(/^\s*\/\/\s+(Creative|Research|Strategy):\s+/)) {
         break;
       }
       commentStart--;
@@ -97,8 +97,8 @@ while (i < lines.length) {
   if (line.trim().startsWith('//')) {
     const trimmed = line.trim();
     // Only keep section headers
-    if (!trimmed.match(/^\s*\/\/\s+(Creative|Inquiry|Strategy)$/) && 
-        !trimmed.match(/^\s*\/\/\s+(Creative|Inquiry|Strategy):\s+/)) {
+    if (!trimmed.match(/^\s*\/\/\s+(Creative|Research|Strategy)$/) && 
+        !trimmed.match(/^\s*\/\/\s+(Creative|Research|Strategy):\s+/)) {
       // Skip this comment line
       i++;
       continue;

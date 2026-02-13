@@ -120,10 +120,10 @@ while (i < projectsText.length) {
 }
 
 // Define category and sub-category order
-const categoryOrder = ['Creative', 'Inquiry', 'Strategy'];
+const categoryOrder = ['Creative', 'Research', 'Strategy'];
 const subCategoryOrder = {
   'Creative': ['Tangible Artifacts', 'Immersive Installations', 'Augmented Interventions', 'Performative Systems'],
-  'Inquiry': ['Display & Interaction Systems', 'Collaborative Environments', 'Publications & Theory', 'Pedagogy & Labs'],
+  'Research': ['Display & Interaction Systems', 'Collaborative Environments', 'Publications & Theory', 'Pedagogy & Labs'],
   'Strategy': ['R&D Leadership', 'Academic Practice', 'Cultural Stewardship']
 };
 
