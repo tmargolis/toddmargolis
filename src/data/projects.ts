@@ -133,12 +133,12 @@ export const projects: Project[] = [
   price: '$1,000.00 each',
   note: 'n/a',
   isSeries: true,
-  heroImage: '/images/1-Whirlpool.png',
+  heroImage: '/images/1-Whirlpool.jpg',
   quote: 'Folding time onto itself.',
   description: 'In the Now & Then series, I explore the profound reality that astronomy is, at its core, the study of the past. Every photon captured by my lens carries a "history of travel," revealing not where a star is today, but where it was when its light began its journey across the void. To bridge the gap between human history and cosmic time, I use AI to generate contextual scenes of the specific historical era on Earth when that light first departed.',
   description2: 'By inserting the astronomical subject into these reconstructed landscapes and applying textures like fossilized rock, flaking parchment, or ancient stone etchings, I aim to materialize the "latency" of the universe, making the deep time of the cosmos tangible through the lens of human heritage.',
   images: [
-  '/images/1-Whirlpool.png',
+  '/images/1-Whirlpool.jpg',
   '/images/Andromeda.jpg',
   '/images/Eagle v2.jpg',
   '/images/Orion.jpg',
@@ -339,14 +339,14 @@ export const projects: Project[] = [
   price: '$1000 each',
   note: 'Power to each tablet. Light so tablet camera can see',
   isSeries: true,
-  heroImage: '/images/Sun_Previs-1.png', // Using Sun as hero
+  heroImage: '/images/Sun_Previs-1.jpg', // Using Sun as hero
   quote: 'Light is a fossil of time.',
   description: 'Imagine seeing yourself not as you are now, but as you were moments, or even an hour, ago. This series of video mirrors forces a visceral encounter with a profound truth of our universe: because light travels at a finite speed, all observation is an act of looking into the past. By introducing a precise, scientifically-calibrated delay into your reflection, each mirror makes this cosmic latency immediate and deeply personal.',
   description2: 'The work dismantles the illusion of a shared, instantaneous present, rendering the self in the mirror perpetually out of reach—a version of you that has already vanished. The experience scales dramatically, moving from the subtly disorienting to the profoundly estranged. The mirrors cease to be mere surfaces for self-recognition and transform into portals, translating abstract astronomical data into a concrete, lived experience.\n\nThis work is a potent memento mori, a reminder that even in our most immediate self-perception, we are always confronting a ghost. It is the culmination of decades of artistic practice by Todd Margolis, who has consistently explored the intersection of perception, technology, and science. His extensive career in virtual and augmented reality, from co-inventing VR systems at the Electronic Visualization Lab to creating telepresence performances, has always questioned the nature of presence and the delays inherent in mediated communication. This series is a direct extension of that inquiry, grounding the technological manipulation of time not in artistic whim, but in the physical laws of the universe.',
   images: [
-  '/images/Moon_Previs-1.png',
-  '/images/Sun_Previs-1.png',
-  '/images/Saturn_Previs-1.png',
+  '/images/Moon_Previs-1.jpg',
+  '/images/Sun_Previs-1.jpg',
+  '/images/Saturn_Previs-1.jpg',
   '/images/ProximaCentauriTablet.png'
   ],
   imageTitles: [
@@ -678,7 +678,7 @@ export const projects: Project[] = [
   subCategory: ['Display & Interaction Systems'],
   year: '1995-1996',
   medium: 'Webmaster',
-  heroImage: '/images/netsight.png',
+  heroImage: '/images/netsight.jpg',
   description: 'In this role as Webmaster for a pioneering Chicago-based ISP, I spearheaded the expansion of traditional internet services into the nascent fields of web hosting and interactive design. By leveraging early-stage spatial computing, I specialized in the development of some of the region\'s first 3D VRML (Virtual Reality Modeling Language) websites, effectively introducing immersive 3D navigation to the web. This work laid the foundation for my ongoing inquiry into display systems by transforming static browsing into a navigable, three-dimensional experience.',
   images: ['/images/SGI_indy.jpeg']
   },
@@ -985,7 +985,7 @@ export const projects: Project[] = [
   description: 'This visualization, featured in Teradata\'s Art of Analytics book, was generated to assist with the exploration and analysis of Qlik\'s open-source developer community, Branch. Originally intended as an interactive, open-ended discovery and navigational platform, the application enables visitors to uncover new meaning within the complex web of users, projects, and relationships. By representing metadata such as project similarities, view counts, and corporate affiliations, the work facilitates a deep understanding of the social dynamics and individual behaviors that drive the ecosystem.',
   description2: 'The visual architecture uses nodes to represent individual projects, scaled by view counts to immediately surface high-impact contributions. To visually quantify collaboration, each node encodes the number of contributors and comments, with clusters colored by product category. This multi-layered system—which earned its place in the Art of Analytics publication for its blend of technical rigor and expressive form—utilizes links to trace the intricate relationships between projects based on shared similarities and overlapping user bases.',
   description3: 'The visualization reveals a strong community focus on visualization extensions, dominated by two primary clusters, while identifying several emerging clusters that indicate opportunities for growth. Light blue links use edge bundling to demonstrate high similarity both within and between Qlik\'s primary visualization categories. Perhaps most notably, the light green links show that most contributors develop projects across the entire product spectrum, proving the versatility of the underlying platform and the cross-disciplinary nature of the developer community.',
-  images: ['/images/TreeOfBranch.png']
+  images: ['/images/TreeOfBranch.jpg']
   },
   // Research: Pedagogy & Labs
   // Research / Pedagogy & Labs / Electronic Visualization Laboratory @  UIC
