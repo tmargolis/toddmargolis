@@ -123,6 +123,7 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                   src={project.contextImage} 
                   class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" 
                   alt={project.contextCaption || "Context View"}
+                  loading="lazy"
                   onclick={`handleImageClick(event, '${project.contextImage}')`}
                 />
                 {project.watermarkedImages?.includes(project.contextImage) && <Watermark />}
@@ -152,6 +153,7 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                         src={img} 
                         class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" 
                         alt={`Series Variation ${i+1}`}
+                        loading="lazy"
                         onclick={`handleImageClick(event, '${img}')`}
                       />
                       {project.watermarkedImages?.includes(img) && <Watermark />}
@@ -174,7 +176,8 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                       <img 
                         src={img} 
                         class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" 
-                        alt={`Series Variation ${i+1}`} 
+                        alt={`Series Variation ${i+1}`}
+                        loading="lazy"
                         onclick={`handleImageClick(event, '${img}')`}
                       />
                       {project.watermarkedImages?.includes(img) && <Watermark />}
@@ -222,7 +225,8 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                     <img 
                       src={project.images[0]} 
                       class="w-full h-full object-cover cursor-zoom-in md:grayscale md:hover:grayscale-0 transition-all duration-500" 
-                      alt="Detail view" 
+                      alt="Detail view"
+                      loading="lazy"
                       onclick={`openLightbox('${project.images[0]}')`}
                     />
                     {project.watermarkedImages?.includes(project.images[0]) && <Watermark />}
@@ -238,7 +242,7 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                 </div>
                 {showContentImages && (
                 <div class="flex-1 relative">
-                   {project.images[0] && <img src={project.images[0]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[0]}')`} />}
+                   {project.images[0] && <img src={project.images[0]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" loading="lazy" onclick={`handleImageClick(event, '${project.images[0]}')`} />}
                    {project.watermarkedImages?.includes(project.images[0]) && <Watermark />}
                 </div>
                 )}
@@ -252,17 +256,17 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                 <div class="flex-1 relative">
                    {project.images[2] ? (
                      <>
-                       <img src={project.images[2]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[2]}')`} />
+                       <img src={project.images[2]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" loading="lazy" onclick={`handleImageClick(event, '${project.images[2]}')`} />
                        {project.watermarkedImages?.includes(project.images[2]) && <Watermark />}
                      </>
                    ) : project.images[1] ? (
                      <>
-                       <img src={project.images[1]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${project.images[1]}')`} />
+                       <img src={project.images[1]} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" loading="lazy" onclick={`handleImageClick(event, '${project.images[1]}')`} />
                        {project.watermarkedImages?.includes(project.images[1]) && <Watermark />}
                      </>
                    ) : (
                      <>
-                       <img src={displayHeroImage} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" onclick={`handleImageClick(event, '${displayHeroImage}')`} />
+                       <img src={displayHeroImage} class="w-full scroll-reveal-color md:grayscale md:hover:grayscale-0 transition-all duration-500 cursor-zoom-in" alt="Detail" loading="lazy" onclick={`handleImageClick(event, '${displayHeroImage}')`} />
                        {project.watermarkedImages?.includes(displayHeroImage) && <Watermark />}
                      </>
                    )}
@@ -361,7 +365,7 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
                 </a>
               </div>
               <div class="relative aspect-square md:aspect-[4/3] bg-gray-800 overflow-hidden w-1/2 max-w-xs mx-auto md:mx-0 md:ml-auto">
-                <img src="/images/todd.jpeg" class="w-full h-full object-cover grayscale opacity-80" alt="Todd Margolis" />
+                <img src="/images/todd.jpeg" class="w-full h-full object-cover grayscale opacity-80" alt="Todd Margolis" loading="lazy" />
               </div>
             </div>
           </section>

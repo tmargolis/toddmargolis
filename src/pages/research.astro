@@ -63,6 +63,7 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
                     src={getDisplayHeroImage(project)}
                     alt={project.title}
                     class="object-cover w-full h-full md:grayscale md:group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
+                    loading="lazy"
                   />
                 </div>
                 <div class="flex justify-between items-start border-b border-white/10 pb-4">

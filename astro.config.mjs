@@ -9,6 +9,12 @@ export default defineConfig({
   base: '/',                       // Leave as '/' since you use a custom domain
   outDir: 'dist',
   trailingSlash: 'always',
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/sharp',
+      config: {},
+    },
+  },
   vite: {
     plugins: [tailwindcss()]
   }
