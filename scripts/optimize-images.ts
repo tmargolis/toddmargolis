@@ -9,7 +9,7 @@ import { join } from 'path';
 const IMAGES_DIR = join(import.meta.dirname, '../public/images');
 const MAX_WIDTH = 1920;
 const JPEG_QUALITY = 82;
-const MIN_SIZE_KB = 500;
+const MIN_SIZE_KB = 200;
 
 function getLargeImages(dir: string): string[] {
   return readdirSync(dir)

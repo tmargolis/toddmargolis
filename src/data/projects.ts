@@ -179,18 +179,18 @@ export const projects: Project[] = [
   weight: 'Variable',
   note: 'Delicate packing',
   isSeries: true,
-  heroImage: '/images/Spheroids-Previs1.png',
+  heroImage: '/images/Spheroids-Previs1.jpg',
   quote: 'Tactile astronomy.',
   description: 'This project presents a series of tactile reliefs created from scientific data of cosmic objects and phenomena, marking a compelling intersection of scientific rigor and artistic translation. It fundamentally recalibrates our relationship with the universe by transforming remote, abstract data into tangible, touchable sculptures. The work invites a haptic engagement—a direct connection through touch—with phenomena previously confined to sight or conceptual understanding. Here, you can run your fingers over the actual craters of the Moon and the surface of Mars, their topographies recreated from remote sensing data. You are also invited to explore physical interpretations of events and structures that have no solid surface: the warped spacetime around a black hole, the vast density of the Milky Way, and the fleeting, dynamic form of a solar flare. This act collapses immense astronomical distance into personal, intimate proximity. By bypassing purely intellectual or visual perception, the work fosters an embodied cognition, constructing a deeply personal and immediate connection to the cosmos rooted in our most grounding sense.',
   description2: 'The work situates itself within a contemporary lineage of art that leverages scientific data to evoke a new kind of technological sublime—an experience of awe mediated not by a vast landscape, but by the elegant translation of complex information into physical form. This project is a natural culmination of artist Todd Margolis\'s career-long exploration of making the invisible visible and the digital tangible. Drawing on decades of experience in 3D fabrication and designing immersive virtual reality systems—translating scientific data into experiential environments—Margolis now inverts his process. Instead of creating virtual worlds from data, he materializes data into real-world artifacts that we can hold and feel. Echoing ancient reliefs that embedded narratives in stone, these sculptures embed the discoveries of 21st-century science into their very texture. They transform scientific data from abstract information into a palpable presence, creating a bridge between the unseen forces of the universe and our most direct, human sense of touch.',
-  contextImage: '/images/Flats-Previs_1.png',
+  contextImage: '/images/Flats-Previs_1.jpg',
   contextCaption: 'Milky Way and Black Hole',
   images: [
-  '/images/Mars-Previs_1..png',
-  '/images/MilkyWay-Previs_1.png',
-  '/images/Moon-Previs_1.png',
-  '/images/Sun-Previs_1.png',
-  '/images/BlackHole-Previs_1.png'
+  '/images/Mars-Previs_1..jpg',
+  '/images/MilkyWay-Previs_1.jpg',
+  '/images/Moon-Previs_1.jpg',
+  '/images/Sun-Previs_1.jpg',
+  '/images/BlackHole-Previs_1.jpg'
   ],
   imageTitles: [
   'Mars',
@@ -206,7 +206,7 @@ export const projects: Project[] = [
   'Sculptural interpretation of solar flares and surface activity, solidified in cast material.',
   'Physical visualization of an event horizon, giving form to the invisible pull of a black hole.'
   ],
-  watermarkedImages: ['/images/Spheroids-Previs1.png', '/images/Flats-Previs_1.png', '/images/Mars-Previs_1..png', '/images/MilkyWay-Previs_1.png', '/images/Moon-Previs_1.png', '/images/Sun-Previs_1.png', '/images/BlackHole-Previs_1.png']
+  watermarkedImages: ['/images/Spheroids-Previs1.jpg', '/images/Flats-Previs_1.jpg', '/images/Mars-Previs_1..jpg', '/images/MilkyWay-Previs_1.jpg', '/images/Moon-Previs_1.jpg', '/images/Sun-Previs_1.jpg', '/images/BlackHole-Previs_1.jpg']
   },
   // Creative / Tangible Artifacts / Sky Watcher
 {
@@ -229,9 +229,7 @@ export const projects: Project[] = [
   '/images/SkyWatcherTech.3.jpg',
   '/images/Sky Watcher3.jpg'
   ],
-  videos: [
-  '/images/SkyWatcher.mp4'
-  ]
+  videoLink: 'https://youtu.be/gXxNTaNgbDY'
   },
   // Creative / Tangible Artifacts / Shape Grammar Objects
 {
@@ -848,7 +846,7 @@ export const projects: Project[] = [
   description: 'Researchers from Washington University, the University of Arizona, the University of California, San Diego, and the University of Vermont were awarded collaborative grants to develop tools that support deeper integration of citizen scientists with a broad range of biological imaging projects. Our specific aims are to develop tools: 1. To make it easier for volunteers with smart phones to capture calibrated imagery supporting quantitative data measurements. 2. To facilitate volunteer contributions to image analysis tasks with better interfaces and formal methods to validate and create consensus estimates from many responses. 3. To foster long-term motivation and engagement within virtual communities through online environments that combine aesthetics, social networking and visualization tools.',
   description2: 'These tools will have an initial focus on problem domains including monitoring of urban re-forestation efforts and analysis of 3D biological and neurological imaging data at many different scales. It will produce a set of smart phone and web apps that will be available to the broader biological research community that require calibrated image capture and analysis, and will create an experimental web portal to engage virtual communities of volunteers and scientists collaborating to work on imaging problems.',
   description3: 'The ImageQuest project will make it simpler for volunteers and scientists to engage in a much broader set of biological imaging research. Providing tools which enhance a volunteers ability to capture and analyze images relieves a technical burden on biologists trying to develop citizen science approaches. Making these tools smarter and more interactive encourages volunteers to contribute meaningfully to novel research questions, and building a virtual community around the volunteers and the scientists helps to recruit, motivate and retain long term participation of the public in scientific research.',
-  images: ['/images/IQ-NYC-LiDARnCensus.jpg','/images/LiDAR.1.png']
+  images: ['/images/IQ-NYC-LiDARnCensus.jpg','/images/LiDAR.1.jpg']
   },
   // Research / Collaborative Environments / Growing Documentary
   {
@@ -889,7 +887,7 @@ export const projects: Project[] = [
   medium: 'Generative AI',
   heroImage: '/images/QlikAnswers2.png',
   description: 'During my tenure at Qlik, I played a key role in architecting the "art of the possible" for Generative AI, specifically by designing prototype integrations that showcased how Large Language Models (LLMs) could be seamlessly embedded within the Qlik platform. These prototypes focused on transforming systems like ChatGPT or Claude from a standalone tool into a specialized virtual assistant capable of enhancing the entire analytics lifecycle. By leveraging Qlik\'s robust API ecosystem, I helped demonstrate high-value use cases such as the automated generation of complex Qlik load scripts and set analysis expressions, the creation of high-fidelity synthetic data for rapid prototyping, and the use of natural language interfaces to recommend strategic questions for data exploration.\n\nThese efforts were instrumental in helping Qlik navigate the critical balance between cutting-edge innovation and enterprise-grade security. I worked closely with development and product teams to address the inherent challenges of LLM integration, such as data privacy and accuracy, while simultaneously gathering customer feedback to ground our AI ambitions in real-world needs. My research into AI-UI symbiosis architected the path for Qlik Answers and the Qlik MCP. By prototyping agentic logic within complex data environments, I validated a strategic roadmap for Model Context Protocols (MCP) that balances rapid innovation with architectural integrity.',
-  images: ['/images/QlikAnswers.png'],
+  images: ['/images/QlikAnswers.jpg'],
   projectTag: ['MCP']
   },
   // Research / Publications & Theory / Immersive Analytics
