@@ -934,7 +934,7 @@ export const projects: Project[] = [
     year: '2016-2019',
     medium: 'Business Intelligence SaaS',
     description: 'Bridging the gap between static reporting and active collaboration, I led the product strategy for Qlik\’s $10M+ ARR reporting portfolio. I spearheaded the modernization of legacy \'Mode 1\' systems into real-time, interactive environments for global partners like the United Nations. By prototyping AI-driven \'Ins  ight Management\' systems, I helped transition the platform from traditional dashboards to personalized, feed-based discovery tools.',
-    images: ['/images/qlik-viz.jpg'],
+    images: ['/images/qlik-viz.png'],
     projectTag: ['research', 'prototype', 'product', 'strategy', 'AI-ML']
   },
     // Research: Publications & Theory
