@@ -291,7 +291,7 @@ export const projects: Project[] = [
   title: 'Confluxus',
   category: ['Creative'],
   subCategory: ['Immersive Installations'],
-  projectTag: ['installation', 'spatial', 'interaction', 'hands-on'],
+  projectTag: ['installation', 'spatial', 'interaction', 'hands-on', '0-to-1'],
   year: '2001',
   medium: 'Networked Virtual Reality',
   heroImage: '/images/confluxus.jpg',
@@ -323,7 +323,7 @@ export const projects: Project[] = [
   title: 'LOCKUP',
   category: ['Creative'],
   subCategory: ['Immersive Installations'],
-  projectTag: ['installation', 'spatial', 'interaction'],
+  projectTag: ['installation', 'spatial', 'interaction', '0-to-1'],
   year: '2000',
   medium: 'Virtual Reality Installation',
   description: 'LOCKUP is an installation, performance and interactive narrative in Virtual Reality that explores the realm of possibilities open to us when we alter life courses through important decision making. Using a transgressive story line, the user is transcended into a criminal world where their fate can be determined by the choices made throughout the piece. A totally immersive suspension of disbelief is achieved via physical interaction with virtual and real objects and an intellectual and emotional connection to the characters and plight of the user\'s survival. Two performers in the CAVE™ with the user interact in a "good-cop/bad-cop" method to provide guidance and encouragement.',
@@ -515,7 +515,7 @@ export const projects: Project[] = [
   title: 'ESSA!',
   category: ['Creative','Research'],
   subCategory: ['Performative Systems', 'Collaborative Environments'],
-  projectTag: ['installation', 'data-viz', 'cross-functional'],
+  projectTag: ['data-viz', 'cross-functional'],
   year: '2013',
   medium: 'Telepresence Performance',
   heroImage: '/images/essa-icon.png',
@@ -588,7 +588,7 @@ export const projects: Project[] = [
   heroImage: '/images/huvr_greg.jpg',
   images: ['/images/HUVR-SC10.jpeg','/images/DualHUVRatSC10.jpeg'],
   collaborators: ['Greg Dawe', 'Dan Sandin', 'Tom DeFanti'],
-  projectTag: ['prototype', 'spatial', 'interaction', 'hands-on', '0-to-1'],
+  projectTag: ['prototype', 'spatial', 'interaction', 'hands-on'],
   videoLink: 'https://youtu.be/h-DcHAK-dsU?si=CaKeoIcbv9Cx4x4L'
   },
   // Research / Display & Interaction Systems / Immersive Manufacturing
@@ -766,7 +766,7 @@ export const projects: Project[] = [
   medium: 'Web Application',
   description: 'Before the era of Large Language Models, I co-developed a pioneering chatbot for Qlik Sense designed to democratize data access through natural language interaction. By architecting a seamless integration with the Qlik Sense Engine API, the system allowed users to query complex datasets and receive instant, visualized answers through a conversational interface.',
   description2: 'The project\'s strategic value was validated when the startup was acquired by Qlik, leading to the full integration of the technology into the core Qlik Sense platform. This work served as an early blueprint for "Inquiry-based" analytics, moving beyond traditional dashboards to create a symbiosis between human language and computational logic.',
-  projectTag: ['prototype', 'AI-ML', 'product', '0-to-1', 'cross-functional'],
+  projectTag: ['prototype', 'AI-ML', 'product', 'cross-functional', 'strategy', 'data-viz'],
   images: ['/images/InsightChatbotLarge.jpeg']
   },
   // Research: Collaborative Environments
