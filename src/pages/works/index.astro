@@ -128,7 +128,7 @@ const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructu
                     <h4 class="font-serif text-2xl text-white group-hover:text-glow transition-all">{project.title}</h4>
                     <p class="font-mono text-xs text-gray-500 mt-1 uppercase">{project.year} | {project.medium}</p>
                  </div>
-                 <span class="font-mono text-xs text-indigo-400 tracking-widest">0{index + 1}</span>
+                 <span class="project-number font-mono text-xs text-indigo-400 tracking-widest">0{index + 1}</span>
                </div>
             </a>
           </article>
@@ -172,6 +172,19 @@ const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructu
           card.classList.remove('hidden');
         } else {
           card.classList.add('hidden');
+        }
+      }
+    });
+
+    // Recalculate and update project numbers based on visible projects
+    let visibleIndex = 0;
+    projectCards.forEach(card => {
+      if (!card.classList.contains('hidden')) {
+        visibleIndex++;
+        const numberSpan = card.querySelector('.project-number');
+        if (numberSpan) {
+          const number = visibleIndex < 10 ? `0${visibleIndex}` : `${visibleIndex}`;
+          numberSpan.textContent = number;
         }
       }
     });

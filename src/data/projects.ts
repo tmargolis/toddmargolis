@@ -924,17 +924,30 @@ export const projects: Project[] = [
   projectTag: ['installation', 'research', 'spatial'],
   images: ['/images/scalableCity.jpg','/images/Sheldon_Brown-_Scalable_City1.jpg']
   },
-  // Research: Publications & Theory
+  // Research: Collaborative Environments
+  // Research / Collaborative Environments / Qlik Reporting & Storytelling
+  {
+    slug: 'qlik-reporting-storytelling',
+    title: 'Qlik Reporting & Storytelling',
+    category: ['Research'],
+    subCategory: ['Collaborative Environments'],
+    year: '2016-2019',
+    medium: 'Business Intelligence SaaS',
+    description: 'Bridging the gap between static reporting and active collaboration, I led the product strategy for Qlik\’s $10M+ ARR reporting portfolio. I spearheaded the modernization of legacy \'Mode 1\' systems into real-time, interactive environments for global partners like the United Nations. By prototyping AI-driven \'Ins  ight Management\' systems, I helped transition the platform from traditional dashboards to personalized, feed-based discovery tools.',
+    images: ['/images/qlik-viz.jpg'],
+    projectTag: ['research', 'prototype', 'product', 'strategy', 'AI-ML']
+  },
+    // Research: Publications & Theory
   // Research / Publications & Theory / Qlik AI
 {
   slug: 'qlik-genai',
-  title: 'Qlik AI',
+  title: 'Qlik Agentic AI',
   category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2023-2026',
   medium: 'Generative AI',
   heroImage: '/images/QlikAnswers2.png',
-  description: 'During my tenure at Qlik, I played a key role in architecting the "art of the possible" for Generative AI, specifically by designing prototype integrations that showcased how Large Language Models (LLMs) could be seamlessly embedded within the Qlik platform. These prototypes focused on transforming systems like ChatGPT or Claude from a standalone tool into a specialized virtual assistant capable of enhancing the entire analytics lifecycle. By leveraging Qlik\'s robust API ecosystem, I helped demonstrate high-value use cases such as the automated generation of complex Qlik load scripts and set analysis expressions, the creation of high-fidelity synthetic data for rapid prototyping, and the use of natural language interfaces to recommend strategic questions for data exploration.\n\nThese efforts were instrumental in helping Qlik navigate the critical balance between cutting-edge innovation and enterprise-grade security. I worked closely with development and product teams to address the inherent challenges of LLM integration, such as data privacy and accuracy, while simultaneously gathering customer feedback to ground our AI ambitions in real-world needs. My research into AI-UI symbiosis architected the path for Qlik Answers and the Qlik MCP. By prototyping agentic logic within complex data environments, I validated a strategic roadmap for Model Context Protocols (MCP) that balances rapid innovation with architectural integrity.',
+  description: 'During my tenure at Qlik, I played a key role in architecting the "art of the possible" for Generative AI, specifically by designing prototype integrations that showcased how Large Language Models (LLMs) could be seamlessly embedded throughout the Qlik platform. These prototypes focused on transforming systems like ChatGPT or Claude from a standalone tool into a specialized virtual assistant capable of enhancing the entire analytics lifecycle. By leveraging Qlik\'s robust API ecosystem, I helped demonstrate high-value use cases such as the automated generation of complex Qlik load scripts and set analysis expressions, the creation of high-fidelity synthetic data, and the use of natural language interfaces to recommend strategic questions for data exploration.\n\nThese efforts were instrumental in helping Qlik navigate the critical balance between cutting-edge innovation and enterprise-grade security. I worked closely with development and product teams to address the inherent challenges of LLM integration, such as data privacy and accuracy, while simultaneously gathering customer feedback to ground our AI ambitions in real-world needs. My research into AI-UI symbiosis architected the path for Qlik Answers and the Qlik MCP. By prototyping agentic logic within complex data environments, I validated a strategic roadmap for Model Context Protocols (MCP) that balances rapid innovation with architectural integrity.',
   images: ['/images/QlikAnswers.jpg'],
   projectTag: ['research', 'AI-ML', 'prototype', 'product', 'strategy', 'leadership']
 },
