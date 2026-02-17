@@ -721,7 +721,7 @@ export const projects: Project[] = [
   images: ['/images/specflic_infospherian300.jpg','/images/remote_melissa+all.jpg'],
   projectTag: ['installation', 'interaction', 'cross-functional', 'leadership'],
   collaborators: ['Adriene Jenik'],
-  related: ['cinegrid-3d-4k', 'vroom', 'ucsd-crca']
+  related: ['cinegrid-3d-4k', 'vroom', 'ucsd-crca', 'museum-of-future-objects-mofo']
   },
   // Research / Display & Interaction Systems / FILE 4K
 {
@@ -1257,7 +1257,8 @@ export const projects: Project[] = [
   medium: 'Consultant',
   description: 'Provided technical expertise for building a Virtual Reality system for the new Emergent Reality Lab at RPI. This included space planning, CAD drawing, requirements assessment, system design, equipment specification and configuration of the immersive and interactive system.',
   projectTag: ['strategy', 'infrastructure', 'spatial'],
-  images: ['/images/erl.png']
+  images: ['/images/erl.png'],
+  related: ['uic-evl']
   },
   // Strategy / Academic Practice / Transmedia Research Institute @ FSU
   {
