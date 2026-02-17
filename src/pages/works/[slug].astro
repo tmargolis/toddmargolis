@@ -65,6 +65,11 @@ const aboutStatement = project.category?.length
   ? categoryStatements[project.category[0]] ?? categoryStatements.Creative
   : categoryStatements.Creative;
 
+// Resolve related projects (by slug) for cross-references in the sidebar
+const relatedProjects = (project.related ?? [])
+  .map((slug) => projects.find((p) => p.slug === slug))
+  .filter((p): p is typeof projects[number] => !!p);
+
 /** Parse Vimeo or YouTube link into iframe embed URL, or null if not supported. */
 function getVideoEmbedUrl(link: string | undefined): string | null {
   if (!link?.trim()) return null;
@@ -287,7 +292,7 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
 
     <!-- Right Col: Properties -->
     <aside class="md:col-span-3 md:sticky md:top-32 h-fit space-y-8 border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0 md:pl-2">
-      <div class="space-y-4 font-mono text-xs uppercase tracking-widest text-gray-400">
+      <div class="space-y-6 font-mono text-xs uppercase tracking-widest text-gray-400">
        {/* Check if status Exists */}
        {project.status ? (
         <div>
@@ -331,26 +336,51 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
           </div>
         )}
         {project.website && (
-        <div>
-          <a href={project.website} target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 underline break-all">{project.website.replace(/^https?:\/\//, '')}</a>
-        </div>
+          <div>
+            <a
+              href={project.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-400 hover:text-indigo-300 underline break-all"
+            >
+              {project.website.replace(/^https?:\/\//, '')}
+            </a>
+          </div>
         )}
-        
+
+        {relatedProjects.length > 0 && (
+          <div class="pt-6 border-t border-white/10 space-y-3">
+            <span class="block text-gray-600">Related Projects</span>
+            <ul class="space-y-1 normal-case tracking-normal">
+              {relatedProjects.map((rp) => (
+                <li>
+                  <a
+                    href={`/works/${rp.slug}/`}
+                    class="text-indigo-300 hover:text-white underline"
+                  >
+                    {rp.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {/* Protected Logistics & Price Section */}
         <div id="protected-meta" class="hidden space-y-4 pt-8 border-t border-white/10">
-           <h4 class="font-serif text-white italic">Logistics</h4>
-           {project.price && (
+          <h4 class="font-serif text-white italic">Logistics</h4>
+          {project.price && (
             <div>
               <span class="block text-gray-600 mb-1">Price</span>
               <span class="text-green-400">{project.price}</span>
             </div>
-           )}
-           {project.note && (
-             <div>
+          )}
+          {project.note && (
+            <div>
               <span class="block text-gray-600 mb-1">Requirements</span>
               <span class="text-indigo-400">{project.note}</span>
             </div>
-           )}
+          )}
         </div>
 
       </div>

@@ -29,6 +29,8 @@ export interface Project {
   watermarkedImages?: string[];
   collaborators?: string[];
   website?: string;
+  /** Slugs of related or cross-referenced projects. */
+  related?: string[];
 }
 
 export const projects: Project[] = [
@@ -572,7 +574,8 @@ export const projects: Project[] = [
   heroImage: '/images/varrier-siggraph.jpg',
   description: 'Virtual reality (VR) has long been hampered by the gear needed to make the experience possible; specifically, stereo glasses and tracking devices. Autostereoscopic display devices are gaining popularity by freeing the user from stereo glasses, however few qualify as VR displays. The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC) has designed and produced a large scale, high resolution head-tracked barrier-strip autostereoscopic display system that produces a VR immersive experience without requiring the user to wear any encumbrances. The resulting system, called Varrier, is a passive parallax barrier 35-panel tiled display that produces a wide field of view, head-tracked VR experience. This paper presents background material related to parallax barrier autostereoscopy, provides system configuration and construction details, examines Varrier interleaving algorithms used to produce the stereo images, introduces calibration and testing, and discusses the camera-based tracking subsystem.',
   projectTag: ['research', 'spatial', 'infrastructure', 'hands-on'],
-  images: ['/images/varrier-siggraph.jpg']
+  images: ['/images/varrier-siggraph.jpg'],
+  related: ['varrier-IEEE', 'varrier-SPIE', 'uic-evl']
   },
   // Research / Display & Interaction Systems / HUVR
 {
@@ -1007,7 +1010,8 @@ export const projects: Project[] = [
   description: 'Varrier is a head-tracked, 35-panel tiled autostereoscopic display system which is produced by The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC). Varrier produces autostereoscopic imagery through a combination of a physical parallax barrier and a virtual barrier, so that the stereoscopic images are directed correctly into the viewers eyes. Since a small amount of rotation and translation between physical and virtual barriers can cause large-scale effects, registration is critical for correct stereo viewing. The process is automated by examining image frames of two video cameras separated by the interocular distance as a simulation of human eyes. Three registration parameters for each panel are calibrated in the process. An arbitrary start condition is allowed and a robust stopping criterion is used to end the process and report results. Instead of exhaustive three dimensional searching, an efficient two phase calibration method is introduced. The combination of a heuristic rough calibration and an adaptive fine calibration guarantees a fast searching process with the best solution.',
   heroImage: '/images/placeholder.png',
   projectTag: ['research', 'spatial', 'hands-on'],
-  images: ['/images/varrier65p_mars.gif']
+  images: ['/images/varrier65p_mars.gif'],
+  related: ['varrier-siggraph', 'varrier-SPIE', 'uic-evl']
   },
   // Research / Publications & Theory / Varrier autostereographic display
 {
@@ -1022,7 +1026,8 @@ export const projects: Project[] = [
   description: 'The goal of this research is to develop a head-tracked, stern virtual reality system utilizing plasma or LCD panels. This paper describes a head-tracked barrier auto-stereographic method that is optimized for real-time interactive virtual reality systems. In this method, virtual barrier screen is created simulating the physical barrier screen, and placed in the virtual world in front of the projection plane. An off- axis perspective projection of this barrier screen, combined with the rest of the virtual world, is projected from at least two viewpoints corresponding to the eye positions of the head- tracked viewer. During the rendering process, the simulated barrier screen effectively casts shadows on the projection plane. Since the different projection points cast shadows at different angles, the different viewpoints are spatially separated on the projection plane. These spatially separated images are projected into the viewer\'s space at different angles by the physical barrier screen. The flexibility of this computational process allows more complicated barrier screens than the parallel opaque lines typically used in barrier strip auto-stereography. In addition this method supports the focusing and steering of images for a user\'s given viewpoint, and allows for very wide angles of view. This method can produce an effective panel-based auto-stereo virtual reality system.',
   heroImage: '/images/placeholder.png',
   projectTag: ['research', 'spatial', 'hands-on'],
-  images: ['/images/varrierEyes.jpg']
+  images: ['/images/varrierEyes.jpg'],
+  related: ['varrier-siggraph', 'varrier-IEEE', 'uic-evl']
   },
   // Research / Publications & Theory / Scalable metadata environments
 {
@@ -1067,7 +1072,8 @@ export const projects: Project[] = [
   description: 'Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored papers on VR systems published at SIGGRAPH and SPIE 2001 and premiered the Varrier system at IEEE VR 2004.',
   description2: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
   projectTag: ['research', 'spatial', 'infrastructure', 'hands-on'],
-  images: ['/images/varrierColors.jpg']
+  images: ['/images/varrierColors.jpg'],
+  related: ['varrier-siggraph', 'varrier-IEEE', 'varrier-SPIE']
   },
   // Research / Pedagogy & Labs / Interactive Arts and Media @ Columbia
 {
