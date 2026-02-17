@@ -72,7 +72,8 @@ export const projects: Project[] = [
   'Concentric star paths reflected in the still waters of Goose Lake.',
   'Star movement captured over the equipment of fellow astrophotographers at a star party.'
   ],
-  description3: 'This series serves as a foundational exploration for artist Todd Margolis, whose career has consistently been dedicated to revealing the unseen. With a background in Electronic Visualization and a professional trajectory focused on creating immersive systems for large-scale data, Margolis has long used technology to expand the limits of human perception. Whether using a camera shutter left open for hours or designing complex VR environments, the conceptual goal remains the same: to make invisible systems, patterns, and forces both visible and experiential. Just as these images translate the hidden data of planetary mechanics into beautiful form, his advanced scientific visualizations provide new ways to navigate and understand complex information. The "Star Trails" series is therefore more than a collection of stunning astrophotography; it is a rigorous inquiry into reality itself, standing at the intersection of scientific visualization and time-based art, and marking a critical articulation of the technologically-mediated experience that defines Margolis\'s broader practice.'
+  description3: 'This series serves as a foundational exploration for artist Todd Margolis, whose career has consistently been dedicated to revealing the unseen. With a background in Electronic Visualization and a professional trajectory focused on creating immersive systems for large-scale data, Margolis has long used technology to expand the limits of human perception. Whether using a camera shutter left open for hours or designing complex VR environments, the conceptual goal remains the same: to make invisible systems, patterns, and forces both visible and experiential. Just as these images translate the hidden data of planetary mechanics into beautiful form, his advanced scientific visualizations provide new ways to navigate and understand complex information. The "Star Trails" series is therefore more than a collection of stunning astrophotography; it is a rigorous inquiry into reality itself, standing at the intersection of scientific visualization and time-based art, and marking a critical articulation of the technologically-mediated experience that defines Margolis\'s broader practice.',
+  related: ['3d-horizons', 'now-and-then', 'sculpture', 'sky-watcher']
   },
   // Creative / Tangible Artifacts / Horizons
 {
@@ -169,7 +170,8 @@ export const projects: Project[] = [
   'Styled as a medieval illuminated manuscript, this image captures the nebula as it was 1,000 years ago, a moment when the Golden Age of Islam flourished.',
   'Presented as a weathered Roman fresco, this work depicts the nebula as it appeared 2,400 years ago during the rise of the Roman Republic and the life of Siddhartha Gautama in India.'
   ],
-  watermarkedImages: ['/images/Andromeda.jpg', '/images/Eagle v2.jpg', '/images/Orion.jpg', '/images/Horsehead and flame nebulas.png', '/images/California nebula.jpg', '/images/Veil.jpg']
+  watermarkedImages: ['/images/Andromeda.jpg', '/images/Eagle v2.jpg', '/images/Orion.jpg', '/images/Horsehead and flame nebulas.png', '/images/California nebula.jpg', '/images/Veil.jpg'],
+  related: ['star-trails', '3d-horizons', 'sculpture', 'sky-watcher']
   },
   // Creative / Tangible Artifacts / Neighbors
 {
@@ -212,7 +214,8 @@ export const projects: Project[] = [
   'Sculptural interpretation of solar flares and surface activity, solidified in cast material.',
   'Physical visualization of an event horizon, giving form to the invisible pull of a black hole.'
   ],
-  watermarkedImages: ['/images/Spheroids-Previs1.jpg', '/images/Flats-Previs_1.jpg', '/images/Mars-Previs_1..jpg', '/images/MilkyWay-Previs_1.jpg', '/images/Moon-Previs_1.jpg', '/images/Sun-Previs_1.jpg', '/images/BlackHole-Previs_1.jpg']
+  watermarkedImages: ['/images/Spheroids-Previs1.jpg', '/images/Flats-Previs_1.jpg', '/images/Mars-Previs_1..jpg', '/images/MilkyWay-Previs_1.jpg', '/images/Moon-Previs_1.jpg', '/images/Sun-Previs_1.jpg', '/images/BlackHole-Previs_1.jpg'],
+  related: ['star-trails', 'now-and-then']
   },
   // Creative / Tangible Artifacts / Sky Watcher
 {
@@ -236,7 +239,8 @@ export const projects: Project[] = [
   '/images/SkyWatcherTech.3.jpg',
   '/images/Sky Watcher3.jpg'
   ],
-  videoLink: 'https://youtu.be/gXxNTaNgbDY'
+  videoLink: 'https://youtu.be/gXxNTaNgbDY',
+  related: ['star-trails', 'now-and-then']
   },
   // Creative / Tangible Artifacts / Shape Grammar Objects
 {
@@ -252,7 +256,8 @@ export const projects: Project[] = [
   description: 'Shape Grammar Objects builds upon a previous large scale art-science collaboration, Atlas in silico, created in response to the contemporary cultural phenomena of the data deluge. ATLAS provides an intuitive discovery based infrastructure and unconventional methodology for investigating and understanding massive multidimensional data. Within ATLAS in silico, a shape grammar approach was created using n-dimensional glyphs to visualize metagenomics data from the Global Ocean Sampling Expedition (GOS).',
   description2: 'This shape grammar was employed to represent millions of abstract individual records from the GOS (each record having variation in sequence, molecular structure and function as well as contextual metadata) and placed the biological data within each record in a human context. Within the virtual environment users explore GOS data in combination with contextual metadata at various levels of scale and resolution through interaction with multiple data-driven visual and auditory patterns at different levels of detail. It is a hybrid multi-scale strategy that merges quantitative and qualitative representation in ways that do not require a priori knowledge of the relationship between the underlying data and its mapping.',
   description3: 'Shape grammar is used to algorithmically generate glyphs in real-time to reflect differences in the underlying data and metadata. In this way differing data can potentially be visually sorted in an exploratory fashion by an observer using their innate pattern recognition capability. This demands an approach that generates as wide a range of distinctive patterns as possible to represent millions of unique objects.\n\nA small sample of these algorithmic objects were used to generate printed visual altas plates and rapid prototyped sculptures as "natural specimens". Shape Grammar Objects are images and sculptures that return to the formalisms of biological atlases and preserved specimens of the 19th Century, documenting variation at a material scale that allows a visual experience of the data to augment blind algorithmic queries. This historic linkage is also reiterated by integrating the aesthetics of fine-lined copper engraving, lithography and grid-like layouts of 19th Century scientific representation with contemporary digital processes.',
-  images: ['/images/SGs.2.jpg','/images/perspective_view_shaded.3.gif']
+  images: ['/images/SGs.2.jpg','/images/perspective_view_shaded.3.gif'],
+  related: ['atlas-in-silico', 'scalable-metadata-environments', 'image-quest']
   },
   // Creative / Tangible Artifacts / (art)n Laboratory
   {
@@ -302,7 +307,8 @@ export const projects: Project[] = [
   description: 'Confluxus is a collaborative virtual reality artwork which is procedurally generated through user interaction. The space is designed to be a community meeting area where participants from varied backgrounds can come together in a tele-immersive environment and cooperate to create a shared experience. Participants were able to join into the shared space from physically remote VR systems. Through the passage of time, the space evolves into a collective expression of the participants intentions. The virtual objects and activities in the space begin as pre-determined constructs by the artists and gradually develop based on user-input.',
   description2: 'Confluxus is an architectural portal that reacts to the positions and movements of the users within it by revealing only the parts of the structure that are within users\' proximity. Within this space, the participants can see each others\' avatars leaving trails over time from their wake in the 3D architectural grid. From here, participants are able to move to other artworks.',
   images: ['/images/confluxus_sm.jpg'],
-  videoLink: 'https://vimeo.com/25293365?fl=pl&fe=cm'
+  videoLink: 'https://vimeo.com/25293365?fl=pl&fe=cm',
+  related: ['special-treatment', 'lockup', 'scalable-city', 'vroom', 'uic-evl']
   },
   // Creative / Immersive Installations / Special Treatment
 {
@@ -319,7 +325,8 @@ export const projects: Project[] = [
   description: 'Special Treatment is an immersive and interactive Virtual Reality installation examining the strength and persistence of memory. An ominous journey by train car deposits viewers in a sparsely populated camp pieced together from plans, photographs and other artifacts from Auschwitz II/Birkenau, Poland. As visitors explore the camp and its architectural structures, conversations and ephemera of the past fade in and out of perception - at times almost tangible, at other times mere allusions. These structures and stories are not intended to be strictly historical or documentary. Each element is the foundation for the folding together of past and present; where the sounds and images of old memories blend with memories created by each new visitor.',
   description2: 'Special Treatment advances the audience from passive viewing to active experience by smoothly moving from present to past and back again. Special Treatment creates a landscape where glimpses and fragments of Birkenau establish a narrative framework where the events of the past continue to shape and be shaped by contemporary interpretations of those events. The full history and lesson of a place such as the death camp at Birkenau is seen not only in the records of those who survived or passed on their memories to us in the present, but in how those events are remembered and shaped by the people of today. The stories of these people grow with each new experience of Special Treatment, and the solidity of that space and the substance of those events becomes more concrete with each new visitor. The immersive experience allows each participant to inhabit the scene of these events, and as they leave the evidence of their own actions and memories, Special Treatment is continually transformed into a new potential memory.',
   description3: 'Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
-  images: ['/images/STP_RealMemory1.med.jpg']
+  images: ['/images/STP_RealMemory1.med.jpg'],
+  related: ['confluxus', 'lockup', 'artn-laboratory', 'applied-interactives', 'uic-evl']
   },
   // Creative / Immersive Installations / LOCKUP
   {
@@ -335,7 +342,8 @@ export const projects: Project[] = [
   description3: 'Special thanks to Dan Sandin, Dave Pape, Alan Millman and UIC\'s Electronic Visualization Laboratory to help make this work possible.',
   heroImage: '/images/LOCKUP.jpg',
   images: ['/images/phase4.jpg','/images/phase5.jpg'],
-  videoLink: 'https://vimeo.com/25295866?fl=pl&fe=cm'
+  videoLink: 'https://vimeo.com/25295866?fl=pl&fe=cm',
+  related: ['confluxus', 'special-treatment', 'uic-evl']
   },
   // Creative: Augmented Interventions
   // Creative / Augmented Interventions / Delayed Vision
@@ -375,7 +383,8 @@ export const projects: Project[] = [
   'The "Saturn" mirror introduces a delay of nearly an hour and a half; the reflected self is so temporally removed it feels like another person, a phantom of your own recent history.',
   'This special edition mirror introduces a delay of 4.24 years; the reflected scene is almost certainly showing a different person or place as a time capsule from the past.'
   ],
-  description3: 'This work finds a powerful precedent in Margolis\'s 2012 augmented reality piece, Moon Lust, exhibited at the Adler Planetarium, which first combined celestial concepts with technologies of altered perception. By turning a core principle of observational astronomy into a deeply personal, philosophical, and unforgettable encounter, the work transforms the gallery into an observatory that looks inward to reveal the most fundamental truths of our place in the cosmos.'
+  description3: 'This work finds a powerful precedent in Margolis\'s 2012 augmented reality piece, Moon Lust, exhibited at the Adler Planetarium, which first combined celestial concepts with technologies of altered perception. By turning a core principle of observational astronomy into a deeply personal, philosophical, and unforgettable encounter, the work transforms the gallery into an observatory that looks inward to reveal the most fundamental truths of our place in the cosmos.',
+  related: ['moon-lust', 'star-trails', '3d-horizons']
   },
   // Creative / Augmented Interventions / Moon Lust
 {
@@ -389,7 +398,8 @@ export const projects: Project[] = [
   medium: 'Augmented Reality Alternate Reality Game',
   heroImage: '/images/moonlustadler1.jpg',
   description: 'Moon Lust is a speculative project that explores global interests and issues pertaining to lunar exploration and habitation. As a curated mobile augmented reality exhibition, Moon Lust hopes to facilitate a dialogue about topics such as lunar mining, space tourism, celestial territories, space ecology and policy, by locating augmented visualizations in and around the Adler Planetarium. The project launched June 21 2012 and remains as a permanent AR exhibition.',
-  images: ['/images/SERL.jpg']
+  images: ['/images/SERL.jpg'],
+  related: ['delayed-vision', 'promotional-consideration', 'out-of-the-box', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Promotional Consideration
 {
@@ -404,7 +414,8 @@ export const projects: Project[] = [
   heroImage: '/images/Promos.jpg',
   description: 'Promotional Considerations is a speculative project designed to articulate and anticipate the needs, desires and concerns of lunar habitation. Blending current lunar research with models of private industry, we can foresee the types of products and services that will emerge for lunar settlers. Each company is represented through augmented reality advertisements as well as accompanying micro-sites.',
   description2: 'The sites are linked to forums to encourage discussion about the issues that the advertisements provoke. Promotional considerations points to larger concerns about life on the moon ranging from the physiological and pyschological effects of individuals who inhabit it, to higher order questions about how the "common heritage" of celestial bodies is affected by private industry interests and concepts of ownership.',
-  images: ['/images/newMoon.jpg','/images/rareEarth.jpg']
+  images: ['/images/newMoon.jpg','/images/rareEarth.jpg'],
+  related: ['moon-lust', 'out-of-the-box', 'museum-of-future-objects-mofo', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Out of the Box
 {
@@ -419,7 +430,8 @@ export const projects: Project[] = [
   heroImage: '/images/darp.jpg',
   description: 'As an exhibition, Out of the Box consists of Virtual Reality artifacts (VRAs) re-contextualized in mobile augmented reality. Viewing the VRA and choosing how to interact with it is the most basic form of participation. The choice, however affects the experience of other participants. In addition, the participant can tweet or facebook activities from within the AR browser which are aggregated into website forums for discussion, inquiry and action. A deeper level of interactivity is built into the experience through a transmedia story, more specifically an ARG which provides participants the option to delve into the narrative that unfolds across social media, websites, forums and mAR. The story develops differently depending on the entry point into the project, with the possibility of two people playing side by side having completely different yet connected experiences. Physical installations offer an additional level of interactivity. Employing the ARG concept of "this is not a game", these fictional HQs provide real-time updates of players/VRA locations, broadcast media particular to the organization, and live actors fulfilling the roles of characters.',
   description2: 'The deep backstory designed for narrative immersion, the integration of real world media platforms and live events, in conjunction a with broad range of social interactivity provides a framework which fosters social immersion within mAR. With this in mind we propose the term augmented social immersion to describe this integrated form of mAR social immersion.',
-  images: ['/images/ootb.jpg','/images/protecscreenshot.jpg']
+  images: ['/images/ootb.jpg','/images/protecscreenshot.jpg'],
+  related: ['moon-lust', 'promotional-consideration', 'museum-of-future-objects-mofo', 'money-grab', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Money Grab
 {
@@ -431,7 +443,8 @@ export const projects: Project[] = [
   year: '2011',
   medium: 'Augmented Reality Alternate Reality Game',
   description: 'Grab that $$$ before the bankers do! #OccupyWallSt. Using the Augmented Reality browser Layar, anyone can open this mobile app and see money raining down all around you. This is one piece in a series entitled Party at my Place which utilizes augmented reality to create insta-celebrations surrounding participants.',
-  images: ['/images/moneyGrabNYC-sm.png']
+  images: ['/images/moneyGrabNYC-sm.png'],
+  related: ['out-of-the-box', 'show-me', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Museum of Future Objects (MOFO)
 {
@@ -447,7 +460,8 @@ export const projects: Project[] = [
   description: 'Commissioned for the MWX2013 exhibition at the Museum and the Web Conference in Portland, MoFO was a speculative and interventionist project that utilized Augmented Reality to disrupt traditional institutional frameworks. The project employed a "blended" exhibition strategy, integrating playful yet critical AR artworks directly into the conference program. By leveraging the friction between physical museum spaces and digital overlays, MoFO challenged delegates to engage with contemporary media art that was deceptively accessible while maintaining a sharp, critical edge.',
   description2: 'Supported by the Australia Council\'s Visual Arts Board, this project served as an inquiry into how emergent display systems can manifest speculative futures within established cultural landscapes. It stands as a key example of my work in creating "blended" environments where technology functions as both a creative medium and a critical lens.',
   images: ['/images/FLOTL.jpg','/images/FLOTL2.jpg'],
-  website: 'https://www.flickr.com/people/mofonow/'
+  website: 'https://www.flickr.com/people/mofonow/',
+  related: ['promotional-consideration', 'out-of-the-box', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Show Me
 {
@@ -461,7 +475,8 @@ export const projects: Project[] = [
   description: 'Show Me explores virtual tourism using augmented reality with my avatar agent. I\'ve never been to Philadelphia. My father, born and raised in Philadelphia, is my only connection to the city. I have always wanted to visit with him to see his childhood haunts and listen as he recants tales of his youth. He doesn\'t travel much these days, and I cannot afford the time so the tour of Philly has been put on the backburner. That is, until now... I have sent my avatar there as an augment to learn more about Philadelphia by recruiting audience members as "tour guides". Using a 3D laser scanned model of myself inside the Layar augmented reality browser, my avatar wanders throughout the exhibition sites until visitors interact with Virtual Todd. He attempts to befriend willing participants, hitching a ride with them to show him the sights. This is the beginning of telepresence in virtual tourism. The experience results in the typical sight-seeing artifacts - photographs (screenshots) of my avatar with the exhibition audience, in various locations in and around Philadelphia. Using Layar\'s authentication and screenshot uploading, people can reload my Layar at any time and location during the exhibit and Virtual Todd will join them there.',
   description2: 'This artwork builds upon my previously produced Augmented Reality projects like Local ARt (an AR Alternate Reality Game) and ImageQuest (a citizen science project using mobile AR with urban tree canopies). My current research investigates social and cultural relationships to emerging media which draws on over a decade of experience creating tele-collaborative immersive and interactive artworks and systems. Show me is an ongoing project which will integrate social networking and game mechanics to further engage the public in novel forms of virtual tourism. The premiere exhibition for Show Me is in Distributed Collectives with other members of Manifest.AR - an international artists collective working with emergent forms of augmented reality as interventionist public art.',
   heroImage: '/images/meNme.jpg',
-  images: ['/images/IMG_0645_todd.jpg','/images/markNme.jpg']
+  images: ['/images/IMG_0645_todd.jpg','/images/markNme.jpg'],
+  related: ['money-grab', 'local-art', 'image-quest', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Local ARt
   {
@@ -475,7 +490,8 @@ export const projects: Project[] = [
   medium: 'Augmented Reality Alternate Reality Game',
   heroImage: '/images/FOR.2.jpeg',
   description: 'Local ARt is a mobile Augmented Reality Alternate Reality Game developed in San Diego in 2011. The primary aim was to create a novel way of connecting two artist run galleries with a series of art walks and community cultural events; and playfully explore the relationship between public and private domains. Replayabilty, minimal design resources, social media integration, neighborhood exploration, and the development/use of mobile augmented reality software were key considerations in the game design and implementation.',
-  images: ['/images/FOR.jpeg']
+  images: ['/images/FOR.jpeg'],
+  related: ['show-me', 'money-grab', 'manifest-ar']
   },
   // Creative: Performative Systems
   // Creative / Performative Systems / Perfect Parlor
@@ -495,7 +511,8 @@ export const projects: Project[] = [
   images: [
   '/images/perfect1.1.jpg',
   '/images/perfect3.jpg'
-  ]
+  ],
+  related: ['confluxus', 'infinite-studio', 'telemotions', 'inspiraling']
   },
   // Creative / Performative Systems / Infinite Studio
 {
@@ -511,7 +528,8 @@ export const projects: Project[] = [
   description: 'Infinite Studio was a new paradigm of art-making, that enables users to create, in real-time, interactive virtual reality artwork from inside a virtual environment. Using a color palette and several drawing and modeling tools, the user can create and modify virtual objects for any effect desired. Individuals can also collaborate across networks to create group constructions. The scenes can be easily scaled, rotated or moved from one part of the virtual world to another, thereby changing focus or eliminating elements. Every line drawn has a lifespan causing the entire art piece to constantly evolve. ',
   images: [
   '/images/infiniteStudioBig2.jpg'
-  ]
+  ],
+  related: ['perfect-parlor', 'confluxus', 'scalable-city']
   },
   // Creative / Performative Systems / ESSA!
 {
@@ -528,7 +546,8 @@ export const projects: Project[] = [
   description2: 'The performance served as a technical showcase for the Qualcomm Institute at Calit2, UCSD, utilizing 4K resolution visualizations—a medium then emerging as the new digital cinema standard. Co-produced by Todd Margolis and Tracy Cornish through the IDEAS initiative, the project leveraged Margolis\'s research into extreme-scale media and enabling technologies. By presenting imagery at four times the resolution of standard HD, the team aimed to push the boundaries of how high-fidelity creative content could be integrated into live, energetic performances.',
   description3: 'Each musical piece was paired with a distinct, real-time 4K visualization designed to reveal the invisible forces behind the drumming. These visuals were driven by a variety of data sources, including motion capture, EEG brain wave data, and computer graphics that responded dynamically to the physical impact of the performers striking the drums. By visualizing the physiological and neurological functions of the artists in real time, Margolis and Cornish provided the audience with a novel, high-resolution experience that translated the internal energy of the body and brain into a stunning visual spectacle.',
   images: ['/images/Ha-Lightning.jpg'],
-  videoLink: 'https://youtu.be/TWHJbr_A6yY?t=39'
+  videoLink: 'https://youtu.be/TWHJbr_A6yY?t=39',
+  related: ['tele-taiko', 'resonations', 'inspiraling', 'ucsd-qualcomm']
   },
   // Creative / Performative Systems / HOMCOM
 {
@@ -546,7 +565,8 @@ export const projects: Project[] = [
   heroImage: '/images/Beacon_Layout_2.jpg',
   images: ['/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg'],
   watermarkedImages: ['/images/Beacon_Layout_2.jpg','/images/fish_eye_view_4.jpg','/images/applause2_0025.jpg'],
-  videoLink: 'https://youtu.be/RK842NwjLJ4'
+  videoLink: 'https://youtu.be/RK842NwjLJ4',
+  related: ['qlik-genai', 'qlik-insight-chatbot']
   },
   // Creative / Performative Systems / Presumed Existence
   {
@@ -560,7 +580,8 @@ export const projects: Project[] = [
   collaborators: ['Ed Colmar'],
   description: 'Created during the peak of the COVID-19 pandemic, this project was a collaborative exploration with Ed Colmar into the boundaries of remote, data-driven creative production. The music video utilizes high-fidelity synchronization techniques to map musical structures directly to visual movements, ensuring every rhythmic shift is reflected in the media\'s temporal flow. This work represents a moment where the invisible cadences of audio were materialized into a structured visual experience, bridging the gap between two remote collaborators through a precise, algorithmic lens.',
   images: ['/images/PresumedExistance.jpg'],
-  videoLink: 'https://youtu.be/SZAX2K6sp1M?feature=shared'
+  videoLink: 'https://youtu.be/SZAX2K6sp1M?feature=shared',
+  related: ['essa', 'resonations', 'inspiraling']
   },
   // Research: Display & Interaction Systems
   // Research / Display & Interaction Systems / The Varrier™ autostereoscopic virtual reality display
@@ -905,7 +926,7 @@ export const projects: Project[] = [
   },
   // Research / Collaborative Environments / Image Quest
 {
-  slug: 'images-quest',
+  slug: 'image-quest',
   title: 'Image Quest',
   category: ['Research'],
   subCategory: ['Collaborative Environments'],
@@ -1024,7 +1045,8 @@ export const projects: Project[] = [
   description: 'In the context of the 2014 publication Augmented Reality Art: From an Emerging Technology to a Novel Creative Medium, this chapter serves as a pivotal investigation into the shift from technical spectacle to a nuanced creative discipline. Rather than focusing on the mere "suspension of disbelief" or the visual blending of the real and virtual, the text situates the medium as a platform for "social immersion". By exploring the cultural potential of mobile AR, it bridges the gap between art history, gaming culture, and contemporary practice. This positioning defines the chapter as a foundational study of how AR serves as an integrative work of art, where the "freedom" of the medium allows for a model of the world that is conditionally defined through participant interaction.',
   description2: 'Relating to the Manifest.AR collective\'s ethos in 2014, the chapter reflects the group\'s radical move toward locative and socially-driven interventions. It highlights a specific turn away from purely sensorial technology toward a "new social form of immersion" that prioritizes the connection between people across distance and time. As the collective was known for its interventionist approach—often placing digital objects in physical spaces like MoMA or the Venice Biennale—this chapter provides the theoretical backbone for those actions. It argues that the true power of the medium lies in "collaborative locative media," shifting the focus from the artist\'s individual vision to collective, social outcomes within the shared digital-physical landscape.',
   projectTag: ['research', 'spatial'],
-  images: ['/images/978-3-319-69932-5.jpeg']
+  images: ['/images/978-3-319-69932-5.jpeg'],
+  related: ['manifest-ar', 'moon-lust', 'show-me', 'out-of-the-box', 'local-art']
   },
   // Research / Publications & Theory / Camera Based Automatic Calibration for the Varrier System
 {
@@ -1272,7 +1294,7 @@ export const projects: Project[] = [
   description: 'An international artists collective working with emergent forms of augmented reality as interventionist public art. The group sees this medium as a way of transforming public space and institutions by installing virtual objects and artworks which respond to and overlay the configuration of located physical meaning.',
   projectTag: ['strategy', 'spatial', 'cross-functional'],
   images: ['/images/ManifestAR.png'],
-  related: ['immersive-art-in-augmented-reality', 'money-grab', 'out-of-the-box']
+  related: ['immersive-art-in-augmented-reality', 'moon-lust', 'promotional-consideration', 'out-of-the-box', 'money-grab', 'museum-of-future-objects-mofo', 'show-me', 'local-art']
   },
   // Strategy / Cultural Stewardship / Applied Interactives
 {
