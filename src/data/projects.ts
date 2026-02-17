@@ -269,7 +269,8 @@ export const projects: Project[] = [
   images: ['/images/edPachkeLarge.jpg','/images/BattleOfMidwayLarge.jpeg'],
   collaborators: ['Ellen Sandor', 'Keith Miller', 'Geoffrey A. Baum', 'Fernando Orellana', 'Sabrina Raaf', 'Karl Wirsum', 'Ed Pachke'],
   videoLink: 'https://vimeo.com/25333525?fl=pl&fe=cm',
-  website: 'https://www.artn.com'
+  website: 'https://www.artn.com',
+  related: ['applied-interactives', 'uic-evl']
   },
   // Creative: Immersive Installations
   // Creative / Immersive Installations / ATLAS in silico
@@ -609,7 +610,8 @@ export const projects: Project[] = [
   description2: 'The platform bridges the gap between high-level oversight and tactical intervention through interactive command-and-control features. Users can manipulate power controls within the virtual space to halt the entire factory process upon detecting a sensor anomaly, facilitating immediate troubleshooting before resuming operations. By integrating Qlik Sense analytics directly into the VR experience, the system provides a multi-temporal view of the plant—blending instantaneous streaming data, short-term widget tracking, and long-term historical trends into a single, comprehensive "common operating picture" for industrial management.',
   videoLink: 'https://youtu.be/VwbG20pvPzY',
   projectTag: ['prototype', 'spatial', 'data-viz', 'hands-on'],
-  images: ['/images/immersiveManufacturing2.jpg']
+  images: ['/images/immersiveManufacturing2.jpg'],
+  related: ['qlik', 'immersive-healthcare-analytics', 'immersive-retail']
   },
   // Research / Display & Interaction Systems / Immersive Healthcare
 {
@@ -625,7 +627,8 @@ export const projects: Project[] = [
   description2: 'A core innovation of the system is its ability to ground virtual data in the physical world through Augmented Reality (AR) object tracking. In a mass-casualty or triage scenario, the system recognizes physical triage tags as markers; as a clinician brings a tag into view, relevant patient data objects are instantly anchored to it. These visualizations follow the patient as they move through the treatment pipeline, ensuring that critical medical history and risk scores remain spatially attached to the individual. To further reduce cognitive load during high-stress situations, the platform integrates Natural Language Generation (NLG) and text-to-speech to provide immediate, verbal summaries of diagnostic insights.',
   videoLink: 'https://youtu.be/1g1G2TjnJdw',
   projectTag: ['prototype', 'spatial', 'data-viz', 'hands-on'],
-  images: ['/images/ImmersiveAnalyticsSIGGRAPH.jpg','/images/immersiveHealthcare1.jpg']
+  images: ['/images/ImmersiveAnalyticsSIGGRAPH.jpg','/images/immersiveHealthcare1.jpg'],
+  related: ['qlik', 'immersive-manufacturing-analytics', 'immersive-retail']
   },
   // Research / Display & Interaction Systems / Becoming Dragon
 {
@@ -658,7 +661,8 @@ export const projects: Project[] = [
   description3: 'I was responsible for creating, planning & executing the concept, design, development, configuration and operation of the Emergency Response Drone. Through Qlik, I worked in partnership with the Ottawa Emergency Services and the University of Ottawa to bring this project to life. We demonstrated the system at Qlik Qonnections 2019 in Dallas, TX',
   images: ['/images/EmergencyDrone2.jpeg','/images/EmergencyDroneStill.jpg'],
   projectTag: ['prototype', '0-to-1', 'hands-on', 'AI-ML', 'data-viz', 'cross-functional'],
-  videoLink: 'https://youtu.be/5QE_a3_dRNc'
+  videoLink: 'https://youtu.be/5QE_a3_dRNc',
+  related: ['qlik']
   },
   // Research / Display & Interaction Systems / Immersive Retail
 {
@@ -671,7 +675,8 @@ export const projects: Project[] = [
   collaborators: ['Todd Margolis'],
   description: 'Prototyped a mixed-reality infrastructure using a Microsoft HoloLens to bridge the gap between a physical retail space and live enterprise data. The system utilized computer vision to recognize products on store shelves, triggering real-time calls to Qlik APIs to overlay dynamic inventory levels and sales performance data directly onto the physical environment. This "heads-up" analytics layer empowers store managers to make data-driven decisions regarding product placement and shelf-stocking efficiency without leaving the floor.',
   projectTag: ['prototype', 'spatial', 'data-viz', 'hands-on'],
-  images: ['/images/ImmersiveRetail.1.jpg','/images/ImmersiveRetail.2.jpg']
+  images: ['/images/ImmersiveRetail.1.jpg','/images/ImmersiveRetail.2.jpg'],
+  related: ['qlik', 'immersive-manufacturing-analytics', 'immersive-healthcare-analytics']
   },
   // Research / Display & Interaction Systems / SPECFLIC
 {
@@ -1057,7 +1062,8 @@ export const projects: Project[] = [
   description2: 'The visual architecture uses nodes to represent individual projects, scaled by view counts to immediately surface high-impact contributions. To visually quantify collaboration, each node encodes the number of contributors and comments, with clusters colored by product category. This multi-layered system—which earned its place in the Art of Analytics publication for its blend of technical rigor and expressive form—utilizes links to trace the intricate relationships between projects based on shared similarities and overlapping user bases.',
   description3: 'The visualization reveals a strong community focus on visualization extensions, dominated by two primary clusters, while identifying several emerging clusters that indicate opportunities for growth. Light blue links use edge bundling to demonstrate high similarity both within and between Qlik\'s primary visualization categories. Perhaps most notably, the light green links show that most contributors develop projects across the entire product spectrum, proving the versatility of the underlying platform and the cross-disciplinary nature of the developer community.',
   projectTag: ['research', 'data-viz'],
-  images: ['/images/TreeOfBranch.jpg']
+  images: ['/images/TreeOfBranch.jpg'],
+  related: ['qlik']
   },
   // Research: Pedagogy & Labs
   // Research / Pedagogy & Labs / Electronic Visualization Laboratory @  UIC
@@ -1074,7 +1080,7 @@ export const projects: Project[] = [
   description2: 'Assisted instructor in guiding students in programming computer graphics utilizing C/C++, OpenGL and glut. Administered a computer lab that consisted of 12 SGI workstations. Installed and updated software, created and maintained user accounts, configured the network and assisted students with lab projects. Guest lecturer for several Virtual Reality art courses in the School of Art and Design.',
   projectTag: ['research', 'spatial', 'infrastructure', 'hands-on'],
   images: ['/images/varrierColors.jpg'],
-  related: ['varrier-siggraph', 'varrier-IEEE', 'varrier-SPIE']
+  related: ['varrier-siggraph', 'varrier-IEEE', 'varrier-SPIE', 'artn-laboratory']
   },
   // Research / Pedagogy & Labs / Interactive Arts and Media @ Columbia
 {
@@ -1087,7 +1093,8 @@ export const projects: Project[] = [
   dimensions: 'Columbia College Chicago',
   description: 'Instructor for Programming Web Databases (PHP/MySQL) and Introduction to Multimedia Programming (Macromedia Director/Lingo). Frequent guest lecturer for courses relating to art and technology in the Photography, Art History, Academic Computing and Interactive Multimedia departments.',
   projectTag: ['research', 'leadership'],
-  images: ['/images/game-art-m.jpg']
+  images: ['/images/game-art-m.jpg'],
+  related: ['saic', 'uic-evl']
   },
   // Research / Pedagogy & Labs / Art and Technology @ SAIC
 {
@@ -1105,7 +1112,8 @@ export const projects: Project[] = [
   description3: 'The Beyond Prototypes exhibition showcased the culmination of this research, inviting the public to engage with a series of experimental virtual reality installations. Utilizing body tracking and stereoscopic video projection, the gallery transformed into a multi-sensory environment where visitors could navigate worlds ranging from poetic visualizations to bizarre interactive narratives. The collection moved past technical demos to present fully realized artworks, featuring projects that pushed the boundaries of architectural visualization and sculptural form through a digital lens.',
   images: ['/images/lab1_400.jpg','/images/350x622-toddnewevent_185.jpg'],
   projectTag: ['research', 'spatial', 'leadership'],
-  videoLink: 'https://vimeo.com/25292528?fl=pl&fe=cm'
+  videoLink: 'https://vimeo.com/25292528?fl=pl&fe=cm',
+  related: ['columbia-college-chicago', 'uic-evl']
   },
   // Research / Pedagogy & Labs / UCSD\
 {
@@ -1150,7 +1158,8 @@ export const projects: Project[] = [
   description2: 'As the lead of the Applied Research team, I orchestrated systematic investigations into cutting-edge technologies to identify high-value organic & inorganic strategic opportunities and anticipate market disruptions. My work centered on a rigorous methodology that translated complex technical breakthroughs into actionable business intelligence. By developing a framework encompassing executive briefings, deep-dive technical assessments, and implementation guidance, my team provided the foundational research necessary for stakeholders to navigate the "Build/Buy/Partner" spectrum. This approach ensured that emerging innovations were strategically integrated into the organizational context to drive future-proof investments.',
   description3: 'My research portfolio covered the full spectrum of the modern digital landscape, with a primary focus on the AI ecosystem throughout the information value lifecycle. I led deep-dives into agentic frameworks, autonomous orchestration and governance platforms, and immersive analytics platforms that leverage extended reality for advanced data exploration and storytelling. This practice enabled enhanced decision-making while establishing a common operating picture for navigating the rapidly evolving paradigms of autonomous reasoning and secure data collaboration.',
   projectTag: ['leadership', 'strategy', 'product', 'AI-ML', 'cross-functional', 'research'],
-  images: ['/images/qlikTaiko.jpg','/images/InsightFeed.jpg']
+  images: ['/images/qlikTaiko.jpg','/images/InsightFeed.jpg'],
+  related: ['immersive-manufacturing-analytics', 'immersive-healthcare-analytics', 'emergency-response-drone', 'immersive-retail', 'tree-of-branch']
   },
   // Strategy / R&D Leadership / NVision @ University of Northampton
   {
@@ -1164,7 +1173,8 @@ export const projects: Project[] = [
   description: 'I served as an Honorary Board Member for NVision at the University of Northampton, where I provided strategic oversight during the critical launch of its multi-million-pound technology innovation center. My role involved technical and operational consultancy for "The Cube," a flagship immersive visualization facility, as well as the center\'s high-performance computing infrastructure. By leveraging my leadership experience from UCSD, I advised on facility management and international best practices, helping to transition the site from its construction phase into a fully operational hub for advanced computational research.',
   description2: '​In addition to technical guidance, I contributed to the center\'s long-term commercial sustainability by shaping its business development and pricing strategies. I worked closely with the management board to establish tiered service models for industry partners and SMEs, ensuring that the center\'s advanced modeling and visualization services remained both accessible and impactful. This involved aligning technical capabilities with rigorous European Regional Development Fund performance targets, ultimately helping to bridge the gap between academic innovation and regional economic growth through high-level stakeholder engagement.',
   projectTag: ['strategy', 'leadership', 'infrastructure', 'cross-functional'],
-  images: ['/images/Northampton.jpg','/images/0810_vr1.jpg']
+  images: ['/images/Northampton.jpg','/images/0810_vr1.jpg'],
+  related: ['ucsd-crca', 'ucsd-qualcomm']
   },
   // Strategy: Academic Practice
   // Strategy / Academic Practice / CRCA @ UCSD
@@ -1180,7 +1190,8 @@ export const projects: Project[] = [
   collaborators: ['Sheldon Brown','Miller Puckett', 'Shahrokh Yadegari', 'Carol Hobson'],
   description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
   projectTag: ['leadership', 'infrastructure', 'cross-functional', 'strategy'],
-  images: ['/images/AG-ART-event.jpg']
+  images: ['/images/AG-ART-event.jpg'],
+  related: ['experimental-game-lab', 'software-studies', 'ucsd-qualcomm', 'atlas-in-silico']
   },
   // Strategy / Academic Practice / Emergent Reality Lab @ RPI
 {
@@ -1206,7 +1217,8 @@ export const projects: Project[] = [
   medium: 'Consultant',
   description: 'In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This included defining research activities, facility specification, space requirements, equipment classification and furnishing specifications.',
   projectTag: ['strategy', 'infrastructure', 'spatial'],
-  images: ['/images/Florida-State-University_blog-cover Large.jpeg']
+  images: ['/images/Florida-State-University_blog-cover Large.jpeg'],
+  related: ['ucsd-crca']
   },
   // Strategy / Academic Practice / Qualcomm Institute @ UCSD
   {
@@ -1220,7 +1232,8 @@ export const projects: Project[] = [
   heroImage: '/images/atkinson-720.jpg',
   description: 'Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive systems using VR and large-format tiled displays. Focus on leading interdisciplinary teams of academic and industry researchers to create discovery platforms for large-scale geospatial, metagenomics and healthcare data. Instructed on Digital Imaging, Collaborative Image production, Web 2.0 Interaction, Transmedia, Programming, Augmented Reality',
   projectTag: ['research', 'leadership', 'spatial', 'infrastructure', 'cross-functional'],
-  images: ['/images/atkinson-720.jpg']
+  images: ['/images/atkinson-720.jpg'],
+  related: ['ucsd-crca', 'experimental-game-lab', 'software-studies', 'varrier-siggraph']
   },
   // Strategy: Cultural Stewardship
   // Strategy / Cultural Stewardship / Manifest.AR
@@ -1233,7 +1246,8 @@ export const projects: Project[] = [
   medium: 'Artist Member',
   description: 'An international artists collective working with emergent forms of augmented reality as interventionist public art. The group sees this medium as a way of transforming public space and institutions by installing virtual objects and artworks which respond to and overlay the configuration of located physical meaning.',
   projectTag: ['strategy', 'spatial', 'cross-functional'],
-  images: ['/images/ManifestAR.png']
+  images: ['/images/ManifestAR.png'],
+  related: ['immersive-art-in-augmented-reality', 'money-grab', 'out-of-the-box']
   },
   // Strategy / Cultural Stewardship / Applied Interactives
 {
@@ -1249,7 +1263,8 @@ export const projects: Project[] = [
   description2: 'Based at the art(n) gallery in Chicago. Exhibited at the Museum of Contemporary Art Chicago and the Block Museum.',
   heroImage: '/images/AppliedInteractives_PortraitMain.jpg',
   projectTag: ['leadership', 'strategy', 'spatial', 'cross-functional'],
-  images: ['/images/VRPortalVideo.jpg','/images/VRPrtl_MCA.jpg']
+  images: ['/images/VRPortalVideo.jpg','/images/VRPrtl_MCA.jpg'],
+  related: ['artn-laboratory']
   },
   // Strategy / Cultural Stewardship / Sine::apsis Experiments
   {
@@ -1262,6 +1277,7 @@ export const projects: Project[] = [
   description: 'A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in "Information Arts" by Steve Wilson, MIT\'s Leonardo journal, and YLEM.',
   collaborators: ['Fernando Orellana', 'Sabrina Raaf', 'Andrea Polli'],
   projectTag: ['leadership', 'strategy', 'cross-functional'],
-  images: ['/images/sineLarge.jpeg']
+  images: ['/images/sineLarge.jpeg'],
+  related: ['applied-interactives']
   },
 ];
