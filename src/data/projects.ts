@@ -748,7 +748,8 @@ export const projects: Project[] = [
   description2: 'Developed during the first three months of my tenure at Qlik, this project served as an intensive exploration into new technology stacks and collaborative research. Despite the challenge of working with a new team and unfamiliar frameworks in a compressed timeframe, the resulting prototype garnered substantial acclaim within the broader community. Its success led to high-profile demonstrations at major industry events, including Qlik Qonnections 2014 in Orlando and Qlik Qonnections 2015 in Dallas. These presentations underscored the potential for gestural computing and immersive analytics to transform how decision-makers engage with information on a truly grand scale.',
   images: ['/images/QlikQonnections.jpeg'],
   videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV&t=1m34s',
-  projectTag: ['prototype', '0-to-1', 'hands-on', 'spatial', 'interaction', 'data-viz']
+  projectTag: ['prototype', '0-to-1', 'hands-on', 'spatial', 'interaction', 'data-viz'],
+  related: ['qlik', 'qlik-day-in-the-life', 'immersive-manufacturing-analytics', 'immersive-retail']
   },
   // Research / Display & Interaction Systems / Day in the Life
 {
@@ -763,7 +764,8 @@ export const projects: Project[] = [
   heroImage: '/images/DayInTheLife.png',
   images: ['/images/QlikQonnectionsPano.jpeg'],
   projectTag: ['prototype', '0-to-1', 'spatial', 'data-viz', 'interaction', 'hands-on'],
-  videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV'
+  videoLink: 'https://youtu.be/e5BrlK-mQR8?si=GTc-IwByNcsi5oCV',
+  related: ['qlik', 'qlik-gesture']
   },
   // Research / Display & Interaction Systems / Conversational Analytics
   {
@@ -776,7 +778,8 @@ export const projects: Project[] = [
   description: 'Before the era of Large Language Models, I co-developed a pioneering chatbot for Qlik Sense designed to democratize data access through natural language interaction. By architecting a seamless integration with the Qlik Sense Engine API, the system allowed users to query complex datasets and receive instant, visualized answers through a conversational interface.',
   description2: 'The project\'s strategic value was validated when the startup was acquired by Qlik, leading to the full integration of the technology into the core Qlik Sense platform. This work served as an early blueprint for "Inquiry-based" analytics, moving beyond traditional dashboards to create a symbiosis between human language and computational logic.',
   projectTag: ['prototype', 'AI-ML', 'product', 'cross-functional', 'strategy', 'data-viz'],
-  images: ['/images/InsightChatbotLarge.jpeg']
+  images: ['/images/InsightChatbotLarge.jpeg'],
+  related: ['qlik', 'qlik-genai', 'qlik-reporting-storytelling']
   },
   // Research: Collaborative Environments
   // Research / Collaborative Environments / Vroom (Virtual Room)
@@ -944,7 +947,8 @@ export const projects: Project[] = [
     medium: 'Business Intelligence SaaS',
     description: 'Bridging the gap between static reporting and active collaboration, I led the product strategy for Qlik\’s $10M+ ARR reporting portfolio. I spearheaded the modernization of legacy \'Mode 1\' systems into real-time, interactive environments for global partners like the United Nations. By prototyping AI-driven \'Insight Management\' systems, I helped transition the platform from traditional dashboards to personalized, feed-based discovery tools.',
     images: ['/images/qlik-viz.png'],
-    projectTag: ['research', 'prototype', 'product', 'strategy', 'AI-ML']
+  projectTag: ['research', 'prototype', 'product', 'strategy', 'AI-ML'],
+  related: ['qlik', 'tree-of-branch', 'qlik-insight-chatbot', 'qlik-genai']
   },
     // Research: Publications & Theory
   // Research / Publications & Theory / Qlik AI
@@ -958,7 +962,8 @@ export const projects: Project[] = [
   heroImage: '/images/QlikAnswers2.png',
   description: 'During my tenure at Qlik, I played a key role in architecting the "art of the possible" for Generative AI, specifically by designing prototype integrations that showcased how Large Language Models (LLMs) could be seamlessly embedded throughout the Qlik platform. These prototypes focused on transforming systems like ChatGPT or Claude from a standalone tool into a specialized virtual assistant capable of enhancing the entire analytics lifecycle. By leveraging Qlik\'s robust API ecosystem, I helped demonstrate high-value use cases such as the automated generation of complex Qlik load scripts and set analysis expressions, the creation of high-fidelity synthetic data, and the use of natural language interfaces to recommend strategic questions for data exploration.\n\nThese efforts were instrumental in helping Qlik navigate the critical balance between cutting-edge innovation and enterprise-grade security. I worked closely with development and product teams to address the inherent challenges of LLM integration, such as data privacy and accuracy, while simultaneously gathering customer feedback to ground our AI ambitions in real-world needs. My research into AI-UI symbiosis architected the path for Qlik Answers and the Qlik MCP. By prototyping agentic logic within complex data environments, I validated a strategic roadmap for Model Context Protocols (MCP) that balances rapid innovation with architectural integrity.',
   images: ['/images/QlikAnswers.jpg'],
-  projectTag: ['research', 'AI-ML', 'prototype', 'product', 'strategy', 'leadership']
+  projectTag: ['research', 'AI-ML', 'prototype', 'product', 'strategy', 'leadership'],
+  related: ['qlik', 'qlik-insight-chatbot', 'qlik-reporting-storytelling', 'collaborative-analytics']
 },
   // Research / Publications & Theory / Immersive Analytics
   {
@@ -973,8 +978,9 @@ export const projects: Project[] = [
     description: 'Immersive Analytics is a new research initiative that aims to remove barriers between people, their data and the tools they use for analysis and decision making. Here the aims of immersive analytics research are clarified, its opportunities and historical context, as well as providing a broad research agenda for the field. In addition, it is reviewed how the term immersion has been used to refer to both technological and psychological immersion, both of which are central to immersive analytics research.',
     description2: 'Many of the problems being addressed by Immersive Analytics require groups of people to solve. This chapter introduces the concept of Collaborative Immersive Analytics (CIA) and reviews how immersive technologies can be combined with Visual Analytics to facilitate co-located and remote collaboration. We provide a definition of Collaborative Immersive Analytics and then an overview of the different types of possible collaboration. The chapter also discusses the various roles in collaborative systems, and how to support shared interaction with the data being presented. Finally, we summarize the opportunities for future research in this domain. The aim of the chapter is to provide enough of an introduction to CIA and key directions for future research, so that practitioners will be able to begin working in the field.',
     images: ['/images/EVLCave2Analytics.jpg','/images/CollaborativeAnalytics.jpeg'],
-    projectTag: ['research', 'spatial', 'data-viz'],
-    website: 'https://link.springer.com/chapter/10.1007/978-3-030-01388-2_8'
+  projectTag: ['research', 'spatial', 'data-viz'],
+  website: 'https://link.springer.com/chapter/10.1007/978-3-030-01388-2_8',
+  related: ['qlik', 'immersive-manufacturing-analytics', 'immersive-healthcare-analytics', 'qlik-genai']
     },
     // Research / Publications & Theory / Cultural Analytics
 {
@@ -988,7 +994,8 @@ export const projects: Project[] = [
   description: 'The GeoMedia Analytics Platform was a research project that transformed thousands of Flickr and Instagram photos into a spatialized visual history of New York City. By utilizing a custom "Flickr Harvester" and high-performance computing, the project analyzed the collective output of social media users along Park Avenue and other major urban corridors. This allowed for the creation of massive, high-resolution "photo clouds" that layered the city\'s digital metadata directly onto its physical geography, revealing invisible cultural patterns and the shifting rhythms of urban life.',
   description2: 'In my capacity as Technical Director for the Software Studies Initiative, I leveraged the Vroom and HIPerSpace tiled display environments to visualize these datasets at an unprecedented scale. This work moved beyond simple data mapping to explore how software and social algorithms influence human behavior and architectural perception. Within my current portfolio, this project served as a cornerstone of research, demonstrating my ability to synthesize Public Data, Visual Analytics, and Immersive Design to make the hidden infrastructures of our modern society visible.',
   projectTag: ['research', 'data-viz', 'leadership'],
-  images: ['/images/tiledDisplayGeo.jpg','/images/toddHololens.jpg']
+  images: ['/images/tiledDisplayGeo.jpg','/images/toddHololens.jpg'],
+  related: ['ucsd-crca', 'tree-of-branch', 'software-studies', 'vroom', 'qlik']
   },
   // Research / Publications & Theory / Immersive Art in Augmented Reality
 {
@@ -1047,7 +1054,8 @@ export const projects: Project[] = [
   weight: 'Proc. SPIE 9012, The Engineering Reality of Virtual Reality 2014, 901205 (28 February 2014); https://doi.org/10.1117/12.2038673',
   images: ['/images/ATLAS_PRINT_SGO_grid.jpg'],
   projectTag: ['research', 'data-viz', 'spatial'],
-  description: 'Scalable Metadata Environments (MDEs) are an artistic approach for designing immersive environments for large scale data exploration in which users interact with data by forming multiscale patterns that they alternatively disrupt and reform. Developed and prototyped as part of an art-science research collaboration, we define an MDE as a 4D virtual environment structured by quantitative and qualitative metadata describing multidimensional data collections. Entire data sets (e.g.10s of millions of records) can be visualized and sonified at multiple scales and at different levels of detail so they can be explored interactively in real-time within MDEs. They are designed to reflect similarities and differences in the underlying data or metadata such that patterns can be visually/aurally sorted in an exploratory fashion by an observer who is not familiar with the details of the mapping from data to visual, auditory or dynamic attributes. While many approaches for visual and auditory data mining exist, MDEs are distinct in that they utilize qualitative and quantitative data and metadata to construct multiple interrelated conceptual coordinate systems. These "regions" function as conceptual lattices for scalable auditory and visual representations within virtual environments computationally driven by multi-GPU CUDA-enabled fluid dyamics systems.'
+  description: 'Scalable Metadata Environments (MDEs) are an artistic approach for designing immersive environments for large scale data exploration in which users interact with data by forming multiscale patterns that they alternatively disrupt and reform. Developed and prototyped as part of an art-science research collaboration, we define an MDE as a 4D virtual environment structured by quantitative and qualitative metadata describing multidimensional data collections. Entire data sets (e.g.10s of millions of records) can be visualized and sonified at multiple scales and at different levels of detail so they can be explored interactively in real-time within MDEs. They are designed to reflect similarities and differences in the underlying data or metadata such that patterns can be visually/aurally sorted in an exploratory fashion by an observer who is not familiar with the details of the mapping from data to visual, auditory or dynamic attributes. While many approaches for visual and auditory data mining exist, MDEs are distinct in that they utilize qualitative and quantitative data and metadata to construct multiple interrelated conceptual coordinate systems. These "regions" function as conceptual lattices for scalable auditory and visual representations within virtual environments computationally driven by multi-GPU CUDA-enabled fluid dyamics systems.',
+  related: ['atlas-in-silico', 'cultural-analytics', 'vroom']
   },
   // Research / Publications & Theory / Tree of Branch
   {
@@ -1063,7 +1071,7 @@ export const projects: Project[] = [
   description3: 'The visualization reveals a strong community focus on visualization extensions, dominated by two primary clusters, while identifying several emerging clusters that indicate opportunities for growth. Light blue links use edge bundling to demonstrate high similarity both within and between Qlik\'s primary visualization categories. Perhaps most notably, the light green links show that most contributors develop projects across the entire product spectrum, proving the versatility of the underlying platform and the cross-disciplinary nature of the developer community.',
   projectTag: ['research', 'data-viz'],
   images: ['/images/TreeOfBranch.jpg'],
-  related: ['qlik']
+  related: ['qlik', 'cultural-analytics', 'qlik-reporting-storytelling']
   },
   // Research: Pedagogy & Labs
   // Research / Pedagogy & Labs / Electronic Visualization Laboratory @  UIC
@@ -1159,7 +1167,7 @@ export const projects: Project[] = [
   description3: 'My research portfolio covered the full spectrum of the modern digital landscape, with a primary focus on the AI ecosystem throughout the information value lifecycle. I led deep-dives into agentic frameworks, autonomous orchestration and governance platforms, and immersive analytics platforms that leverage extended reality for advanced data exploration and storytelling. This practice enabled enhanced decision-making while establishing a common operating picture for navigating the rapidly evolving paradigms of autonomous reasoning and secure data collaboration.',
   projectTag: ['leadership', 'strategy', 'product', 'AI-ML', 'cross-functional', 'research'],
   images: ['/images/qlikTaiko.jpg','/images/InsightFeed.jpg'],
-  related: ['immersive-manufacturing-analytics', 'immersive-healthcare-analytics', 'emergency-response-drone', 'immersive-retail', 'tree-of-branch']
+  related: ['immersive-manufacturing-analytics', 'immersive-healthcare-analytics', 'emergency-response-drone', 'immersive-retail', 'tree-of-branch', 'qlik-gesture', 'qlik-day-in-the-life', 'qlik-insight-chatbot', 'qlik-reporting-storytelling', 'qlik-genai']
   },
   // Strategy / R&D Leadership / NVision @ University of Northampton
   {
