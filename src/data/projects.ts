@@ -124,7 +124,7 @@ export const projects: Project[] = [
   ],
   description3: 'This piece is not a nostalgic novelty; it is the culmination of a career dedicated to the intersection of art, technology, and perception. For decades, Margolis has been a pioneer in immersive media, from his early co-invention of the Varrier™ auto-stereoscopic display to his creation of 3D artwork using PHSCologram technology. This View-Master project is a direct extension of that lifelong inquiry, refining large-scale concepts into a profoundly personal form.\n\nDuring his tenure at the Qualcomm Institute at UCSD, Margolis designed "discovery platforms" to translate vast scientific datasets into immersive, understandable experiences. This practice of turning complex information into compelling visual encounters is central to his work. The View-Master, then, becomes the perfect synthesis of his artistic and technological concerns: using a historical medium of mass visual consumption to frame cutting-edge scientific discovery and contemporary cultural mythology. In doing so, he forges a tangible, and critical, connection between human curiosity, commercial ambition, and the farthest reaches of our universe.',
   watermarkedImages: ['/images/View-MasterReelSm.png', '/images/Pluto-Previs_1.jpg','/images/asteroid-anaglyph.png', '/images/ProximaAvi.png', '/images/Horizons-moon.jpg'],
-  related: ['varrier-siggraph', 'sculpture'],
+  related: ['varrier-siggraph', 'sculpture', 'moon-lust'],
   website: 'https://observables.art'
 },
   // Creative / Tangible Artifacts / Now & Then
@@ -218,7 +218,7 @@ export const projects: Project[] = [
   'Physical visualization of an event horizon, giving form to the invisible pull of a black hole.'
   ],
   watermarkedImages: ['/images/Spheroids-Previs1.jpg', '/images/Flats-Previs_1.jpg', '/images/Mars-Previs_1..jpg', '/images/MilkyWay-Previs_1.jpg', '/images/Moon-Previs_1.jpg', '/images/Sun-Previs_1.jpg', '/images/BlackHole-Previs_1.jpg'],
-  related: ['3d-horizons','promotional-consideration'],
+  related: ['3d-horizons', 'moon-lust', 'promotional-consideration'],
   website: 'https://observables.art'
   },
   // Creative / Tangible Artifacts / Sky Watcher
@@ -404,7 +404,7 @@ export const projects: Project[] = [
   heroImage: '/images/moonlustadler1.jpg',
   description: 'Moon Lust is a speculative project that explores global interests and issues pertaining to lunar exploration and habitation. As a curated mobile augmented reality exhibition, Moon Lust hopes to facilitate a dialogue about topics such as lunar mining, space tourism, celestial territories, space ecology and policy, by locating augmented visualizations in and around the Adler Planetarium. The project launched June 21 2012 and remains as a permanent AR exhibition.',
   images: ['/images/SERL.jpg'],
-  related: ['sculpture', '3d-horizons', 'promotional-consideration', 'out-of-the-box', 'manifest-ar']
+  related: ['sculpture', '3d-horizons', 'promotional-consideration', 'delayed-vision', 'out-of-the-box', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Promotional Consideration
 {
@@ -420,7 +420,7 @@ export const projects: Project[] = [
   description: 'Promotional Considerations is a speculative project designed to articulate and anticipate the needs, desires and concerns of lunar habitation. Blending current lunar research with models of private industry, we can foresee the types of products and services that will emerge for lunar settlers. Each company is represented through augmented reality advertisements as well as accompanying micro-sites.',
   description2: 'The sites are linked to forums to encourage discussion about the issues that the advertisements provoke. Promotional considerations points to larger concerns about life on the moon ranging from the physiological and pyschological effects of individuals who inhabit it, to higher order questions about how the "common heritage" of celestial bodies is affected by private industry interests and concepts of ownership.',
   images: ['/images/newMoon.jpg','/images/rareEarth.jpg'],
-  related: ['moon-lust', 'out-of-the-box', 'museum-of-future-objects-mofo', 'manifest-ar']
+  related: ['moon-lust', 'sculpture', 'out-of-the-box', 'museum-of-future-objects-mofo', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Out of the Box
 {
@@ -1178,7 +1178,8 @@ export const projects: Project[] = [
   collaborators: ['Lev Manovich'],
   description: 'Disseminate the broad vision that software is a layer that permeates all areas of contemporary societies. As Technical Director, I developed projects, workshops, and publications analyzing contemporary techniques of control, communication, representation, and simulation through the lens of this software layer.',
   projectTag: ['research', 'data-viz', 'leadership'],
-  images: ['/images/maxresdefault.jpg']
+  images: ['/images/maxresdefault.jpg'],
+  related: ['cultural-analytics', 'ucsd-crca']
   },
   // Research / Pedagogy & Labs / UCSD\
   {
