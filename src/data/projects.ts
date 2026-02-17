@@ -594,7 +594,8 @@ export const projects: Project[] = [
   images: ['/images/HUVR-SC10.jpeg','/images/DualHUVRatSC10.jpeg'],
   collaborators: ['Greg Dawe', 'Dan Sandin', 'Tom DeFanti'],
   projectTag: ['prototype', 'spatial', 'interaction', 'hands-on'],
-  videoLink: 'https://youtu.be/h-DcHAK-dsU?si=CaKeoIcbv9Cx4x4L'
+  videoLink: 'https://youtu.be/h-DcHAK-dsU?si=CaKeoIcbv9Cx4x4L',
+  related: ['ucsd-qualcomm', 'vroom']
   },
   // Research / Display & Interaction Systems / Immersive Manufacturing
 {
@@ -644,7 +645,8 @@ export const projects: Project[] = [
   description2: 'The project seeks to explore notions of cultural identity and gender and examines the subject in transition - both biologically and technologically. As the Virtual Media Specialist for Becoming Dragon, I collaborated with Micha Cardenas and Chris Head to integrate motion capture technologies into the mixed reality performance. Micha wore a customized optical target integrated into the HMD which captured every live physical movement to control the movements of her avatar in Second Life. This was accomplished using VICON cameras and software I setup and configured with a bridge written by Chris Head and a SL script to receive those movements written by Micha. I also facilitated the installation and configuration of the stereoscopic 3D Second Life projection into the performance space as well as the video feed from the physical world back into Second Life.',
   description3: 'Co-sponsored by The Center for Performance Studies, the UCLA Department of Theater, the Center for Research in Computing and the Arts (CRCA), the Department of Theater, the School of Theater, Film, and Television, LGBT Studies, the Center for the Study of Women and The Center for Research in Engineering, Media and Performance. Additional support provided by San Diego State University\'s Second Life Initiative, Aztlan Island.',
   projectTag: ['installation', 'spatial', 'interaction', 'cross-functional'],
-  images: ['/images/becoming-transreal_1.jpg','/images/11_25_08_micha_dragon.jpg']
+  images: ['/images/becoming-transreal_1.jpg','/images/11_25_08_micha_dragon.jpg'],
+  related: ['ucsd-crca']
   },
   // Research / Display & Interaction Systems / Emerngency Response Drone
 {
@@ -692,7 +694,8 @@ export const projects: Project[] = [
   description3: 'I worked with Adriene Jenik in SPECFLIC 1.0 in La Jolla and SPECFLIC 2.0 in San Jose as Technical Director to identify and utilize transgressive digital media throughout the design and planning process. Physical architecture was transformed into immersive spaces where social experiences played out through digitally mediated audio and video streams (live and pre-recorded). During pre-production of SPECFLIC 2.0, I worked with Cinematographer John Pirozzi to assist with the HD shoot of Allison Janney and Richard Jenik in the MLK Library. I lead a large technical support team for SPECFLIC 2.0 which installed a complex network of projectors, cameras, microphones, speakers and computers inside, around and on top of the installation spaces.',
   images: ['/images/specflic_infospherian300.jpg','/images/remote_melissa+all.jpg'],
   projectTag: ['installation', 'interaction', 'cross-functional', 'leadership'],
-  collaborators: ['Adriene Jenik']
+  collaborators: ['Adriene Jenik'],
+  related: ['cinegrid-3d-4k', 'vroom', 'ucsd-crca']
   },
   // Research / Display & Interaction Systems / FILE 4K
 {
@@ -708,7 +711,8 @@ export const projects: Project[] = [
   heroImage: '/images/fig6.5.jpg',
   images: ['/images/fig4.1.jpg','/images/fig6.4.jpg'],
   projectTag: ['research', 'infrastructure', 'cross-functional', 'leadership'],
-  videoLink: 'https://youtu.be/8JX1Yv7TfDQ'
+  videoLink: 'https://youtu.be/8JX1Yv7TfDQ',
+  related: ['cinegrid-3d-4k', 'cinegrid-aes', 'vroom', 'ucsd-crca', 'ucsd-qualcomm']
   },
   // Research / Display & Interaction Systems / NetSight
 {
@@ -721,7 +725,8 @@ export const projects: Project[] = [
   heroImage: '/images/netsight.jpg',
   projectTag: ['product', 'spatial', 'hands-on'],
   description: 'In this role as Webmaster for a pioneering Chicago-based ISP, I spearheaded the expansion of traditional internet services into the nascent fields of web hosting and interactive design. By leveraging early-stage spatial computing, I specialized in the development of some of the region\'s first 3D VRML (Virtual Reality Modeling Language) websites, effectively introducing immersive 3D navigation to the web. This work laid the foundation for my ongoing inquiry into display systems by transforming static browsing into a navigable, three-dimensional experience.',
-  images: ['/images/SGI_indy.jpeg']
+  images: ['/images/SGI_indy.jpeg'],
+  related: ['uic-evl']
   },
   // Research / Display & Interaction Systems / PowerUser
 {
@@ -733,7 +738,8 @@ export const projects: Project[] = [
   medium: 'Web Developer',
   description: 'During my tenure as a Web Developer at PowerUser, I spearheaded the development of sophisticated, database-driven web architectures, bridging the gap between robust back-end infrastructure and intuitive user interaction. My role encompassed the full lifecycle of digital deployment, from the hands-on administration of web servers and e-commerce systems to the collaborative programming of dynamic site layouts. By integrating complex data systems with interactive design principles, I focused on creating scalable display and interaction frameworks that prioritized both technical stability and a seamless end-user experience.',
   projectTag: ['product', 'infrastructure', 'hands-on'],
-  images: ['/images/poweruser.jpg']
+  images: ['/images/poweruser.jpg'],
+  related: ['netsight']
   },
   // Research / Display & Interaction Systems / Qlik Gesture
 {
@@ -795,7 +801,8 @@ export const projects: Project[] = [
   description2: 'Vroom enables group collaboration for local and remote participants to share knowledge and experiences. Possible applications include: Remote learning, Brainstorming / Storyboarding, Post-production review and collaboration, High resolution video playback, Tele-immersive 3D interaction, Easy-to-use screencasting, Image, video, text media sharing\n\nVroom features include: Support for multiple user interfaces (optical tracking, touch UI, gesture interface, etc.), Support for directional and spatialized audio, Giga-Pixel image interactivity, 4K video streaming, 3D visualization, Tele-matic production',
   description3: 'Previous compatible system (HIPerSpace, HIPerWall, AESOP, OptiPortal) have been developed at Calit2 and distributed around the world to dozens of academic, government and corporate institutions. These systems are connected to high-speed optical networks to enable remote collaboration. The installation of Vroom in the Calit2 Theater will have approximately 100 displays, both 2D and 3D in a reconfigurable arrangement. Open-source software developed at UCSD and the Electronic Visualization Lab at UIC will enable the graphics (SAGE, CGLX and CalVR) and audio (SoundBender, VMAP and Sonnotate) middleware to share data across the local Vroom system as well as with remote nodes. Vroom will use 10Gb/s networking to all the display nodes with 10 (eventually 20) 10Gb/s uplinks to remote servers. Using both research systems and commercial platforms, we will integrate HD video tele-conferencing with remote nodes. We will employ spatialized audio with distributed Meyer speakers along with multiple wave field synthesis speaker arrays to provide directional audio. 4K video streaming and playback will be integrated into Vroom for both tiled display walls and projection surfaces.',
   projectTag: ['infrastructure', 'spatial', 'cross-functional', 'leadership'],
-  images: ['/images/Octo-OptIPortableUnderConstructionControlRoom.jpeg', '/images/AllScreensContiuousImageDemo.jpg']
+  images: ['/images/Octo-OptIPortableUnderConstructionControlRoom.jpeg', '/images/AllScreensContiuousImageDemo.jpg'],
+  related: ['cinegrid-3d-4k', 'cinegrid-aes', 'growing-documentary', 'scalable-city', 'cultural-analytics', 'scalable-metadata-environments', 'ucsd-crca', 'ucsd-qualcomm', 'experimental-game-lab']
   },
   // Research / Collaborative Environments / CineGrid 3D 4K
 {
@@ -810,7 +817,8 @@ export const projects: Project[] = [
   description: 'CineGrid is a global, non-profit organization dedicated to the research and demonstration of ultra-high-quality digital media over high-speed photonic networks. At its core, the project functions as a specialized "collaboratory," integrating high-performance computing with the rigorous demands of digital cinema. By utilizing 10 Gbps optical networks, CineGrid enables the real-time distribution and collaborative editing of 4K, 8K, and stereoscopic 3D media across vast distances. This infrastructure effectively removes the geographical barriers of high-end production, allowing interdisciplinary teams to treat global networks as a singular, unified workspace.',
   description2: 'A highlight of my research included networking media infrastructure, culminating in the tri-continental premiere of 4K feature-length media.  This milestone successfully established new benchmarks for distributed cinema, proving that uncompressed, ultra-high-resolution streams could be synchronized across continents with minimal latency. That led to a private demonstration of this technology for George Lucas at Industrial Light & Magic.',
   projectTag: ['research', 'infrastructure', 'cross-functional', 'leadership'],
-  images: ['/images/audience.jpg','/images/CineSAGE-ILM.1-sm.jpg']
+  images: ['/images/audience.jpg','/images/CineSAGE-ILM.1-sm.jpg'],
+  related: ['vroom', 'cinegrid-aes', 'file-4k', 'tele-taiko', 'growing-documentary', 'resonations']
   },
   // Research / Collaborative Environments / CineGrid @ AES
 {
@@ -826,7 +834,8 @@ export const projects: Project[] = [
   description2: 'The technical program showcased the CineGrid philosophy of "networked extreme media" through four distinct acts, including interactive 4K telepresence and remote audio post-production. By leveraging uncompressed motion pictures and multi-channel spatialized audio, the event successfully simulated a globally distributed creative workflow. This research laid the groundwork for collaborative digital cinema specifications adopted by major Hollywood studios and international research institutions.',
   description3: 'As part of the core planning and design team, I collaborated with engineers from Industrial Light & Magic (ILM) and Skywalker Sound to architect the audio-video infrastructure. My responsibilities included configuring remote uncompressed audio servers and local network routing to ensure ultra-low latency playback. During the live performance, I served as the lead technician for queuing and managing the 24-channel spatialized audio streams over IP.',
   projectTag: ['research', 'infrastructure', 'cross-functional', 'hands-on'],
-  images: ['/images/crew_shot.png','/images/wagner250.jpg']
+  images: ['/images/crew_shot.png','/images/wagner250.jpg'],
+  related: ['vroom', 'cinegrid-3d-4k', 'file-4k', 'resonations']
   },
   // Research / Collaborative Environments / TeleMotions
 {
@@ -838,10 +847,11 @@ export const projects: Project[] = [
   medium: 'Telepresence Performance',
   heroImage: '/images/TeleMotions4.jpg',
   collaborators: ['Mark Dresser'],
-  description: 'TeleMotions was an experimental telepresence performance project developed by the Experimental Game Lab at the Qualcomm Institute (UCSD). The project functioned as an inquiry into networked collaboration, utilizing high-bandwidth optical networks to facilitate real-time, distributed performances between remote participants. By connecting physically separated performers through immersive media environments, TeleMotions sought to challenge traditional notions of "presence" and "place," creating a shared virtual stage where movement and sound could interact without geographical constraints.',
+  description: 'TeleMotions was an experimental telepresence performance project developed by the Qualcomm Institute (UCSD). The project functioned as an inquiry into networked collaboration, utilizing high-bandwidth optical networks to facilitate real-time, distributed performances between remote participants. By connecting physically separated performers through immersive media environments, TeleMotions sought to challenge traditional notions of "presence" and "place," creating a shared virtual stage where movement and sound could interact without geographical constraints.',
   description2: 'In my role as Technical Director at the lab, I managed the complex infrastructure required for such high-stakes, real-time media systems. This involved coordinating the logistical planning, latency management, and fault-tolerant network architecture necessary to ensure that human intuition and algorithmic logic could coexist seamlessly across a distributed network.',
   projectTag: ['research', 'infrastructure', 'cross-functional', 'leadership'],
-  images: ['/images/TeleMotions2.jpg']
+  images: ['/images/TeleMotions2.jpg'],
+  related: ['inspiraling', 'cinegrid-3D-4K', 'resonations', 'ucsd-crca']
   },
   // Research / Collaborative Environments / Inspiraling
 {
@@ -857,7 +867,8 @@ export const projects: Project[] = [
   description2: 'The music explored elements of jazz fused with artistic properties of telematic technology including multiplicity, heterophony, swing, polyphony, synchronicity, and nodality. The transparent densities and intensities were manifested to create this new music reality of telematic jazz.\n\nIn my role as Transmedia Producer I created a shared tele-collaborative performance environment enabling real-time spontaneity and musical tele-presence. This was achieved by utilizing advanced networking, HD video and multi-channel streaming audio with the coordinated efforts of artists and technologists from across the US. I lead the administrative effort to facilitate funding, budget planning, resource management and staff scheduling.',
   description3: 'San Diego Performers: Hafez Modirzadeh, saxophone, Michael Dessen, trombone, Alex Cline, percussion, Mark Dresser, contrabass\n\nNew York Performers: Amir ElSaffar, trumpet, Oliver Lake, saxophone, Min Xiao-Fen, pipa, Gerry Hemingway, percussion, Sarah Weaver, conductor\n\nPresented by:\n\nCalit2 and the Center for Research and Computing in the Arts (CRCA), University of California San Diego. Special thanks to the Dean of Arts and Humanities and the Fund for Innovation for supporting this project.\\nnMusic Technology Program, Steinhardt School, New York University. Dr. Robert Rowe, Vice-Chair, Director of Music Composition, Department of Music and Performing Arts Professions.\n\nRoulette Intermedia, Inc. James Staley, Director',
   projectTag: ['research', 'infrastructure', 'cross-functional', 'leadership'],
-  images: ['/images/inspiraling_sd8_copy_hb.jpg','/images/IMG_3681_copy_hb.jpg']
+  images: ['/images/inspiraling_sd8_copy_hb.jpg','/images/IMG_3681_copy_hb.jpg'],
+  related: ['telemotions', 'resonations', 'ucsd-crca']
   },
   // Research / Collaborative Environments / Tele-Taiko Teaching @ CineGrid
 {
@@ -872,7 +883,8 @@ export const projects: Project[] = [
   description2: 'By integrating ultra-high-definition video streaming with motion-tracked data, the research successfully simulated the kinesthetic feedback of an in-person apprenticeship, proving that even the most physically demanding and rhythmically precise art forms can be effectively transmitted across global research networks.',
   images: ['/images/tele-taiko.jpg','/images/TeleTaiko.jpg'],
   projectTag: ['research', 'infrastructure', 'cross-functional', 'leadership'],
-  videoLink: 'https://youtu.be/5KBoZfF-EK0'
+  videoLink: 'https://youtu.be/5KBoZfF-EK0',
+  related: ['essa', 'cinegrid-3D-4K']
   },
   // Research / Collaborative Environments / ResoNations
 {
@@ -888,7 +900,8 @@ export const projects: Project[] = [
   description3: 'ResoNations was made possible by an international collaboration of musicians, conductors, performers and researchers. My role as Transmedia Producer was to unify five remote locations via high quality audio and video into a single cohesive networked environment. Using multicast video streaming via Access Grid and multi-channel audio streaming via JackTrip, we connected the remote spaces to form a unified performance and experience. ResoNations was part of the annual Innovation Talks Symposia held at the United Nations Headquarters in New York by the World Association of Former United Nations Internes and Fellows (WAFUNIF), a United Nations Peace Messenger. WAFUNIF Arts For Peace and the Permanent Mission of Romania to the United Nations sponsored the event.',
   images: ['/images/resonations_7_resized.jpg','/images/resonations_1_resized.jpg'],
   projectTag: ['research', 'infrastructure', 'cross-functional', 'leadership'],
-  collaborators: ['United Nations Headquarters in New York, University of California San Diego, The Banff Centre in Alberta, Canada, Queens University Belfast, and Dongguk University in Seoul']
+  collaborators: ['United Nations Headquarters in New York, University of California San Diego, The Banff Centre in Alberta, Canada, Queens University Belfast, and Dongguk University in Seoul'],
+  related: ['cinegrid-3d-4k', 'cinegrid-aes', 'telemotions', 'inspiraling']
   },
   // Research / Collaborative Environments / Image Quest
 {
@@ -904,7 +917,8 @@ export const projects: Project[] = [
   description2: 'These tools will have an initial focus on problem domains including monitoring of urban re-forestation efforts and analysis of 3D biological and neurological imaging data at many different scales. It will produce a set of smart phone and web apps that will be available to the broader biological research community that require calibrated image capture and analysis, and will create an experimental web portal to engage virtual communities of volunteers and scientists collaborating to work on imaging problems.',
   description3: 'The ImageQuest project will make it simpler for volunteers and scientists to engage in a much broader set of biological imaging research. Providing tools which enhance a volunteers ability to capture and analyze images relieves a technical burden on biologists trying to develop citizen science approaches. Making these tools smarter and more interactive encourages volunteers to contribute meaningfully to novel research questions, and building a virtual community around the volunteers and the scientists helps to recruit, motivate and retain long term participation of the public in scientific research.',
   projectTag: ['research', 'AI-ML', 'cross-functional'],
-  images: ['/images/IQ-NYC-LiDARnCensus.jpg','/images/LiDAR.1.jpg']
+  images: ['/images/IQ-NYC-LiDARnCensus.jpg','/images/LiDAR.1.jpg'],
+  related: ['atlas-in-silico', 'scalable-metadata-environments', 'ucsd-crca']
   },
   // Research / Collaborative Environments / Growing Documentary
   {
@@ -919,7 +933,8 @@ export const projects: Project[] = [
     description2: 'This project culminated with screenings at the 24th Tokyo International Film Festival (2011), CineGrid International Workshop (2011) and the Hawaii International Film Festival (2012) as well as presentated at TEDx San Diego (2013) on the novel production practice.',
   heroImage: '/images/groupShot1.jpg',
   projectTag: ['research', 'infrastructure', 'cross-functional', 'leadership'],
-  images: ['/images/GrowingTEDx.jpg']
+  images: ['/images/GrowingTEDx.jpg'],
+  related: ['vroom', 'cinegrid-3d-4k', 'ucsd-crca', 'ucsd-qualcomm', 'file-4k']
   },
   // Research / Collaborative Environments / Scalable City
   {
@@ -934,7 +949,8 @@ export const projects: Project[] = [
   description: 'Scalable City is a multi-dimensional art and research project developed within the Experimental Game Lab at the Qualcomm Institute, UCSD. The work functions as a provocative critique of urban sprawl and algorithmic logic, utilizing the mechanics of a video game to simulate the relentless expansion and eventual collapse of a hyper-consumerist landscape. By intersecting technologies from the leading edge of visualization research with extended game industry tools, the project creates a hybrid experience that explores how software systems permeate and shape contemporary society.',
   description2: 'The artwork is structured around a series of algorithmic "rules" that automate the construction of a sprawling, chaotic city—transforming the serene geometry of a digital landscape into a densely packed environment of roads and suburban architecture. As the simulation progresses, the very tools used for creation become the agents of destruction, leading to a "beautifully entropic" failure of the urban system.',
   projectTag: ['installation', 'research', 'spatial'],
-  images: ['/images/scalableCity.jpg','/images/Sheldon_Brown-_Scalable_City1.jpg']
+  images: ['/images/scalableCity.jpg','/images/Sheldon_Brown-_Scalable_City1.jpg'],
+  related: ['vroom', 'ucsd-crca', 'experimental-game-lab']
   },
   // Research: Collaborative Environments
   // Research / Collaborative Environments / Qlik Reporting & Storytelling
@@ -1149,7 +1165,8 @@ export const projects: Project[] = [
   heroImage: '/images/placeholder.png',
   description: 'Founded by Sheldon Brown, EGL is a research studio positioning gaming as the defining cultural form of the 21st century. We provided innovative, multi-disciplinary expertise to push forward its technological and expressive fronts. By intersecting technologies from the leading edge of visualization research with extended game industry tools, we created new cultural forms and hybrid experiences.',
   projectTag: ['research', 'spatial', 'leadership', 'infrastructure'],
-  images: ['/images/eglLarge.jpeg']
+  images: ['/images/eglLarge.jpeg'],
+  related: ['ucsd-crca', 'ucsd-qualcomm', 'vroom', 'scalable-city']
   },
   // Strategy
   // Strategy: R&D Leadership
@@ -1199,7 +1216,7 @@ export const projects: Project[] = [
   description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
   projectTag: ['leadership', 'infrastructure', 'cross-functional', 'strategy'],
   images: ['/images/AG-ART-event.jpg'],
-  related: ['experimental-game-lab', 'software-studies', 'ucsd-qualcomm', 'atlas-in-silico']
+  related: ['experimental-game-lab', 'software-studies', 'ucsd-qualcomm', 'atlas-in-silico', 'vroom', 'telemotions', 'inspiraling', 'growing-documentary', 'resonations', 'scalable-city', 'cultural-analytics']
   },
   // Strategy / Academic Practice / Emergent Reality Lab @ RPI
 {
@@ -1241,7 +1258,7 @@ export const projects: Project[] = [
   description: 'Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive systems using VR and large-format tiled displays. Focus on leading interdisciplinary teams of academic and industry researchers to create discovery platforms for large-scale geospatial, metagenomics and healthcare data. Instructed on Digital Imaging, Collaborative Image production, Web 2.0 Interaction, Transmedia, Programming, Augmented Reality',
   projectTag: ['research', 'leadership', 'spatial', 'infrastructure', 'cross-functional'],
   images: ['/images/atkinson-720.jpg'],
-  related: ['ucsd-crca', 'experimental-game-lab', 'software-studies', 'varrier-siggraph']
+  related: ['ucsd-crca', 'experimental-game-lab', 'software-studies', 'varrier-siggraph', 'vroom', 'cinegrid-3d-4k', 'cinegrid-aes']
   },
   // Strategy: Cultural Stewardship
   // Strategy / Cultural Stewardship / Manifest.AR
