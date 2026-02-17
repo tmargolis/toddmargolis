@@ -1318,7 +1318,7 @@ export const projects: Project[] = [
   heroImage: '/images/AppliedInteractives_PortraitMain.jpg',
   projectTag: ['leadership', 'strategy', 'spatial', 'cross-functional'],
   images: ['/images/VRPortalVideo.jpg','/images/VRPrtl_MCA.jpg'],
-  related: ['artn-laboratory']
+  related: ['artn-laboratory', 'special-treatment']
   },
   // Strategy / Cultural Stewardship / Sine::apsis Experiments
   {
