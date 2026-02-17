@@ -285,7 +285,8 @@ export const projects: Project[] = [
   heroImage: '/images/atlas-varrier.png',
   description: 'ATLAS in silico is a physically interactive virtual reality installation that fuses dynamic media, computer vision, and spatialized multichannel audio with pioneering science. It functions as an expressive virtual reality context for large-scale data exploration. Rather than simply displaying numbers, it translates massive scientific datasets—specifically touching on metagenomics and biological sequences—into a visceral, navigable environment. It uses computer vision to track the viewer, allowing their physical presence to drive the audiovisual representation of the data, effectively bridging the gap between abstract information and physical perception.',
   description2: 'The project was the subject of significant academic inquiry, leading to publications such as "Algorithmic Object as Natural Specimen" in Leonardo and "Sensate Abstraction" in SPIE, which detailed hybrid strategies for handling multi-dimensional data. The work has been exhibited globally at major venues including the National Academy of Sciences, SIGGRAPH, the Perot Museum of Nature and Science, 9e2 (Seattle), and the Museum of Old and New Art (MONA) in Tasmania.',
-  images: ['/images/Screenshot-16.png','/images/ATLAS_PRINT_SGO_grid.jpg']
+  images: ['/images/Screenshot-16.png','/images/ATLAS_PRINT_SGO_grid.jpg'],
+  related: ['varrier-siggraph']
   },
   // Creative / Immersive Installations / Confluxus
 {
@@ -575,7 +576,7 @@ export const projects: Project[] = [
   description: 'Virtual reality (VR) has long been hampered by the gear needed to make the experience possible; specifically, stereo glasses and tracking devices. Autostereoscopic display devices are gaining popularity by freeing the user from stereo glasses, however few qualify as VR displays. The Electronic Visualization Laboratory (EVL) at the University of Illinois at Chicago (UIC) has designed and produced a large scale, high resolution head-tracked barrier-strip autostereoscopic display system that produces a VR immersive experience without requiring the user to wear any encumbrances. The resulting system, called Varrier, is a passive parallax barrier 35-panel tiled display that produces a wide field of view, head-tracked VR experience. This paper presents background material related to parallax barrier autostereoscopy, provides system configuration and construction details, examines Varrier interleaving algorithms used to produce the stereo images, introduces calibration and testing, and discusses the camera-based tracking subsystem.',
   projectTag: ['research', 'spatial', 'infrastructure', 'hands-on'],
   images: ['/images/varrier-siggraph.jpg'],
-  related: ['varrier-IEEE', 'varrier-SPIE', 'uic-evl']
+  related: ['varrier-IEEE', 'varrier-SPIE', 'uic-evl','atlas-in-silico']
   },
   // Research / Display & Interaction Systems / HUVR
 {
