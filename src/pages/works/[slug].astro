@@ -65,10 +65,58 @@ const aboutStatement = project.category?.length
   ? categoryStatements[project.category[0]] ?? categoryStatements.Creative
   : categoryStatements.Creative;
 
-// Resolve related projects (by slug) for cross-references in the sidebar
-const relatedProjects = (project.related ?? [])
+// Resolve related projects for cross-references in the sidebar.
+// Combines explicit `related` slugs with automatically inferred relationships.
+const manualRelated = (project.related ?? [])
   .map((slug) => projects.find((p) => p.slug === slug))
   .filter((p): p is typeof projects[number] => !!p);
+
+function normalizeSlug(slug: string) {
+  return slug.replace(/-/g, ' ').toLowerCase();
+}
+
+function getSlugRoot(slug: string) {
+  const parts = normalizeSlug(slug).split(' ');
+  return parts[0] || '';
+}
+
+function textIncludes(haystack: string | undefined, needle: string | undefined) {
+  if (!haystack || !needle) return false;
+  return haystack.toLowerCase().includes(needle.toLowerCase());
+}
+
+function areProjectsRelated(a: typeof projects[number], b: typeof projects[number]) {
+  if (a.slug === b.slug) return false;
+
+  // 1) Similar slug root (e.g. immersive-*, varrier-*)
+  const rootA = getSlugRoot(a.slug);
+  const rootB = getSlugRoot(b.slug);
+  if (rootA && rootA === rootB) return true;
+
+  // 2) Shared hero image or any shared image path
+  if (a.heroImage && b.heroImage && a.heroImage === b.heroImage) return true;
+  const aImages = new Set(a.images ?? []);
+  const hasSharedImage = (b.images ?? []).some((img) => aImages.has(img));
+  if (hasSharedImage) return true;
+
+  // 3) One project's title or slug appears in the other's description text
+  const aText = `${a.description} ${a.description2 ?? ''} ${a.description3 ?? ''}`;
+  const bText = `${b.description} ${b.description2 ?? ''} ${b.description3 ?? ''}`;
+  if (textIncludes(aText, b.title) || textIncludes(bText, a.title)) return true;
+  if (textIncludes(aText, b.slug) || textIncludes(bText, a.slug)) return true;
+
+  return false;
+}
+
+const autoRelated = projects.filter((p) => areProjectsRelated(project, p));
+
+// Merge and de-duplicate by slug, preserving manual ordering first
+const relatedProjects = [
+  ...manualRelated,
+  ...autoRelated.filter(
+    (p) => !manualRelated.some((mp) => mp.slug === p.slug)
+  ),
+];
 
 /** Parse Vimeo or YouTube link into iframe embed URL, or null if not supported. */
 function getVideoEmbedUrl(link: string | undefined): string | null {
