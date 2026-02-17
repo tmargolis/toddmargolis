@@ -41,7 +41,7 @@ projects.forEach(project => {
 // Organize tags into groups
 const outcomeTags = ['prototype', 'product', 'research', 'installation', 'artifact'];
 const processTags = ['0-to-1', 'hands-on', 'leadership', 'strategy', 'cross-functional'];
-const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructure'];
+const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructure', 'astronomy'];
 ---
 
 <Layout title="Works">
@@ -83,7 +83,7 @@ const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructu
 
         <!-- Domain Tags -->
         <div class="border-l border-white/20 pl-4">
-          <h3 class="font-mono text-xs text-gray-500 uppercase tracking-widest mb-3">Technology</h3>
+          <h3 class="font-mono text-xs text-gray-500 uppercase tracking-widest mb-3">Domain</h3>
           <div class="flex flex-wrap gap-2">
             {domainTags.filter(tag => allTags.has(tag)).map(tag => (
               <button 

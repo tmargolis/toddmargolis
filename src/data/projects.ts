@@ -42,7 +42,7 @@ export const projects: Project[] = [
   title: 'Star Trails',
   category: ['Creative'],
   subCategory: ['Tangible Artifacts'],
-  projectTag: ['artifact', 'hands-on', 'data-viz'],
+  projectTag: ['artifact', 'hands-on', 'data-viz', 'astronomy'],
   year: '2023-2024',
   medium: 'Archival Pigment Prints',
   dimensions: '20 x 30 inches each',
@@ -73,7 +73,8 @@ export const projects: Project[] = [
   'Star movement captured over the equipment of fellow astrophotographers at a star party.'
   ],
   description3: 'This series serves as a foundational exploration for artist Todd Margolis, whose career has consistently been dedicated to revealing the unseen. With a background in Electronic Visualization and a professional trajectory focused on creating immersive systems for large-scale data, Margolis has long used technology to expand the limits of human perception. Whether using a camera shutter left open for hours or designing complex VR environments, the conceptual goal remains the same: to make invisible systems, patterns, and forces both visible and experiential. Just as these images translate the hidden data of planetary mechanics into beautiful form, his advanced scientific visualizations provide new ways to navigate and understand complex information. The "Star Trails" series is therefore more than a collection of stunning astrophotography; it is a rigorous inquiry into reality itself, standing at the intersection of scientific visualization and time-based art, and marking a critical articulation of the technologically-mediated experience that defines Margolis\'s broader practice.',
-  related: ['3d-horizons', 'now-and-then', 'sculpture', 'sky-watcher']
+  related: ['sky-watcher', 'now-and-then', 'delayed-vision'],
+  website: 'https://observables.art'
   },
   // Creative / Tangible Artifacts / Horizons
 {
@@ -81,7 +82,7 @@ export const projects: Project[] = [
   title: 'Horizons',
   category: ['Creative'],
   subCategory: ['Tangible Artifacts'],
-  projectTag: ['artifact', 'spatial', 'data-viz', 'hands-on'],
+  projectTag: ['artifact', 'spatial', 'data-viz', 'hands-on', 'astronomy'],
   status: 'Work in Progress',
   year: '2026',
   medium: 'Stereoscopic View-Master',
@@ -123,7 +124,8 @@ export const projects: Project[] = [
   ],
   description3: 'This piece is not a nostalgic novelty; it is the culmination of a career dedicated to the intersection of art, technology, and perception. For decades, Margolis has been a pioneer in immersive media, from his early co-invention of the Varrier™ auto-stereoscopic display to his creation of 3D artwork using PHSCologram technology. This View-Master project is a direct extension of that lifelong inquiry, refining large-scale concepts into a profoundly personal form.\n\nDuring his tenure at the Qualcomm Institute at UCSD, Margolis designed "discovery platforms" to translate vast scientific datasets into immersive, understandable experiences. This practice of turning complex information into compelling visual encounters is central to his work. The View-Master, then, becomes the perfect synthesis of his artistic and technological concerns: using a historical medium of mass visual consumption to frame cutting-edge scientific discovery and contemporary cultural mythology. In doing so, he forges a tangible, and critical, connection between human curiosity, commercial ambition, and the farthest reaches of our universe.',
   watermarkedImages: ['/images/View-MasterReelSm.png', '/images/Pluto-Previs_1.jpg','/images/asteroid-anaglyph.png', '/images/ProximaAvi.png', '/images/Horizons-moon.jpg'],
-  related: ['varrier-siggraph']
+  related: ['varrier-siggraph', 'sculpture'],
+  website: 'https://observables.art'
 },
   // Creative / Tangible Artifacts / Now & Then
 {
@@ -131,7 +133,7 @@ export const projects: Project[] = [
   title: 'Now & Then',
   category: ['Creative'],
   subCategory: ['Tangible Artifacts'],
-  projectTag: ['artifact', 'AI-ML', 'hands-on'],
+  projectTag: ['artifact', 'AI-ML', 'hands-on', 'astronomy'],
   status: 'Work in Progress',
   year: '2021-2026',
   medium: 'Archival Prints',
@@ -171,7 +173,8 @@ export const projects: Project[] = [
   'Presented as a weathered Roman fresco, this work depicts the nebula as it appeared 2,400 years ago during the rise of the Roman Republic and the life of Siddhartha Gautama in India.'
   ],
   watermarkedImages: ['/images/Andromeda.jpg', '/images/Eagle v2.jpg', '/images/Orion.jpg', '/images/Horsehead and flame nebulas.png', '/images/California nebula.jpg', '/images/Veil.jpg'],
-  related: ['star-trails', '3d-horizons', 'sculpture', 'sky-watcher']
+  related: ['star-trails', 'delayed-vision'],
+  website: 'https://observables.art'
   },
   // Creative / Tangible Artifacts / Neighbors
 {
@@ -179,7 +182,7 @@ export const projects: Project[] = [
   title: 'Neighbors',
   category: ['Creative'],
   subCategory: ['Tangible Artifacts'],
-  projectTag: ['artifact', 'spatial', 'data-viz', 'hands-on'],
+  projectTag: ['artifact', 'spatial', 'data-viz', 'hands-on', 'astronomy'],
   status: 'Work in Progress',
   year: '2026',
   medium: 'Cast Material',
@@ -215,7 +218,8 @@ export const projects: Project[] = [
   'Physical visualization of an event horizon, giving form to the invisible pull of a black hole.'
   ],
   watermarkedImages: ['/images/Spheroids-Previs1.jpg', '/images/Flats-Previs_1.jpg', '/images/Mars-Previs_1..jpg', '/images/MilkyWay-Previs_1.jpg', '/images/Moon-Previs_1.jpg', '/images/Sun-Previs_1.jpg', '/images/BlackHole-Previs_1.jpg'],
-  related: ['star-trails', 'now-and-then']
+  related: ['3d-horizons','promotional-consideration'],
+  website: 'https://observables.art'
   },
   // Creative / Tangible Artifacts / Sky Watcher
 {
@@ -223,7 +227,7 @@ export const projects: Project[] = [
   title: 'Sky Watcher',
   category: ['Creative'],
   subCategory: ['Tangible Artifacts'],
-  projectTag: ['prototype', '0-to-1', 'hands-on', 'interaction'],
+  projectTag: ['prototype', '0-to-1', 'hands-on', 'interaction', 'astronomy'],
   status: 'Work in Progress',
   year: '2026',
   medium: 'Mixed Media Light Sculpture (Arduino, Makeon Controller, LEDs, Vellum, Gold Acrylic)',
@@ -352,7 +356,7 @@ export const projects: Project[] = [
   title: 'Delayed Vision',
   category: ['Creative'],
   subCategory: ['Augmented Interventions'],
-  projectTag: ['prototype', 'spatial', 'interaction', 'hands-on'],
+  projectTag: ['prototype', 'spatial', 'interaction', 'hands-on', 'astronomy'],
   status: 'Work in Progress',
   year: '2026',
   medium: 'Tablet application',
@@ -384,7 +388,8 @@ export const projects: Project[] = [
   'This special edition mirror introduces a delay of 4.24 years; the reflected scene is almost certainly showing a different person or place as a time capsule from the past.'
   ],
   description3: 'This work finds a powerful precedent in Margolis\'s 2012 augmented reality piece, Moon Lust, exhibited at the Adler Planetarium, which first combined celestial concepts with technologies of altered perception. By turning a core principle of observational astronomy into a deeply personal, philosophical, and unforgettable encounter, the work transforms the gallery into an observatory that looks inward to reveal the most fundamental truths of our place in the cosmos.',
-  related: ['moon-lust', 'star-trails', '3d-horizons']
+  related: ['moon-lust', 'now-and-then'],
+  website: 'https://observables.art'
   },
   // Creative / Augmented Interventions / Moon Lust
 {
@@ -392,14 +397,14 @@ export const projects: Project[] = [
   title: 'Moon Lust',
   category: ['Creative'],
   subCategory: ['Augmented Interventions'],
-  projectTag: ['prototype', 'spatial', 'interaction', 'AI-ML'],
+  projectTag: ['prototype', 'spatial', 'interaction', 'AI-ML', 'astronomy'],
   year: '2012',
   collaborators: ['Tracy Cornish'],
   medium: 'Augmented Reality Alternate Reality Game',
   heroImage: '/images/moonlustadler1.jpg',
   description: 'Moon Lust is a speculative project that explores global interests and issues pertaining to lunar exploration and habitation. As a curated mobile augmented reality exhibition, Moon Lust hopes to facilitate a dialogue about topics such as lunar mining, space tourism, celestial territories, space ecology and policy, by locating augmented visualizations in and around the Adler Planetarium. The project launched June 21 2012 and remains as a permanent AR exhibition.',
   images: ['/images/SERL.jpg'],
-  related: ['delayed-vision', 'promotional-consideration', 'out-of-the-box', 'manifest-ar']
+  related: ['sculpture', '3d-horizons', 'promotional-consideration', 'out-of-the-box', 'manifest-ar']
   },
   // Creative / Augmented Interventions / Promotional Consideration
 {
@@ -407,7 +412,7 @@ export const projects: Project[] = [
   title: 'Promotional Consideration',
   category: ['Creative'],
   subCategory: ['Augmented Interventions'],
-  projectTag: ['prototype', 'spatial','AI-ML'],
+  projectTag: ['prototype', 'spatial','AI-ML', 'astronomy'],
   year: '2012',
   collaborators: ['Tracy Cornish'],
   medium: 'Augmented Reality Alternate Reality Game',
