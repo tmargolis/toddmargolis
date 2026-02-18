@@ -245,7 +245,7 @@ export const projects: Project[] = [
   '/images/Sky Watcher3.jpg'
   ],
   videoLink: 'https://youtu.be/gXxNTaNgbDY',
-  related: ['star-trails', 'now-and-then']
+  related: ['star-trails', 'now-and-then', 'delayed-vision']
   },
   // Creative / Tangible Artifacts / Shape Grammar Objects
 {
