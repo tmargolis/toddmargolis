@@ -63,7 +63,7 @@ export const projects: Project[] = [
       '/images/Screenshot_20260101-084458~2.jpg',
       '/images/Redshifter.jpg',
     ],
-    watermarkedImages: ['/images/bang.png', '/images/pulsar.jpg','/images/LaminarFlowMethod-1.jpg', '/images/Spheroids-Previs1.jpb', '/images/Spaghettification.1.jpg', '/images/Screenshot_20260101-084458~2.jpg', '/images/Redshifter.jpg'],
+    watermarkedImages: ['/images/bang.png', '/images/pulsar.jpg','/images/LaminarFlowMethod-1.jpg', '/images/Spheroids-Previs1.jpg', '/images/Spaghettification.1.png', '/images/Screenshot_20260101-084458~2.jpg', '/images/Redshifter.jpg'],
     imageTitles: [
       'Bang',
       'Star Trails',
