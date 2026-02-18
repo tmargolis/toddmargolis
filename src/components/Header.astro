@@ -50,25 +50,27 @@ const navItems = [
 
 <nav class="fixed top-0 w-full z-40 glass text-gray-300">
   <!-- Mobile -->
-  <div class="md:hidden w-full px-6 py-5">
-    <div class="flex justify-between items-center">
+  <div class="md:hidden w-full px-6 pt-4 pb-2">
+    <!-- Row 1: Name + Search icon -->
+    <div class="flex justify-between items-center mb-2">
       <a href="/" class="font-serif tracking-tight font-semibold text-gray hover:text-glow transition-all duration-300">
         Todd Margolis
       </a>
-      <div class="flex items-center gap-4">
-        {navItems.map((item) => {
-          const isActive = activeCategories.includes(item.label);
-          return (
+      <a href="https://toddmargolis.net/works/" aria-label="Search works" class="hover:text-white hover:text-glow transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </a>
+    </div>
+    <!-- Row 2: Nav links -->
+    <div class="flex items-center gap-4">
+      {navItems.map((item) => {
+        const isActive = activeCategories.includes(item.label);
+        return (
           <a href={item.href} class={`font-mono text-xs tracking-[0.2em] uppercase hover:text-white hover:text-glow transition-all duration-300 ${isActive ? 'font-semibold' : 'font-normal'}`}>{item.label}</a>
-          );
-        })}
-        <a href="https://toddmargolis.net/works/" aria-label="Search works" class="hover:text-white hover:text-glow transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"/>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-          </svg>
-        </a>
-      </div>
+        );
+      })}
     </div>
   </div>
 
