@@ -62,6 +62,12 @@ const navItems = [
           <a href={item.href} class={`font-mono text-xs tracking-[0.2em] uppercase hover:text-white hover:text-glow transition-all duration-300 ${isActive ? 'font-semibold' : 'font-normal'}`}>{item.label}</a>
           );
         })}
+        <a href="https://toddmargolis.net/works/" aria-label="Search works" class="hover:text-white hover:text-glow transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -97,7 +103,14 @@ const navItems = [
       })}
     </div>
 
-    <!-- Right: spacer for balance -->
-    <div class="w-[140px]" aria-hidden="true"></div>
+    <!-- Right: search icon -->
+    <div class="w-[140px] flex justify-end">
+      <a href="https://toddmargolis.net/works/" aria-label="Search works" class="hover:text-white hover:text-glow transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </a>
+    </div>
   </div>
 </nav>
