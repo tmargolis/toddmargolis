@@ -39,7 +39,7 @@ export const projects: Project[] = [
     slug: 'observables',
     title: 'Observables',
     category: ['Creative', 'Research'],
-    subCategory: ['Display & Interaction', 'Immersive Installations', 'Tangible Artifacts'],
+    subCategory: ['Display & Interaction Systems', 'Immersive Installations', 'Tangible Artifacts'],
     projectTag: ['installation', 'artifact', 'research', 'astronomy', 'data-viz', 'hands-on'],
     status: 'Work in Progress',
     year: '2023-2026',
@@ -63,6 +63,7 @@ export const projects: Project[] = [
       '/images/Screenshot_20260101-084458~2.jpg',
       '/images/Redshifter.jpg',
     ],
+    watermarkedImages: ['/images/bang.png', '/images/pulsar.jpg','/images/LaminarFlowMethod-1.jpg', '/images/Spheroids-Previs1.jpb', '/images/Spaghettification.1.jpg', '/images/Screenshot_20260101-084458~2.jpg', '/images/Redshifter.jpg'],
     imageTitles: [
       'Bang',
       'Star Trails',
