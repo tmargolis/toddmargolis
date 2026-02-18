@@ -297,7 +297,8 @@ export const projects: Project[] = [
   description: 'ATLAS in silico is a physically interactive virtual reality installation that fuses dynamic media, computer vision, and spatialized multichannel audio with pioneering science. It functions as an expressive virtual reality context for large-scale data exploration. Rather than simply displaying numbers, it translates massive scientific datasets—specifically touching on metagenomics and biological sequences—into a visceral, navigable environment. It uses computer vision to track the viewer, allowing their physical presence to drive the audiovisual representation of the data, effectively bridging the gap between abstract information and physical perception.',
   description2: 'The project was the subject of significant academic inquiry, leading to publications such as "Algorithmic Object as Natural Specimen" in Leonardo and "Sensate Abstraction" in SPIE, which detailed hybrid strategies for handling multi-dimensional data. The work has been exhibited globally at major venues including the National Academy of Sciences, SIGGRAPH, the Perot Museum of Nature and Science, 9e2 (Seattle), and the Museum of Old and New Art (MONA) in Tasmania.',
   images: ['/images/Screenshot-16.png','/images/ATLAS_PRINT_SGO_grid.jpg'],
-  related: ['varrier-siggraph','ucsd-crca']
+  related: ['varrier-siggraph','ucsd-crca','shape-grammar-objects'],
+  website: 'https://www.atlasinsilico.net/'
   },
   // Creative / Immersive Installations / Confluxus
 {
