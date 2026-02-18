@@ -42,7 +42,7 @@ export const projects: Project[] = [
     subCategory: ['Display & Interaction Systems', 'Immersive Installations', 'Tangible Artifacts'],
     projectTag: ['installation', 'artifact', 'research', 'astronomy', 'data-viz', 'hands-on'],
     status: 'Work in Progress',
-    year: '2023-2026',
+    year: '2021-2026',
     medium: 'Mixed Media Exhibition',
     heroImage: '/images/1-Whirlpool.jpg',
     quote: 'A convergence of space and time.',
