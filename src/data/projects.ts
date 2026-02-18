@@ -554,7 +554,8 @@ export const projects: Project[] = [
   description3: 'Each musical piece was paired with a distinct, real-time 4K visualization designed to reveal the invisible forces behind the drumming. These visuals were driven by a variety of data sources, including motion capture, EEG brain wave data, and computer graphics that responded dynamically to the physical impact of the performers striking the drums. By visualizing the physiological and neurological functions of the artists in real time, Margolis and Cornish provided the audience with a novel, high-resolution experience that translated the internal energy of the body and brain into a stunning visual spectacle.',
   images: ['/images/Ha-Lightning.jpg'],
   videoLink: 'https://youtu.be/TWHJbr_A6yY?t=39',
-  related: ['tele-taiko', 'resonations', 'inspiraling', 'ucsd-qualcomm']
+  related: ['tele-taiko', 'ucsd-qualcomm'],
+  website: 'https://naruwantaiko.com/'
   },
   // Creative / Performative Systems / HOMCOM
 {
