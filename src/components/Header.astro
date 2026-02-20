@@ -70,7 +70,7 @@ const navItems = [
         const hasSubs = item.subCategories?.length;
         return (
           <div class="mobile-nav-accordion border-b border-white/5 last:border-b-0" data-nav-index={i}>
-            <div class="flex items-center justify-between py-1.5 -mx-1">
+            <div class="flex items-center justify-between py-0.5 -mx-1">
               <a href={item.href} class={`hover:text-white hover:text-glow transition-all duration-300 flex-grow ${isActive ? 'font-semibold' : 'font-normal'}`}>{item.label}</a>
               {hasSubs ? (
                 <button
