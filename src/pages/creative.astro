@@ -47,8 +47,8 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
     <h1 class="font-serif text-5xl md:text-7xl mb-16 text-center">Creative</h1>
 
     {projectsBySubCategory.map(({ name, slug, projects: subProjects }) => (
-      <section id={slug} class="mb-20 scroll-mt-32">
-        <h2 class="sticky top-[4.5rem] md:top-[47px] z-30 bg-white subsection-title font-mono text-sm uppercase tracking-widest">
+      <section id={slug} class="mb-20 scroll-mt-[var(--header-height,4.5rem)] md:scroll-mt-32">
+        <h2 class="sticky top-[var(--header-height,4.5rem)] md:top-9 z-30 bg-white subsection-title font-mono text-sm uppercase tracking-widest">
           {name}
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">

@@ -42,6 +42,13 @@
   }
 }
 
+/* Mobile header height: set by Header script so sticky section titles sit below nav (including when accordion is open) */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 4.5rem;
+  }
+}
+
 /* Category sub-section titles (Creative, Research, Strategy pages) */
 .subsection-title {
   background: linear-gradient(

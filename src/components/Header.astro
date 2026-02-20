@@ -48,9 +48,9 @@ const navItems = [
 ];
 ---
 
-<nav class="fixed top-0 w-full z-40 glass text-gray-300">
+<nav id="site-header" class="fixed top-0 w-full z-40 glass text-gray-300">
   <!-- Mobile -->
-  <div class="md:hidden w-full px-6 pt-4 pb-2">
+  <div class="md:hidden w-full px-6 pt-4 pb-0">
     <!-- Row 1: Name + Search icon -->
     <div class="flex justify-between items-center mb-2">
       <a href="/" class="font-serif tracking-tight font-semibold text-gray hover:text-glow transition-all duration-300">
@@ -63,16 +63,76 @@ const navItems = [
         </svg>
       </a>
     </div>
-    <!-- Row 2: Nav links -->
-    <div class="flex items-center gap-4">
-      {navItems.map((item) => {
+    <!-- Row 2: Nav links with accordion subcategories -->
+    <div class="flex flex-col gap-0 font-mono text-xs tracking-[0.2em] uppercase">
+      {navItems.map((item, i) => {
         const isActive = activeCategories.includes(item.label);
+        const hasSubs = item.subCategories?.length;
         return (
-          <a href={item.href} class={`font-mono text-xs tracking-[0.2em] uppercase hover:text-white hover:text-glow transition-all duration-300 ${isActive ? 'font-semibold' : 'font-normal'}`}>{item.label}</a>
+          <div class="mobile-nav-accordion border-b border-white/5 last:border-b-0" data-nav-index={i}>
+            <div class="flex items-center justify-between py-1.5 -mx-1">
+              <a href={item.href} class={`hover:text-white hover:text-glow transition-all duration-300 flex-grow ${isActive ? 'font-semibold' : 'font-normal'}`}>{item.label}</a>
+              {hasSubs ? (
+                <button
+                  type="button"
+                  class="mobile-nav-toggle p-3 -m-2 hover:text-white hover:text-glow transition-all duration-300 [&[aria-expanded=true]_svg]:rotate-180 min-w-[44px] min-h-[44px] flex items-center justify-center"
+                  aria-expanded="false"
+                  aria-controls={`mobile-nav-panel-${i}`}
+                  id={`mobile-nav-trigger-${i}`}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200">
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </button>
+              ) : null}
+            </div>
+            {hasSubs ? (
+              <div id={`mobile-nav-panel-${i}`} class="mobile-nav-panel hidden flex flex-col pb-2 pl-2 text-[0.65rem] tracking-[0.15em]" role="region" aria-labelledby={`mobile-nav-trigger-${i}`}>
+                {item.subCategories!.map((name) => (
+                  <a
+                    href={`${item.href}#${subCategorySlug(name)}`}
+                    class="block py-1.5 font-normal text-gray-400 hover:text-white hover:text-glow transition-all duration-200"
+                  >
+                    {name}
+                  </a>
+                ))}
+              </div>
+            ) : null}
+          </div>
         );
       })}
     </div>
   </div>
+
+  <script>
+    function setHeaderHeight() {
+      const nav = document.getElementById('site-header');
+      if (nav && window.matchMedia('(max-width: 767px)').matches) {
+        document.documentElement.style.setProperty('--header-height', `${nav.offsetHeight}px`);
+      }
+    }
+    setHeaderHeight();
+    window.addEventListener('resize', setHeaderHeight);
+    document.querySelectorAll('.mobile-nav-toggle').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const panel = document.getElementById(btn.getAttribute('aria-controls')!);
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        const allPanels = document.querySelectorAll('.mobile-nav-panel');
+        const allToggles = document.querySelectorAll('.mobile-nav-toggle');
+        if (!isExpanded) {
+          allToggles.forEach((t) => t.setAttribute('aria-expanded', 'false'));
+          allPanels.forEach((p) => p.classList.add('hidden'));
+          btn.setAttribute('aria-expanded', 'true');
+          panel?.classList.remove('hidden');
+        } else {
+          btn.setAttribute('aria-expanded', 'false');
+          panel?.classList.add('hidden');
+        }
+        requestAnimationFrame(setHeaderHeight);
+      });
+    });
+  </script>
 
   <!-- Desktop -->
   <div class="hidden md:flex w-full justify-between items-center px-8 py-1">
