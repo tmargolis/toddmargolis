@@ -147,7 +147,7 @@ const navItems = [
           <div class="relative group">
             <a href={item.href} class={`${isActive ? 'font-semibold' : 'font-normal'} hover:text-white hover:text-glow transition-all duration-300 block py-1`}>{item.label}</a>
             <div class="absolute left-0 top-full pt-1 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              <div class="bg-[#0a0a0a] border border-white/10 rounded shadow-2xl py-1 min-w-[200px]">
+              <div class="bg-[#0a0a0a] border border-white/10 rounded shadow-2xl py-1 min-w-[325px]">
                 {item.subCategories.map((name) => (
                   <a
                     href={`${item.href}#${subCategorySlug(name)}`}
