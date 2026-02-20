@@ -52,7 +52,7 @@
     transparent 100%
   );
   color: oklch(0.673 0.182 276.935);
-  padding: 0.1rem 2rem;
+  padding: 0.2rem 0.2rem;
   margin-bottom: 2rem;
   border: none;
   border-radius: 0.25rem;
