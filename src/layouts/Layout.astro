@@ -52,9 +52,9 @@ const documentTitle = fullTitle ?? `Todd Margolis | ${title}`;
 
     <Header activeCategories={activeCategories} />
     
-    <main class="relative z-10 pt-0 min-h-0 flex-1 flex flex-col">
-		  <slot />
-    </main>
+<main class="relative z-10 flex-1 flex flex-col pt-[calc(var(--header-height)+1.5rem)] md:pt-0">
+  <slot />
+</main>
 
     {!hideFooter && <Footer />}
 	</body>
