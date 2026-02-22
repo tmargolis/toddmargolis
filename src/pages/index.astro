@@ -27,20 +27,41 @@ const strategySubCategories = [
 
 <Layout title="Todd Margolis" fullTitle="Home | Todd Margolis" description="Materializing the Invisible">
 
-    <!-- Full-bleed background video (best practice: autoplay, muted, loop, playsinline, poster) -->
+    <!-- Full-bleed background video (best practice: autoplay, muted, loop, playsinline, poster, preload) -->
     <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
       <video
+        id="homepage-bg-video"
         class="absolute inset-0 w-full h-full object-cover"
         autoplay
         muted
         loop
         playsinline
+        preload="auto"
         poster="/video/aurora-poster.jpg"
       >
-        <source src="/video/aurora_bg.webm" type="video/webm" />
         <source src="/video/aurora_bg.mp4" type="video/mp4" />
+        <source src="/video/aurora_bg.webm" type="video/webm" />
       </video>
     </div>
+    <script>
+      (function() {
+        var video = document.getElementById('homepage-bg-video');
+        if (!video) return;
+        function tryPlay() {
+          video.muted = true;
+          video.play().catch(function() {});
+        }
+        tryPlay();
+        if (document.visibilityState === 'hidden') {
+          document.addEventListener('visibilitychange', function onVisible() {
+            if (document.visibilityState === 'visible') {
+              tryPlay();
+              document.removeEventListener('visibilitychange', onVisible);
+            }
+          });
+        }
+      })();
+    </script>
 
     <div class="relative z-10">
     <section class="mt-15 md:mt-10">
