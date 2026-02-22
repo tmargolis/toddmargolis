@@ -400,7 +400,7 @@ export const projects: Project[] = [
   videoLink: 'https://vimeo.com/25600185',
   description: 'Special Treatment is an immersive and interactive Virtual Reality installation examining the strength and persistence of memory. An ominous journey by train car deposits viewers in a sparsely populated camp pieced together from plans, photographs and other artifacts from Auschwitz II/Birkenau, Poland. As visitors explore the camp and its architectural structures, conversations and ephemera of the past fade in and out of perception - at times almost tangible, at other times mere allusions. These structures and stories are not intended to be strictly historical or documentary. Each element is the foundation for the folding together of past and present; where the sounds and images of old memories blend with memories created by each new visitor.',
   description2: 'Special Treatment advances the audience from passive viewing to active experience by smoothly moving from present to past and back again. Special Treatment creates a landscape where glimpses and fragments of Birkenau establish a narrative framework where the events of the past continue to shape and be shaped by contemporary interpretations of those events. The full history and lesson of a place such as the death camp at Birkenau is seen not only in the records of those who survived or passed on their memories to us in the present, but in how those events are remembered and shaped by the people of today. The stories of these people grow with each new experience of Special Treatment, and the solidity of that space and the substance of those events becomes more concrete with each new visitor. The immersive experience allows each participant to inhabit the scene of these events, and as they leave the evidence of their own actions and memories, Special Treatment is continually transformed into a new potential memory.',
-  description3: 'Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO.',
+  description3: 'Special Treatment is a project by Applied Interactives, an artist-based non-profit organization that was co-founded by Todd Margolis, Geoffrey A. Baum, Keith Miller and Tim Portlock in 2001 . Its primary mission was to propagate virtual reality technologies and art into the exhibition spaces of galleries and contemporary art museums as well as into the hands of individual artists. Its secondary mission was to continue to develop an art lab (a physical space in Chicago) where artist members and visitors can work collaboratively on large scale immersive artworks that make use of a range of interactive technologies. Special Treatment was created in collaboration with (art)n Laboratory and with support from the Electronic Visualization Laboratory (EVL) at UIC, Panstwowe Muzeum Auschwitz-Birkenau w Oswiecimiu and VRCO. It was exhibited at the Museum of Contemporary Art Chicago and Art Basel Miami Beach.',
   images: ['/images/STP_RealMemory1.med.jpg'],
   related: ['confluxus', 'lockup', 'artn-laboratory', 'applied-interactives', 'uic-evl']
   },
@@ -881,7 +881,7 @@ export const projects: Project[] = [
   year: '2017',
   medium: 'Web Application',
   description: 'Before the era of Large Language Models, I co-developed a pioneering chatbot for Qlik Sense designed to democratize data access through natural language interaction. By architecting a seamless integration with the Qlik Sense Engine API, the system allowed users to query complex datasets and receive instant, visualized answers through a conversational interface.',
-  description2: 'The project\'s strategic value was validated when the startup was acquired by Qlik, leading to the full integration of the technology into the core Qlik Sense platform. This work served as an early blueprint for "Inquiry-based" analytics, moving beyond traditional dashboards to create a symbiosis between human language and computational logic.',
+  description2: 'A core focus was bridging Natural Language and analytics. The work to validate and bring in acquisitions kept Qlik ahead of the curve and laid the perfect groundwork for the conversational AI and LLM era we\'re in now. The project\'s strategic value was validated when CrunchData and Kyndi were acquired by Qlik, leading to full integration into the core Qlik platform. This served as an early blueprint for inquiry-based analytics, moving beyond traditional dashboards to create a symbiosis between human language and computational logic.',
   projectTag: ['prototype', 'AI-ML', 'product', 'cross-functional', 'strategy', 'data-viz'],
   images: ['/images/InsightChatbotLarge.jpeg'],
   related: ['qlik', 'qlik-genai', 'qlik-reporting-storytelling']
@@ -1069,7 +1069,7 @@ export const projects: Project[] = [
   // Research / Publications & Theory / Qlik AI
 {
   slug: 'qlik-genai',
-  title: 'Qlik Agentic AI',
+  title: 'Agentic AI @ Qlik',
   category: ['Research'],
   subCategory: ['Publications & Theory'],
   year: '2023-2026',
@@ -1387,7 +1387,7 @@ export const projects: Project[] = [
   medium: 'Founding Member / President',
   collaborators: ['Keith Miller', 'Geoffrey A. Baum', 'Sabrina Raaf', 'Tim Portlock', 'Ben Chang'],
   description: 'A 501(c)3 non-profit dedicated to propagating VR technologies into galleries and contemporary art museums. Led the creation of a VR installation using the Auschwitz-Birkenau concentration camp as a setting for exploring persistence and memory, based on a PHSCologram housed in the Museum of Jewish Heritage.',
-  description2: 'Based at the art(n) gallery in Chicago. Exhibited at the Museum of Contemporary Art Chicago and the Block Museum.',
+  description2: 'Based at the art(n) gallery in Chicago. Exhibited at the Museum of Contemporary Art Chicago, the Block Museum and Art Basel Miami Beach.',
   heroImage: '/images/AppliedInteractives_PortraitMain.jpg',
   projectTag: ['leadership', 'strategy', 'spatial', 'cross-functional'],
   images: ['/images/VRPortalVideo.jpg','/images/VRPrtl_MCA.jpg'],
