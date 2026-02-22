@@ -85,12 +85,12 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
     <h1 class="font-serif text-5xl md:text-7xl mb-16 text-center">Research</h1>
 
     {projectsBySubCategory.map(({ name, slug, projects: subProjects }) => (
-      <section id={slug} class="mb-20 scroll-mt-[var(--header-height,4.5rem)] md:scroll-mt-32">
+      <section id={slug} class="mb-15 -pt-15 scroll-mt-[var(--header-height,4.5rem)] md:scroll-mt-32">
         <h2 class="sticky top-[var(--header-height,4.5rem)] md:top-9 z-30 bg-black/80 backdrop-blur-md subsection-title font-mono text-sm uppercase tracking-widest">
           {name}
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 -mt-7">
           {subProjects.map((project, index) => (
             <article>
               <a href={`/works/${project.slug}/`} class="group block relative">
