@@ -27,10 +27,26 @@ const strategySubCategories = [
 
 <Layout title="Todd Margolis" fullTitle="Home | Todd Margolis" description="Materializing the Invisible">
 
+    <!-- Full-bleed background video (best practice: autoplay, muted, loop, playsinline, poster) -->
+    <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="/video/aurora-poster.jpg"
+      >
+        <source src="/video/aurora_bg.webm" type="video/webm" />
+        <source src="/video/aurora_bg.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="relative z-10">
     <section class="mt-15 md:mt-10">
-        <header class="text-center max-w-4xl mx-auto pt-12 md:pt-26">
+        <header class="text-center max-w-4xl mx-auto pt-8 md:pt-26">
             <h1 class="font-serif text-5xl md:text-7xl text-white">Todd Margolis</h1>
-            <p class="font-mono text-xs text-gray-400 mt-4"><i>Materializing the Invisible</i></p>
+            <p class="font-mono text-xs text-gray-300 mt-4"><i>Materializing the Invisible</i></p>
             <p class="text-lg text-gray-300 mt-10">RESEARCHER / STRATEGIST / ARTIST  </p>
         </header>
     </section>
@@ -38,7 +54,7 @@ const strategySubCategories = [
     <section class="mt-15">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
             <!-- Pillar 1: Research -->
-            <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group m-4">
+            <div class="bg-black/80 backdrop-blur-md border border-white/10 p-8 rounded-lg flex flex-col hover:border-white/20 transition-colors group m-4">
                 <a href="/research/" class="block">
                     <h1 class="font-mono text-lg uppercase text-white">Research</h1>
                     <p class="text-gray-400 mt-4 flex-grow">Examining how communication is meditated and augmented with technology. Designing collaborative environments, autostereoscopic systems and spatial interfaces where human intuition and computational logic operate in symbiosis. Enabling the exploration and critique of emerging media.</p>
@@ -53,7 +69,7 @@ const strategySubCategories = [
             </div>
 
             <!-- Pillar 2: Strategy -->
-            <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group m-4">
+            <div class="bg-black/80 backdrop-blur-md border border-white/10 p-8 rounded-lg flex flex-col hover:border-white/20 transition-colors group m-4">
                 <a href="/strategy/" class="block">
                     <h1 class="font-mono text-lg uppercase text-white">Strategy</h1>
                     <p class="text-gray-400 mt-4 flex-grow">Architecting the future of R&D. Bridging the gap between "blue sky" academic invention and market-ready reality by designing the physical labs, cross-functional teams, and product roadmaps that make innovation scalable.</p>
@@ -68,7 +84,7 @@ const strategySubCategories = [
             </div>
 
             <!-- Pillar 3: Creative -->
-            <div class="border border-gray-800 p-8 rounded-lg flex flex-col hover:border-gray-600 transition-colors group m-4">
+            <div class="bg-black/80 backdrop-blur-md border border-white/10 p-8 rounded-lg flex flex-col hover:border-white/20 transition-colors group m-4">
                 <a href="/creative/" class="block">
                     <h1 class="font-mono text-lg uppercase text-white">Creative</h1>
                     <p class="text-gray-400 mt-4 flex-grow">An artistic practice centered on the manifestation of data through physical form. By synthesizing traditional sculpture with emergent technologies, I create interactive and immersive environments and artifacts that enable participants to examine the space between the digital record and the sensory world.</p>
@@ -84,5 +100,6 @@ const strategySubCategories = [
 
         </div>
     </section>
+    </div>
 
 </Layout>
