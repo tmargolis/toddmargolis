@@ -44,7 +44,7 @@ export const projects: Project[] = [
     status: 'Work in Progress',
     year: '2021-2026',
     medium: 'Mixed Media Exhibition',
-    heroImage: '/images/public/images/Screenshot_20260221-210516~2.png',
+    heroImage: '/images/public/Screenshot_20260221-210516~2.png',
     quote: 'A convergence of space and time.',
     description: 'Observables is a body of work that interrogates the "time-lag" of the universe — materializing the moment where objective data dissolves into a personal encounter with the cosmos. Every photon that reaches the human eye is a fossil: a fragment of light that departed its source moments, centuries, or billions of years ago. This foundational truth of physics is the conceptual engine driving the collection. Rather than presenting the cosmos as a backdrop for wonder, Observables treats light-travel time as an active material — one that warps perception, collapses history, and renders every act of looking an act of remembering.',
     description2: 'Spanning kinetic installation, mixed reality, archival photography, tactile sculpture, stereoscopic imaging, and generative audio, the twelve works in the collection each approach this latency from a different angle. Some make it visceral — a video mirror that shows you as you were years ago. Others make it historical — astrophotographs of galaxies rendered in the aesthetic of the human civilizations that existed when that light first departed. Taken together, the works form a sustained inquiry into presence, perception, and the radical displacement of "now" that underlies all astronomical observation.',
