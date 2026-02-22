@@ -44,6 +44,43 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
 ---
 
 <Layout title="Research" activeCategories={['Research']}>
+  <!-- Full-bleed background video -->
+  <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+    <video
+      id="research-bg-video"
+      class="absolute inset-0 w-full h-full object-cover object-right md:object-center"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="/video/october-poster.jpg"
+    >
+      <source src="/video/october_aurora.mp4" type="video/mp4" />
+      <source src="/video/october_aurora.webm" type="video/webm" />
+    </video>
+  </div>
+  <script>
+    (function() {
+      var video = document.getElementById('research-bg-video');
+      if (!video) return;
+      function tryPlay() {
+        video.muted = true;
+        video.play().catch(function() {});
+      }
+      tryPlay();
+      if (document.visibilityState === 'hidden') {
+        document.addEventListener('visibilitychange', function onVisible() {
+          if (document.visibilityState === 'visible') {
+            tryPlay();
+            document.removeEventListener('visibilitychange', onVisible);
+          }
+        });
+      }
+    })();
+  </script>
+
+  <div class="relative z-10">
   <section class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
     <h1 class="font-serif text-5xl md:text-7xl mb-16 text-center">Research</h1>
 
@@ -66,7 +103,7 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
                     loading="lazy"
                   />
                 </div>
-                <div class="flex justify-between items-start border-b border-white/10 pb-4">
+                <div class="flex justify-between items-start bg-black/80 backdrop-blur-md border border-white/10 rounded-b px-4 py-3 -mt-px">
                   <div>
                     <h4 class="font-serif text-2xl text-white group-hover:text-glow transition-all">{project.title}</h4>
                     <p class="font-mono text-xs text-gray-500 mt-1 uppercase">{project.year} | {project.medium}</p>
@@ -87,4 +124,5 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
       </a>
     </div>
   </section>
+  </div>
 </Layout>
