@@ -3,9 +3,10 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Inquire">
-  <section class="pt-32 pb-24 flex flex-col justify-center items-center px-6 md:px-12 text-center">
+  <div class="relative z-10">
+  <section class="pt-0 pb-24 flex flex-col justify-start items-center px-6 md:px-12 text-center">
       <h1 class="font-serif text-5xl md:text-7xl mb-6">Connect</h1>
-      <p class="font-mono text-sm text-gray-400 mb-12 max-w-lg">
+      <p class="font-mono text-sm text-gray-400 mb-6 max-w-lg">
           For all professional and project inquiries, please contact me directly.
       </p>
 
@@ -16,9 +17,22 @@ import Layout from '../layouts/Layout.astro';
           </div>
 
           <div>
-               <span class="block text-xs text-gray-600 mb-2">LOCATION</span>
+               <span class="block text-xs text-gray-600 mb-1">LOCATION</span>
                <p class="text-white">Chicago, IL</p>
           </div>
       </div>
   </section>
+  </div>
+
+    <!-- Black background (no gradient) -->
+  <div class="fixed inset-0 z-0 bg-black" aria-hidden="true"></div>
+  <!-- Eclipse image positioned lower so it doesn't overlap Connect -->
+  <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+    <img
+      src="/images/eclipse.jpg"
+      alt=""
+      class="absolute inset-0 w-full h-full object-contain object-[center_80%]"
+    />
+  </div>
+
 </Layout>

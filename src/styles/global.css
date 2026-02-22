@@ -117,8 +117,15 @@ body.page-strategy .noise-overlay,
 body.page-research .noise-overlay,
 body.page-creative .noise-overlay,
 body.page-works .noise-overlay,
-body.page-bio .noise-overlay {
+body.page-bio .noise-overlay,
+body.page-contact .noise-overlay {
   display: none;
+}
+
+/* Contact page: solid black background (no gradient) */
+body.page-contact {
+  background: #000;
+  background-image: none;
 }
 
 /* Creative page: bg video starts right-aligned; JS scroll shifts to left */
