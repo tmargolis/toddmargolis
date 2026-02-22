@@ -47,7 +47,7 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
   <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
     <video
       id="creative-bg-video"
-      class="absolute inset-0 w-full h-full object-cover object-right md:object-center"
+      class="absolute inset-0 w-full h-full object-cover creative-bg-video-align"
       autoplay
       muted
       loop
@@ -76,6 +76,21 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
           }
         });
       }
+
+      // Scroll-linked alignment: right at top → left at bottom
+      function setVideoAlign() {
+        var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollHeight <= 0) {
+          video.style.objectPosition = '100% 50%';
+          return;
+        }
+        var progress = Math.min(1, Math.max(0, window.scrollY / scrollHeight));
+        var x = 100 - progress * 100;
+        video.style.objectPosition = x + '% 50%';
+      }
+      setVideoAlign();
+      window.addEventListener('scroll', setVideoAlign, { passive: true });
+      window.addEventListener('resize', setVideoAlign);
     })();
   </script>
 
@@ -101,7 +116,7 @@ function getDisplayHeroImage(project: (typeof projects)[0]) {
                     loading="lazy"
                   />
                 </div>
-                <div class="flex justify-between items-start bg-black/80 backdrop-blur-md border border-white/10 rounded-b px-4 py-3 -mt-px">
+                <div class="flex justify-between items-start bg-black/40 backdrop-blur-md border border-white/10 rounded-b px-4 py-3 -mt-px">
                   <div>
                     <h4 class="font-serif text-2xl text-white group-hover:text-glow transition-all">{project.title}</h4>
                     <p class="font-mono text-xs text-gray-500 mt-1 uppercase">{project.year} | {project.medium}</p>
