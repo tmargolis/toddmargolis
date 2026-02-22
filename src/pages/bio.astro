@@ -3,10 +3,29 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="About">
+  <!-- Static full-bleed background image (sharp) -->
+  <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+    <img
+      src="/images/ToddCityOfRocks.jpg"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover object-center"
+    />
+  </div>
+  <!-- Blur only behind the card: clip-path updated by script to match card position -->
+  <div id="bio-blur-layer" class="fixed inset-0 z-[1] overflow-hidden pointer-events-none" aria-hidden="true" style="clip-path: inset(0 100% 100% 0 round 8px);">
+    <img
+      src="/images/ToddCityOfRocks.jpg"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover object-center blur scale-105"
+    />
+  </div>
+
+  <div class="relative z-10">
   <section class="min-h-screen pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
       
-      <!-- Text -->
-      <div>
+      <!-- Text card (blur shows only behind this area) -->
+      <div id="bio-card" class="rounded-lg border border-white/20 shadow-2xl shadow-black/30 bg-black/40">
+          <div class="px-6 py-8 md:px-10 md:py-10">
           <h1 class="font-serif text-5xl md:text-6xl mb-4 italic">About Todd</h1>
           <p class="font-mono text-sm text-gray-400 mb-8 font-semibold">Combining Art, Engineering, and Strategy</p>
           <div class="font-mono text-sm text-gray-300 space-y-6 leading-relaxed text-justify">
@@ -16,26 +35,26 @@ import Layout from '../layouts/Layout.astro';
 
               <h3 class="font-serif text-xl text-white mt-10 mb-4">The Engineering of Experience</h3>
               <p>
-                  Todd's trajectory began at the bleeding edge of visualization research. As a grad student and then Visiting Research Programmer at the University of Illinois at Chicago's <strong class="text-white">Electronic Visualization Lab (EVL)</strong>, he co-invented the <strong class="text-white">Varrier™ auto-stereoscopic display</strong>—a pioneering barrier-strip system that enabled high-resolution Virtual Reality without the need for glasses. This early work in modeling sub-pixel rendering algorithms established the foundation of his practice: removing the friction between the user and the data.
+                  Todd's trajectory began at the bleeding edge of visualization research. As a grad student and then Visiting Research Programmer at the University of Illinois at Chicago's <strong><a href="/works/uic-evl/" class="text-white underline decoration-white/50 hover:decoration-white">Electronic Visualization Lab (EVL)</a></strong>, he co-invented the <strong><a href="/works/varrier-siggraph/" class="text-white underline decoration-white/50 hover:decoration-white">Varrier™</a></strong> auto-stereoscopic display—a pioneering barrier-strip system that enabled high-resolution Virtual Reality without the need for glasses. This early work in modeling sub-pixel rendering algorithms established the foundation of his practice: removing the friction between the user and the data.
               </p>
               <p>
-                  He expanded this expertise as the <strong class="text-white">Technical Director</strong> of the <strong class="text-white">Center for Research in Computing and the Arts (CRCA)</strong> at UCSD. There, he spearheaded the design and architecture of a <strong class="text-white">10,000 sq. ft. research facility</strong>, managing labs dedicated to spatialized audio, motion capture, and immersive environments. He served as a bridge between diverse disciplines, leading interdisciplinary teams to build "discovery platforms" for massive datasets ranging from metagenomics to cultural analytics.
+                  He expanded this expertise as the Technical Director of the <strong><a href ="/works/ucsd-crca/" class="text-white underline decoration-white/50 hover:decoration-white">Center for Research in Computing and the Arts (CRCA)</a></strong> at UCSD. There, he spearheaded the design and architecture of a 10,000 sq. ft. research facility, managing labs dedicated to spatialized audio, motion capture, and <strong><a href ="/works/vroom/" class="text-white underline decoration-white/50 hover:decoration-white">immersive environments</a></strong>. He served as a bridge between diverse disciplines, leading interdisciplinary teams to build "discovery platforms" for massive datasets ranging from <strong><a href ="/works/atlas-in-silico/" class="text-white underline decoration-white/50 hover:decoration-white">metagenomics</a></strong> to <strong><a href ="/works/cultural-analytics/" class="text-white underline decoration-white/50 hover:decoration-white">cultural analytics</a></strong>.
               </p>
 
               <h3 class="font-serif text-xl text-white mt-10 mb-4">From Telepresence to Product Strategy</h3>
               <p>
-                  What distinguishes Todd's approach to product management is his background in high-stakes, real-time media systems. Projects like <strong class="text-white">CineGrid 3D 4K</strong>—which successfully executed the tri-continental premiere of 4K feature-length media via optical networks <strong class="text-white">(in 2010)</strong> and his work in <strong class="text-white">Telepresence Performance</strong> (<em>TeleMotions</em>, <em>ResoNations</em>) required more than just creative vision; they demanded rigorous logistical planning, latency management, and fault-tolerant network architecture.
+                  What distinguishes Todd's approach to product management is his background in high-stakes, real-time media systems. Projects like CineGrid—where he successfully executed the world's first tri-continental premiere of 4K feature-length media via optical networks <strong><a href ="/works/file-4k/" class="text-white underline decoration-white/50 hover:decoration-white">(in 2009)</a></strong> and his work in Telepresence Performance (<strong><a href ="/works/resonations/" class="text-white underline decoration-white/50 hover:decoration-white">ResoNations</a></strong>) required more than just creative vision; they demanded rigorous logistical planning, latency management, and fault-tolerant network architecture.
               </p>
               <p>
-                  This experience in <strong class="text-white">Distributed Cinema</strong> and networked collaboration directly informs his data-driven approach to product leadership. He views enterprise software not merely as code, but as a collaborative environment where human intuition and algorithmic logic must coexist.
+                  This experience in Distributed Cinema and networked collaboration directly informs his data-driven approach to product leadership. He views the future of enterprise software not merely as code, but as a collaborative environment where human intuition and agentic logic must coexist.
               </p>
 
               <h3 class="font-serif text-xl text-white mt-10 mb-4">Applied Research & Innovation Leadership</h3>
               <p>
-                  As <strong class="text-white">Sr. Director of Applied Research & Emerging Technologies at Qlik</strong>, Todd accelerated the long-term roadmap for enterprise intelligence. He led a team of machine learning engineers to define the strategy for <strong class="text-white">Generative AI</strong>, moving beyond the hype cycle to develop capabilities that are ethical, scalable, and genuinely useful.
+                  As Sr. Director of Applied Research & Emerging Technologies at <strong><a href ="/works/qlik/" class="text-white underline decoration-white/50 hover:decoration-white">Qlik</a></strong>, Todd accelerated the long-term roadmap for enterprise intelligence. He led a team of machine learning engineers to define the strategy for <strong><a href ="/works/qlik-genai/" class="text-white underline decoration-white/50 hover:decoration-white">Generative AI</a></strong>, moving beyond the hype cycle to develop capabilities that are ethical, scalable, and genuinely useful.
               </p>
               <p>
-                  His current artistic focus, <a href="http://observables.art">Observables</a>, continues this inquiry. Through projects like <em>Horizons</em> (a stereoscopic intervention into space data) and <em>Now & Then</em> (temporaral astrophotography compositions), he continues to materialize the invisible, proving that the tools of rigorous research and the instruments of artistic expression are one and the same.
+                  His current artistic focus, <strong><a href ="https://observables.art" class="text-white underline decoration-white/50 hover:decoration-white">Observables</a></strong>, continues this inquiry. Through projects like <strong><a href ="/works/3d-horizons/" class="text-white underline decoration-white/50 hover:decoration-white">Horizons</a></strong> (a stereoscopic intervention into space data) and <strong><a href ="/works/now-and-then/" class="text-white underline decoration-white/50 hover:decoration-white">Now & Then</a></strong> (temporaral astrophotography compositions), he continues to materialize the invisible, proving that the tools of rigorous research and the instruments of artistic expression are one and the same.
               </p>
           </div>
       </div>
@@ -51,4 +70,19 @@ import Layout from '../layouts/Layout.astro';
           </div>
       </div>
   </section>
+  </div>
+
+  <script>
+    function updateBioBlurMask() {
+      const card = document.getElementById('bio-card');
+      const blurLayer = document.getElementById('bio-blur-layer');
+      if (!card || !blurLayer) return;
+      const r = card.getBoundingClientRect();
+      const radius = 8;
+      blurLayer.style.clipPath = `inset(${r.top}px ${window.innerWidth - r.right}px ${window.innerHeight - r.bottom}px ${r.left}px round ${radius}px)`;
+    }
+    document.addEventListener('DOMContentLoaded', updateBioBlurMask);
+    window.addEventListener('scroll', updateBioBlurMask, { passive: true });
+    window.addEventListener('resize', updateBioBlurMask);
+  </script>
 </Layout>

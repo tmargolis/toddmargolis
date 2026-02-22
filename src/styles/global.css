@@ -116,7 +116,8 @@ a {
 body.page-strategy .noise-overlay,
 body.page-research .noise-overlay,
 body.page-creative .noise-overlay,
-body.page-works .noise-overlay {
+body.page-works .noise-overlay,
+body.page-bio .noise-overlay {
   display: none;
 }
 
