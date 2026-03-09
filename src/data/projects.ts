@@ -216,13 +216,16 @@ export const projects: Project[] = [
     description2: 'The first component uses astrophotography to capture the "history of travel" of photons. By incorporating when a star\'s light began its journey across the void, AI is used to generate contextual scenes of the specific historical era on Earth when that light departed. The astronomical subjects are inserted into these reconstructed landscapes using textures like fossilized rock or flaking parchment (e.g., the Whirlpool galaxy shown as it looked 23 million years ago combined with early ape ancestors).\n\nThe second component translates this abstract astronomical data into a concrete, interactive, and lived experience using video mirrors. These mirrors introduce a precise delay into the viewer\'s reflection—such as the "Saturn" mirror, which introduces a delay of nearly an hour and a half. This forces a visceral encounter with cosmic latency, dismantling the illusion of a shared, instantaneous present. The self in the mirror is perpetually out of reach, rendering the viewer a phantom of their own recent history.',
     description3: 'Together, these components transform the museum space into an inward-looking observatory. The static artifacts anchor the viewer in the deep time of the cosmos through the lens of human heritage, while the video mirrors make the physical laws of the universe an immediate, deeply personal, and highly interactive encounter.',
     images: [
-    '/images/1-Whirlpool.jpg',
-    '/images/Andromeda.jpg',
-    '/images/Eagle v2.jpg',
-    '/images/Orion.jpg',
-    '/images/Horsehead and flame nebulas.png',
-    '/images/California nebula.jpg',
-    '/images/Veil.jpg'
+    '/images/whirlpoo-ape-comp.1 Large.jpeg',
+    '/images/Andromeda-comp.2 Large.jpeg',
+    '/images/Eagle-comp2 Large.jpeg',
+    '/images/Orion-mayan-comp.2 Large.jpeg',
+    '/images/Horsehead-combo.3 Large.jpeg',
+    '/images/california-islam-comp1 Large.jpeg',
+    '/images/Veil-bhuda-comp.1 Large.jpeg',
+    '/images/Saturn-video-still2.png',
+    '/images/Sun-video-still.png',
+    '/images/Moon-video-still.png'
     ],
     imageTitles: [
     'Whirlpool',
@@ -240,10 +243,14 @@ export const projects: Project[] = [
     'Visualized on weathered, flaking parchment, this artwork captures the nebula as it looked 1,344 years ago during the height of the classic peak of Maya civilization.',
     'Created with the aesthetic of a Migration Period tapestry, this silhouette shows the nebula as it existed 1,375 years ago while Germanic tribes reshaped Europe and the Gupta Empire thrived in India.',
     'Styled as a medieval illuminated manuscript, this image captures the nebula as it was 1,000 years ago, a moment when the Golden Age of Islam flourished.',
-    'Presented as a weathered Roman fresco, this work depicts the nebula as it appeared 2,400 years ago during the rise of the Roman Republic and the life of Siddhartha Gautama in India.'
+    'Presented as a weathered Roman fresco, this work depicts the nebula as it appeared 2,400 years ago during the rise of the Roman Republic and the life of Siddhartha Gautama in India.',
+    'A video mirror with a 79-minute delay corresponding to the average light travel time from Saturn, rendering your reflection so temporally removed that it feels like a phantom of your own recent history.',
+    'A video mirror that introduces an 8-minute and 20-second delay to your reflection, translating the immense scale of our solar system and the travel time of sunlight into a tangible, personal experience.',
+    'A video mirror reflecting the viewer with a 1.3-second delay, creating a subtle temporal disjunction that matches the exact time it takes light to travel from the Moon to Earth.'
     ],
     watermarkedImages: ['/images/Andromeda.jpg', '/images/Eagle v2.jpg', '/images/Orion.jpg', '/images/Horsehead and flame nebulas.png', '/images/California nebula.jpg', '/images/Veil.jpg'],
     related: ['star-trails', 'sky-watcher'],
+    videoLink: 'https://youtu.be/gXxNTaNgbDY',
     website: 'https://observables.art'
     },
     // Creative / Tangible Artifacts / Neighbors
