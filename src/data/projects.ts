@@ -197,58 +197,9 @@ export const projects: Project[] = [
   website: 'https://observables.art'
 },
   // Creative / Tangible Artifacts / Now & Then
-{
-  slug: 'now-and-then',
-  title: 'Now & Then',
-  category: ['Creative'],
-  subCategory: ['Tangible Artifacts'],
-  projectTag: ['artifact', 'AI-ML', 'hands-on', 'astronomy'],
-  status: 'Work in Progress',
-  year: '2021-2026',
-  medium: 'Archival Prints',
-  dimensions: '20 x 30 inches each',
-  price: '$1,000.00 each',
-  note: 'n/a',
-  isSeries: true,
-  heroImage: '/images/1-Whirlpool.jpg',
-  quote: 'Folding time onto itself.',
-  description: 'In the Now & Then series, I explore the profound reality that astronomy is, at its core, the study of the past. Every photon captured by my lens carries a "history of travel," revealing not where a star is today, but where it was when its light began its journey across the void. To bridge the gap between human history and cosmic time, I use AI to generate contextual scenes of the specific historical era on Earth when that light first departed.',
-  description2: 'By inserting the astronomical subject into these reconstructed landscapes and applying textures like fossilized rock, flaking parchment, or ancient stone etchings, I aim to materialize the "latency" of the universe, making the deep time of the cosmos tangible through the lens of human heritage.',
-  images: [
-  '/images/1-Whirlpool.jpg',
-  '/images/Andromeda.jpg',
-  '/images/Eagle v2.jpg',
-  '/images/Orion.jpg',
-  '/images/Horsehead and flame nebulas.png',
-  '/images/California nebula.jpg',
-  '/images/Veil.jpg'
-  ],
-  imageTitles: [
-  'Whirlpool',
-  'Andromeda',
-  'Eagle',
-  'Orion',
-  'Horsehead',
-  'California',
-  'Veil Nebula'
-  ],
-  imageDescriptions: [
-  'Fossilised into the appearance of ancient rock, this image captures the galaxy as it looked 23 million years ago when the continents were only just settling into their modern positions.',
-  'Rendered as a primitive stone etching, this piece portrays our neighbor as it was 2.5 million years ago, a time when Homo habilis first began fashioning primitive tools in East Africa.',
-  'Presented as a Neolithic stone carving, this work depicts the nebula as it appeared 7,000 years ago while early humans were domesticating cattle in a green Sahara and building the first proto-cities.',
-  'Visualized on weathered, flaking parchment, this artwork captures the nebula as it looked 1,344 years ago during the height of the classic peak of Maya civilization.',
-  'Created with the aesthetic of a Migration Period tapestry, this silhouette shows the nebula as it existed 1,375 years ago while Germanic tribes reshaped Europe and the Gupta Empire thrived in India.',
-  'Styled as a medieval illuminated manuscript, this image captures the nebula as it was 1,000 years ago, a moment when the Golden Age of Islam flourished.',
-  'Presented as a weathered Roman fresco, this work depicts the nebula as it appeared 2,400 years ago during the rise of the Roman Republic and the life of Siddhartha Gautama in India.'
-  ],
-  watermarkedImages: ['/images/Andromeda.jpg', '/images/Eagle v2.jpg', '/images/Orion.jpg', '/images/Horsehead and flame nebulas.png', '/images/California nebula.jpg', '/images/Veil.jpg'],
-  related: ['star-trails', 'delayed-vision', 'sky-watcher'],
-  website: 'https://observables.art'
-  },
-  // Creative / Tangible Artifacts / Now & Then
   {
     slug: 'now-and-then-ars',
-    title: 'Now & Then (Ars Electronica edition)',
+    title: 'Now & Then',
     category: ['Creative'],
     subCategory: ['Tangible Artifacts'],
     projectTag: ['artifact', 'AI-ML', 'hands-on', 'astronomy'],
@@ -260,7 +211,7 @@ export const projects: Project[] = [
     note: 'n/a',
     isSeries: true,
     heroImage: '/images/1-Whirlpool.jpg',
-    quote: 'Folding time onto itself.',
+    quote: '(Ars Electronica edition)',
     description: '"Now & Then" is a multi-modal interactive installation that materializes the "latency" of the universe, bridging the gap between human history and cosmic deep time. Because light travels at a finite speed, all observation is an act of looking into the past. This project explores this physical law by combining two distinct but conceptually unified components: a series of AI-augmented archival prints and interactive video mirrors.',
     description2: 'The first component uses astrophotography to capture the "history of travel" of photons. By incorporating when a star\'s light began its journey across the void, AI is used to generate contextual scenes of the specific historical era on Earth when that light departed. The astronomical subjects are inserted into these reconstructed landscapes using textures like fossilized rock or flaking parchment (e.g., the Whirlpool galaxy shown as it looked 23 million years ago combined with early ape ancestors).\n\nThe second component translates this abstract astronomical data into a concrete, interactive, and lived experience using video mirrors. These mirrors introduce a precise delay into the viewer\'s reflection—such as the "Saturn" mirror, which introduces a delay of nearly an hour and a half. This forces a visceral encounter with cosmic latency, dismantling the illusion of a shared, instantaneous present. The self in the mirror is perpetually out of reach, rendering the viewer a phantom of their own recent history.',
     description3: 'Together, these components transform the museum space into an inward-looking observatory. The static artifacts anchor the viewer in the deep time of the cosmos through the lens of human heritage, while the video mirrors make the physical laws of the universe an immediate, deeply personal, and highly interactive encounter.',
@@ -292,7 +243,7 @@ export const projects: Project[] = [
     'Presented as a weathered Roman fresco, this work depicts the nebula as it appeared 2,400 years ago during the rise of the Roman Republic and the life of Siddhartha Gautama in India.'
     ],
     watermarkedImages: ['/images/Andromeda.jpg', '/images/Eagle v2.jpg', '/images/Orion.jpg', '/images/Horsehead and flame nebulas.png', '/images/California nebula.jpg', '/images/Veil.jpg'],
-    related: ['star-trails', 'delayed-vision', 'sky-watcher'],
+    related: ['star-trails', 'sky-watcher'],
     website: 'https://observables.art'
     },
     // Creative / Tangible Artifacts / Neighbors
