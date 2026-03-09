@@ -203,7 +203,6 @@ export const projects: Project[] = [
     category: ['Creative'],
     subCategory: ['Tangible Artifacts'],
     projectTag: ['artifact', 'AI-ML', 'hands-on', 'astronomy'],
-    status: 'Work in Progress',
     year: '2021-2026',
     medium: 'Archival Prints & Android Tablets',
     dimensions: '20 x 30 inches each',
@@ -251,7 +250,6 @@ export const projects: Project[] = [
     'A video mirror that introduces an 8-minute and 20-second delay to your reflection, translating the immense scale of our solar system and the travel time of sunlight into a tangible, personal experience.',
     'A video mirror reflecting the viewer with a 1.3-second delay, creating a subtle temporal disjunction that matches the exact time it takes light to travel from the Moon to Earth.'
     ],
-    watermarkedImages: ['/images/Andromeda.jpg', '/images/Eagle v2.jpg', '/images/Orion.jpg', '/images/Horsehead and flame nebulas.png', '/images/California nebula.jpg', '/images/Veil.jpg'],
     related: ['star-trails', 'sky-watcher'],
     videoLink: 'https://youtu.be/rMFdAl8OyRA',
     website: 'https://observables.art'
