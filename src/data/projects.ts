@@ -198,7 +198,7 @@ export const projects: Project[] = [
 },
   // Creative / Tangible Artifacts / Now & Then
   {
-    slug: 'now-and-then-ars',
+    slug: 'now-and-then',
     title: 'Now & Then',
     category: ['Creative'],
     subCategory: ['Tangible Artifacts'],
