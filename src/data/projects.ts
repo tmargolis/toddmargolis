@@ -209,7 +209,7 @@ export const projects: Project[] = [
     price: '$1,000.00 each',
     note: 'n/a',
     isSeries: true,
-    heroImage: '/images/1-Whirlpool.jpg',
+    heroImage: '/images/whirlpool-ape-comp-1-large.jpeg',
     quote: '(Ars Electronica edition)',
     description: '"Now & Then" is a multi-modal interactive installation that materializes the "latency" of the universe, bridging the gap between human history and cosmic deep time. Because light travels at a finite speed, all observation is an act of looking into the past. This project explores this physical law by combining two distinct but conceptually unified components: a series of AI-augmented archival prints and interactive video mirrors.',
     description2: 'The first component uses astrophotography to capture the "history of travel" of photons. By incorporating when a star\'s light began its journey across the void, AI is used to generate contextual scenes of the specific historical era on Earth when that light departed. The astronomical subjects are inserted into these reconstructed landscapes using textures like fossilized rock or flaking parchment (e.g., the Whirlpool galaxy shown as it looked 23 million years ago combined with early ape ancestors).\n\nThe second component translates this abstract astronomical data into a concrete, interactive, and lived experience using video mirrors. These mirrors introduce a precise delay into the viewer\'s reflection—such as the "Saturn" mirror, which introduces a delay of nearly an hour and a half. This forces a visceral encounter with cosmic latency, dismantling the illusion of a shared, instantaneous present. The self in the mirror is perpetually out of reach, rendering the viewer a phantom of their own recent history.',
