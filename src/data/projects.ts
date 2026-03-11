@@ -203,6 +203,8 @@ export const projects: Project[] = [
     slug: 'metronome',
     title: 'Metronome',
     category: ['Creative'],
+    subCategory: ['Immersive Installations'],
+    projectTag: ['artifact', 'spatial', 'data-viz', 'hands-on', 'astronomy'],
     status: 'In Progress',
     year: '2026',
     medium: 'Generative Audio',
