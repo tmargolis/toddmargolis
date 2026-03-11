@@ -41,6 +41,7 @@ const starTrailsModelBases = ['geminid', 'dunes', 'goose-lake', 'wildcat'];
 const getStarTrailsModelBase = (index) => starTrailsModelBases[index] || `star-trails-${index + 1}`;
 
 const isNowAndThen = project.slug === 'now-and-then';
+const isMetronome = project.slug === 'metronome';
 const nowAndThenModelBases = ['whirlpool', 'andromeda', 'eagle', 'orion', 'horsehead', 'california', 'veil'];
 const getNowAndThenModelBase = (index) => nowAndThenModelBases[index] || `now-and-then-${index + 1}`;
 
@@ -82,6 +83,7 @@ function getVideoEmbedUrl(link: string | undefined): string | null {
 }
 const videoEmbedUrl = getVideoEmbedUrl(project.videoLink);
 const hasVideo = !!videoEmbedUrl || !!(project.videos && project.videos.length > 0);
+const metronomeAudioSrc = isMetronome ? (project.audio || '/audio/metronome_test.1.mp3') : '';
 const showContentImages = project.images.length >= 2 || (hasVideo && project.images.length >= 1);
 ---
 
@@ -105,6 +107,21 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
       {project.quote && <p class="font-serif text-xl md:text-2xl text-gray-300 italic max-w-2xl">"{project.quote}"</p>}
     </div>
   </header>
+
+  {/* Metronome: Audio control bar under hero */}
+  {isMetronome && (
+    <div class="w-full bg-black/60 border-t border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex justify-center">
+        <button
+          id="metronome-toggle"
+          type="button"
+          class="font-mono text-xs md:text-sm uppercase tracking-widest px-6 py-3 border border-white/30 bg-black/40 hover:bg-white hover:text-black transition-colors"
+        >
+          ▶ Play Audio
+        </button>
+      </div>
+    </div>
+  )}
 
   <!-- Content Grid -->
   <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-12 relative">
@@ -440,10 +457,83 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
 
 </Layout>
 
-  <script define:vars={{ allImages: project.isSeries ? seriesImages : carouselImages, watermarkedImages: project.watermarkedImages || [], prevUrl: `/works/${prevProject.slug}/`, nextUrl: `/works/${nextProject.slug}/` }}>
+  <script define:vars={{ allImages: project.isSeries ? seriesImages : carouselImages, watermarkedImages: project.watermarkedImages || [], prevUrl: `/works/${prevProject.slug}/`, nextUrl: `/works/${nextProject.slug}/`, isMetronome, metronomeAudioSrc }}>
     // Collect all clickable images from the page
     const images = allImages;
     let currentImageIndex = 0;
+
+    // Metronome audio controls
+    let metronomeAudio = null;
+    let metronomeIsPlaying = false;
+
+    function updateMetronomeButtonLabel() {
+      const btn = document.getElementById('metronome-toggle');
+      if (!btn) return;
+      btn.textContent = metronomeIsPlaying ? '■ Stop Audio' : '▶ Play Audio';
+    }
+
+    function ensureMetronomeAudio() {
+      if (!isMetronome || !metronomeAudioSrc) return null;
+      if (!metronomeAudio) {
+        metronomeAudio = new Audio(metronomeAudioSrc);
+        metronomeAudio.loop = true;
+
+        metronomeAudio.addEventListener('play', () => {
+          metronomeIsPlaying = true;
+          updateMetronomeButtonLabel();
+        });
+        metronomeAudio.addEventListener('pause', () => {
+          metronomeIsPlaying = false;
+          updateMetronomeButtonLabel();
+        });
+        metronomeAudio.addEventListener('ended', () => {
+          metronomeIsPlaying = false;
+          updateMetronomeButtonLabel();
+        });
+      }
+      return metronomeAudio;
+    }
+
+    function toggleMetronomeAudio() {
+      const audio = ensureMetronomeAudio();
+      if (!audio) return;
+      if (audio.paused) {
+        audio.play().catch(() => {
+          // If user gesture is still required, just keep button in "Play" state
+          metronomeIsPlaying = false;
+          updateMetronomeButtonLabel();
+        });
+      } else {
+        audio.pause();
+      }
+    }
+
+    function setupMetronomeControls() {
+      if (!isMetronome) return;
+      const btn = document.getElementById('metronome-toggle');
+      if (!btn) return;
+
+      btn.addEventListener('click', () => {
+        toggleMetronomeAudio();
+      });
+
+      // Best-effort autoplay on load; will be blocked on many browsers, which is fine.
+      const audio = ensureMetronomeAudio();
+      if (audio) {
+        audio.play()
+          .then(() => {
+            metronomeIsPlaying = true;
+            updateMetronomeButtonLabel();
+          })
+          .catch(() => {
+            metronomeIsPlaying = false;
+            updateMetronomeButtonLabel();
+          });
+      }
+
+      // Initialize label in case autoplay is blocked
+      updateMetronomeButtonLabel();
+    }
 
     // Swipe navigation for project pages
     let touchStartX = 0;
@@ -489,6 +579,9 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
 
     // Scroll-reveal (mobile only): grayscale by default; start observing only after first scroll so initial view stays B&W
     document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Metronome audio UI if applicable
+      setupMetronomeControls();
+
       const isMobile = window.matchMedia('(max-width: 768px)').matches;
       const revealEls = document.querySelectorAll('.scroll-reveal-color');
       if (isMobile && revealEls.length) {

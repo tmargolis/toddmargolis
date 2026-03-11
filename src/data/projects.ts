@@ -18,6 +18,8 @@ export interface Project {
   description2?: string;
   description3?: string;
   images: string[];
+  /** Optional audio track for the project (e.g., Metronome). */
+  audio?: string;
   videos?: string[];
   videoLink?: string;
   projectTag?: string[];
@@ -195,7 +197,33 @@ export const projects: Project[] = [
   watermarkedImages: ['/images/View-MasterReelSm.png', '/images/Pluto-Previs_1.jpg','/images/asteroid-anaglyph.png', '/images/ProximaAvi.png', '/images/Horizons-moon.jpg'],
   related: ['varrier-siggraph', 'sculpture', 'moon-lust'],
   website: 'https://observables.art'
-},
+  },
+  // Creative / Generative Audio / Metronome
+  {
+    slug: 'metronome',
+    title: 'Metronome',
+    category: ['Creative'],
+    status: 'In Progress',
+    year: '2026',
+    medium: 'Generative Audio',
+    dimensions: 'Variable',
+    weight: 'N/A',
+    note: 'Stereo Speakers',
+    heroImage: '/images/pulsar.jpg',
+    quote: 'A chorus of the cosmos.',
+    description: 'METRONOME is an auditory experiment that invites you to listen to—and physically feel—the immense scale of the observable universe. While our cosmos holds an estimated two trillion galaxies, it is also governed by a precision that rivals the finest clockwork. This artwork transforms the incomprehensible magnitude of celestial time into a tangible, visceral encounter.',
+    description2: 'The installation functions as a dual-layered cosmic timepiece. Every second, the piece triggers the audible sonification of a unique pulsar—the \"cosmic metronomes\" of the universe. These spinning neutron stars are the most stable timekeepers in existence, and here, they provide a persistent 1Hz heartbeat for the room. Listeners hear a constantly evolving \"chorus of the cosmos,\" ranging from the sharp, metallic clicks of millisecond pulsars to the hollow, percussive thumps of ancient stars.\n\nThis steady rhythmic immersion is punctuated every hour by a \"Catastrophic Event.\" The pulsar clock falls into a heavy, expectant silence as the room is overtaken by raw, low-frequency data from a LIGO binary black hole merger. By time-stretching these sub-second events into thirty-second swells, METRONOME shifts the experience from the ears to the bones. Using high-output subwoofers, the merger becomes a pressure event—a literal sensation of spacetime being compressed and stretched. It is the sublime rendered audible and tactile for the first time.',
+    description3: 'This piece is a natural culmination of artist Todd Margolis\'s two-decade career exploring the intersection of art, technology, and large-scale data. From developing immersive discovery platforms for scientific research in Virtual Reality to his academic work on \"Scalable Auditory Data Signatures,\" Margolis has consistently sought to translate vast, abstract information into meaningful human experiences. Here, he extends that inquiry to the ultimate dataset: the fundamental fabric of spacetime.\n\nThe artwork resonates deeply with the mission of Observables, exploring the contrast between the ancient, enduring universe and the fleeting, ephemeral nature of the digital sound attempting to capture it. METRONOME becomes an artifact from a future we haven\'t yet reached—a self-organizing sonic tapestry that embodies our ambition to comprehend the incomprehensible, forcing a confrontation with humanity\'s place within an unfathomable expanse.',
+    images: [
+    '/images/gravitationWave.jpg',
+    '/images/gsmf.gif'
+    ],
+    watermarkedImages: [
+    '/images/Audio_Stats.png',
+    '/images/gsmf.gif'
+    ],
+    audio: '/audio/metronome_test.1.mp3',
+  },
   // Creative / Tangible Artifacts / Now & Then
   {
     slug: 'now-and-then',
