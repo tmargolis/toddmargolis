@@ -270,7 +270,7 @@ export const projects: Project[] = [
     ],
     imageDescriptions: [
     'Seen as it was 23 million years ago—long before humans or even our earliest ancestors emerged—this galaxy appears as a distant marker of a universe already in motion, quietly unfolding eons before our species would ever look back at it.',
-    'Rendered as a primitive stone etching, this piece portrays our neighbor as it was 2.5 million years ago, a time when Homo habilis first began fashioning primitive tools in East Africa.',
+    'Portraying our galactic neighbor as it was 2.5 million years ago, this piece links its ancient light to the era when Homo habilis first began fashioning primitive tools in East Africa.',
     'Showing the nebula as it appeared 7,000 years ago, this image connects its ancient light to a moment when early humans were domesticating cattle in a green Sahara and building the first proto-cities.',
     'Capturing the nebula as it looked 1,344 years ago, this artwork ties its distant light to the height of the classic peak of Maya civilization.',
     'Created with the aesthetic of a Migration Period tapestry, this silhouette shows the nebula as it existed 1,375 years ago while Germanic tribes reshaped Europe and the Gupta Empire thrived in India.',
