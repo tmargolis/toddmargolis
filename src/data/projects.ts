@@ -1148,7 +1148,7 @@ export const projects: Project[] = [
   description: 'The GeoMedia Analytics Platform was a research project that transformed thousands of Flickr and Instagram photos into a spatialized visual history of New York City. By utilizing a custom "Flickr Harvester" and high-performance computing, the project analyzed the collective output of social media users along Park Avenue and other major urban corridors. This allowed for the creation of massive, high-resolution "photo clouds" that layered the city\'s digital metadata directly onto its physical geography, revealing invisible cultural patterns and the shifting rhythms of urban life.',
   description2: 'In my capacity as Technical Director for the Software Studies Initiative, I leveraged the Vroom and HIPerSpace tiled display environments to visualize these datasets at an unprecedented scale. This work moved beyond simple data mapping to explore how software and social algorithms influence human behavior and architectural perception. Within my current portfolio, this project served as a cornerstone of research, demonstrating my ability to synthesize Public Data, Visual Analytics, and Immersive Design to make the hidden infrastructures of our modern society visible.',
   projectTag: ['research', 'data-viz', 'leadership'],
-  images: ['/images/tiledDisplayGeo.jpg','/images/toddHololens.jpg'],
+  images: ['/images/tiledDisplayGeo.jpg','/images/GeoMediaAnalytics-web.jpg'],
   related: ['ucsd-crca', 'tree-of-branch', 'software-studies', 'vroom', 'qlik']
   },
   // Research / Publications & Theory / Immersive Art in Augmented Reality
