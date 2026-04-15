@@ -1291,6 +1291,7 @@ export const projects: Project[] = [
   description: 'Disseminate the broad vision that software is a layer that permeates all areas of contemporary societies. As Technical Director, I developed projects, workshops, and publications analyzing contemporary techniques of control, communication, representation, and simulation through the lens of this software layer.',
   projectTag: ['research', 'data-viz', 'leadership'],
   images: ['/images/StarWarsAnalyzed.jpg'],
+  website: 'https://www.flickr.com/photos/culturevis/albums/',
   related: ['cultural-analytics', 'ucsd-crca']
   },
   // Research / Pedagogy & Labs / UCSD\
