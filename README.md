@@ -1,43 +1,21 @@
-# Astro Starter Kit: Minimal
+# Todd Margolis's Portfolio Website
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Overview
+This portfolio showcases the three main disciplines of Todd Margolis: Research, Strategy, and Creative.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Disciplines
+- **Research**: Comprehensive studies to inform strategic decisions.
+- **Strategy**: Crafting tailored strategies to meet client needs.
+- **Creative**: Innovative solutions and design to engage the audience.
 
-## 🚀 Project Structure
+## Technical Stack
+- **Astro**: A modern framework for building fast websites.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **GitHub Pages**: Hosting the website seamlessly and efficiently.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Key Features
+- Responsive design to ensure a great user experience on all devices.
+- Fast loading times for optimal performance.
+- Easy navigation to explore Todd's work in depth.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Explore the portfolio to see how Todd integrates Research, Strategy, and Creativity into impactful outcomes!
