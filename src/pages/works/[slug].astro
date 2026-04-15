@@ -442,9 +442,9 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
   </a>
 
   <!-- Lightbox Modal -->
-  <div id="lightbox" class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-xl hidden flex items-center justify-center cursor-zoom-out p-4" onclick="closeLightbox()">
-     <div class="relative max-w-full max-h-full">
-       <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain shadow-2xl shadow-black" />
+  <div id="lightbox" class="fixed left-0 right-0 bottom-0 z-[60] bg-black/95 backdrop-blur-xl hidden flex items-center justify-center cursor-zoom-out p-4 overflow-auto" style="top: var(--header-height);" onclick="closeLightbox()">
+     <div class="relative max-w-full" style="max-height: calc(100vh - var(--header-height) - 2rem);">
+       <img id="lightbox-img" src="" class="max-w-full object-contain shadow-2xl shadow-black" style="max-height: calc(100vh - var(--header-height) - 2rem);" />
        <div id="lightbox-watermark" class="absolute bottom-8 right-0 pointer-events-none hidden" style="transform: rotate(-45deg);">
          <span class="font-mono text-s uppercase tracking-widest text-black" style="opacity: 0.3; text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6);">
            AI Draft

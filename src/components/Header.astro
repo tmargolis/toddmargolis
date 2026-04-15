@@ -107,7 +107,7 @@ const navItems = [
   <script>
     function setHeaderHeight() {
       const nav = document.getElementById('site-header');
-      if (nav && window.matchMedia('(max-width: 767px)').matches) {
+      if (nav) {
         document.documentElement.style.setProperty('--header-height', `${nav.offsetHeight}px`);
       }
     }

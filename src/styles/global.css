@@ -42,11 +42,9 @@
   }
 }
 
-/* Mobile header height: set by Header script so sticky section titles sit below nav (including when accordion is open) */
-@media (max-width: 767px) {
-  :root {
-    --header-height: 4.5rem;
-  }
+/* Header height: overwritten by Header script at runtime */
+:root {
+  --header-height: 4.5rem;
 }
 
 /* Category sub-section titles (Creative, Research, Strategy pages) – match header accordion look, no gradient/blue */
