@@ -1286,11 +1286,11 @@ export const projects: Project[] = [
   subCategory: ['Pedagogy & Labs'],
   year: '2008-2012',
   medium: 'Technical Director',
-  heroImage: '/images/placeholder.png',
+  heroImage: '/images/Lev.jpg',
   collaborators: ['Lev Manovich'],
   description: 'Disseminate the broad vision that software is a layer that permeates all areas of contemporary societies. As Technical Director, I developed projects, workshops, and publications analyzing contemporary techniques of control, communication, representation, and simulation through the lens of this software layer.',
   projectTag: ['research', 'data-viz', 'leadership'],
-  images: ['/images/maxresdefault.jpg'],
+  images: ['/images/StarWarsAnalyzed.jpg'],
   related: ['cultural-analytics', 'ucsd-crca']
   },
   // Research / Pedagogy & Labs / UCSD\
