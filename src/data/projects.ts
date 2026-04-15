@@ -1351,7 +1351,7 @@ export const projects: Project[] = [
   year: '2005-2012',
   medium: 'Technical Director',
   dimensions: 'University of California, San Diego',
-  heroImage: '/images/CRCA-neighborhood.jpg',
+  heroImage: '/images/CRCA_Map.jpg',
   collaborators: ['Sheldon Brown','Miller Puckett', 'Shahrokh Yadegari', 'Carol Hobson'],
   description: 'Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Created the design, specification, installation, configuration, operation, training and maintenance routine of CRCA\'s new 10,000 sq ft facilities including Virtual Reality, Spatialized Audio, Motion Capture, Gaming and Digital Cinema labs. Technical Director for dozens of interdisciplinary research projects that have been published and exhibited world-wide, as well as new products that have been brought to market. Managed small to medium groups on short-term projects as well as long-term teams.',
   projectTag: ['leadership', 'infrastructure', 'cross-functional', 'strategy'],
