@@ -1,28 +1,149 @@
-# Observables.art
+# Todd Margolis
 
-> Observables explores the friction between what we see as reality and what science tells us is fact. A convergence of space and time, the work exists at the intersection of astrophotography, sculpted objects, and interactive immersive environments. Each piece is a study in materiality—the 'rocky' grit of physical existence meeting the 'gassy' translucency of our digital lives. Central to this work is the reality that astronomy is the study of the past: every photon captured is a "light fossil" carrying a history of travel from an era we never inhabited. The installations explore the "shifting shoreline" of the cosmic horizon, demanding a recalibration of our senses to perceive subtle shifts in light, space, and time.
+> Portfolio of Todd Margolis — researcher, strategist, and artist. Tagline: "Materializing the Invisible." Over two decades translating academic inquiry in visualization, virtual reality, immersive analytics, and generative AI into scalable products and experiential artworks. Practice spans Varrier™ autostereoscopic VR at UIC's Electronic Visualization Lab, technical direction at UCSD's CRCA and Qualcomm Institute, Sr. Director of Applied Research at Qlik, and the Observables body of work exploring cosmic light-travel time through astrophotography, sculpture, and interactive installation.
 
 ## Core Pages
 
-- [Home](https://observables.art/) - Landing page featuring the Observables collection with hero section and grid of all 11 artworks
-- [Narrative](https://observables.art/narrative/) - Artist statement exploring the intersection of space and time, materiality, and the act of observation
-- [Works](https://observables.art/works/) - Complete gallery index displaying all projects in a grid layout
-- [Bang](https://observables.art/works/bang/) - Kinetic installation using a closed-loop pneumatic system with a black weather balloon
-- [Black Hole Vision](https://observables.art/works/black-hole-vision/) - Virtual Reality experience visualizing spaghettification and the event horizon
-- [Delayed Vision](https://observables.art/works/delayed-vision/) - Video mirror series introducing delays corresponding to light-travel time from celestial bodies (Moon, Sun, Saturn)
-- [Star Trails](https://observables.art/works/star-trails/) - Photographic series capturing star motion as Earth rotates (Geminid, Dunes, Goose Lake, Wildcat)
-- [3D Horizons](https://observables.art/works/3d-horizons/) - Stereoscopic View-Master experience with 7 images of the solar system
-- [Audio Counter](https://observables.art/works/audio-counter/) - Generative audio piece sonifying the observable universe's star counts
-- [The Edge](https://observables.art/works/the-edge/) - Laminar flow fog screen installation representing the edge of the observable universe
-- [Now & Then](https://observables.art/works/now-and-then/) - Photo series combining modern astrophotography with historical imagery (Whirlpool, Andromeda, Eagle, Orion, Horsehead, California)
-- [Sculpture Series](https://observables.art/works/sculpture/) - Cast material reliefs from topographic data of cosmic objects (Mars, Milky Way, Moon, Sun, Black Hole)
-- [CMB VR](https://observables.art/works/cmb-vr/) - Virtual Reality experience placing the user inside the Cosmic Microwave Background radiation sphere
-- [Redshifter](https://observables.art/works/redshifter/) - Immersive room installation simulating the Redshift effect with lighting that shifts spectrum
-- [Virtual Walkthrough](https://observables.art/walkthrough/) - Full-screen ArtPlacer embed providing an interactive 3D virtual exhibition experience
-- [Artist Bio](https://observables.art/bio/) - Biography of Todd Margolis, practice description, and link to main portfolio at toddmargolis.net
-- [Inquire](https://observables.art/contact/) - Contact page for acquisitions, exhibitions, and press inquiries
-- [Logistics](https://observables.art/logistics/) - Authenticated page (Clerk) containing technical requirements, installation specifications, and shipping details for all 11 artworks, with downloadable Exhibition Prospectus PDF
+- [Home](https://toddmargolis.net/) - Landing page with three practice pillars (Research, Strategy, Creative) and aurora background video
+- [About](https://toddmargolis.net/bio/) - Biography covering engineering, telepresence, product strategy, and current artistic practice
+- [Research](https://toddmargolis.net/research/) - Research projects organized by Display & Interaction Systems, Collaborative Environments, Publications & Theory, and Pedagogy & Labs
+- [Strategy](https://toddmargolis.net/strategy/) - Leadership and institutional roles in R&D Leadership, Academic Practice, and Cultural Stewardship
+- [Creative](https://toddmargolis.net/creative/) - Artworks organized by Tangible Artifacts, Immersive Installations, Augmented Interventions, and Performative Systems
+- [Works](https://toddmargolis.net/works/) - Searchable index of all projects with tag filtering and chronological sorting
+- [CV](https://toddmargolis.net/narrative/) - Embedded curriculum vitae (Google Docs)
+- [Connect](https://toddmargolis.net/contact/) - Contact page (info@toddmargolis.net, Chicago IL)
+- [Logistics](https://toddmargolis.net/logistics/) - Authenticated page with exhibition technical requirements and downloadable prospectus PDF
+- [Sitemap](https://toddmargolis.net/sitemap.xml) - Machine-readable URL index for all pages and project detail pages
+
+## Creative Works
+
+### Tangible Artifacts
+
+- [Star Trails](https://toddmargolis.net/works/star-trails/) (2023-2024) - In the photographic series 'Star Trails' the night sky is transformed into a canvas for the captivating dance of celestial motion. Using the technique of long-e
+- [Horizons](https://toddmargolis.net/works/3d-horizons/) (2026) - The iconic View-Master, a symbol of childhood wonder, is reimagined by artist Todd Margolis as a complex portal to the cosmos. This custom experience presents s
+- [Now & Then](https://toddmargolis.net/works/now-and-then/) (2021-2026) - 'Now & Then' is a multi-modal interactive installation that materializes the 'latency' of the universe, bridging the gap between human history and cosmic deep t
+- [Neighbors](https://toddmargolis.net/works/sculpture/) (2026) - This project presents a series of tactile reliefs created from scientific data of cosmic objects and phenomena, marking a compelling intersection of scientific 
+- [Sky Watcher](https://toddmargolis.net/works/sky-watcher/) (2026) - 'Sky Watcher' is a data-driven light sculpture that bridges the complexity of the cosmos with the intimacy of human curiosity. Inspired by the iconic honeycomb 
+- [Shape Grammar Objects](https://toddmargolis.net/works/shape-grammar-objects/) (2009) - Shape Grammar Objects builds upon a previous large scale art-science collaboration, Atlas in silico, created in response to the contemporary cultural phenomena 
+- [(art)n Laboratory](https://toddmargolis.net/works/artn-laboratory/) (1999-2001) - As an Artist-in-Residence at (art)n Laboratory, I aided with the production of complex 3D artworks utilizing proprietary PHSCologram and ImmersaGram technologie
+
+### Immersive Installations
+
+- [Observables](https://toddmargolis.net/works/observables/) (2021-2026) - Observables is a body of work that interrogates the 'time-lag' of the universe — materializing the moment where objective data dissolves into a personal encount
+- [Metronome](https://toddmargolis.net/works/metronome/) (2026) - METRONOME is an auditory experiment that invites you to listen to—and physically feel—the immense scale of the observable universe. While our cosmos holds an es
+- [ATLAS in silico](https://toddmargolis.net/works/atlas-in-silico/) (2007-2013) - ATLAS in silico is a physically interactive virtual reality installation that fuses dynamic media, computer vision, and spatialized multichannel audio with pion
+- [Confluxus](https://toddmargolis.net/works/confluxus/) (2001) - Confluxus is a collaborative virtual reality artwork which is procedurally generated through user interaction. The space is designed to be a community meeting a
+- [Special Treatment](https://toddmargolis.net/works/special-treatment/) (2003-2005) - Special Treatment is an immersive and interactive Virtual Reality installation examining the strength and persistence of memory. An ominous journey by train car
+- [LOCKUP](https://toddmargolis.net/works/lockup/) (2000) - LOCKUP is an installation, performance and interactive narrative in Virtual Reality that explores the realm of possibilities open to us when we alter life cours
+
+### Augmented Interventions
+
+- [Delayed Vision](https://toddmargolis.net/works/delayed-vision/) (2026) - Imagine seeing yourself not as you are now, but as you were moments, or even an hour, ago. This series of video mirrors forces a visceral encounter with a profo
+- [Moon Lust](https://toddmargolis.net/works/moon-lust/) (2012) - Moon Lust is a speculative project that explores global interests and issues pertaining to lunar exploration and habitation. As a curated mobile augmented reali
+- [Promotional Consideration](https://toddmargolis.net/works/promotional-consideration/) (2012) - Promotional Considerations is a speculative project designed to articulate and anticipate the needs, desires and concerns of lunar habitation. Blending current 
+- [Out of the Box](https://toddmargolis.net/works/out-of-the-box/) (2012) - As an exhibition, Out of the Box consists of Virtual Reality artifacts (VRAs) re-contextualized in mobile augmented reality. Viewing the VRA and choosing how to
+- [Money Grab](https://toddmargolis.net/works/money-grab/) (2011) - Grab that $$$ before the bankers do! #OccupyWallSt. Using the Augmented Reality browser Layar, anyone can open this mobile app and see money raining down all ar
+- [Museum of Future Objects (MOFO)](https://toddmargolis.net/works/museum-of-future-objects-mofo/) (2013) - Commissioned for the MWX2013 exhibition at the Museum and the Web Conference in Portland, MoFO was a speculative and interventionist project that utilized Augme
+- [Show Me](https://toddmargolis.net/works/show-me/) (2011) - Show Me explores virtual tourism using augmented reality with my avatar agent. I've never been to Philadelphia. My father, born and raised in Philadelphia, is m
+- [Local ARt](https://toddmargolis.net/works/local-art/) (2011) - Local ARt is a mobile Augmented Reality Alternate Reality Game developed in San Diego in 2011. The primary aim was to create a novel way of connecting two artis
+
+### Performative Systems
+
+- [Perfect Parlor](https://toddmargolis.net/works/perfect-parlor/) (2002-2003) - The Perfect Parlor explores how technology can augment human communication, interaction and perceptions when incorporated into personal, social and work spaces.
+- [Infinite Studio](https://toddmargolis.net/works/infinite-studio/) (2000) - Infinite Studio was a new paradigm of art-making, that enables users to create, in real-time, interactive virtual reality artwork from inside a virtual environm
+- [ESSA!](https://toddmargolis.net/works/essa/) (2013) - ESSA! was a groundbreaking live performance that merged the traditional power of Japanese taiko drumming with state-of-the-art digital media. While taiko has ro
+- [HOMCOM](https://toddmargolis.net/works/homcom/) (2018) - ​HOM-COM is a multi-sensory installation that reimagines the birth of AI-native entertainment. The work is presented as a historical reenactment of a pivotal mo
+- [Presumed Existence](https://toddmargolis.net/works/presumed-existence/) (2021) - Created during the peak of the COVID-19 pandemic, this project was a collaborative exploration with Ed Colmar into the boundaries of remote, data-driven creativ
+
+## Research Works
+
+### Display & Interaction Systems
+
+- [Observables](https://toddmargolis.net/works/observables/) (2021-2026) - Observables is a body of work that interrogates the 'time-lag' of the universe — materializing the moment where objective data dissolves into a personal encount
+- [(art)n Laboratory](https://toddmargolis.net/works/artn-laboratory/) (1999-2001) - As an Artist-in-Residence at (art)n Laboratory, I aided with the production of complex 3D artworks utilizing proprietary PHSCologram and ImmersaGram technologie
+- [The Varrier™ autostereoscopic virtual reality display](https://toddmargolis.net/works/varrier-siggraph/) (2005) - Virtual reality (VR) has long been hampered by the gear needed to make the experience possible; specifically, stereo glasses and tracking devices. Autostereosco
+- [HUVR](https://toddmargolis.net/works/huvr/) (2010-2012) - A small group of UCSD researchers have created a new, relatively low-cost augmented reality system that enables users to touch the virtual environment they are 
+- [Immersive Manufacturing](https://toddmargolis.net/works/immersive-manufacturing-analytics/) (2016) - This project explores the convergence of Immersive Analytics and the Industrial Internet of Things (IIoT), transforming complex manufacturing data into a naviga
+- [Immersive Healthcare](https://toddmargolis.net/works/immersive-healthcare-analytics/) (2019) - This project demonstrates a pioneering application of Immersive Analytics in healthcare, utilizing the Microsoft HoloLens and Qlik Sense to provide medical prof
+- [Becoming Dragon](https://toddmargolis.net/works/becoming-dragon/) (2008-2010) - Becoming Dragon questions the one year requirement of Real Life Experience that transgender people must fulfill in order to receive Gender Confirmation Surgery 
+- [Emerngency Response Drone](https://toddmargolis.net/works/emergency-response-drone/) (2019) - The Emergency Response Drone is a proof-of-concept autonomous system designed to enhance humanitarian efforts through real-time situational awareness and distri
+- [Immersive Retail](https://toddmargolis.net/works/immersive-retail/) (2018) - Prototyped a mixed-reality infrastructure using a Microsoft HoloLens to bridge the gap between a physical retail space and live enterprise data. The system util
+- [SPECFLIC](https://toddmargolis.net/works/specflic/) (2006) - SPECFLIC uses novel transmission and display media and a new storytelling form called Distributed Social Cinema to expand a critical dialogue about the social a
+- [FILE 4K](https://toddmargolis.net/works/file-4k/) (2009) - In July 2009, I led a research team of engineers, film-makers and computer scientists to produce two high profile and historic events at FILE (Electronic Langua
+- [NetSight](https://toddmargolis.net/works/netsight/) (1995-1996) - In this role as Webmaster for a pioneering Chicago-based ISP, I spearheaded the expansion of traditional internet services into the nascent fields of web hostin
+- [PowerUser](https://toddmargolis.net/works/poweruser-inc/) (1998-2000) - During my tenure as a Web Developer at PowerUser, I spearheaded the development of sophisticated, database-driven web architectures, bridging the gap between ro
+- [Qlik Gesture](https://toddmargolis.net/works/qlik-gesture/) (2014-2015) - The gestural interface for Qlik Sense represented a significant evolution in how users could physically interact with large-scale data environments. By integrat
+- [Day in the Life](https://toddmargolis.net/works/qlik-day-in-the-life/) (2016) - This project explores a multi-modal interface for big data exploration, utilizing wearable technology and gesture-based interactions to navigate complex dataset
+- [Conversational Analytics](https://toddmargolis.net/works/qlik-insight-chatbot/) (2017) - Before the era of Large Language Models, I co-developed a pioneering chatbot for Qlik Sense designed to democratize data access through natural language interac
+- [NVision @ University of Northampton](https://toddmargolis.net/works/nvision/) (2010-2012) - I served as an Honorary Board Member for NVision at the University of Northampton, where I provided strategic oversight during the critical launch of its multi-
+
+### Collaborative Environments
+
+- [ATLAS in silico](https://toddmargolis.net/works/atlas-in-silico/) (2007-2013) - ATLAS in silico is a physically interactive virtual reality installation that fuses dynamic media, computer vision, and spatialized multichannel audio with pion
+- [ESSA!](https://toddmargolis.net/works/essa/) (2013) - ESSA! was a groundbreaking live performance that merged the traditional power of Japanese taiko drumming with state-of-the-art digital media. While taiko has ro
+- [Vroom (Virtual Room)](https://toddmargolis.net/works/vroom/) (2010-2013) - Vroom (Virtual Room) is a next-generation reconfigurable tiled display environment in development at Calit2. Vroom enables freely scalable digital collaboratori
+- [CineGrid 3D 4K](https://toddmargolis.net/works/cinegrid-3d-4k/) (2006-2013) - CineGrid is a global, non-profit organization dedicated to the research and demonstration of ultra-high-quality digital media over high-speed photonic networks.
+- [CineGrid @ AES](https://toddmargolis.net/works/cinegrid-aes/) (2006) - This landmark demonstration represented the first real-time streaming of synchronized 2K/4K digital cinema and 24-channel uncompressed audio across a 10,000-mil
+- [TeleMotions](https://toddmargolis.net/works/telemotions/) (2011) - TeleMotions was an experimental telepresence performance project developed by the Qualcomm Institute (UCSD). The project functioned as an inquiry into networked
+- [Inspiraling](https://toddmargolis.net/works/inspiraling/) (2010) - Inspiraling: Telematic Jazz Explorations was an unprecedented concert of new jazz works with renowned composers and performers for the telematic music medium. T
+- [Tele-Taiko Teaching @ CineGrid](https://toddmargolis.net/works/tele-taiko/) (2013) - Tele-Taiko Teaching at CineGrid 2013 was a pioneering exploration into high-fidelity, low-latency remote pedagogy, leveraging high-speed optical networks to bri
+- [ResoNations](https://toddmargolis.net/works/resonations/) (2009) - Simultaneously performed at the United Nations Headquarters in New York, University of California San Diego, The Banff Centre in Alberta, Canada, Queens Univers
+- [Image Quest](https://toddmargolis.net/works/image-quest/) (2010-2012) - Researchers from Washington University, the University of Arizona, the University of California, San Diego, and the University of Vermont were awarded collabora
+- [Growing Documentary](https://toddmargolis.net/works/growing-documentary/) (2011-2012) - Growing Documentary: Places + Perspectives is a sponsored research project between graduate students from Keio Media Design, Keio University and undergraduate s
+- [Scalable City](https://toddmargolis.net/works/scalable-city/) (2009) - Scalable City is a multi-dimensional art and research project developed within the Experimental Game Lab at the Qualcomm Institute, UCSD. The work functions as 
+- [Qlik Reporting & Storytelling](https://toddmargolis.net/works/qlik-reporting-storytelling/) (2016-2019) - Bridging the gap between static reporting and active collaboration, I led the product strategy for Qlik’s $10M+ ARR reporting portfolio. I spearheaded the moder
+
+### Publications & Theory
+
+- [Agentic AI @ Qlik](https://toddmargolis.net/works/qlik-genai/) (2023-2026) - During my tenure at Qlik, I played a key role in architecting the 'art of the possible' for Generative AI, specifically by designing prototype integrations that
+- [Collaborative Immersive Analytics](https://toddmargolis.net/works/collaborative-analytics/) (2018) - Immersive Analytics is a new research initiative that aims to remove barriers between people, their data and the tools they use for analysis and decision making
+- [Cultural Analytics](https://toddmargolis.net/works/cultural-analytics/) (2012-2014) - Developed at UC San Diego's Qualcomm Institute, the GeoMedia Analytics Platform combines Google Earth, Google Maps, and Street View APIs to investigate large pu
+- [Immersive Art in Augmented Reality](https://toddmargolis.net/works/immersive-art-in-augmented-reality/) (2014) - In the context of the 2014 publication Augmented Reality Art: From an Emerging Technology to a Novel Creative Medium, this chapter serves as a pivotal investiga
+- [Camera Based Automatic Calibration for the Varrier System](https://toddmargolis.net/works/varrier-IEEE/) (2005) - Varrier is a head-tracked, 35-panel tiled autostereoscopic display system which is produced by The Electronic Visualization Laboratory (EVL) at the University o
+- [Varrier autostereographic display](https://toddmargolis.net/works/varrier-SPIE/) (2001) - The goal of this research is to develop a head-tracked, stern virtual reality system utilizing plasma or LCD panels. This paper describes a head-tracked barrier
+- [Scalable metadata environments](https://toddmargolis.net/works/scalable-metadata-environments/) (2014) - Scalable Metadata Environments (MDEs) are an artistic approach for designing immersive environments for large scale data exploration in which users interact wit
+- [Tree of Branch](https://toddmargolis.net/works/tree-of-branch/) (2015) - This visualization, featured in Teradata's Art of Analytics book, was generated to assist with the exploration and analysis of Qlik's open-source developer comm
+
+### Pedagogy & Labs
+
+- [Electronic Visualization Laboratory @  UIC](https://toddmargolis.net/works/uic-evl/) (1998-2005) - Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored papers on VR system
+- [Interactive Arts and Media @ Columbia](https://toddmargolis.net/works/columbia-college-chicago/) (2000-2003) - Instructor for Programming Web Databases (PHP/MySQL) and Introduction to Multimedia Programming (Macromedia Director/Lingo). Frequent guest lecturer for courses
+- [Art and Technology @ SAIC](https://toddmargolis.net/works/saic/) (1999-2003) - As an instructor in the Art and Technology department at the School of the Art Institute of Chicago, I led graduate-level seminars focused on the intersection o
+- [UCSD's Software Studies](https://toddmargolis.net/works/software-studies/) (2008-2012) - As Technical Director for UCSD's Software Studies initiative, I translated the lab's critical framework into deployable analytics systems for real-world stakeho
+- [UCSD's Experimental Game Lab](https://toddmargolis.net/works/experimental-game-lab/) (2005-2012) - Founded by Sheldon Brown, EGL is a research studio positioning gaming as the defining cultural form of the 21st century. We provided innovative, multi-disciplin
+- [CRCA @ UCSD](https://toddmargolis.net/works/ucsd-crca/) (2005-2012) - Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Create
+- [Qualcomm Institute @ UCSD](https://toddmargolis.net/works/ucsd-qualcomm/) (2012-2014) - Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive
+
+## Strategy Works
+
+### R&D Leadership
+
+- [Qlik](https://toddmargolis.net/works/qlik/) (2014-2026) - Led a team of ML engineers to accelerate Qlik's long-term roadmap, defining high-level strategy and developing new capabilities across emerging media platforms.
+- [NVision @ University of Northampton](https://toddmargolis.net/works/nvision/) (2010-2012) - I served as an Honorary Board Member for NVision at the University of Northampton, where I provided strategic oversight during the critical launch of its multi-
+- [Emergent Reality Lab @ RPI](https://toddmargolis.net/works/rpi/) (2011-2012) - Provided technical expertise for building a Virtual Reality system for the new Emergent Reality Lab at RPI. This included space planning, CAD drawing, requireme
+- [Transmedia Research Institute @ FSU](https://toddmargolis.net/works/florida-state-university/) (2011-2012) - In preparation for constructing a new 50,000 sq. foot Transmedia Research Institute, I provided guidance on the building characterization and design. This inclu
+
+### Academic Practice
+
+- [Electronic Visualization Laboratory @  UIC](https://toddmargolis.net/works/uic-evl/) (1998-2005) - Lead project developer creating Virtual Reality content and co-inventor of the Varrier™ auto-stereoscopic barrier strip display. Co-authored papers on VR system
+- [Interactive Arts and Media @ Columbia](https://toddmargolis.net/works/columbia-college-chicago/) (2000-2003) - Instructor for Programming Web Databases (PHP/MySQL) and Introduction to Multimedia Programming (Macromedia Director/Lingo). Frequent guest lecturer for courses
+- [Art and Technology @ SAIC](https://toddmargolis.net/works/saic/) (1999-2003) - As an instructor in the Art and Technology department at the School of the Art Institute of Chicago, I led graduate-level seminars focused on the intersection o
+- [CRCA @ UCSD](https://toddmargolis.net/works/ucsd-crca/) (2005-2012) - Provided organizational administration, research development, project management and grant writing for the Center for Research in Computing and the Arts. Create
+- [Qualcomm Institute @ UCSD](https://toddmargolis.net/works/ucsd-qualcomm/) (2012-2014) - Researcher with the Qualcomm Institute at the California Institute for Telecommunications and Information Technology (Calit2) designing and developing immersive
+
+### Cultural Stewardship
+
+- [(art)n Laboratory](https://toddmargolis.net/works/artn-laboratory/) (1999-2001) - As an Artist-in-Residence at (art)n Laboratory, I aided with the production of complex 3D artworks utilizing proprietary PHSCologram and ImmersaGram technologie
+- [Manifest.AR](https://toddmargolis.net/works/manifest-ar/) (2011-2012) - An international artists collective working with emergent forms of augmented reality as interventionist public art. The group sees this medium as a way of trans
+- [Applied Interactives](https://toddmargolis.net/works/applied-interactives/) (2001-2005) - A 501(c)3 non-profit dedicated to propagating VR technologies into galleries and contemporary art museums. Led the creation of a VR installation using the Ausch
+- [Sine::apsis Experiments](https://toddmargolis.net/works/sine-apsis/) (2000-2005) - A 501(c)3 collective taking an unorthodox look at the role of technology in life and art. Organized exhibitions, lectures, and workshops featured in 'Informatio
+
+## Related Sites
+
+- [Observables](https://observables.art/) - Dedicated exhibition site for the Observables collection (12 cosmic latency artworks); cross-linked from several works on this portfolio
 
 ## Data Collections
 
-- [projects.ts](https://observables.art/) - TypeScript data file containing complete metadata for all 11 artworks including titles, years, mediums, dimensions, weights, prices, descriptions, image paths, video paths, and series configurations. Defines the Project interface and exports the projects array used throughout the site for dynamic page generation.
+- [llms-full.txt](https://toddmargolis.net/llms-full.txt) - Complete archive of src/data TypeScript source files (projects metadata, interfaces, and all project records)
+- [projects.ts](https://toddmargolis.net/llms-full.txt) - Primary data file: Project interface and projects array powering dynamic page generation for all works
+

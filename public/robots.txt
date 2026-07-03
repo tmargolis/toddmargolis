@@ -1,0 +1,68 @@
+# toddmargolis.net — permissive crawl policy
+
+User-agent: *
+Allow: /
+Disallow: /logistics/
+
+# Named AI crawlers (explicit allow; same policy as above)
+User-agent: GPTBot
+Allow: /
+Disallow: /logistics/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /logistics/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /logistics/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /logistics/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /logistics/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /logistics/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /logistics/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /logistics/
+
+User-agent: CCBot
+Allow: /
+Disallow: /logistics/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /logistics/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /logistics/
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /logistics/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /logistics/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /logistics/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /logistics/
+
+Sitemap: https://toddmargolis.net/sitemap.xml
