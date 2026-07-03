@@ -8,9 +8,11 @@ interface Props {
   fullTitle?: string;
   hideFooter?: boolean;
   activeCategories?: string[];
+  /** RFC 8288 discovery links in HTML (mirror homepage Link response headers). */
+  agentDiscovery?: boolean;
 }
 
-const { title, fullTitle, hideFooter = false, activeCategories = [] } = Astro.props;
+const { title, fullTitle, hideFooter = false, activeCategories = [], agentDiscovery = false } = Astro.props;
 const documentTitle = fullTitle ?? `Todd Margolis | ${title}`;
 ---
 
@@ -27,6 +29,13 @@ const documentTitle = fullTitle ?? `Todd Margolis | ${title}`;
 		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{documentTitle}</title>
+
+    {agentDiscovery && (
+      <>
+        <link rel="describedby" href="/llms.txt" type="text/plain" title="Site index for LLMs" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+      </>
+    )}
 		
 		<!-- Open Graph / Social Media Preview -->
 		<meta property="og:type" content="website" />

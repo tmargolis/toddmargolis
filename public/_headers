@@ -1,0 +1,5 @@
+# Cloudflare Pages: RFC 8288 Link headers for agent discovery (homepage minimum).
+# GitHub Pages ignores this file; use workers/link-headers.js via Wrangler if needed.
+
+/
+  Link: </llms.txt>; rel="describedby"; type="text/plain"; title="Site index for LLMs", </sitemap.xml>; rel="sitemap"; type="application/xml"

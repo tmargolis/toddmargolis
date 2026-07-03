@@ -1,0 +1,11 @@
+name = "toddmargolis-link-headers"
+main = "workers/link-headers.js"
+compatibility_date = "2024-01-01"
+
+[[routes]]
+pattern = "toddmargolis.net/*"
+zone_name = "toddmargolis.net"
+
+[[routes]]
+pattern = "www.toddmargolis.net/*"
+zone_name = "toddmargolis.net"
