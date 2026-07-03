@@ -1,6 +1,7 @@
 # toddmargolis.net — permissive crawl policy
 
 User-agent: *
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 Allow: /
 Disallow: /logistics/
 
