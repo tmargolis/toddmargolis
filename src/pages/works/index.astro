@@ -44,7 +44,11 @@ const processTags = ['0-to-1', 'hands-on', 'leadership', 'strategy', 'cross-func
 const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructure', 'astronomy'];
 ---
 
-<Layout title="Works">
+<Layout
+  title="Works"
+  description="Portfolio of creative, research, and strategy work by Todd Margolis — immersive installations, data visualization, virtual reality, AI and more."
+  canonical="https://toddmargolis.net/works/"
+>
   <!-- Full-bleed background video -->
   <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
     <video
@@ -215,18 +219,41 @@ const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructu
 
   let searchQuery = '';
 
-  // Check URL for tag parameter and auto-activate
-  const urlParams = new URLSearchParams(window.location.search);
-  const urlTag = urlParams.get('tag');
-  if (urlTag) {
-    activeTags.add(urlTag);
+  function activateTag(tag: string) {
+    activeTags.add(tag);
     tagButtons.forEach(button => {
-      if (button.getAttribute('data-tag') === urlTag) {
+      if (button.getAttribute('data-tag') === tag) {
         button.classList.add('bg-white', 'text-black');
         button.classList.remove('border-white/20');
       }
     });
   }
+
+  function syncHashToTags() {
+    const hashTag = window.location.hash.match(/^#tag-(.+)$/);
+    if (hashTag) {
+      activateTag(hashTag[1]);
+      return;
+    }
+    // Legacy ?tag= URLs — migrate to hash without reload
+    const urlTag = new URLSearchParams(window.location.search).get('tag');
+    if (urlTag) {
+      activateTag(urlTag);
+      history.replaceState(null, '', `/works/#tag-${urlTag}`);
+    }
+  }
+
+  syncHashToTags();
+
+  window.addEventListener('hashchange', () => {
+    activeTags.clear();
+    tagButtons.forEach(button => {
+      button.classList.remove('bg-white', 'text-black');
+      button.classList.add('border-white/20');
+    });
+    syncHashToTags();
+    updateDisplay();
+  });
 
   function updateDisplay() {
     let visibleIndex = 0;
@@ -297,6 +324,8 @@ const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructu
         button.classList.remove('border-white/20');
       }
 
+      const hash = activeTags.size === 1 ? `#tag-${[...activeTags][0]}` : '';
+      history.replaceState(null, '', `/works/${hash}`);
       updateDisplay();
     });
   });
@@ -309,6 +338,7 @@ const domainTags = ['AI-ML', 'spatial', 'data-viz', 'interaction', 'infrastructu
         button.classList.remove('bg-white', 'text-black');
         button.classList.add('border-white/20');
       });
+      history.replaceState(null, '', '/works/');
       updateDisplay();
     });
   }

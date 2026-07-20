@@ -1,0 +1,30 @@
+---
+import type { Project } from '../data/projects';
+import { metaDescription } from '../utils/seo';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+
+const imagePath = project.heroImage || project.images[0];
+const imageUrl = imagePath ? new URL(imagePath, Astro.site).href : undefined;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  name: project.title,
+  description: metaDescription(project.description, 300),
+  url: new URL(`/works/${project.slug}/`, Astro.site).href,
+  ...(imageUrl && { image: imageUrl }),
+  creator: {
+    '@type': 'Person',
+    name: 'Todd Margolis',
+    url: Astro.site,
+  },
+  dateCreated: project.year,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

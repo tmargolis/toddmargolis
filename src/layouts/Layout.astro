@@ -6,22 +6,41 @@ import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
   fullTitle?: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+  noindex?: boolean;
   hideFooter?: boolean;
   activeCategories?: string[];
   /** RFC 8288 discovery links in HTML (mirror homepage Link response headers). */
   agentDiscovery?: boolean;
 }
 
-const { title, fullTitle, hideFooter = false, activeCategories = [], agentDiscovery = false } = Astro.props;
+const {
+  title,
+  fullTitle,
+  description = 'Todd Margolis — artist, researcher, and strategist at the intersection of data, technology, and immersive experience.',
+  ogImage = '/images/og-image.jpg',
+  canonical,
+  noindex = false,
+  hideFooter = false,
+  activeCategories = [],
+  agentDiscovery = false,
+} = Astro.props;
+
 const documentTitle = fullTitle ?? `Todd Margolis | ${title}`;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
+const ogImageUrl = new URL(ogImage, Astro.site).href;
 ---
 
 <!doctype html>
 <html lang="en" class="scroll-smooth bg-obs-black text-gray-200">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Todd Margolis" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="canonical" href={canonicalUrl} />
+		{noindex && <meta name="robots" content="noindex, follow" />}
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -36,15 +55,19 @@ const documentTitle = fullTitle ?? `Todd Margolis | ${title}`;
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </>
     )}
+
+    <slot name="head" />
 		
 		<!-- Open Graph / Social Media Preview -->
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={documentTitle} />
-		<meta property="og:description" content="Todd Margolis" />
-		<meta property="og:image" content={`${Astro.site}/images/og-image.jpg`} />
-		<meta property="og:url" content={`${Astro.site}${Astro.url.pathname}`} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImageUrl} />
+		<meta property="og:url" content={canonicalUrl} />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:image" content={`${Astro.site}/images/og-image.jpg`} />
+		<meta name="twitter:title" content={documentTitle} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImageUrl} />
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

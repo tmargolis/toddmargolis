@@ -2,6 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import { projects } from '../../data/projects';
 import Watermark from '../../components/Watermark.astro';
+import ProjectJsonLd from '../../components/ProjectJsonLd.astro';
+import { metaDescription } from '../../utils/seo';
 
 export function getStaticPaths() {
   return projects.map(project => ({
@@ -85,9 +87,13 @@ const videoEmbedUrl = getVideoEmbedUrl(project.videoLink);
 const hasVideo = !!videoEmbedUrl || !!(project.videos && project.videos.length > 0);
 const metronomeAudioSrc = isMetronome ? (project.audio || '/audio/metronome_test.1.mp3') : '';
 const showContentImages = project.images.length >= 2 || (hasVideo && project.images.length >= 1);
+
+const description = metaDescription(project.description);
+const ogImage = project.heroImage || project.images[0] || '/images/og-image.jpg';
 ---
 
-<Layout title={project.title} activeCategories={project.category}>
+<Layout title={project.title} description={description} ogImage={ogImage} activeCategories={project.category}>
+  <ProjectJsonLd project={project} />
   <!-- Hero -->
   <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
     <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
@@ -357,7 +363,7 @@ const showContentImages = project.images.length >= 2 || (hasVideo && project.ima
           <div class="flex flex-wrap gap-2">
             {project.projectTag.map(tag => (
               <a 
-                href={`/works/?tag=${tag}`}
+                href={`/works/#tag-${tag}`}
                 class="font-mono text-xs text-indigo-400 hover:text-white hover:bg-white/10 px-2 py-1 border border-white/20 transition-colors"
               >
                 #{tag}

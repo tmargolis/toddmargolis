@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { projects } from '../data/projects';
+import { yearToLastmod } from '../utils/seo';
 
 const SITE_URL = 'https://toddmargolis.net';
 
@@ -12,23 +13,29 @@ const staticRoutes = [
   '/works/',
   '/contact/',
   '/narrative/',
-  '/logistics/',
 ];
 
 export const GET: APIRoute = () => {
-  const urls = [
-    ...staticRoutes.map((path) => `${SITE_URL}${path}`),
-    ...projects.map((project) => `${SITE_URL}/works/${project.slug}/`),
-  ];
+  const today = new Date().toISOString().split('T')[0];
 
-  const lastmod = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+  const staticUrls = staticRoutes.map((path) => ({
+    loc: `${SITE_URL}${path}`,
+    lastmod: today,
+  }));
+
+  const projectUrls = projects.map((project) => ({
+    loc: `${SITE_URL}/works/${project.slug}/`,
+    lastmod: yearToLastmod(project.year),
+  }));
+
+  const urls = [...staticUrls, ...projectUrls];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls
   .map(
-    (url) => `  <url>
-    <loc>${url}</loc>
+    ({ loc, lastmod }) => `  <url>
+    <loc>${loc}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>monthly</changefreq>
   </url>`
@@ -44,4 +51,3 @@ ${urls
     },
   });
 };
-
