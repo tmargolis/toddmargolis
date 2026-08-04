@@ -925,6 +925,24 @@ export const projects: Project[] = [
   images: ['/images/InsightChatbotLarge.jpeg'],
   related: ['qlik', 'qlik-genai', 'qlik-reporting-storytelling']
   },
+  // Research / Display & Interaction Systems / J-Space
+  {
+  slug: 'j-space',
+  title: 'J-Space',
+  category: ['Research'],
+  subCategory: ['Display & Interaction Systems'],
+  projectTag: ['research', 'AI-ML', 'data-viz', 'prototype', 'hands-on', '0-to-1'],
+  status: 'Work in Progress',
+  year: '2026',
+  medium: 'Web Application',
+  heroImage: '/images/jspace.jpg',
+  quote: 'What the model privately represents vs. what it publicly says.',
+  description: 'J-Space investigates Anthropic\'s Jacobian lens — a method for decoding the verbalizable concepts a language model is poised to express as they evolve through its layers. Unlike chain-of-thought text or agent telemetry, these readings come from intermediate residual-stream activations: ranked concept clouds that can appear, compete, resolve, or vanish before any token is spoken. The research treats that gap as both scientific instrument and artistic material — a new way to materialize the invisible interval between receiving a question and producing an answer.',
+  description2: 'Current studies run an open-weight model locally through a fitted Jacobian lens, producing per-token, full-depth traces rendered as said-vs-unsaid tables and reference-free non-factual studies. Early findings suggest factual recall often resolves only in the deep layers; multi-token answers unspool autoregressively across depth; and many errors look like genuine absence rather than suppressed truth — the model substituting from the right semantic neighborhood. Separate pilots on opinion, refusal, and creative prompts test whether confident commit, templated refusal, and low-support degeneration remain separable without ground truth.',
+  description3: 'The work is building toward interactive visualizations. Every path is grounded in an actual lens recordings rather than a simulated monologue — partial evidence of accessible internal representation, not a claim of machine consciousness.',
+  images: ['/images/jspace.jpg'],
+  related: ['qlik-genai', 'qlik-insight-chatbot', 'homcom', 'now-and-then', 'observables', 'star-trails']
+  },
   // Research: Collaborative Environments
   // Research / Collaborative Environments / Vroom (Virtual Room)
 {
