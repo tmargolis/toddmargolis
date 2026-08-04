@@ -928,7 +928,7 @@ export const projects: Project[] = [
   // Research / Display & Interaction Systems / J-Space
   {
   slug: 'j-space',
-  title: 'J-Space',
+  title: 'Traces',
   category: ['Research'],
   subCategory: ['Display & Interaction Systems'],
   projectTag: ['research', 'AI-ML', 'data-viz', 'prototype', 'hands-on', '0-to-1'],
