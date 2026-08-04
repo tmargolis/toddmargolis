@@ -147,6 +147,47 @@ export const projects: Project[] = [
   related: ['sky-watcher', 'now-and-then', 'delayed-vision'],
   website: 'https://observables.art'
   },
+  // Creative / Tangible Artifacts / Cityscapes
+{
+  slug: 'cityscapes',
+  title: 'Cityscapes',
+  category: ['Creative'],
+  subCategory: ['Tangible Artifacts'],
+  projectTag: ['artifact', 'spatial', 'data-viz', 'hands-on'],
+  status: 'Work in Progress',
+  year: '2026',
+  medium: 'Archival Pigment Prints',
+  dimensions: '20 x 30 inches each',
+  weight: '5kg each',
+  price: '$1,000.00 each',
+  note: 'n/a',
+  isSeries: true,
+  heroImage: '/images/cityscapes-detail.jpg',
+  description: '"Cityscapes" is a large-format photographic series shot from a high-rise vantage over Chicago\'s urban grid. Each cardinal direction — North, East, South, West — becomes a single, densely resolved print in which thousands of windows register as light, pattern, and texture rather than as apertures into private space. The city is treated at cosmological scale: units dissolve into system, interiors into field, and the inhabited skyline reads as a luminous data surface rather than a collection of rooms.',
+  description2: 'The images are built from stacked long-exposure frames — a clean architectural base composite paired with a vibrancy layer that lets the ambient glow of residents TV viewing materialize. High resolution is deliberate: geometry and facade detail remain crisp, while the optical and compositional relationship keeps residential interiors from becoming the subject. The result sits in a lineage with Trevor Paglen\'s limit telephotography and Jason Salavon\'s temporal collapse — real subjects rendered abstract by vantage, optics, and accumulation — extended here from desert and archive into the urban night.',
+  images: [
+  '/images/cityscapes-north.jpg',
+  '/images/cityscapes-east.jpg',
+  '/images/cityscapes-south.jpg',
+  '/images/cityscapes-west.jpg',
+  '/images/cityscapes-detail.jpg'
+  ],
+  imageTitles: [
+  'North',
+  'East',
+  'South',
+  'West',
+  'Detail'
+  ],
+  imageDescriptions: [
+  'Looking north from a 12th-floor vantage; windows as city-scale light pattern rather than residential apertures.',
+  'Looking east across the urban grid; facade geometry resolved as luminous texture.',
+  'Looking south at night — each point of light a life in progress, visible only as system.',
+  'Looking west; the stacked skyline treated as a continuous data field.',
+  'Close inspection of print resolution and window-light quality at full scale.'
+  ],
+  related: ['star-trails', 'now-and-then', 'cultural-analytics', 'shape-grammar-objects']
+  },
   // Creative / Tangible Artifacts / Horizons
 {
   slug: '3d-horizons',
