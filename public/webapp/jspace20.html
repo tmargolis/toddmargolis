@@ -1,0 +1,487 @@
+<div id="stage"><div id="clusters"></div></div>
+<div id="fade"></div>
+<button id="layerstoggle" class="corner" title="toggle prompt list">
+  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+    <polyline points="2 17 12 22 22 17"></polyline>
+    <polyline points="2 12 12 17 22 12"></polyline>
+  </svg>
+</button>
+<button id="gear" class="corner" title="toggle controls">&#9881;</button>
+<div id="tweak">
+  <div id="tweak_src">—</div>
+  <label>memory floor <input id="s_floor" type="range" min="0" max="0.3" step="0.01" value="0.19"><b id="v_floor"></b></label>
+  <label>cluster spread <input id="s_gap" type="range" min="0" max="2.5" step="0.05" value="1.55"><b id="v_gap"></b></label>
+  <label>cluster size <input id="s_size" type="range" min="0" max="2.5" step="0.05" value="1.8"><b id="v_size"></b></label>
+  <label>clusters (K) <input id="s_k" type="range" min="1" max="20" step="1" value="7"><b id="v_k"></b></label>
+  <label>max tokens <input id="s_max" type="range" min="20" max="160" step="1" value="90"><b id="v_max"></b></label>
+  <label class="chk"><input id="s_clu" type="checkbox"> cluster circles</label>
+</div>
+<div id="bottombar">
+  <div id="player">
+    <button id="pp" title="play / pause (space)">&#9654;</button>
+    <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="timeline">
+    <span id="clock">0:00 / 0:00</span>
+    <span id="layer"></span>
+  </div>
+  <div id="tabs"></div>
+</div>
+<style>
+  html, body { margin:0; height:100%; background:#000; overflow:hidden;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  #stage { position:fixed; inset:0; user-select:text; -webkit-user-select:text; }
+  #clusters { position:absolute; inset:0; pointer-events:none; }
+  .clu { position:absolute; border:1px solid rgba(88,196,120,.38); border-radius:50%;
+    transform:translate(-50%,-50%); }
+  .clab { position:absolute; transform:translate(-50%,-50%); color:#5ec47a; white-space:nowrap;
+    font-family: Georgia, "Times New Roman", serif; font-style:italic; font-size:14px;
+    text-shadow:0 0 6px #000, 0 0 6px #000; }
+  .tok { position:absolute; white-space:pre; color:#fff; opacity:0; will-change:opacity;
+    transform:translate(-50%,-50%); cursor:text; line-height:1; }
+  .tok.ans { transform:translate(0,-50%); font-weight:600; text-decoration:none;
+    text-underline-offset:3px; }
+  #prompt { position:fixed; left:22px; top:18px; max-width:56%; text-align:left; color:#fff;
+    white-space:pre-wrap; font-size:clamp(14px,1.9vw,20px); line-height:1.4; z-index:1;
+    pointer-events:none; text-shadow:0 0 10px #000, 0 0 10px #000, 0 0 4px #000; }
+  #fade { position:fixed; inset:0; background:#000; opacity:0; pointer-events:none; z-index:2; }
+  .corner { position:fixed; top:12px; z-index:6; width:30px; height:30px; display:flex;
+    align-items:center; justify-content:center; border:1px solid #3a3a42;
+    background:rgba(20,20,24,.6); color:#cfcfd6; font-size:15px; border-radius:8px;
+    cursor:pointer; line-height:1; opacity:0; pointer-events:none; transition:opacity .2s; }
+  .corner.show { opacity:1; pointer-events:auto; }
+  #gear { right:14px; }
+  #layerstoggle { right:52px; }
+  #tweak { position:fixed; top:50px; right:14px; z-index:5; display:none; flex-direction:column;
+    gap:7px; padding:11px 13px; border-radius:10px; background:rgba(20,20,24,.85);
+    backdrop-filter:blur(6px); color:#cfcfd6; font-size:11.5px; }
+  #tweak.show { display:flex; }
+  #tweak_src { color:#ffe14d; font-size:12px; letter-spacing:.04em; padding-bottom:4px;
+    margin-bottom:2px; border-bottom:1px solid #3a3a42; }
+  #tweak label { display:flex; align-items:center; gap:8px; justify-content:space-between; }
+  #tweak input[type=range] { width:120px; accent-color:#5ec47a; }
+  #tweak b { min-width:34px; text-align:right; font-variant-numeric:tabular-nums; color:#9a9aa2; }
+  #tweak .chk { justify-content:flex-start; gap:6px; cursor:pointer; }
+  #bottombar { position:fixed; left:0; right:0; bottom:0; z-index:4; display:flex;
+    flex-direction:column; align-items:center; gap:8px; padding:10px 16px 14px;
+    color:#cfcfd6; font-size:12px; background:linear-gradient(transparent, rgba(0,0,0,.65));
+    opacity:0; pointer-events:none; transition:opacity .2s; }
+  #bottombar.show { opacity:1; pointer-events:auto; }
+  #player { display:flex; align-items:center; gap:10px; }
+  #tabs { display:flex; gap:5px; flex-wrap:wrap; justify-content:center; }
+  #tabs.hidden { display:none; }
+  #tabs button { border:1px solid #3a3a42; background:#17181d; color:#d8d8dc; border-radius:7px;
+    padding:6px 9px; cursor:pointer; font:inherit; }
+  #tabs button.on { background:#ffe14d; color:#1a1a1a; border-color:#ffe14d; }
+  #pp { width:34px; box-sizing:border-box; text-align:center; border:1px solid #3a3a42;
+    background:#17181d; color:#d8d8dc; border-radius:7px; padding:5px 0; cursor:pointer;
+    font:inherit; }
+  #seek { width:160px; cursor:pointer; accent-color:#ffe14d; height:4px; }
+  #clock { width:88px; text-align:right; white-space:nowrap; overflow:hidden;
+    font-variant-numeric:tabular-nums; color:#9a9aa2; }
+  #layer { width:120px; text-align:left; white-space:nowrap; overflow:hidden; color:#9a9aa2;
+    font-size:12.5px; letter-spacing:.06em; opacity:0; pointer-events:none;
+    font-variant-numeric:tabular-nums; }
+</style>
+<script>const SHUFFLE=true;</script>
+<script src="jspace20.js"></script>
+<script>
+const CONF = { charDur:0.04, promptHold:2.0, layerDur:0.5, subRun:0.8,
+  subGap:0.12, cloudFade:0.6, endHold:5.0, finalFade:2.0, ENT_REF:8.0, sizeMin:15, sizeMax:46 };
+
+const $=id=>document.getElementById(id);
+const stage=$('stage'), cluBox=$('clusters'), fadeEl=$('fade'), layerEl=$('layer'),
+  ppEl=$('pp'), seekEl=$('seek'), clockEl=$('clock'), tabsEl=$('tabs'),
+  bottombarEl=$('bottombar'), gearEl=$('gear'), layersToggleEl=$('layerstoggle'), tweakEl=$('tweak');
+const sFloor=$('s_floor'), sGap=$('s_gap'), sSize=$('s_size'), sK=$('s_k'), sMax=$('s_max'),
+  sClu=$('s_clu'), vFloor=$('v_floor'), vGap=$('v_gap'), vSize=$('v_size'), vK=$('v_k'),
+  vMax=$('v_max');
+
+let W=0,H=0,item=null,tl=null,cloudEls=[],ansEls=[],promptEl=null,curMax=90,curFloor=0.19;
+let clusters=null, offset={}, soft={};
+let playhead=0,duration=1,playing=false,dragging=false,idx=0,last=performance.now();
+
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const sizeFromEnt=e=>{const f=clamp(e/CONF.ENT_REF,0,1); return CONF.sizeMin+(1-f)*(CONF.sizeMax-CONF.sizeMin);};
+const maxL=it=>it.layers[it.layers.length-1];
+const fmt=s=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+
+function buildTimeline(it){
+  const P=CONF, mx=maxL(it);
+  const typeEnd=it.prompt.length*P.charDur, sweepStart=typeEnd+P.promptHold,
+    sweepEnd=sweepStart+(mx+1)*P.layerDur;
+  const cyc=[];
+  if(it.answer.length){ cyc.push({start:sweepStart,end:sweepEnd}); let prev=sweepEnd;
+    for(let i=1;i<it.answer.length;i++){ const st=prev+P.subGap,en=st+P.subRun; cyc.push({start:st,end:en}); prev=en; } }
+  const lastEnd=cyc.length?cyc[cyc.length-1].end:sweepEnd;
+  const cloudFadeAt=cyc.length>1?cyc[1].start:sweepEnd;
+  const finalFadeStart=lastEnd+P.endHold;
+  return {typeEnd,sweepStart,sweepEnd,cyc,cloudFadeAt,finalFadeStart,end:finalFadeStart+P.finalFade};
+}
+
+// repel points in 2D so tokens don't stack
+function spreadLocal(pts, mindist, iters){
+  for(let it=0;it<iters;it++){
+    for(let i=0;i<pts.length;i++){ let fx=0,fy=0;
+      for(let j=0;j<pts.length;j++){ if(i===j)continue;
+        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, d=Math.hypot(dx,dy)+1e-9;
+        if(d<mindist){ const f=(mindist-d)/d*0.5; fx+=dx*f; fy+=dy*f; } }
+      pts[i].nx=pts[i].x+fx; pts[i].ny=pts[i].y+fy; }
+    for(const p of pts){ p.x=p.nx; p.y=p.ny; }
+  }
+}
+
+function dist2(a,b){ let s=0; for(let i=0;i<a.length;i++){ const t=a[i]-b[i]; s+=t*t; } return s; }
+
+function kmeansND(E,K,iters){
+  const n=E.length, dim=E[0].length; K=Math.max(1,Math.min(K,n));
+  const cent=[]; for(let k=0;k<K;k++) cent.push(E[Math.floor(k*n/K)].slice());
+  const lab=new Array(n).fill(0);
+  for(let it=0;it<iters;it++){
+    for(let i=0;i<n;i++){ let b=0,bd=1e18;
+      for(let k=0;k<K;k++){ let d=0; for(let j=0;j<dim;j++){ const t=E[i][j]-cent[k][j]; d+=t*t; } if(d<bd){bd=d;b=k;} } lab[i]=b; }
+    const sums=Array.from({length:K},()=>new Array(dim).fill(0)), cn=new Array(K).fill(0);
+    for(let i=0;i<n;i++){ cn[lab[i]]++; for(let j=0;j<dim;j++) sums[lab[i]][j]+=E[i][j]; }
+    for(let k=0;k<K;k++) if(cn[k]) for(let j=0;j<dim;j++) cent[k][j]=sums[k][j]/cn[k];
+  }
+  return {lab,cent};
+}
+
+// PCA of row vectors → 2D coords via Gram-matrix eig (good for small n / K).
+function pca2(rows){
+  const n=rows.length, dim=rows[0].length;
+  if(n===1) return [[0,0]];
+  const mean=new Array(dim).fill(0);
+  for(const r of rows) for(let j=0;j<dim;j++) mean[j]+=r[j];
+  for(let j=0;j<dim;j++) mean[j]/=n;
+  const X=rows.map(r=>{ const o=new Array(dim); for(let j=0;j<dim;j++) o[j]=r[j]-mean[j]; return o; });
+  const G=Array.from({length:n},()=>new Array(n).fill(0));
+  for(let i=0;i<n;i++) for(let j=i;j<n;j++){
+    let s=0; for(let k=0;k<dim;k++) s+=X[i][k]*X[j][k];
+    G[i][j]=G[j][i]=s;
+  }
+  const eigs=[];
+  const Gw=G.map(r=>r.slice());
+  for(let c=0;c<2;c++){
+    let v=Array.from({length:n},(_,i)=>Math.sin((i+1)*(c+1.7)));
+    let nrm=Math.hypot(...v)||1; v=v.map(x=>x/nrm);
+    let lam=0;
+    for(let it=0;it<100;it++){
+      const w=new Array(n).fill(0);
+      for(let i=0;i<n;i++) for(let j=0;j<n;j++) w[i]+=Gw[i][j]*v[j];
+      // orthogonalize against prior eigs
+      for(const eg of eigs){ const dot=w.reduce((s,x,i)=>s+x*eg.v[i],0); for(let i=0;i<n;i++) w[i]-=dot*eg.v[i]; }
+      lam=Math.hypot(...w)||1e-12; v=w.map(x=>x/lam);
+    }
+    eigs.push({lam, v});
+    for(let i=0;i<n;i++) for(let j=0;j<n;j++) Gw[i][j]-=lam*v[i]*v[j];
+  }
+  return rows.map((_,i)=>[
+    Math.sqrt(Math.max(eigs[0].lam,0))*eigs[0].v[i],
+    Math.sqrt(Math.max(eigs[1].lam,0))*eigs[1].v[i]
+  ]);
+}
+
+function softWeights(d2s, beta){
+  let m=d2s[0]; for(const d of d2s) if(d<m) m=d;
+  const w=d2s.map(d=>Math.exp(-beta*(d-m)));
+  let s=0; for(const x of w) s+=x; s=s||1;
+  return w.map(x=>x/s);
+}
+
+// Embedding-aware layout:
+//  • k-means → hard membership + titles (nearest to mean)
+//  • cluster centres via PCA of centroids (similar clusters sit near each other),
+//    scaled by spread / K / size packing
+//  • within-cluster: offset ∝ embedding delta from centroid (title → centre)
+//  • soft blend across centroids so tokens near two clusters sit between them
+function cluster(){
+  curMax=Math.min(+sMax.value, item.concepts.length);
+  const K=clamp(+sK.value,1,20);
+  const E=[]; for(let k=0;k<curMax;k++) E.push(item.concepts[k].e);
+  const {lab,cent}=kmeansND(E, K, 25);
+  const groups=[]; offset={}; soft={};
+  const baseIntra=0.13;
+  const sz=Math.max(+sSize.value, 0.05);
+  const intraR=baseIntra*sz;
+  const gap=+sGap.value;
+
+  // build non-empty groups + titles
+  const usedCent=[];
+  for(let g=0; g<cent.length; g++){
+    const members=[]; for(let i=0;i<curMax;i++) if(lab[i]===g) members.push(i);
+    if(!members.length) continue;
+    let title=members[0], bd=1e18;
+    members.forEach(k=>{ const d=dist2(E[k], cent[g]); if(d<bd){bd=d;title=k;} });
+    const gi=groups.length;
+    groups.push({members,cx:0.5,cy:0.5,title,centIdx:g});
+    usedCent.push(cent[g]);
+    // remap label index to compact group index later via centIdx
+  }
+  const n=groups.length;
+  if(!n){ clusters={groups}; return; }
+
+  // map original k-means id → group index
+  const gOf=new Array(cent.length).fill(-1);
+  groups.forEach((grp,gi)=>{ gOf[grp.centIdx]=gi; });
+  const primary=new Array(curMax);
+  for(let i=0;i<curMax;i++) primary[i]=gOf[lab[i]];
+
+  // --- cluster centres: PCA sets neighbour ORDER; evenly spaced ring sets DISTANCE ---
+  // (raw PCA packing leaves similar centroids stacked near the origin; a ring scaled by
+  //  spread keeps them separated while preserving similarity neighbourhoods)
+  const centXY=pca2(usedCent);
+  const order=centXY.map((p,i)=>({i, ang:Math.atan2(p[1], p[0])}))
+    .sort((a,b)=>a.ang-b.ang);
+  // chord ≥ ~2.8*intraR between neighbours → ring radius; spread scales it
+  const needR=n>1 ? (intraR*2.8)/(2*Math.sin(Math.PI/n)) : 0;
+  const baseR=clamp(needR, 0.34, 0.50);
+  const R=baseR*(gap/2);                        // gap=0 → collapse; gap=2 → designed R
+  order.forEach((o,slot)=>{
+    const ang=(slot/n)*2*Math.PI - Math.PI/2;
+    groups[o.i].cx=clamp(0.5+R*Math.cos(ang), 0.06, 0.94);
+    groups[o.i].cy=clamp(0.5+R*Math.sin(ang), 0.06, 0.90);
+  });
+  // hard min-separation pass (guards clamp-to-edge pileups at high K / high spread)
+  const minDist=n>1 ? 2*R*Math.sin(Math.PI/n)*0.92 : 0;
+  for(let it=0; it<40; it++){
+    for(let i=0;i<n;i++){ let fx=0,fy=0;
+      for(let j=0;j<n;j++){ if(i===j)continue;
+        const dx=groups[i].cx-groups[j].cx, dy=groups[i].cy-groups[j].cy;
+        const d=Math.hypot(dx,dy)+1e-9;
+        if(d<minDist){ const f=(minDist-d)/d*0.55; fx+=dx*f; fy+=dy*f; } }
+      groups[i]._nx=groups[i].cx+fx; groups[i]._ny=groups[i].cy+fy; }
+    for(const g of groups){
+      g.cx=clamp(g._nx, 0.08, 0.92); g.cy=clamp(g._ny, 0.08, 0.88);
+      delete g._nx; delete g._ny;
+    }
+  }
+
+  // --- within-cluster offsets from embedding delta (PCA of residuals) ---
+  // global residual basis so directions are comparable across clusters
+  const residuals=E.map((e,i)=>{
+    const c=usedCent[primary[i]];
+    return e.map((v,j)=>v-c[j]);
+  });
+  const locXY=pca2(residuals);
+  // per-cluster: scale so max embedding-radius maps to baseIntra; title (~min r) → near 0
+  const embR=residuals.map(d=>Math.sqrt(d.reduce((s,v)=>s+v*v,0)));
+  groups.forEach(grp=>{
+    let maxR=0; grp.members.forEach(k=>{ maxR=Math.max(maxR, embR[k]); });
+    maxR=maxR||1;
+    const pts=grp.members.map(k=>{
+      const lx=locXY[k][0], ly=locXY[k][1];
+      const ln=Math.hypot(lx,ly)||1e-9;
+      // radius from embedding delta; keep PCA direction
+      const r=(embR[k]/maxR)*baseIntra;
+      return {x:lx/ln*r, y:ly/ln*r, k};
+    });
+    // title forced to origin (nearest-to-mean)
+    pts.forEach(p=>{ if(p.k===grp.title){ p.x=0; p.y=0; } });
+    spreadLocal(pts, 0.018, 30);
+    // re-pin title after repel
+    pts.forEach(p=>{ if(p.k===grp.title){ p.x=0; p.y=0; } });
+    let mm=0; pts.forEach(p=>{ mm=Math.max(mm, Math.hypot(p.x,p.y)); });
+    const sc=mm>baseIntra ? baseIntra/mm : 1;
+    pts.forEach(p=>{ offset[p.k]={x:p.x*sc, y:p.y*sc}; });
+  });
+
+  // --- soft affinity only BIASES ANGLE inside the native disk (never leaves it) ---
+  // radius stays embedding-based; direction leans toward the next-nearest cluster.
+  const primaryD=[];
+  for(let i=0;i<curMax;i++) primaryD.push(dist2(E[i], usedCent[primary[i]]));
+  const sorted=primaryD.slice().sort((a,b)=>a-b);
+  const med=sorted[Math.floor(sorted.length/2)]||1;
+  const beta=0.55/Math.max(med, 1e-3);
+  for(let i=0;i<curMax;i++){
+    const gi=primary[i];
+    const native=groups[gi];
+    soft[i]={x:native.cx, y:native.cy};       // always anchored to native centre
+    const o=offset[i]; if(!o) continue;
+    const r=Math.hypot(o.x,o.y);
+    if(r<1e-6 || i===native.title) continue;  // title stays pinned at centre
+    const d2s=usedCent.map(c=>dist2(E[i], c));
+    const w=softWeights(d2s, beta);
+    // second-highest weight = the cluster we lean toward
+    let best=-1, bw=-1, second=-1, sw=-1;
+    for(let g=0;g<n;g++){
+      if(w[g]>bw){ second=best; sw=bw; best=g; bw=w[g]; }
+      else if(w[g]>sw){ second=g; sw=w[g]; }
+    }
+    if(second<0 || best!==gi) continue;
+    const lean=sw/(bw+sw+1e-9);               // 0 = fully native, ~0.5 = ambiguous
+    if(lean<0.12) continue;
+    const tx=groups[second].cx-native.cx, ty=groups[second].cy-native.cy;
+    const tn=Math.hypot(tx,ty)||1;
+    const bias=Math.min(0.55, lean);
+    const mx=o.x/r*(1-bias)+tx/tn*bias, my=o.y/r*(1-bias)+ty/tn*bias;
+    const mn=Math.hypot(mx,my)||1;
+    offset[i]={x:mx/mn*r, y:my/mn*r};         // same radius → still inside disk
+  }
+  clusters={groups};
+}
+
+function place(){
+  W=window.innerWidth; H=window.innerHeight;
+  const sz=+sSize.value;
+  cloudEls.forEach((el,k)=>{ el.style.display = k<curMax?'block':'none'; });
+  cluBox.innerHTML='';
+  for(const grp of clusters.groups){
+    let maxr=0;
+    for(const k of grp.members){ const c=item.concepts[k], o=offset[k]||{x:0,y:0};
+      // native centre + local offset only (soft affinity never moves the anchor)
+      const px=grp.cx+o.x*sz, py=grp.cy+o.y*sz;
+      maxr=Math.max(maxr, Math.hypot(o.x,o.y)*sz);
+      const el=cloudEls[k]; el.style.fontSize=sizeFromEnt(c.ent).toFixed(1)+'px';
+      const w=el.offsetWidth, h=el.offsetHeight;
+      el.style.left=clamp(px*W, w/2+3, W-w/2-3)+'px';
+      el.style.top=clamp(py*H, h/2+4, H-h/2-46)+'px'; }
+    if(sClu.checked){
+      const rpx=(maxr+0.02)*Math.min(W,H), cxp=grp.cx*W, cyp=grp.cy*H;
+      const circ=document.createElement('div'); circ.className='clu';
+      circ.style.left=cxp+'px'; circ.style.top=cyp+'px';
+      circ.style.width=circ.style.height=(2*rpx)+'px'; cluBox.appendChild(circ);
+      const lb=document.createElement('div'); lb.className='clab';
+      lb.textContent=item.concepts[grp.title].d.trim();
+      lb.style.left=cxp+'px'; lb.style.top=((grp.cy<0.5)? cyp+rpx+14 : cyp-rpx-14)+'px';   // upper-half clusters label below
+      cluBox.appendChild(lb);
+    }
+  }
+  if(item.answer.length){
+    const hx=clamp(item.head.x,0.06,0.60)*W, hy=clamp(item.head.y,0.10,0.55)*H;
+    let x=hx, y=hy; const lineH=sizeFromEnt(item.answer[0].ent)*1.35;
+    ansEls.forEach((el,i)=>{ el.style.fontSize=sizeFromEnt(item.answer[i].ent).toFixed(1)+'px';
+      const w=el.offsetWidth;
+      if(x>hx && x+w>0.95*W){ x=hx; y+=lineH; }
+      el.style.left=x+'px'; el.style.top=y+'px'; x+=w; });
+  }
+}
+
+function relayout(){ if(!item) return; cluster(); place(); }
+
+function buildScene(i){
+  idx=i; item=DATA[i]; stage.querySelectorAll('.tok,#prompt').forEach(e=>e.remove()); cluBox.innerHTML='';
+  if(item.category){ const srcEl=$('tweak_src'); if(srcEl) srcEl.textContent=item.category; }
+  promptEl=document.createElement('div'); promptEl.id='prompt'; stage.appendChild(promptEl);
+  cloudEls=[];
+  for(const c of item.concepts){ c._first=c.op.findIndex(v=>v>0); if(c._first<0)c._first=1e9;
+    const el=document.createElement('span'); el.className='tok'; el.textContent=c.d;
+    stage.appendChild(el); cloudEls.push(el); }
+  ansEls=[];
+  for(const a of item.answer){ const el=document.createElement('span'); el.className='tok ans';
+    el.textContent=a.d; stage.appendChild(el); ansEls.push(el); }
+  sMax.max=item.concepts.length; if(+sMax.value>item.concepts.length) sMax.value=item.concepts.length;
+  relayout();
+  tl=buildTimeline(item); duration=tl.end;
+  [...tabsEl.children].forEach((b,k)=>b.classList.toggle('on',k===i));
+  playhead=0; playing=true; ppEl.innerHTML='&#10074;&#10074;'; render(0);
+}
+
+function render(t){
+  const it=item,P=CONF,mx=maxL(it);
+  // prompt: types out top-left, stays on screen until the final fade-to-black
+  { const n=t<tl.typeEnd?Math.floor(t/P.charDur):it.prompt.length;
+    let txt=it.prompt.slice(0,n); if(t<tl.typeEnd && Math.floor(t*2)%2===0) txt+='▌';
+    promptEl.textContent=txt;
+    promptEl.style.opacity = t>=tl.finalFadeStart
+      ? clamp(1-(t-tl.finalFadeStart)/P.finalFade,0,1) : 1;
+  }
+  // cloud
+  const inSweep=t>=tl.sweepStart;
+  const p=clamp((t-tl.sweepStart)/P.layerDur,0,mx);
+  const fl=Math.floor(p),cl=Math.min(fl+1,mx),fr=p-fl;
+  let ca=1; if(t>tl.cloudFadeAt) ca=clamp(1-(t-tl.cloudFadeAt)/P.cloudFade,0,1);
+  for(let k=0;k<curMax;k++){ const c=it.concepts[k]; let o=0;
+    if(inSweep){ const traj=lerp(c.op[fl],c.op[cl],fr); o=Math.max(traj*ca, p>=c._first?curFloor:0); }
+    cloudEls[k].style.opacity=o; }
+  // spoken answer: cycle greyscale, freeze at final rank opacity (no colour); underline
+  // only lands once the token has actually reached layer mx (its cycle is complete)
+  for(let i=0;i<ansEls.length;i++){ const a=it.answer[i], c=tl.cyc[i], el=ansEls[i];
+    if(t<c.start){ el.style.opacity=0; el.style.textDecoration='none'; continue; }
+    if(t<c.end){ const p2=clamp((t-c.start)/(c.end-c.start)*mx,0,mx),f=Math.floor(p2),g=Math.min(f+1,mx),r=p2-f;
+      el.style.opacity=lerp(a.op[f],a.op[g],r); el.style.textDecoration='none'; }
+    else { el.style.opacity=a.op[mx]; el.style.textDecoration='underline'; } }
+  fadeEl.style.opacity = t>=tl.finalFadeStart ? clamp((t-tl.finalFadeStart)/P.finalFade,0,1) : 0;
+  cluBox.style.opacity = (inSweep && t<tl.finalFadeStart) ? 1 : 0;
+  let lay=null;
+  if(t>=tl.sweepStart && t<tl.sweepEnd) lay=Math.round(p);
+  else for(const c of tl.cyc){ if(t>=c.start && t<c.end){ lay=Math.round((t-c.start)/(c.end-c.start)*mx); break; } }
+  layerEl.textContent=lay===null?'':('layer '+lay+' → '+mx); layerEl.style.opacity=lay===null?0:0.55;
+}
+
+const FRAME_DT = 1/30;
+function nextIdx(dir){ return (idx + dir + DATA.length) % DATA.length; }
+
+function loop(now){ const dt=(now-last)/1000; last=now;
+  if(playing){ playhead=Math.min(duration,playhead+dt);
+    if(playhead>=duration){
+      const n=nextIdx(1);
+      if(n===0 && typeof SHUFFLE!=='undefined' && SHUFFLE) shuffleData();
+      buildScene(n);
+    } }
+  if(!dragging) seekEl.value=Math.round(playhead/duration*1000);
+  clockEl.textContent=fmt(playhead)+' / '+fmt(duration);
+  render(playhead); requestAnimationFrame(loop);
+}
+
+function syncTweak(){ vFloor.textContent=(+sFloor.value).toFixed(2); vGap.textContent=(+sGap.value).toFixed(2);
+  vSize.textContent=(+sSize.value).toFixed(2); vK.textContent=sK.value; vMax.textContent=sMax.value;
+  curFloor=+sFloor.value; }
+sFloor.oninput=()=>{ syncTweak(); };
+sGap.oninput=()=>{ syncTweak(); cluster(); place(); render(playhead); };  // spread: re-place centres
+sSize.oninput=()=>{ syncTweak(); cluster(); place(); render(playhead); }; // size: fan tokens + reflow ring
+sK.oninput=()=>{ syncTweak(); cluster(); place(); render(playhead); };
+sMax.oninput=()=>{ syncTweak(); cluster(); place(); render(playhead); };
+sClu.onchange=()=>{ place(); render(playhead); };
+
+ppEl.onclick=()=>{ if(playhead>=duration) playhead=0; playing=!playing; ppEl.innerHTML=playing?'&#10074;&#10074;':'&#9654;'; };
+seekEl.addEventListener('input',()=>{ playhead=seekEl.value/1000*duration; render(playhead); });
+seekEl.addEventListener('pointerdown',()=>dragging=true);
+window.addEventListener('pointerup',()=>{ dragging=false; updateChrome(lastMouseY); });
+window.addEventListener('resize',()=>{ if(item){ relayout(); render(playhead); } });
+
+gearEl.onclick=()=>{ tweakEl.classList.toggle('show'); updateChrome(0); };
+layersToggleEl.onclick=()=>{ tabsEl.classList.toggle('hidden'); bottombarEl.classList.add('show'); };
+
+const REVEAL_TOP=90, REVEAL_BOTTOM=140;
+let lastMouseY=null;
+function updateChrome(y){
+  const nearTop=y!=null && y<=REVEAL_TOP;
+  const nearBottom=y!=null && y>=(window.innerHeight-REVEAL_BOTTOM);
+  const topShow=nearTop || tweakEl.classList.contains('show');
+  [gearEl,layersToggleEl].forEach(el=>el.classList.toggle('show',topShow));
+  bottombarEl.classList.toggle('show', nearBottom || dragging);
+}
+window.addEventListener('mousemove',e=>{ lastMouseY=e.clientY; updateChrome(lastMouseY); });
+window.addEventListener('mouseleave',()=>{ lastMouseY=null; updateChrome(null); });
+
+function stepFrame(dir){
+  playing=false; ppEl.innerHTML='&#9654;';
+  playhead=clamp(playhead+dir*FRAME_DT,0,duration);
+  if(!dragging) seekEl.value=Math.round(playhead/duration*1000);
+  clockEl.textContent=fmt(playhead)+' / '+fmt(duration);
+  render(playhead);
+}
+
+const tuneEls=new Set([sFloor,sGap,sSize,sK,sMax]);
+window.addEventListener('keydown',(e)=>{
+  if(tuneEls.has(e.target)) return;   // let native arrow-key nudging work on the tuning sliders
+  if(e.code==='Space'){ e.preventDefault();
+    if(playhead>=duration) playhead=0;
+    playing=!playing; ppEl.innerHTML=playing?'&#10074;&#10074;':'&#9654;';
+  } else if(e.key==='ArrowLeft'&&e.shiftKey){ e.preventDefault(); stepFrame(-1);
+  } else if(e.key==='ArrowRight'&&e.shiftKey){ e.preventDefault(); stepFrame(1);
+  } else if(e.key==='ArrowLeft'){ e.preventDefault(); buildScene(nextIdx(-1));
+  } else if(e.key==='ArrowRight'){ e.preventDefault(); buildScene(nextIdx(1)); }
+});
+
+function shuffleData(){
+  for(let i=DATA.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1));
+    const t=DATA[i]; DATA[i]=DATA[j]; DATA[j]=t; }
+  [...tabsEl.children].forEach((b,i)=>{ b.textContent=DATA[i].name; });
+}
+if(typeof SHUFFLE!=='undefined' && SHUFFLE) shuffleData();
+DATA.forEach((d,i)=>{ const b=document.createElement('button'); b.textContent=d.name; b.onclick=()=>buildScene(i); tabsEl.appendChild(b); });
+syncTweak(); buildScene(0); requestAnimationFrame(loop);
+</script>

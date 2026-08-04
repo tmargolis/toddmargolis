@@ -941,6 +941,8 @@ export const projects: Project[] = [
   description2: 'Current studies run an open-weight model locally through a fitted Jacobian lens, producing per-token, full-depth traces rendered as said-vs-unsaid tables and reference-free non-factual studies. Early findings suggest factual recall often resolves only in the deep layers; multi-token answers unspool autoregressively across depth; and many errors look like genuine absence rather than suppressed truth — the model substituting from the right semantic neighborhood. Separate pilots on opinion, refusal, and creative prompts test whether confident commit, templated refusal, and low-support degeneration remain separable without ground truth.',
   description3: 'The work is building toward interactive visualizations. Every path is grounded in an actual lens recordings rather than a simulated monologue — partial evidence of accessible internal representation, not a claim of machine consciousness.',
   images: ['/images/jspace.jpg'],
+  videoLink: 'https://youtu.be/YyrVuCM1trk',
+  website: 'https://toddmargolis.net/webapp/jspace20.html',
   related: ['qlik-genai', 'qlik-insight-chatbot', 'homcom', 'now-and-then', 'observables', 'star-trails']
   },
   // Research: Collaborative Environments
