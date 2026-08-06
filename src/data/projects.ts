@@ -509,7 +509,6 @@ export const projects: Project[] = [
   category: ['Creative'],
   subCategory: ['Augmented Interventions'],
   projectTag: ['prototype', 'spatial', 'interaction', 'hands-on', 'astronomy'],
-  status: 'Work in Progress',
   year: '2026',
   medium: 'Tablet application',
   dimensions: '11 x 7 x 1 inches',
