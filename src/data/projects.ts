@@ -985,9 +985,28 @@ export const projects: Project[] = [
   images: ['/images/jspace2.jpg', '/images/jspace3.jpg'],
   videoLink: 'https://youtu.be/YyrVuCM1trk',
   website: 'https://toddmargolis.net/webapp/jspace20.html',
-  related: ['qlik-genai', 'qlik-insight-chatbot', 'homcom', 'now-and-then', 'observables', 'star-trails']
+  related: ['interlock', 'qlik-genai', 'qlik-insight-chatbot', 'homcom', 'now-and-then', 'observables', 'star-trails']
   },
   // Research: Collaborative Environments
+  // Research / Collaborative Environments / Interlock
+{
+  slug: 'interlock',
+  title: 'Interlock',
+  category: ['Research'],
+  subCategory: ['Collaborative Environments'],
+  projectTag: ['research', 'AI-ML', 'infrastructure', '0-to-1', 'prototype', 'cross-functional'],
+  status: 'Work in Progress',
+  year: '2026',
+  medium: 'Agent Control Plane',
+  heroImage: '/images/interlock-mockup.jpeg',
+  quote: 'Is what\'s happening safe, authorized, correct, and attributable?',
+  description: 'Interlock is a vendor-neutral control plane for trusted coordination across heterogeneous AI agents, tools, runtimes, and organizations. As agents mediate more of our routine interactions — with services, with colleagues\' agents, with suppliers — the infrastructure beneath that coordination matters. Orchestration frameworks answer "what should happen next?" Interlock answers whether what is happening is safe, authorized, correct, and attributable — without requiring a human to coordinate every agent boundary.',
+  description2: 'The project sits above individual agent runtimes and below business applications. It does not replace orchestration; it makes a fleet of agents built on those frameworks governable, observable, interoperable, and auditable across vendor boundaries. Eight layers form the control-plane surface: registry, identity, authorization, orchestration, durable execution, connectivity, observability, and evaluation & outcomes. Protocol foundations are open standards — A2A for agent-to-agent communication and task lifecycle, MCP for tool and data connectivity, and OpenTelemetry for unified observability.',
+  description3: 'Design commitments distinguish Interlock from control-plane tools that treat governance as a feature rather than a foundation: human oversight as a first-class outcome (not a failure mode); legible identity and delegation chains across principals; auditability of what was done, by whom, under what authorization; and interoperability without platform lock-in. The goal is not to replace human interaction — it is to reduce the overhead that competes with it, while keeping relational and social texture visible rather than optimized away.',
+  images: ['/images/interlock-mockup.jpeg'],
+  website: 'https://github.com/tmargolis/interlock',
+  related: ['j-space', 'qlik-insight-chatbot', 'qlik-genai', 'homcom']
+  },
   // Research / Collaborative Environments / Vroom (Virtual Room)
 {
   slug: 'vroom',
