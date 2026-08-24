@@ -31,6 +31,8 @@ export interface Project {
   watermarkedImages?: string[];
   collaborators?: string[];
   website?: string;
+  /** Labeled external links (e.g. research posts, publications). */
+  links?: { label: string; url: string }[];
   /** Slugs of related or cross-referenced projects. */
   related?: string[];
 }
@@ -1004,6 +1006,16 @@ export const projects: Project[] = [
   description3: 'Design commitments distinguish Interlock from control-plane tools that treat governance as a feature rather than a foundation: human oversight as a first-class outcome (not a failure mode); legible identity and delegation chains across principals; auditability of what was done, by whom, under what authorization; and interoperability without platform lock-in. The goal is not to replace human interaction — it is to reduce the overhead that competes with it, while keeping relational and social texture visible rather than optimized away.',
   images: ['/images/interlock-mockup.jpeg'],
   website: 'https://github.com/tmargolis/interlock',
+  links: [
+    {
+      label: 'Four Ways Behavioral Governance Fails',
+      url: 'https://github.com/tmargolis/interlock/blob/main/research/2026-08-evidence-log-001.md',
+    },
+    {
+      label: 'One Boundary Is Not Governance',
+      url: 'https://github.com/tmargolis/interlock/blob/main/research/2026-08-evidence-log-002.md',
+    },
+  ],
   related: ['j-space', 'qlik-insight-chatbot', 'qlik-genai', 'homcom']
   },
   // Research / Collaborative Environments / Vroom (Virtual Room)

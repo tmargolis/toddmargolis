@@ -384,6 +384,26 @@ const ogImage = project.heroImage || project.images[0] || '/images/og-image.jpg'
           </div>
         )}
 
+        {project.links && project.links.length > 0 && (
+          <div class="pt-6 border-t border-white/10 space-y-3">
+            <span class="block text-gray-600">Research</span>
+            <ul class="space-y-1 normal-case tracking-normal">
+              {project.links.map((link) => (
+                <li>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-indigo-300 hover:text-white underline"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {relatedProjects.length > 0 && (
           <div class="pt-6 border-t border-white/10 space-y-3">
             <span class="block text-gray-600">Related Work</span>
