@@ -995,7 +995,7 @@ export const projects: Project[] = [
   title: 'Interlock',
   category: ['Research'],
   subCategory: ['Collaborative Environments'],
-  projectTag: ['research', 'AI-ML', 'infrastructure', '0-to-1', 'prototype', 'cross-functional'],
+  projectTag: ['research', 'AI-ML', 'infrastructure', '0-to-1', 'cross-functional'],
   status: 'Work in Progress',
   year: '2026',
   medium: 'Agent Control Plane',
