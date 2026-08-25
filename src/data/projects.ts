@@ -1009,11 +1009,11 @@ export const projects: Project[] = [
   links: [
     {
       label: 'Four Ways Behavioral Governance Fails',
-      url: 'https://github.com/tmargolis/interlock/blob/main/research/2026-08-evidence-log-001.md',
+      url: 'https://toddmargolis.substack.com/p/four-ways-behavioral-governance-fails',
     },
     {
       label: 'One Boundary Is Not Governance',
-      url: 'https://github.com/tmargolis/interlock/blob/main/research/2026-08-evidence-log-002.md',
+      url: 'https://toddmargolis.substack.com/p/one-boundary-is-not-governance',
     },
   ],
   related: ['j-space', 'qlik-insight-chatbot', 'qlik-genai', 'homcom']
