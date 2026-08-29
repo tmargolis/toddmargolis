@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getAllPosts } from '../utils/substack';
+import { metaDescription } from '../utils/seo';
+
+const posts = getAllPosts();
+
+function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+
+<Layout
+  title="Writing"
+  description="Essays on multi-agent systems, context engineering, and structural AI governance from Todd Margolis's newsletter."
+  canonical="https://toddmargolis.net/writing/"
+>
+  <div class="relative z-10 max-w-3xl mx-auto px-6 md:px-12 pb-24">
+    <section class="pt-0 pb-12 text-center">
+      <h1 class="font-serif text-5xl md:text-7xl mb-6">Writing</h1>
+      <p class="font-mono text-sm text-gray-400 max-w-lg mx-auto">
+        Essays on multi-agent systems, context engineering, and structural AI
+        governance — published on Substack.
+      </p>
+    </section>
+
+    <section class="flex justify-center mb-16">
+      <iframe
+        src="https://toddmargolis.substack.com/embed"
+        width="100%"
+        height="150"
+        style="max-width:480px; border:1px solid rgba(255,255,255,0.1); background:white; border-radius:2px;"
+        frameborder="0"
+        scrolling="no"
+        title="Subscribe to Todd Margolis's Substack"
+      ></iframe>
+    </section>
+
+    <section class="space-y-10">
+      {posts.map((post) => (
+        <article class="pt-8 border-t border-white/10 first:pt-0 first:border-t-0">
+          <span class="block font-mono text-xs uppercase tracking-widest text-gray-600 mb-2">
+            {formatDate(post.pubDate)}
+          </span>
+          <h2 class="font-serif text-2xl mb-3">
+            <a
+              href={post.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-indigo-300 transition-colors"
+            >
+              {post.title}
+            </a>
+          </h2>
+          <p class="font-mono text-sm text-gray-400 leading-relaxed mb-3">
+            {metaDescription(post.excerpt, 220)}
+          </p>
+          <a
+            href={post.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-mono text-xs uppercase tracking-widest text-indigo-400 hover:text-white transition-colors"
+          >
+            Read on Substack &rarr;
+          </a>
+        </article>
+      ))}
+    </section>
+  </div>
+</Layout>

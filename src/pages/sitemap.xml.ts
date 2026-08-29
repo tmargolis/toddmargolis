@@ -13,6 +13,7 @@ const staticRoutes = [
   '/works/',
   '/contact/',
   '/narrative/',
+  '/writing/',
 ];
 
 export const GET: APIRoute = () => {

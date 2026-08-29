@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate-pdf": "tsx scripts/generate-pdf.ts"
+    "generate-pdf": "tsx scripts/generate-pdf.ts",
+    "sync-substack": "tsx scripts/sync-substack.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
