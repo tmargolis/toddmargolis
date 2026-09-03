@@ -1017,6 +1017,25 @@ export const projects: Project[] = [
   ],
   related: ['j-space', 'qlik-insight-chatbot', 'qlik-genai', 'homcom']
   },
+  // Research / Collaborative Environments / Context Memory Fabric
+{
+  slug: 'context-memory-fabric',
+  title: 'Context Memory Fabric',
+  category: ['Research'],
+  subCategory: ['Collaborative Environments'],
+  projectTag: ['research', 'AI-ML', 'infrastructure', 'prototype', '0-to-1'],
+  status: 'Work in Progress',
+  year: '2026',
+  medium: 'Personal Context Layer (MCP)',
+  heroImage: '/images/context-memory-fabric.jpg',
+  quote: 'Your context, across every AI — not every AI\'s separate memory of you.',
+  description: 'Context Memory Fabric is a portable personal context layer that travels with you across AI clients — Claude Desktop, IDE agents, chat interfaces, and CLI tools — instead of leaving each one to accumulate its own partial, unportable model of you. It unites two kinds of knowledge that assistants normally keep apart: a curated corpus of durable notes, research reports, and specifications, and a temporal episodic memory of decisions, milestones, and changing preferences. Both are exposed through standard Model Context Protocol tools, so any compliant agent can retrieve the same grounded, provenance-tagged context.',
+  description2: 'The system enforces a strict separation between what is curated and what is remembered. Episodic memory lives in a temporal knowledge graph (Graphiti on FalkorDB) that records when each fact became true and when it was superseded, so newer decisions override older ones without silently erasing history. Durable knowledge stays in a plain Markdown repository that is read-only by default; proposed edits are written as reviewable staging diffs with content hashes rather than applied in place. A single assembly step merges both sources into clean Markdown with provenance tags and explicit guidance for interpreting conflicts. Bulk historical imports — including native ChatGPT exports — are classified conservatively into episodic, durable, and ambiguous buckets, always preserving the original source and date.',
+  description3: 'The project grew out of a practical frustration: as AI assistants multiply, each vendor builds its own siloed memory of the user, and none of it can be inspected, corrected, or moved. Context Memory Fabric treats personal context as infrastructure the user owns and controls — local-first, auditable, and provider-replaceable, usable even without any particular wiki, export, or graph backend. Its working thesis is simply: your context, across every AI, rather than every AI\'s separate memory of you. The work extends a longer line of Margolis\'s research into systems that make invisible information legible and shared — from large-scale collaborative visualization environments to vendor-neutral coordination layers for AI agents.',
+  images: ['/images/context-memory-fabric.jpg'],
+  website: 'https://github.com/tmargolis/context-memory-fabric',
+  related: ['interlock', 'j-space', 'qlik-genai', 'qlik-insight-chatbot']
+  },
   // Research / Collaborative Environments / Vroom (Virtual Room)
 {
   slug: 'vroom',
