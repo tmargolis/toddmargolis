@@ -1,13 +1,5 @@
 <div id="stage"><div id="clusters"></div></div>
 <div id="fade"></div>
-<button id="layerstoggle" class="corner" title="toggle prompt list">
-  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
-    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-    <polyline points="2 17 12 22 22 17"></polyline>
-    <polyline points="2 12 12 17 22 12"></polyline>
-  </svg>
-</button>
 <button id="gear" class="corner" title="toggle controls">&#9881;</button>
 <div id="tweak">
   <div id="tweak_src">—</div>
@@ -51,7 +43,6 @@
     cursor:pointer; line-height:1; opacity:0; pointer-events:none; transition:opacity .2s; }
   .corner.show { opacity:1; pointer-events:auto; }
   #gear { right:14px; }
-  #layerstoggle { right:52px; }
   #tweak { position:fixed; top:50px; right:14px; z-index:5; display:none; flex-direction:column;
     gap:7px; padding:11px 13px; border-radius:10px; background:rgba(20,20,24,.85);
     backdrop-filter:blur(6px); color:#cfcfd6; font-size:11.5px; }
@@ -65,11 +56,9 @@
   #bottombar { position:fixed; left:0; right:0; bottom:0; z-index:4; display:flex;
     flex-direction:column; align-items:center; gap:8px; padding:10px 16px 14px;
     color:#cfcfd6; font-size:12px; background:linear-gradient(transparent, rgba(0,0,0,.65));
-    opacity:0; pointer-events:none; transition:opacity .2s; }
-  #bottombar.show { opacity:1; pointer-events:auto; }
+    opacity:1; pointer-events:auto; }
   #player { display:flex; align-items:center; gap:10px; }
   #tabs { display:flex; gap:5px; flex-wrap:wrap; justify-content:center; }
-  #tabs.hidden { display:none; }
   #tabs button { border:1px solid #3a3a42; background:#17181d; color:#d8d8dc; border-radius:7px;
     padding:6px 9px; cursor:pointer; font:inherit; }
   #tabs button.on { background:#ffe14d; color:#1a1a1a; border-color:#ffe14d; }
@@ -92,7 +81,7 @@ const CONF = { charDur:0.04, promptHold:2.0, layerDur:0.5, subRun:0.8,
 const $=id=>document.getElementById(id);
 const stage=$('stage'), cluBox=$('clusters'), fadeEl=$('fade'), layerEl=$('layer'),
   ppEl=$('pp'), seekEl=$('seek'), clockEl=$('clock'), tabsEl=$('tabs'),
-  bottombarEl=$('bottombar'), gearEl=$('gear'), layersToggleEl=$('layerstoggle'), tweakEl=$('tweak');
+  gearEl=$('gear'), tweakEl=$('tweak');
 const sFloor=$('s_floor'), sGap=$('s_gap'), sSize=$('s_size'), sK=$('s_k'), sMax=$('s_max'),
   sClu=$('s_clu'), vFloor=$('v_floor'), vGap=$('v_gap'), vSize=$('v_size'), vK=$('v_k'),
   vMax=$('v_max');
@@ -438,20 +427,17 @@ sClu.onchange=()=>{ place(); render(playhead); };
 ppEl.onclick=()=>{ if(playhead>=duration) playhead=0; playing=!playing; ppEl.innerHTML=playing?'&#10074;&#10074;':'&#9654;'; };
 seekEl.addEventListener('input',()=>{ playhead=seekEl.value/1000*duration; render(playhead); });
 seekEl.addEventListener('pointerdown',()=>dragging=true);
-window.addEventListener('pointerup',()=>{ dragging=false; updateChrome(lastMouseY); });
+window.addEventListener('pointerup',()=>{ dragging=false; });
 window.addEventListener('resize',()=>{ if(item){ relayout(); render(playhead); } });
 
 gearEl.onclick=()=>{ tweakEl.classList.toggle('show'); updateChrome(0); };
-layersToggleEl.onclick=()=>{ tabsEl.classList.toggle('hidden'); bottombarEl.classList.add('show'); };
 
-const REVEAL_TOP=90, REVEAL_BOTTOM=140;
+const REVEAL_TOP=90;
 let lastMouseY=null;
 function updateChrome(y){
   const nearTop=y!=null && y<=REVEAL_TOP;
-  const nearBottom=y!=null && y>=(window.innerHeight-REVEAL_BOTTOM);
   const topShow=nearTop || tweakEl.classList.contains('show');
-  [gearEl,layersToggleEl].forEach(el=>el.classList.toggle('show',topShow));
-  bottombarEl.classList.toggle('show', nearBottom || dragging);
+  gearEl.classList.toggle('show',topShow);
 }
 window.addEventListener('mousemove',e=>{ lastMouseY=e.clientY; updateChrome(lastMouseY); });
 window.addEventListener('mouseleave',()=>{ lastMouseY=null; updateChrome(null); });
