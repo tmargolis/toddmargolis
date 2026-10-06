@@ -1,5 +1,12 @@
 [
   {
+    "title": "Why Your AI Assistant Forgot What You Built Yesterday",
+    "link": "https://toddmargolis.substack.com/p/why-your-ai-assistant-forgot-what",
+    "pubDate": "2026-10-05T21:57:45.000Z",
+    "excerpt": "A personal context layer that bridges episodic memory and durable knowledge across Claude, ChatGPT, Gemini, and your local IDE.",
+    "guid": "https://toddmargolis.substack.com/p/why-your-ai-assistant-forgot-what"
+  },
+  {
     "title": "The Control Plane Has an Intent Problem",
     "link": "https://toddmargolis.substack.com/p/the-control-plane-has-an-intent-problem",
     "pubDate": "2026-08-26T21:19:13.000Z",
