@@ -1,6 +1,13 @@
 [
   {
-    "title": "Why Your AI Assistant Forgot What You Built Yesterday",
+    "title": "The Missing Hook",
+    "link": "https://toddmargolis.substack.com/p/the-missing-hook",
+    "pubDate": "2026-11-12T17:14:37.000Z",
+    "excerpt": "Why third-party governance stops at the edge of consumer AI, and what the labs could open",
+    "guid": "https://toddmargolis.substack.com/p/the-missing-hook"
+  },
+  {
+    "title": "Why Your AI Assistant Forgot What You Built Yesterday: Introducing Context Memory Fabric",
     "link": "https://toddmargolis.substack.com/p/why-your-ai-assistant-forgot-what",
     "pubDate": "2026-10-05T21:57:45.000Z",
     "excerpt": "A personal context layer that bridges episodic memory and durable knowledge across Claude, ChatGPT, Gemini, and your local IDE.",
